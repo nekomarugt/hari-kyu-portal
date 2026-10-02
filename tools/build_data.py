@@ -38,7 +38,7 @@ def kinfo(subj):
     return ks
 if __name__ == "__main__":
     res = {}
-    for subj, fn, dir_ in (("anat", "anat_filled.json", "anatomy"), ("physio", "physio_filled.json", "physiology")):
+    for subj, fn, dir_ in (("anat", "anat_filled2.json", "anatomy"), ("physio", "physio_filled.json", "physiology")):
         out, ents = load(subj, fn, None)
         d = json.load(open(W + fn))
         dai_name, chu_name, dai_of_chu = {}, {}, {}
