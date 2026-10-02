@@ -1,0 +1,82 @@
+{
+  "id": "/hari-kyu-portal/",
+  "name": "はり師きゅう師 解剖学・生理学ポータル",
+  "short_name": "解剖生理",
+  "description": "はり師・きゅう師 国家試験の解剖学・生理学の過去問（回別・分野別・ランダム）と4択クイズ。基礎の復習と過去問演習のためのポータル",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "/hari-kyu-portal/",
+  "scope": "/hari-kyu-portal/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0b1730",
+  "background_color": "#0b1730",
+  "categories": [
+    "education",
+    "medical"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "解剖学 過去問",
+      "short_name": "解剖過去問",
+      "url": "/hari-kyu-portal/anatomy/",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "生理学 過去問",
+      "short_name": "生理過去問",
+      "url": "/hari-kyu-portal/physiology/",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "4択クイズ",
+      "short_name": "クイズ",
+      "url": "/hari-kyu-portal/quiz/",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

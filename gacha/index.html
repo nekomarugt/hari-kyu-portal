@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1730" />
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="勉強でためたコインで回せる、おまけのガチャ。キャラ38体をあつめよう（無料・端末内のみ）。" />
+    <title>アバターガチャ｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="../game/game.css" />
+    <link rel="stylesheet" href="./gacha.css" />
+  </head>
+  <body class="jkq-body jkc-body">
+    <a class="jkq-return" href="../">← ポータルへ</a>
+    <main class="jkq-shell">
+      <header class="jkq-head">
+        <div class="jkq-mark jkc-mark" aria-hidden="true">🎁</div>
+        <div><p class="jkq-eyebrow">おまけ・無料</p><h1>アバターガチャ</h1></div>
+        <div class="jkc-coin" aria-live="polite"><small>コイン</small><b id="coin">0</b></div>
+      </header>
+
+      <section class="jkq-surface jkc-machine" aria-labelledby="mach-h">
+        <h2 id="mach-h" class="jkc-sr-only">ガチャを回す</h2>
+        <div class="jkc-stage" id="stage" aria-hidden="true"></div>
+        <p class="jkc-msg" id="msg">勉強でためたコインで、キャラをあつめよう。</p>
+        <div class="jkc-btns">
+          <button type="button" class="jkc-pull" id="pull1"><span>1回まわす</span><small>10コイン</small></button>
+          <button type="button" class="jkc-pull is-ten" id="pull10"><span>10連でまわす</span><small>100コイン ・ レア以上1体かくてい</small></button>
+        </div>
+        <p class="jkq-note" id="short" hidden></p>
+        <div class="jkc-rates" aria-label="出現率">
+          <div><b class="rn">N</b><span>ノーマル</span><em>75%</em></div>
+          <div><b class="rr">R</b><span>レア</span><em>22%</em></div>
+          <div><b class="rs">SR</b><span>スーパーレア</span><em>2%</em></div>
+          <div><b class="rss">SSR</b><span>スペシャル</span><em>1%</em></div>
+        </div>
+        <p class="jkq-note">同じ子が出たら、コインが少しもどります（N +2 ／ R +5 ／ SR +15 ／ SSR +30）。R以上が出ないまま29回すぎると、30回目はR以上がかくてい（いま <span id="pity">0</span>/30）。SSRだけのかくていはありません（SSRは1%の、とても出にくい最上位です）。</p>
+      </section>
+
+      <section class="jkq-surface jkc-results" id="results" hidden aria-label="結果" aria-live="polite">
+        <h2>結果</h2>
+        <div class="jkc-grid" id="res-grid"></div>
+      </section>
+
+      <section class="jkq-surface" aria-labelledby="book-h">
+        <div class="jkc-bookhead"><h2 id="book-h">キャラずかん</h2><strong id="count">0/38</strong></div>
+        <div class="jkc-bar"><i id="count-bar"></i></div>
+        <p class="jkq-note">手に入れた子をタップすると「きろく」が読めます。1つ目は無料、2つ目から20・50コイン（SR・SSRは80・120コインまで）でひらけます。かぶりが出ると、次のきろくが1つ無料でひらきます。</p>
+        <div class="jkc-book" id="book"></div>
+        <div class="jkc-detail" id="detail" hidden></div>
+      </section>
+
+      <section class="jkq-surface jkc-omi" aria-labelledby="omi-h">
+        <h2 id="omi-h">⛩ 合格祈願おみくじ</h2>
+        <p class="jkq-note">1回 5コイン。何回でもひけます。コインやXPはもらえず、ガチャの確率にも関係しません（ただのお楽しみ）。</p>
+        <button type="button" class="jkc-pull jkc-omi-btn" id="omi-draw"><span>おみくじをひく</span><small>5コイン</small></button>
+        <p class="jkq-note" id="omi-short" hidden></p>
+        <div id="omi-result" aria-live="polite"></div>
+      </section>
+
+      <section class="jkq-surface">
+        <h2>コインのためかた</h2>
+        <ul class="jkc-how">
+          <li>問題にはじめて正解 +3（2回目以降は +1）。回答コインは1日30まで</li>
+          <li>4択クイズ30問 +5／50問 +10（60%以上正解、1日1回ずつ）</li>
+          <li>新しいバッジ +5 ／ 3・7・14・30日連続 +10</li>
+        </ul>
+        <a class="jkq-secondary" href="../quiz/">4択クイズへ（10・30・50問）</a>
+        <p class="jkq-note">おまけのお楽しみです。ガチャの記録は、この端末の中だけに保存されます（別の端末とは共有されません）。</p>
+      </section>
+    </main>
+    <script src="../game/avatars.js"></script>
+    <script src="../game/game.js"></script>
+    <script src="./gacha.js"></script>
+    <script src="./omikuji.js"></script>
+  </body>
+</html>

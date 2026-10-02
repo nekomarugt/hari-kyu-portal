@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1730" />
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="はり師・きゅう師 国家試験の解剖学の過去問を、回別・分野別・ランダムで練習できるアプリ" />
+    <title>解剖学 過去問｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../game/game.css" />
+  </head>
+  <body>
+    <a class="portal-return" href="../" aria-label="解剖学・生理学ポータルへ戻る">← ポータルへ戻る</a>
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <p class="eyebrow">はり師・きゅう師　基礎の復習と過去問演習</p>
+          <h1>解剖学 過去問</h1>
+        </div>
+        <div class="question-total" id="header-total" aria-label="収録問題数">—</div>
+      </header>
+
+      <section id="loading-view" class="surface status-surface" aria-live="polite">
+        <div class="loading-ring" aria-hidden="true"></div>
+        <p>問題を読み込んでいます</p>
+      </section>
+
+      <section id="setup-view" class="surface is-hidden" aria-labelledby="setup-title">
+        <div class="surface-heading">
+          <div>
+            <p class="section-kicker">出題設定</p>
+            <h2 id="setup-title">何問やる？</h2>
+          </div>
+          <div class="history-summary" id="history-summary"></div>
+        </div>
+
+        <div data-jkg="panel" data-subject="ana" data-src="past"></div>
+
+        <ul class="jk-modes is-sub" aria-label="出題モードの違い">
+          <li><strong>分野別</strong><span>出題基準の大項目ごと</span></li>
+          <li><strong>回数別</strong><span>好きな回を選んで解く</span></li>
+          <li><strong>ランダム</strong><span>全体から抜き打ち</span></li>
+        </ul>
+
+        <div class="setup-grid">
+          <label class="field">
+            <span>回数別（回を選ぶ）</span>
+            <select id="exam-select">
+              <option value="all">すべての回</option>
+            </select>
+          </label>
+
+          <fieldset class="field count-field">
+            <legend>出題数</legend>
+            <div class="segmented" id="count-options">
+              <label><input type="radio" name="count" value="10" checked /><span>10問</span></label>
+              <label><input type="radio" name="count" value="30" /><span>30問</span></label>
+              <label><input type="radio" name="count" value="all" /><span>全問</span></label>
+            </div>
+          </fieldset>
+          <label class="field field-wide is-hidden" id="field-wrap">
+            <span>分野別（出題基準の大項目・任意）</span>
+            <select id="field-select">
+              <option value="all">すべての分野</option>
+            </select>
+          </label>
+          <label class="field field-wide is-hidden" id="sub-wrap">
+            <span>サブ分野（中項目・さらに絞る場合）</span>
+            <select id="sub-select">
+              <option value="all">この分野すべて</option>
+            </select>
+          </label>
+        </div>
+
+        <button class="primary-button" id="start-button" type="button">
+          <span>ランダムに開始</span><span aria-hidden="true">→</span>
+        </button>
+
+        <button class="secondary-button is-hidden" id="review-saved-button" type="button">
+          苦手問題だけ復習する
+        </button>
+
+        <div class="source-note">
+          <span>解剖学の過去問（4択）。分野は出題基準（2026年版）のA1〜A11の11分野</span>
+          <span>端末内に学習記録を保存</span>
+        </div>
+      </section>
+
+      <section id="quiz-view" class="surface quiz-surface is-hidden" aria-labelledby="question-text">
+        <div class="quiz-topline">
+          <button class="text-button" id="quit-button" type="button">終了</button>
+          <div class="progress-copy"><strong id="progress-current">1</strong><span>/</span><span id="progress-total">10</span></div>
+          <div class="source-badge" id="source-badge"></div>
+        </div>
+        <div class="progress-track" aria-hidden="true"><div id="progress-bar"></div></div>
+
+        <article class="question-card">
+          <p class="multi-note is-hidden" id="multi-note">正しいものをすべて選択</p>
+          <h2 id="question-text"></h2>
+          <div class="choices" id="choices"></div>
+          <button class="primary-button compact answer-button" id="submit-answer-button" type="button" disabled>解答する</button>
+        </article>
+
+        <div id="feedback" class="feedback is-hidden" aria-live="polite">
+          <div class="feedback-title"><span id="feedback-icon" aria-hidden="true"></span><strong id="feedback-label"></strong></div>
+          <p id="feedback-answer"></p>
+          <div class="feedback-explanation is-hidden" id="feedback-explanation"></div>
+          <p class="inferred-note is-hidden" id="inferred-note">※この問題は公式の正答表が見つからず、内容から正答を判断しています。</p>
+          <button class="primary-button compact" id="next-button" type="button">次の問題へ</button>
+        </div>
+      </section>
+
+      <section id="result-view" class="surface result-surface is-hidden" aria-labelledby="result-title">
+        <p class="section-kicker">RESULT</p>
+        <h2 id="result-title">今回の結果</h2>
+        <div class="score-ring" id="score-ring">
+          <div><strong id="score-percent">0</strong><span>%</span></div>
+        </div>
+        <p class="score-detail"><strong id="score-correct">0</strong> / <span id="score-total">0</span> 問正解</p>
+        <p class="result-message" id="result-message"></p>
+        <div class="result-actions">
+          <button class="primary-button is-hidden" id="retry-wrong-button" type="button">間違えた問題だけ</button>
+          <button class="secondary-button" id="back-to-setup-button" type="button">条件を変える</button>
+        </div>
+      </section>
+
+      <section id="error-view" class="surface status-surface is-hidden" role="alert">
+        <h2>問題を読み込めませんでした</h2>
+        <p>ページを再読み込みしてください。</p>
+      </section>
+
+      <footer>
+        <span>出典：問題は公益財団法人東洋療法研修試験財団の国家試験問題を元にしています。</span>
+        <button id="reset-history-button" class="footer-button is-hidden" type="button">学習記録をリセット</button>
+      </footer>
+    </main>
+    <script src="../game/game.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

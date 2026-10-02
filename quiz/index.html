@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1730" />
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="はり師・きゅう師 国家試験の解剖学・生理学の過去問から、4択クイズ（10・30・50問）と、まちがえた問題だけの復習（無料）。" />
+    <title>4択クイズ｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="../game/game.css" />
+  </head>
+  <body class="jkq-body">
+    <a class="jkq-return" href="../">← ポータルへ</a>
+    <main class="jkq-shell">
+      <header class="jkq-head">
+        <div class="jkq-mark" aria-hidden="true">4択</div>
+        <div><p class="jkq-eyebrow"><span class="jk-tag is-quick">サクッとスキマ時間用</span></p><h1>4択クイズ</h1><p class="jkq-hint">10・30・50問でサクッと。じっくり解くなら「過去問を解く」で。</p></div>
+      </header>
+
+      <section id="v-setup" class="jkq-surface" aria-labelledby="setup-h">
+        <h2 id="setup-h">どの科目にする？</h2>
+        <div class="jkq-seg" role="group" aria-label="科目">
+          <button type="button" data-subj="ana" aria-pressed="false">解剖学</button>
+          <button type="button" data-subj="phy" aria-pressed="true">生理学</button>
+        </div>
+        <h3 class="jkq-h3">問題数</h3>
+        <div class="jkq-seg" role="group" aria-label="問題数">
+          <button type="button" data-n="10" aria-pressed="true">10問</button>
+          <button type="button" data-n="30" aria-pressed="false">30問</button>
+          <button type="button" data-n="50" aria-pressed="false">50問</button>
+        </div>
+        <p class="jkq-note" id="type-note"></p>
+        <button type="button" class="jkq-primary" id="start-btn"><span id="start-label">10問スタート →</span></button>
+        <button type="button" class="jkq-secondary is-weak" id="weak-btn" hidden>まちがえた問題だけ復習（<span id="weak-btn-n">0</span>問）</button>
+        <p class="jkq-note" id="no-weak">まちがえた問題は、ここに自動でたまります。</p>
+        <p class="jkq-note">同じ問題は重ならないようにランダムに出します。回答が速すぎる・同じ問題をくり返すとコインは増えません（くわしくは「きろく」のルール）。</p>
+        <p class="jkq-note">記録は、この端末の中だけに保存されます。</p>
+        <p class="jkq-note">出典：問題は公益財団法人東洋療法研修試験財団の国家試験問題を元にしています。</p>
+      </section>
+
+      <section id="v-loading" class="jkq-surface" hidden><p>問題を読み込んでいます…</p></section>
+
+      <section id="v-quiz" class="jkq-surface" hidden aria-labelledby="q-text">
+        <div class="jkq-top">
+          <button type="button" class="jkq-quit" id="quit">やめる</button>
+          <div class="jkq-prog"><strong id="prog-n">1</strong> / <span id="prog-t">10</span></div>
+          <div class="jkq-label" id="q-label"></div>
+        </div>
+        <div class="jkq-track" aria-hidden="true"><i id="prog-bar"></i></div>
+        <p class="jkq-multi" id="multi-note" hidden>正しいものをすべて選ぶ</p>
+        <h2 id="q-text" class="jkq-q"></h2>
+        <div id="choices" class="jkq-choices"></div>
+        <button type="button" class="jkq-primary" id="submit" disabled hidden>こたえる</button>
+        <div id="fb" class="jkq-fb" hidden aria-live="polite">
+          <strong id="fb-title"></strong>
+          <p id="fb-ans"></p>
+          <div id="fb-why-wrap" hidden><b>解説</b><p id="fb-why"></p></div>
+          <p class="jkq-note" id="fb-inf" hidden>※この問題は公式の正答表が見つからず、内容から正答を判断しています。</p>
+          <button type="button" class="jkq-primary" id="next">次の問題へ</button>
+        </div>
+      </section>
+
+      <section id="v-result" class="jkq-surface jkq-result" hidden aria-labelledby="r-h">
+        <p class="jkq-eyebrow">RESULT</p>
+        <h2 id="r-h">おつかれさま！</h2>
+        <div class="jkq-ring" id="r-ring"><div><strong id="r-pct">0%</strong></div></div>
+        <p class="jkq-score"><strong id="r-score"></strong> 正解</p>
+        <p class="jkq-msg" id="r-msg"></p>
+        <div class="jkq-gain">
+          <div><small>もらったXP</small><b id="r-xp"></b></div>
+          <div><small>連続日数</small><b id="r-streak"></b></div>
+          <div class="jkq-gain-lv"><small>コイン</small><b id="r-coin"></b></div>
+          <div class="jkq-gain-lv"><small>レベル</small><b id="r-lv"></b><span class="jkg-bar"><i id="r-bar"></i></span></div>
+        </div>
+        <p class="jkq-note" id="r-weaknote"></p>
+        <button type="button" class="jkq-primary" id="r-again">もう一回</button>
+        <button type="button" class="jkq-secondary is-weak" id="r-wrong" hidden></button>
+        <button type="button" class="jkq-secondary" id="r-back">科目・設定にもどる</button>
+        <a class="jkq-secondary" href="../gacha/">🎁 ガチャを回す</a>
+        <button type="button" class="jkg-link" data-jkg-open>🏅 バッジ・きろくを見る</button>
+        <p class="jkq-note">記録は、この端末の中だけに保存されます。</p>
+      </section>
+
+      <section id="v-error" class="jkq-surface" hidden>
+        <h2>読み込めませんでした</h2>
+        <p>ネットワークを確認して、もう一度ためしてください。</p>
+        <button type="button" class="jkq-primary" id="retry-error">もどる</button>
+      </section>
+    </main>
+    <script src="../game/game.js"></script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>
