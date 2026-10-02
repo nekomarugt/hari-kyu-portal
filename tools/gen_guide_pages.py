@@ -87,6 +87,7 @@ def landing():
         <ul>
           <li>分野（出題基準の大項目）を選び、項目を開くと要点・なぜ・確認問題が読めます。</li>
           <li>項目ごとの「出題N問」は、その項目に結び付けた過去問の数です（自動の割り当てで目安）。「過去問を解く」で、その問題だけを出題します。</li>
+          <li>項目の中の「頻出ポイントと出され方」は、その項目に結び付いた過去問の本文・選択肢の語を集計したものです（目安）。</li>
           <li>過去問アプリの解答後にも、その問題に関係する項目へのリンクが出ます。</li>
           <li>「赤字を隠して確認」で、答えの語を隠して覚えているかを確かめられます（タップで1か所ずつ表示）。</li>
         </ul>
@@ -116,7 +117,7 @@ def coverage():
         <button class="g-toggle" data-f="all" aria-pressed="true" type="button">すべて</button>
         <button class="g-toggle" data-f="新規必要" aria-pressed="false" type="button">新規必要だけ</button>
       </section>
-      <p class="g-legend"><strong>流用OK</strong>＝小項目の語がほぼ収録済み／<strong>手直し</strong>＝収録はあるが、小項目の語が足りない（または文章を直して収録）／<strong>新規必要</strong>＝この中項目の主な解説がない（準備中）。判定は小項目名のキーワード照合による目安で、内容の正誤や深さを保証するものではありません。</p>
+      <p class="g-legend"><strong>流用OK</strong>＝小項目の語がほぼ収録済み／<strong>手直し</strong>＝収録はあるが、小項目の語が足りない（または文章を直して収録）／<strong>新規必要</strong>＝この中項目の主な解説がない（準備中）。「うち新規作成」は、出題基準に合わせて新しく書き起こした項目の数です。判定は小項目名のキーワード照合による目安で、内容の正誤や深さを保証するものではありません。</p>
       <div id="cov-sum" class="g-covsum"></div>
       <div id="cov-body"></div>
     </main>

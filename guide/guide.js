@@ -39,7 +39,7 @@
           var row = h("div", "g-covrow st-" + r.st);
           var top = h("div", "g-covtop");
           top.appendChild(h("span", "g-chu-id", r.id)); top.appendChild(h("strong", "", r.name));
-          top.appendChild(h("span", "g-stchip st-" + r.st, r.st)); top.appendChild(h("span", "g-covn", "過去問" + r.nq + "問"));
+          top.appendChild(h("span", "g-stchip st-" + r.st, r.st)); top.appendChild(h("span", "g-covn", "過去問" + r.nq + "問")); if (r.made) top.appendChild(h("span", "g-covmade", "うち新規作成" + r.made + "項目"));
           row.appendChild(top);
           var det = h("div", "g-covdet");
           if (r.secs.length) {
@@ -99,6 +99,7 @@
     if (s.freq) bs.appendChild(badge("g-freq", "頻出", "出題N問が" + D.thr + "問以上、または同趣旨の問題が3回以上"));
     bs.appendChild(badge(s.np ? "g-n" : "g-n0", "出題" + s.np + "問", "この項目に結び付けた過去問の数（自動割り当ての目安）"));
     if (s.st === "参考") bs.appendChild(badge("g-ref", "補足", "出題基準に明記のない補足"));
+    if (s.made) bs.appendChild(badge("g-new", "新規", "出題基準に合わせて新しく書いた項目"));
     hd.appendChild(bs);
     var meta = h("span", "g-sec-meta", (s.ex ? s.ex : "この項目に結び付けた過去問はありません") + (s.nr ? "｜関連" + s.nr + "問" : ""));
     hd.appendChild(meta);
@@ -110,8 +111,26 @@
   function fill(b, id) {
     var s = D.sections[id];
     var html = '<div class="g-html">' + s.h + "</div>";
-    if (s.w) html += '<p class="g-why">' + esc(s.w) + "</p>";
+    if (s.w) html += s.w.split("\n").map(function (x) { return '<p class="g-why">' + esc(x) + "</p>"; }).join("");
     b.innerHTML = html;
+    if (s.pt && s.pt.length) {
+      var bx = h("div", "g-pt"); bx.appendChild(h("h4", "", "頻出ポイントと出され方（この項目の過去問から集計）"));
+      var ul0 = h("ul", "g-ptl");
+      s.pt.forEach(function (p) {
+        var li = h("li", "g-pti");
+        li.appendChild(h("strong", "", p.t));
+        li.appendChild(h("span", "g-ptn", p.n + "問｜" + p.ex + (p.rec ? "｜第23回以降" + p.rec + "問" : "")));
+        li.appendChild(h("span", "g-pth", "出し方：" + p.how));
+        var cs = h("span", "g-ptq"); p.qs.slice(0, 4).forEach(function (k) { var a = h("a", "g-qchip", qlabel(k)); a.href = D.qdir + "?q=" + k; cs.appendChild(a); });
+        li.appendChild(cs); ul0.appendChild(li);
+      });
+      bx.appendChild(ul0);
+      var wh = b.querySelector(".g-why:last-of-type"); if (wh) wh.after(bx); else b.appendChild(bx);
+    }
+    if (s.tr && s.tr.n >= 3) {
+      var tl = h("p", "g-tr", "出され方の目安（主な結び付け" + s.tr.n + "問を自動集計）：誤りを選ぶ形" + s.tr.wrong + "問／正しいものを選ぶ形" + s.tr.right + "問。年代は 第1〜11回" + s.tr.e1 + "問・第12〜22回" + s.tr.e2 + "問・第23回以降" + s.tr.e3 + "問。");
+      b.appendChild(tl);
+    }
     if (s.cq) {
       var det = h("details", "g-check"); var sm = h("summary", "", "確認：" + s.cq); det.appendChild(sm);
       var a = h("p", "g-check-a"); a.innerHTML = '<span class="answer">' + esc(s.ca) + "</span>"; det.appendChild(a); b.appendChild(det);
