@@ -187,6 +187,15 @@
       });
       dt.appendChild(inner); b.appendChild(dt);
     });
+    (s.tips || []).forEach(function (t) {
+      var tp = h("details", "g-tips"); tp.appendChild(h("summary", "", "TIPS：" + t.t));
+      var inner = h("div", "g-tips-b");
+      var fg = h("figure", "g-tips-fig"); var a = h("a"); a.href = t.src; a.target = "_blank"; a.rel = "noopener";
+      var im = h("img"); im.src = t.src; im.alt = t.alt; im.width = t.w; im.height = t.h; im.loading = "lazy"; im.decoding = "async";
+      a.appendChild(im); fg.appendChild(a); fg.appendChild(h("figcaption", "", t.cap)); inner.appendChild(fg);
+      inner.appendChild(h("p", "g-tips-note", t.note));
+      tp.appendChild(inner); b.appendChild(tp);
+    });
     var q = h("div", "g-q");
     q.appendChild(h("h4", "", "この項目の過去問"));
     if (s.cl >= 3) q.appendChild(h("p", "g-clu", "同じ趣旨の問題が最多" + s.cl + "回出ています（例：「" + s.clq + "」）。"));

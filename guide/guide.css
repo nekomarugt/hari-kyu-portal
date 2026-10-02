@@ -63,6 +63,14 @@
 .g-check > summary, .g-deep > summary { padding: 10px 12px; min-height: 44px; font-size: .9rem; font-weight: 700; cursor: pointer; color: var(--hk-jade-900,#0c4a40); }
 .g-check-a, .g-deep-b { margin: 0; padding: 4px 12px 10px; font-size: .9rem; }
 .g-deep-b p { margin: .4em 0; }
+.g-tips { margin: 8px 0; border: 1px dashed var(--hk-line,#e3d9bd); border-radius: 8px; background: #fffdf6; }
+.g-tips > summary { padding: 8px 12px; min-height: 40px; font-size: .82rem; font-weight: 700; cursor: pointer; color: var(--hk-muted,#55675e); }
+.g-tips-b { padding: 4px 12px 10px; }
+.g-tips-fig { margin: 0; }
+.g-tips-fig a { display: block; }
+.g-tips-fig img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; border-radius: 6px; }
+.g-tips-fig figcaption { margin-top: 6px; font-size: .82rem; line-height: 1.65; }
+.g-tips-note { margin: 6px 0 0; font-size: .78rem; color: var(--hk-muted,#55675e); }
 .g-q { margin-top: 14px; padding: 10px 12px; background: var(--hk-jade-100,#dff0e9); border-radius: 8px; }
 .g-q h4 { margin: 0 0 6px; font-size: .92rem; color: var(--hk-jade-900,#0c4a40); }
 .g-clu { margin: 4px 0 8px; font-size: .84rem; }
