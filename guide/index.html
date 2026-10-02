@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c4a40" />
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="解剖学・生理学の学習資料。出題基準（2026年版）の順に整理し、過去問と相互にリンクしています。" />
+    <title>学習資料｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="../guide/guide.css" />
+  </head>
+  <body class="g-body" data-page="landing">
+    <a class="g-return" href="../">← ポータルへ戻る</a>
+    <main class="g-shell">
+      <header class="g-head">
+        <img class="g-logo" src="../icons/logo.svg" width="48" height="48" alt="" />
+        <div>
+          <p class="g-eyebrow">基礎の復習と過去問演習</p>
+          <h1>学習資料</h1>
+          <p class="g-sub">出題基準（2026年版）の順に整理。項目ごとに「出題N問」と、その過去問へのリンクつき。</p>
+        </div>
+      </header>
+      <nav class="g-cards" aria-label="学習資料の一覧">
+        <a class="g-card" href="./anatomy/"><span class="g-card-no">01</span><div><h2>解剖学</h2><p id="gl-ana">読み込み中…</p><p class="g-card-sub">A1〜A11（人体の構成〜感覚器系）</p></div><span class="g-arrow" aria-hidden="true">→</span></a>
+        <a class="g-card" href="./physiology/"><span class="g-card-no">02</span><div><h2>生理学</h2><p id="gl-phy">読み込み中…</p><p class="g-card-sub">P1〜P16（生理学の基礎〜ホメオスタシスと生体リズム）</p></div><span class="g-arrow" aria-hidden="true">→</span></a>
+        <a class="g-card g-card-sub" href="./coverage/"><span class="g-card-no">対応</span><div><h2>出題基準との対応表</h2><p>中項目ごとの収録状況（流用OK／手直し／新規必要）と、まだ足りない内容</p></div><span class="g-arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <section class="g-note">
+        <h2>使い方</h2>
+        <ul>
+          <li>分野（出題基準の大項目）を選び、項目を開くと要点・なぜ・確認問題が読めます。</li>
+          <li>項目ごとの「出題N問」は、その項目に結び付けた過去問の数です（自動の割り当てで目安）。「過去問を解く」で、その問題だけを出題します。</li>
+          <li>過去問アプリの解答後にも、その問題に関係する項目へのリンクが出ます。</li>
+          <li>「赤字を隠して確認」で、答えの語を隠して覚えているかを確かめられます（タップで1か所ずつ表示）。</li>
+        </ul>
+        <p class="g-src">登録・ログイン不要、記録は端末内だけに保存されます。</p>
+      </section>
+    </main>
+    <script src="./anatomy/content.js"></script>
+    <script src="./physiology/content.js"></script>
+    <script src="./guide.js"></script>
+  </body>
+</html>

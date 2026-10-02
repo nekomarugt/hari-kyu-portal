@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""one-shot: 柔整ポータル由来の青系配色を、輝度を保ったまま翡翠(jade)×クリーム系へ置換する。
+"""one-shot: 旧配色（青系）を、輝度を保ったまま翡翠(jade)×クリーム系へ置換する。
  レア度(N/R/SR/SSR)の色・おみくじ以外のアクセント(紫/ピンク/金/赤)は変更しない。"""
 import re, sys, colorsys
 JADE_H = 172/360; CREAM_H = 42/360; GRAY_H = 160/360; GREEN_H = 128/360

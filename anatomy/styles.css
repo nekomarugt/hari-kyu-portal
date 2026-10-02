@@ -292,3 +292,10 @@ button:focus-visible, select:focus-visible { outline: 3px solid rgba(26, 110, 98
 .inferred-note { margin: -6px 0 14px; color: var(--muted); font-size: 0.74rem; line-height: 1.5; }
 footer { flex-wrap: wrap; align-items: baseline; }
 footer > span { flex: 1 1 260px; line-height: 1.6; }
+
+/* 学習資料へのリンク（解答後） */
+.guide-link { display: grid; gap: 6px; margin: 4px 0 16px; padding: 10px 12px; border: 1px dashed var(--hk-jade-300, #7cc5b2); border-radius: 12px; background: rgba(255, 253, 247, 0.7); }
+.guide-link-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; }
+.guide-link a { color: var(--hk-jade-700, #12705f); text-decoration: none; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+.guide-link a:hover, .guide-link a:focus-visible { text-decoration: underline; }
+.guide-link-sub { font-weight: 600 !important; font-size: 0.9rem; }

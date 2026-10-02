@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c4a40" />
+    <!-- PWA -->
+    <link rel="manifest" href="../../manifest.webmanifest" />
+    <link rel="icon" href="../../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../../sw.js",{scope:"../../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="はり師・きゅう師 国家試験の生理学を、出題基準（2026年版）の順に整理した学習資料。各項目から過去問へ、過去問から項目へ行き来できます。" />
+    <title>生理学 学習資料｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="../../theme.css" />
+    <link rel="stylesheet" href="../../guide/guide.css" />
+  </head>
+  <body class="g-body" data-page="viewer" data-subject="physiology">
+    <a class="g-return" href="../">← 学習資料トップへ</a>
+    <main class="g-shell">
+      <header class="g-head">
+        <img class="g-logo" src="../../icons/logo.svg" width="48" height="48" alt="" />
+        <div>
+          <p class="g-eyebrow">学習資料　基礎の復習と過去問演習</p>
+          <h1>生理学 学習資料</h1>
+          <p class="g-sub" id="g-sub">出題基準（2026年版）の順に整理</p>
+        </div>
+      </header>
+
+      <section class="g-tools" aria-label="表示の設定">
+        <button id="g-hide" class="g-toggle" type="button" aria-pressed="false">赤字を隠して確認</button>
+        <button id="g-openall" class="g-toggle" type="button" aria-pressed="false">すべて開く</button>
+        <a class="g-toggle" id="g-practice-all" href="../../physiology/">生理学の過去問へ</a>
+        <a class="g-toggle" href="../coverage/#physiology">出題基準との対応表</a>
+      </section>
+
+      <p class="g-legend" id="g-legend"></p>
+
+      <nav class="g-chapters" id="g-chapters" aria-label="分野を選ぶ"></nav>
+      <section class="g-stage" id="g-stage" aria-live="polite"><p class="g-loading">読み込んでいます…</p></section>
+      <div class="g-pager">
+        <button id="g-prev" type="button">← 前の分野</button>
+        <button id="g-next" type="button">次の分野 →</button>
+      </div>
+      <p class="g-src">図・文章は学習用に作成した独自の資料です。出題基準は公益財団法人東洋療法研修試験財団の「出題基準（2026年版）」の大項目・中項目に当てはめたもので、公式の区分そのものではありません。過去問との対応は自動で割り当てた目安です。</p>
+    </main>
+    <script src="./content.js"></script>
+    <script src="../guide.js"></script>
+  </body>
+</html>

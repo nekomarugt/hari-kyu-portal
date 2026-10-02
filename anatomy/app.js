@@ -183,6 +183,20 @@ function launchFromField() {
   els.startButton.click();
 }
 
+// 学習資料などから ?q=回-問（1問）／?qs=回-問,回-問,…（複数）で来たら、その問題だけで出題を始める
+function launchFromIds() {
+  const params = new URLSearchParams(location.search);
+  const raw = params.get("qs") || params.get("q");
+  if (!raw) return false;
+  window.history.replaceState(null, "", location.pathname);
+  const ids = raw.split(",").map((s) => s.trim()).filter(Boolean).slice(0, 60);
+  const byId = new Map(questions.map((question) => [questionId(question), question]));
+  const items = ids.map((id) => byId.get(id)).filter(Boolean);
+  if (!items.length) return false;
+  startQuiz(items);
+  return true;
+}
+
 function populateSetup() {
   const exams = [...new Set(questions.map((question) => question.exam))].sort((a, b) => b - a);
   exams.forEach((exam) => {
@@ -359,10 +373,42 @@ function submitAnswer() {
   els.feedbackLabel.textContent = correct ? "正解" : "不正解";
   els.feedbackAnswer.textContent = `${question.answers.length > 1 ? "正解（どれか1つでOK）" : "正解"}：${question.answers.map((index) => `${index + 1}．${question.choices[index]}`).join("／")}`;
   renderExplanation(question);
+  renderGuideLink(question);
   if (els.inferredNote) els.inferredNote.classList.toggle("is-hidden", !question.inferred);
   els.nextButton.textContent = position === queue.length - 1 ? "結果を見る" : "次の問題へ";
   els.feedback.classList.remove("is-hidden");
   els.nextButton.focus({ preventScroll: true });
+}
+
+// この問題に結び付けた学習資料（主1つ＋関連最大2つ）。../guide/qlinks.json は初回だけ読み込む
+let guideLinks = null;
+function loadGuideLinks() {
+  if (!guideLinks) guideLinks = fetch("../guide/qlinks.json").then((response) => (response.ok ? response.json() : null)).catch(() => null);
+  return guideLinks;
+}
+function renderGuideLink(question) {
+  const box = document.getElementById("guide-link");
+  if (!box) return;
+  box.classList.add("is-hidden");
+  box.replaceChildren();
+  loadGuideLinks().then((data) => {
+    if (!data || queue[position] !== question) return;
+    const ids = (data[SUBJECT_KEY][questionId(question)] || []);
+    if (!ids.length) return;
+    const page = SUBJECT_KEY === "ana" ? "anatomy" : "physiology";
+    const label = document.createElement("span");
+    label.className = "guide-link-label";
+    label.textContent = "学習資料で確認";
+    box.appendChild(label);
+    ids.forEach((id, index) => {
+      const link = document.createElement("a");
+      link.href = `../guide/${page}/#${id}`;
+      link.className = index === 0 ? "guide-link-main" : "guide-link-sub";
+      link.textContent = (index === 0 ? "📖 " : "関連：") + (data.titles[id] || id);
+      box.appendChild(link);
+    });
+    box.classList.remove("is-hidden");
+  });
 }
 
 function nextQuestion() {
@@ -420,7 +466,7 @@ fetch("./questions.json")
   .then((data) => {
     questions = data;
     populateSetup();
-    loadFields().then(launchFromField);
+    loadFields().then(() => { if (!launchFromIds()) launchFromField(); });
     show(els.setup);
   })
   .catch(() => show(els.error));
