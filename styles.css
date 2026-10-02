@@ -1,13 +1,13 @@
 :root {
   color-scheme: light;
-  --ink: #10223e;
-  --muted: #63728a;
-  --line: #d9e1ec;
+  --ink: #0b2623;
+  --muted: #5b776e;
+  --line: #e5e0d3;
   --paper: #ffffff;
-  --navy: #173d78;
-  --blue: #1676ae;
+  --navy: #11463f;
+  --blue: #1d7d71;
   --teal: #087866;
-  --shadow: 0 28px 80px rgba(12, 35, 72, 0.14);
+  --shadow: 0 28px 80px rgba(12, 41, 37, 0.14);
 }
 
 * { box-sizing: border-box; }
@@ -19,9 +19,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 7% 5%, rgba(39, 99, 191, 0.16), transparent 30rem),
+    radial-gradient(circle at 7% 5%, rgba(27, 113, 102, 0.16), transparent 30rem),
     radial-gradient(circle at 94% 32%, rgba(8, 120, 102, 0.11), transparent 27rem),
-    linear-gradient(180deg, #edf3fb 0%, #fbfcfe 52%, #eef4f9 100%);
+    linear-gradient(180deg, #f7f2e7 0%, #fdfbf9 52%, #f6f3eb 100%);
   color: var(--ink);
   font-family: "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
   font-size: 16px;
@@ -49,7 +49,7 @@ body {
   height: 52px;
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 0 12px 28px rgba(15, 47, 98, 0.22);
+  box-shadow: 0 12px 28px rgba(13, 55, 49, 0.22);
 }
 
 .subject-mark span {
@@ -67,7 +67,7 @@ body {
 .eyebrow,
 .surface-heading p {
   margin: 0 0 2px;
-  color: #37639b;
+  color: #1a6e62;
   font-size: 0.82rem;
   font-weight: 850;
   letter-spacing: 0.11em;
@@ -81,7 +81,7 @@ h3 { margin: 2px 0 2px; font-size: clamp(1.35rem, 2.8vw, 1.72rem); line-height: 
 
 .portal-surface {
   padding: clamp(25px, 5vw, 49px);
-  border: 1px solid rgba(16, 34, 62, 0.08);
+  border: 1px solid rgba(11, 38, 35, 0.08);
   border-radius: 29px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: var(--shadow);
@@ -98,7 +98,7 @@ h3 { margin: 2px 0 2px; font-size: clamp(1.35rem, 2.8vw, 1.72rem); line-height: 
 
 .subject-card {
   --accent: var(--navy);
-  --tint: #edf3ff;
+  --tint: #f8f2e6;
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -132,7 +132,7 @@ h3 { margin: 2px 0 2px; font-size: clamp(1.35rem, 2.8vw, 1.72rem); line-height: 
 }
 
 .subject-card:focus-visible { outline: 4px solid color-mix(in srgb, var(--accent) 28%, transparent); outline-offset: 3px; }
-.subject-card.physiology { --accent: var(--blue); --tint: #eaf8fe; }
+.subject-card.physiology { --accent: var(--blue); --tint: #faf5ec; }
 
 .card-number {
   justify-self: start;
@@ -150,7 +150,7 @@ h3 { margin: 2px 0 2px; font-size: clamp(1.35rem, 2.8vw, 1.72rem); line-height: 
 .card-copy { align-self: center; position: relative; z-index: 1; }
 .card-label { color: var(--accent); font-size: 0.78rem; font-weight: 900; letter-spacing: 0.1em; }
 .card-copy p { margin: 5px 0 11px; color: var(--muted); font-weight: 750; }
-.card-features { display: block; color: #4f6078; font-size: 0.88rem; line-height: 1.65; }
+.card-features { display: block; color: #4d635c; font-size: 0.88rem; line-height: 1.65; }
 
 .card-arrow {
   position: relative;
@@ -169,8 +169,8 @@ h3 { margin: 2px 0 2px; font-size: clamp(1.35rem, 2.8vw, 1.72rem); line-height: 
 
 .study-section { margin-top: 36px; padding-top: 30px; border-top: 1px solid var(--line); }
 .study-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.study-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 126px; padding: 22px; border: 1px solid var(--line); border-left: 6px solid var(--blue); border-radius: 18px; background: #f1f8fd; color: var(--ink); text-decoration: none; }
-.study-card p { margin: 8px 0 0; color: #4f6078; font-size: 1rem; }
+.study-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 126px; padding: 22px; border: 1px solid var(--line); border-left: 6px solid var(--blue); border-radius: 18px; background: #faf7ee; color: var(--ink); text-decoration: none; }
+.study-card p { margin: 8px 0 0; color: #4d635c; font-size: 1rem; }
 .study-card > span { font-size: 1.5rem; }
 .study-card:hover { border-color: var(--blue); }
 .study-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
@@ -184,10 +184,10 @@ h3 { margin: 2px 0 2px; font-size: clamp(1.35rem, 2.8vw, 1.72rem); line-height: 
   margin-top: 22px;
   padding: 16px 19px;
   border-radius: 14px;
-  background: #f0f4f9;
+  background: #f6f4ee;
 }
 
-.use-note strong { color: #204f91; }
+.use-note strong { color: #155950; }
 .use-note span { color: var(--muted); }
 
 footer {
@@ -196,7 +196,7 @@ footer {
   justify-content: space-between;
   gap: 6px 18px;
   padding: 17px 7px 0;
-  color: #718097;
+  color: #4a5e55;
   font-size: 0.78rem;
 }
 
@@ -207,7 +207,7 @@ footer span::before {
   height: 6px;
   margin-right: 7px;
   border-radius: 50%;
-  background: #8295ae;
+  background: #7b998f;
   vertical-align: 0.1em;
 }
 
@@ -238,7 +238,7 @@ footer span::before {
 }
 
 .basics-section { margin-top: 36px; padding-top: 30px; border-top: 1px solid var(--line); }
-.study-card.basics { border-left-color: var(--navy); background: #eef2f9; }
+.study-card.basics { border-left-color: var(--navy); background: #f5f1ea; }
 .study-card.basics:hover { border-color: var(--navy); }
 .basics-section .study-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .basics-section .study-card { gap: 10px; padding: 20px 18px; }
@@ -250,13 +250,13 @@ footer span::before {
 
 .study-card.anatomy { grid-column: 1 / -1; border-left-color: #c2410c; background: #fff5ee; }
 .study-card.anatomy:hover { border-color: #c2410c; }
-.free-badge { display: inline-block; margin-left: 6px; padding: 2px 9px; border-radius: 99px; background: #16764b; color: #fff; font-size: 0.72rem; font-weight: 800; vertical-align: 0.2em; }
+.free-badge { display: inline-block; margin-left: 6px; padding: 2px 9px; border-radius: 99px; background: #1e7729; color: #fff; font-size: 0.72rem; font-weight: 800; vertical-align: 0.2em; }
 
-.study-card.workbook { grid-column: 1 / -1; border-left-color: #5b6b86; background: #f3f5f9; }
-.study-card.workbook:hover { border-color: #5b6b86; }
+.study-card.workbook { grid-column: 1 / -1; border-left-color: #566f67; background: #f6f5f0; }
+.study-card.workbook:hover { border-color: #566f67; }
 
 /* 出典・このサイトについて */
-.about-section { margin-top: 26px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--soft, #f6f9fd); color: var(--ink, #10213e); font-size: 0.86rem; line-height: 1.75; }
+.about-section { margin-top: 26px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--soft, #fbf8f3); color: var(--ink, #0b2622); font-size: 0.86rem; line-height: 1.75; }
 .about-section h2 { margin: 0 0 6px; font-size: 0.98rem; }
 .about-section p { margin: 0 0 6px; }
 .about-section p:last-child { margin-bottom: 0; }

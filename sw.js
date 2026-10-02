@@ -3,13 +3,13 @@
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
 const SCOPE = new URL('./', self.location).pathname; // "/hari-kyu-portal/"
 const PRECACHE = [
-  './', './styles.css', './game/game.css', './game/game.js', './game/avatars.js', './game/fx.js', './game/lore.js',
+  './', './styles.css', './theme.css', './icons/logo.svg', './game/game.css', './game/game.js', './game/avatars.js', './game/fx.js', './game/lore.js',
   './anatomy/', './anatomy/app.js', './anatomy/styles.css', './anatomy/questions.json', './anatomy/fields.json',
   './physiology/', './physiology/app.js', './physiology/styles.css', './physiology/questions.json', './physiology/fields.json',
   './quiz/', './quiz/quiz.js',

@@ -1,0 +1,164 @@
+/* はり師きゅう師 解剖学・生理学ポータル：テーマ（翡翠 jade × 生成り cream × 灸の橙 moxa）
+ * 全ページの最後に読み込む。配色・形（葉っぱ型の角丸）・見出し（明朝）・ロゴをここでそろえる。
+ * 色の基準: jade-900 #0c4a40 / jade-700 #12705f / jade-100 #dff0e9 / cream #f8f1de / paper #fffdf7 / moxa #b4531c / ink #17261f */
+:root {
+  --hk-jade-900: #0c4a40;
+  --hk-jade-800: #0f5c4f;
+  --hk-jade-700: #12705f;
+  --hk-jade-300: #7cc5b2;
+  --hk-jade-100: #dff0e9;
+  --hk-cream: #f8f1de;
+  --hk-cream-50: #fcf8ec;
+  --hk-paper: #fffdf7;
+  --hk-line: #e3d9bd;
+  --hk-moxa: #b4531c;
+  --hk-moxa-soft: #fbe9d9;
+  --hk-amber: #f0a24a;
+  --hk-ink: #17261f;
+  --hk-muted: #55675e;
+  --hk-ok: #2a7d34;
+  --hk-ng: #b23030;
+  --hk-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "MS PMincho", serif;
+  --hk-leaf: 6px 26px 6px 26px;      /* 葉っぱ型：対角だけ大きく丸める */
+  --hk-leaf-s: 4px 16px 4px 16px;
+  /* 既存CSSの変数を上書き */
+  --ink: var(--hk-ink); --muted: var(--hk-muted); --line: var(--hk-line); --paper: var(--hk-paper); --soft: var(--hk-cream-50);
+  --navy: var(--hk-jade-900); --blue: var(--hk-jade-700); --blue-strong: var(--hk-jade-900); --teal: var(--hk-jade-700);
+  --green: var(--hk-ok); --green-soft: #e8f5e6; --red: var(--hk-ng); --red-soft: #fdecea;
+  --shadow: 0 22px 60px rgba(12, 74, 64, 0.14);
+}
+.jkg-card, .jkq-surface, .jkg-modal {
+  --jk-ink: var(--hk-ink); --jk-muted: var(--hk-muted); --jk-line: var(--hk-line); --jk-blue: var(--hk-jade-700); --jk-blue-d: var(--hk-jade-900);
+  --jk-teal: var(--hk-jade-700); --jk-warm: var(--hk-moxa); --jk-soft: var(--hk-cream-50);
+}
+
+/* ---- 紙のような地：生成り＋細かい点 ---- */
+body, body.jkq-body {
+  background:
+    radial-gradient(rgba(18, 112, 95, 0.10) 1px, transparent 1.6px) 0 0 / 22px 22px,
+    linear-gradient(180deg, #f8f1de 0%, #fcf8ec 55%, #f6eed8 100%) !important;
+  color: var(--hk-ink);
+}
+body.jkc-body { background-attachment: fixed; }
+
+/* ---- 見出し：明朝＋灸の橙の短い線 ---- */
+h1, h2, .jkg-sech, .jkq-head h1 { font-family: var(--hk-serif); font-weight: 700; letter-spacing: 0.05em; }
+h1::after { content: ""; display: block; width: 44px; height: 4px; margin-top: 7px; border-radius: 2px; background: var(--hk-amber); }
+
+/* ---- 共通の入れ物：葉っぱ型の角 ---- */
+.portal-surface, .surface, .jkq-surface, .jkg-modal, .about-section { border-radius: var(--hk-leaf); border: 1px solid var(--hk-line); background: rgba(255, 253, 247, 0.97); box-shadow: var(--shadow); }
+.jkg-card { border-radius: var(--hk-leaf); border: 1px solid var(--hk-line); border-left: 8px solid var(--hk-moxa); background: linear-gradient(160deg, var(--hk-paper) 45%, var(--hk-cream-50)); box-shadow: 0 10px 28px rgba(12, 74, 64, 0.09); }
+.jkg-card.is-compact { border-radius: var(--hk-leaf-s); border-left-width: 6px; }
+.about-section { box-shadow: none; background: var(--hk-cream-50); border-style: dashed; border-color: #cdbf93; }
+
+/* ---- ヘッダー：深い翡翠の帯＋ロゴ ---- */
+.portal-header, .app-header, .jkq-head {
+  position: relative; overflow: hidden; gap: 16px; padding: 18px 20px; margin: 0 0 22px;
+  border-radius: var(--hk-leaf); color: var(--hk-cream);
+  background:
+    radial-gradient(circle at 100% 0, rgba(240, 162, 74, 0.28) 0, transparent 9rem),
+    repeating-radial-gradient(circle at 105% 120%, rgba(248, 241, 222, 0.07) 0 2px, transparent 2px 14px),
+    linear-gradient(135deg, var(--hk-jade-900), var(--hk-jade-800) 70%, var(--hk-jade-700));
+  box-shadow: 0 16px 38px rgba(12, 74, 64, 0.28);
+}
+.portal-header h1, .app-header h1, .jkq-head h1 { color: var(--hk-cream); }
+.portal-header .eyebrow, .app-header .eyebrow, .jkq-head .jkq-eyebrow {
+  display: inline-block; padding: 1px 10px; margin: 0 0 6px; border: 1px solid rgba(248, 241, 222, 0.5); border-radius: 99px;
+  color: #f6dfb1; background: rgba(0, 0, 0, 0.12); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: none;
+}
+.portal-header .header-note { color: #d9efe7; }
+.site-logo { flex: none; display: block; width: 64px; height: 64px; border-radius: 16px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); }
+.app-header .site-logo { width: 52px; height: 52px; }
+.question-total { background: rgba(248, 241, 222, 0.16); color: var(--hk-cream); border: 1px solid rgba(248, 241, 222, 0.4); border-radius: 99px; }
+.jkq-mark, .jkc-mark { border-radius: 16px; background: var(--hk-cream); color: var(--hk-jade-900); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); }
+.jkq-head .jk-tag.is-quick { background: var(--hk-cream); }
+
+/* ---- 科目カード：葉っぱ型＋左の太い帯 ---- */
+.subject-card { border: 2px solid var(--hk-line); border-left: 10px solid var(--accent); border-radius: var(--hk-leaf); background: linear-gradient(155deg, var(--hk-paper) 40%, var(--tint)); }
+.subject-card.anatomy { --accent: var(--hk-jade-800); --tint: #e8f3ee; }
+.subject-card.physiology { --accent: var(--hk-moxa); --tint: #fbeedf; }
+.subject-card::after { right: -28px; bottom: -28px; width: 110px; height: 110px; border: 0; border-radius: 0; transform: rotate(45deg); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.card-number { border-radius: 99px; }
+.card-label { color: var(--hk-muted); }
+.card-arrow { border-radius: 50% 8px 50% 8px; }
+
+/* ---- ボタン：丸薬型 ---- */
+.primary-button, .secondary-button, .jkq-primary, .jkq-secondary, .jkg-btn, .portal-return, .jkq-return, .jkc-pull { border-radius: 999px; }
+.primary-button, .jkq-primary { background: var(--hk-jade-700); border-color: var(--hk-jade-700); color: #fff; }
+.primary-button:hover, .jkq-primary:hover { background: var(--hk-jade-900); }
+.secondary-button, .jkq-secondary { border-color: var(--hk-jade-700); color: var(--hk-jade-900); background: var(--hk-paper); }
+.jkq-secondary.is-weak, .jkg-btn.is-weak { border-color: var(--hk-moxa); color: var(--hk-moxa); }
+.jkg-btn { background: var(--hk-jade-700); color: #fff; }
+.jkg-btn.is-gacha { background: var(--hk-moxa); box-shadow: 0 3px 0 #7f3611; color: #fff; }
+.jkg-btn.is-gacha:hover { background: #9c4516; }
+.portal-return, .jkq-return { background: var(--hk-jade-900); color: var(--hk-cream); border-color: rgba(248, 241, 222, 0.5); }
+.portal-return:hover, .jkq-return:hover { background: var(--hk-jade-700); }
+select { border-radius: 12px; border-color: #cdbf93; background-color: var(--hk-paper); }
+.segmented, .jkq-seg { border-radius: 999px; background: #efe6cb; }
+.segmented span, .jkq-seg button { border-radius: 999px; }
+.segmented input:checked + span, .jkq-seg button[aria-pressed="true"] { background: var(--hk-jade-700); color: #fff; box-shadow: 0 3px 10px rgba(12, 74, 64, 0.25); }
+
+/* ---- 選択肢：左に太い帯の札 ---- */
+.choice, .jkq-choice { border-radius: 4px 16px 4px 16px; border: 2px solid var(--hk-line); border-left: 8px solid #cdbf93; background: var(--hk-paper); }
+.choice:hover:not(:disabled), .jkq-choice:hover:not(:disabled) { border-color: var(--hk-jade-700); border-left-color: var(--hk-jade-700); background: #f1f7f3; }
+.choice.is-selected, .jkq-choice.is-sel { border-color: var(--hk-jade-700); border-left-color: var(--hk-jade-700); background: var(--hk-jade-100); }
+.choice.is-correct, .jkq-choice.is-ok { border-color: var(--hk-ok); border-left-color: var(--hk-ok); background: #e8f5e6; }
+.choice.is-wrong, .jkq-choice.is-ng { border-color: var(--hk-ng); border-left-color: var(--hk-ng); background: #fdecea; }
+.choice-number, .jkq-cn { border-radius: 50%; }
+.choice.is-selected .choice-number { background: var(--hk-jade-700); color: #fff; }
+.choice.is-correct .choice-number { background: var(--hk-ok); color: #fff; }
+.choice.is-wrong .choice-number { background: var(--hk-ng); color: #fff; }
+.feedback, .jkq-fb { border-radius: var(--hk-leaf-s); }
+.multi-note, .jkq-multi { background: var(--hk-moxa-soft); color: #8a3d0f; border-radius: 99px; }
+.progress-track div, #prog-bar { background: linear-gradient(90deg, var(--hk-jade-700), var(--hk-amber)); }
+
+/* ---- タグ・ラベル ---- */
+.jk-tag { border-radius: 4px 12px 4px 12px; }
+.jk-tag.is-quick { background: var(--hk-moxa-soft); color: #8a3d0f; border-color: #e7b184; }
+.jk-tag.is-exam { background: var(--hk-jade-100); color: var(--hk-jade-900); border-color: var(--hk-jade-300); }
+.jk-modes li { border-radius: 4px 14px 4px 14px; }
+.use-note { border-radius: var(--hk-leaf-s); }
+.use-note strong { color: var(--hk-jade-900); }
+.surface-heading p, .section-kicker { color: var(--hk-jade-700); }
+footer { border-top: 2px dotted #cdbf93; color: var(--hk-muted); }
+.footer-button, .jkg-link { color: var(--hk-jade-900); }
+
+/* ---- ガチャ・おみくじ：UIの外枠だけ合わせ、レア度の色はそのまま ---- */
+.jkc-machine, .jkc-omi, .jkc-book { border-radius: var(--hk-leaf); }
+.jkc-pull { background: var(--hk-moxa); color: #fff; }
+.jkc-pull.is-ten { background: var(--hk-jade-700); }
+.jkc-omicard { border-radius: var(--hk-leaf-s); }
+
+/* ---- 小さい画面 ---- */
+@media (max-width: 520px) {
+  .portal-header, .app-header, .jkq-head { padding: 14px 14px; gap: 12px; }
+  .site-logo { width: 52px; height: 52px; }
+  .app-header .site-logo { width: 44px; height: 44px; }
+  :root { --hk-leaf: 5px 20px 5px 20px; }
+}
+.jkc-pull { box-shadow: 0 5px 0 #7f3611, 0 10px 18px rgba(180, 83, 28, 0.25); }
+.jkc-pull.is-ten { box-shadow: 0 5px 0 #08342d, 0 10px 18px rgba(12, 74, 64, 0.25); }
+.jkc-pull:active:not(:disabled) { box-shadow: 0 2px 0 #08342d; }
+
+/* ---- 読みやすさ（コントラスト4.5以上）の調整 ---- */
+.question-total { background: rgba(4, 36, 30, 0.6); color: #fff; }
+.segmented { min-height: 58px; }
+.jkq-seg button { color: #3f5249; }
+.jkq-head .jkq-hint { color: #d9efe7; }
+.jkc-cell.is-locked { color: #5b6b63; }
+.jkq-note, .jkc-rates span { color: #4a5e55; }
+.jkc-rates b.rn, .jkc-rar.r-n { background: #667386; }
+.jkc-rates b.rr, .jkc-rar.r-r { background: linear-gradient(135deg, #3d6bd6, #2a4fbd); }
+.jkc-rates b.rs, .jkc-rar.r-sr { background: linear-gradient(135deg, #b87200, #94560a); }
+.jkg-badge { opacity: 1; background: #f1ebd7; border-style: dashed; border-color: #cdbf93; }
+.jkg-badge strong { color: #33463d; }
+.jkg-badge small { color: #4a5e55; }
+.jkg-badge.is-got { background: #fff4d6; border-style: solid; border-color: #e3c36a; }
+.jkg-badge.is-got strong { color: var(--hk-ink); }
+/* おみくじ：運勢の色の意味(大吉=赤…)はそのまま、白文字・本文が4.5以上になる濃さに */
+.jkc-omicard.is-dai { --c: #b81d2b; --c2: #7f1119; }
+.jkc-omicard.is-chu { --c: #b8430c; --c2: #8a3006; }
+.jkc-omicard.is-sho { --c: #8a5e00; --c2: #664500; }
+.jkc-omicard.is-kichi { --c: #2a7d34; --c2: #1d5a25; }
+.jkc-omicard.is-sue { --c: #14695d; --c2: #0f4c43; }
+.jkc-omicard.is-kyo { --c: #435650; --c2: #2b3833; }

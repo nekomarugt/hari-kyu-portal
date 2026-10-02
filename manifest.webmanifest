@@ -9,8 +9,8 @@
   "scope": "/hari-kyu-portal/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#0b1730",
-  "background_color": "#0b1730",
+  "theme_color": "#0c4a40",
+  "background_color": "#f8f1de",
   "categories": [
     "education",
     "medical"
