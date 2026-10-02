@@ -15,8 +15,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../../sw.js",{scope:"../../"}).catch(function(){})})}</script>
     <!-- /PWA -->
-    <meta name="description" content="学習資料と出題基準（2026年版）の中項目ごとの対応状況と不足している内容。" />
-    <title>出題基準との対応表｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <meta name="description" content="分野ごとに、よく出る所と過去問の数を確認して、資料を読む・過去問を解くへ進めるページ。" />
+    <title>出題範囲マップ｜はり師きゅう師 解剖学・生理学ポータル</title>
     <link rel="stylesheet" href="../../theme.css" />
     <link rel="stylesheet" href="../../guide/guide.css" />
   </head>
@@ -27,18 +27,17 @@
         <img class="g-logo" src="../../icons/logo.svg" width="48" height="48" alt="" />
         <div>
           <p class="g-eyebrow">学習資料</p>
-          <h1>出題基準との対応表</h1>
-          <p class="g-sub">出題基準（2026年版）の中項目ごとに、学習資料の収録状況と足りない小項目を示します。</p>
+          <h1>出題範囲マップ</h1>
+          <p class="g-sub">どの分野がよく出るかを見て、「資料を読む」か「過去問を解く」を選びます。</p>
         </div>
       </header>
-      <section class="g-tools">
+      <section class="g-tools" aria-label="表示の切りかえ">
         <button class="g-toggle" data-subj="anatomy" aria-pressed="true" type="button">解剖学</button>
         <button class="g-toggle" data-subj="physiology" aria-pressed="false" type="button">生理学</button>
-        <button class="g-toggle" data-f="all" aria-pressed="true" type="button">すべて</button>
-        <button class="g-toggle" data-f="新規必要" aria-pressed="false" type="button">新規必要だけ</button>
+        <button id="cov-sort" class="g-toggle" aria-pressed="false" type="button">頻出順に並べる</button>
+        <button id="cov-openall" class="g-toggle" aria-pressed="false" type="button">すべて開く</button>
       </section>
-      <p class="g-legend"><strong>流用OK</strong>＝小項目の語がほぼ収録済み／<strong>手直し</strong>＝収録はあるが、小項目の語が足りない（または文章を直して収録）／<strong>新規必要</strong>＝この中項目の主な解説がない（準備中）。「うち新規作成」は、出題基準に合わせて新しく書き起こした項目の数です。判定は小項目名のキーワード照合による目安で、内容の正誤や深さを保証するものではありません。</p>
-      <div id="cov-sum" class="g-covsum"></div>
+      <p class="g-covnote">分野の名前をタップすると、中の項目が開きます。「頻出」は、過去問でとくによく出ている所のめやすです。「過去問を解く」は、その項目の問題を10問ずつ出します（出す数は過去問のページで変えられます）。</p>
       <div id="cov-body"></div>
     </main>
     <script src="../coverage.js"></script>

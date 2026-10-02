@@ -173,12 +173,16 @@ function loadFields() {
 
 // おみくじなどから ?field=分野ID で来たら、その分野を選んでそのまま出題を始める（分野別モードと同じ出題）
 function launchFromField() {
-  const f = new URLSearchParams(location.search).get("field");
+  const search = location.search;
+  const f = new URLSearchParams(search).get("field");
   if (!f) return;
   window.history.replaceState(null, "", location.pathname);
   if (!fieldData || ![...els.fieldSelect.options].some((option) => option.value === f && !option.disabled)) return;
   els.fieldSelect.value = f;
   refreshSubOptions();
+  // ?sub=中項目ID（例 A3-B）なら、その中項目だけに絞って始める（学習資料の「過去問を解く」から）
+  const sub = new URLSearchParams(search).get("sub");
+  if (sub && els.subSelect && [...els.subSelect.options].some((option) => option.value === sub && !option.disabled)) els.subSelect.value = sub;
   updateStartLabel();
   els.startButton.click();
 }

@@ -19,45 +19,89 @@
     return;
   }
 
-  /* ---------------- 対応表 ---------------- */
+  /* ---------------- 出題範囲マップ（学習者向け） ---------------- */
   if (page === "coverage") {
-    var C = window.HKCoverage || {}, subj = location.hash === "#physiology" ? "physiology" : "anatomy", filt = "all";
-    var body = document.getElementById("cov-body"), sum = document.getElementById("cov-sum");
-    function renderCov() {
-      var rows = C[subj] || [], d = G[subj];
-      document.querySelectorAll("[data-subj]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-subj") === subj)); });
-      document.querySelectorAll("[data-f]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-f") === filt)); });
-      var cnt = { "流用OK": 0, "手直し": 0, "新規必要": 0 }, nq = { "流用OK": 0, "手直し": 0, "新規必要": 0 };
-      rows.forEach(function (r) { cnt[r.st]++; nq[r.st] += r.nq; });
-      sum.innerHTML = ["流用OK", "手直し", "新規必要"].map(function (k) { return '<div class="g-sumbox st-' + k + '"><strong>' + cnt[k] + '</strong><span>' + k + '（中項目）</span><small>過去問' + nq[k] + '問</small></div>'; }).join("");
-      body.replaceChildren();
-      d.chapters.forEach(function (ch) {
-        var list = rows.filter(function (r) { return r.dai === ch.id && (filt === "all" || r.st === filt); });
-        if (!list.length) return;
-        var sec = h("section", "g-covch"); sec.appendChild(h("h2", "", ch.id + " " + ch.name));
-        list.forEach(function (r) {
-          var row = h("div", "g-covrow st-" + r.st);
-          var top = h("div", "g-covtop");
-          top.appendChild(h("span", "g-chu-id", r.id)); top.appendChild(h("strong", "", r.name));
-          top.appendChild(h("span", "g-stchip st-" + r.st, r.st)); top.appendChild(h("span", "g-covn", "過去問" + r.nq + "問")); if (r.made) top.appendChild(h("span", "g-covmade", "うち新規作成" + r.made + "項目"));
-          row.appendChild(top);
-          var det = h("div", "g-covdet");
-          if (r.secs.length) {
-            var p = h("p", "", "収録："); r.secs.forEach(function (id) { var a = h("a", "", D_title(subj, id)); a.href = "../" + subj + "/#" + id; p.appendChild(a); p.appendChild(document.createTextNode(" ")); });
-            det.appendChild(p);
-          }
-          if (r.refs.length) { var p2 = h("p", "", "他の項目で一部ふれる："); r.refs.forEach(function (id) { var a = h("a", "", D_title(subj, id)); a.href = "../" + subj + "/#" + id; p2.appendChild(a); p2.appendChild(document.createTextNode(" ")); }); det.appendChild(p2); }
-          if (r.miss.length) det.appendChild(h("p", "g-miss", "不足の小項目：" + r.miss.join("、")));
-          else if (r.secs.length) det.appendChild(h("p", "g-miss ok", "小項目の語はひと通り収録"));
-          if (!r.secs.length && !r.refs.length) det.appendChild(h("p", "g-miss", "未収録（準備中）。小項目：" + r.sho.join("、")));
-          row.appendChild(det); sec.appendChild(row);
-        });
-        body.appendChild(sec);
-      });
+    var C = window.HKCoverage || {}, subj = location.hash === "#physiology" ? "physiology" : "anatomy", sortFreq = false, openState = {};
+    var body = document.getElementById("cov-body");
+    function best(d, r) {
+      // 「資料を読む」の行き先：この中項目の項目のうち、過去問がいちばん多いもの（なければ先頭。収録がなければ関連項目）
+      var ids = r.secs.length ? r.secs : r.refs; if (!ids.length) return null;
+      var top = ids[0]; ids.forEach(function (id) { if (d.sections[id] && d.sections[id].np > d.sections[top].np) top = id; });
+      return top;
     }
-    function D_title(s, id) { var x = G[s].sections[id]; return id + " " + (x ? x.t.replace(/[：:].*$/, "") : ""); }
+    function topPoint(d, r) {
+      var t = null;
+      r.secs.forEach(function (id) { var s = d.sections[id]; if (s && s.pt) s.pt.forEach(function (p) { if (p.n >= 2 && (!t || p.n > t.n)) t = p; }); });
+      return t;
+    }
+    function model() {
+      var d = G[subj], rows = C[subj] || [];
+      var list = d.chapters.map(function (ch) {
+        var items = rows.filter(function (r) { return r.dai === ch.id; }).map(function (r) {
+          var freq = r.secs.some(function (id) { return d.sections[id] && d.sections[id].freq; });
+          return { r: r, freq: freq, read: best(d, r), pt: topPoint(d, r) };
+        });
+        return { ch: ch, items: items, nq: items.reduce(function (a, x) { return a + x.r.nq; }, 0), nfreq: items.filter(function (x) { return x.freq; }).length };
+      });
+      if (sortFreq) {
+        list.forEach(function (c) { c.items = c.items.slice().sort(function (a, b) { return b.r.nq - a.r.nq; }); });
+        list = list.slice().sort(function (a, b) { return b.nq - a.nq; });
+      }
+      return list;
+    }
+    function setOpen(art, open) {
+      var hd = art.querySelector(".g-sec-h"), bd = art.querySelector(".g-sec-b");
+      bd.hidden = !open; art.classList.toggle("is-open", open); hd.setAttribute("aria-expanded", String(open));
+      openState[subj + art.getAttribute("data-dai")] = open;
+      var all = document.querySelectorAll(".g-covdai"), n = document.querySelectorAll(".g-covdai.is-open").length;
+      var oa = document.getElementById("cov-openall"); if (oa) { oa.setAttribute("aria-pressed", String(n === all.length)); oa.textContent = n === all.length ? "すべて閉じる" : "すべて開く"; }
+    }
+    function renderCov() {
+      var d = G[subj];
+      document.querySelectorAll("[data-subj]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-subj") === subj)); });
+      document.getElementById("cov-sort").setAttribute("aria-pressed", String(sortFreq));
+      document.getElementById("cov-sort").textContent = sortFreq ? "出題基準の順にもどす" : "頻出順に並べる";
+      body.replaceChildren();
+      model().forEach(function (c) {
+        var art = h("article", "g-sec g-covdai"); art.setAttribute("data-dai", c.ch.id);
+        var hd = h("button", "g-sec-h"); hd.type = "button"; hd.setAttribute("aria-expanded", "false");
+        var t = h("span", "g-sec-t"); t.appendChild(h("span", "g-sec-id", c.ch.id)); t.appendChild(document.createTextNode(" " + c.ch.name)); hd.appendChild(t);
+        var bs = h("span", "g-badges");
+        if (c.nfreq) bs.appendChild(h("span", "g-badge g-freq", "頻出" + c.nfreq + "か所"));
+        bs.appendChild(h("span", "g-badge g-n", "出題" + c.nq + "問"));
+        hd.appendChild(bs);
+        art.appendChild(hd);
+        var bd = h("div", "g-sec-b"); bd.hidden = true;
+        c.items.forEach(function (x) {
+          var r = x.r, row = h("div", "g-covrow");
+          var top = h("div", "g-covtop");
+          top.appendChild(h("strong", "g-covname", r.name));
+          var b2 = h("span", "g-badges");
+          if (x.freq) b2.appendChild(h("span", "g-badge g-freq", "頻出"));
+          b2.appendChild(h("span", "g-badge " + (r.nq ? "g-n" : "g-n0"), "過去問" + r.nq + "問"));
+          top.appendChild(b2); row.appendChild(top);
+          if (x.pt) row.appendChild(h("p", "g-covpt", "よく出る所：" + x.pt.t + "（" + x.pt.n + "問）"));
+          var act = h("div", "g-covact");
+          if (x.read) { var a1 = h("a", "g-btn", "資料を読む"); a1.href = "../" + subj + "/#" + x.read; act.appendChild(a1); }
+          if (r.nq) { var a2 = h("a", "g-btn g-btn2", "過去問を解く"); a2.href = d.qdir + "?field=" + encodeURIComponent(r.dai) + "&sub=" + encodeURIComponent(r.id); act.appendChild(a2); }
+          else act.appendChild(h("span", "g-covnone", "この項目の過去問はまだありません"));
+          row.appendChild(act); bd.appendChild(row);
+        });
+        art.appendChild(bd);
+        hd.addEventListener("click", function () { setOpen(art, bd.hidden); });
+        body.appendChild(art);
+        if (openState[subj + c.ch.id]) setOpen(art, true);
+      });
+      var oa = document.getElementById("cov-openall"); if (oa) { oa.setAttribute("aria-pressed", "false"); oa.textContent = "すべて開く"; }
+      var n = document.querySelectorAll(".g-covdai.is-open").length, all = document.querySelectorAll(".g-covdai").length;
+      if (oa && n === all && all) { oa.setAttribute("aria-pressed", "true"); oa.textContent = "すべて閉じる"; }
+    }
     document.querySelectorAll("[data-subj]").forEach(function (b) { b.addEventListener("click", function () { subj = b.getAttribute("data-subj"); history.replaceState(null, "", "#" + subj); renderCov(); }); });
-    document.querySelectorAll("[data-f]").forEach(function (b) { b.addEventListener("click", function () { filt = b.getAttribute("data-f"); renderCov(); }); });
+    document.getElementById("cov-sort").addEventListener("click", function () { sortFreq = !sortFreq; renderCov(); });
+    document.getElementById("cov-openall").addEventListener("click", function () {
+      var arts = [].slice.call(document.querySelectorAll(".g-covdai")), allOpen = arts.every(function (a) { return a.classList.contains("is-open"); });
+      arts.forEach(function (a) { setOpen(a, !allOpen); });
+    });
     renderCov();
     return;
   }
