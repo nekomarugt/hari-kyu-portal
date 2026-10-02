@@ -28,7 +28,8 @@ def load(subj, fn, dai_prefix):
         e = {"exam": q["kai"], "number": q["no"], "question": norm(q["stem"]),
              "choices": [norm(o) for o in q["options"]], "answers": sorted(ans), "explanation": "",
              "field": q["kijun_dai"], "chu": q["kijun_chu"]}
-        if q.get("note"): e["note"] = q["note"]
+        if len(ans) > 1: e["note"] = "※正解は複数あります。どれか1つを選んで。"   # 複数正解＝どれか1つを選べば正解
+        elif q.get("note"): e["note"] = q["note"]
         if str(q.get("answer_source", "")).startswith("inferred"): e["inferred"] = True
         out.append(e)
     out.sort(key=lambda e: (e["exam"], e["number"]))

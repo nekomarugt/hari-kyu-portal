@@ -74,13 +74,13 @@
     var box = $("choices"); box.innerHTML = "";
     $("submit").hidden = false; $("submit").disabled = true;
     $("multi-note").hidden = !(q.answers.length > 1);
-    if (q.answers.length > 1) $("multi-note").textContent = "正解は" + q.answers.length + "つ。正しいものをすべて選ぶ";
+    if (q.answers.length > 1) $("multi-note").textContent = "※正解は複数あります。どれか1つを選んで"; // どれか1つを選べば正解
     {
       q.choices.forEach(function (c, i) {
         var b = document.createElement("button"); b.type = "button"; b.className = "jkq-choice"; b.setAttribute("aria-pressed", "false");
         var n = document.createElement("span"); n.className = "jkq-cn"; n.textContent = String(i + 1);
         var t = document.createElement("span"); t.textContent = c; b.appendChild(n); b.appendChild(t);
-        b.addEventListener("click", function () { pick(i, b, q.answers.length > 1); });
+        b.addEventListener("click", function () { pick(i, b, false); }); // 複数正解の問題も単一選択
         box.appendChild(b);
       });
     }
@@ -102,11 +102,11 @@
   }
   function submit() {
     var q = st.queue[st.pos]; if (st.answered || !st.sel.size) return; st.answered = true;
-    var ans = new Set(q.answers), ok = ans.size === st.sel.size && q.answers.every(function (a) { return st.sel.has(a); });
+    var ans = new Set(q.answers), ok = st.sel.size === 1 && ans.has(Array.from(st.sel)[0]); // 正解のどれか1つを選べば正解
     var bs = $("choices").children;
     for (var i = 0; i < bs.length; i++) { bs[i].disabled = true; bs[i].classList.remove("is-sel"); if (ans.has(i)) bs[i].classList.add("is-ok"); else if (st.sel.has(i)) bs[i].classList.add("is-ng"); }
     $("submit").hidden = true;
-    fb(ok, "正解：" + q.answers.map(function (a) { return (a + 1) + "．" + q.choices[a]; }).join("／"), q.expl || "");
+    fb(ok, (q.answers.length > 1 ? "正解（どれか1つでOK）：" : "正解：") + q.answers.map(function (a) { return (a + 1) + "．" + q.choices[a]; }).join("／"), q.expl || "");
     $("fb-inf").hidden = !q.inferred;
     $("next").hidden = false; $("next").textContent = st.pos === st.N - 1 ? "結果を見る" : "次の問題へ";
     grade(q, ok); $("next").focus({ preventScroll: true });

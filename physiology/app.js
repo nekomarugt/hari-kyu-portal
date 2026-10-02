@@ -244,6 +244,8 @@ function startQuiz(items) {
   renderQuestion();
 }
 
+const MULTI_NOTE = "※正解は複数あります。どれか1つを選んで";
+
 function renderQuestion() {
   const question = queue[position];
   selected = new Set();
@@ -257,7 +259,7 @@ function renderQuestion() {
   els.sourceBadge.textContent = `第${question.exam}回・問題${question.number}` + (fieldName ? `・${fieldName.name}` : "");
   els.questionText.textContent = question.question;
   els.multiNote.classList.toggle("is-hidden", !isMulti);
-  if (isMulti) els.multiNote.textContent = `正解は${question.answers.length}つ。正しいものをすべて選んで「解答する」`;
+  if (isMulti) els.multiNote.textContent = MULTI_NOTE; // 複数正解＝どれか1つを選べば正解（単一選択）
   els.submitAnswerButton.classList.remove("is-hidden");
   els.submitAnswerButton.disabled = true;
   els.feedback.className = "feedback is-hidden";
@@ -270,7 +272,7 @@ function renderQuestion() {
     button.dataset.index = String(index);
     button.setAttribute("aria-pressed", "false");
     button.innerHTML = `<span class="choice-number">${index + 1}</span><span>${escapeHtml(choice)}</span>`;
-    button.addEventListener("click", () => choose(index, isMulti, button));
+    button.addEventListener("click", () => choose(index, false, button)); // 複数正解の問題も単一選択
     els.choices.appendChild(button);
   });
 }
@@ -307,9 +309,6 @@ function choose(index, isMulti, button) {
   els.submitAnswerButton.disabled = selected.size === 0;
 }
 
-function setsMatch(a, b) {
-  return a.size === b.size && [...a].every((value) => b.has(value));
-}
 
 // 解説は現在空。あるときだけ表示し、ないときはブロックごと隠す
 function renderExplanation(question) {
@@ -332,7 +331,7 @@ function submitAnswer() {
   answered = true;
   const question = queue[position];
   const answers = new Set(question.answers);
-  const correct = setsMatch(selected, answers);
+  const correct = selected.size === 1 && answers.has([...selected][0]); // 正解の選択肢のどれか1つを選べば正解
   const id = questionId(question);
   const stats = history[id] || { attempts: 0, correct: 0, wrong: 0 };
   stats.attempts += 1;
@@ -358,7 +357,7 @@ function submitAnswer() {
   els.feedback.className = `feedback ${correct ? "is-correct" : "is-wrong"}`;
   els.feedbackIcon.textContent = correct ? "✓" : "×";
   els.feedbackLabel.textContent = correct ? "正解" : "不正解";
-  els.feedbackAnswer.textContent = `正解：${question.answers.map((index) => `${index + 1}．${question.choices[index]}`).join("／")}`;
+  els.feedbackAnswer.textContent = `${question.answers.length > 1 ? "正解（どれか1つでOK）" : "正解"}：${question.answers.map((index) => `${index + 1}．${question.choices[index]}`).join("／")}`;
   renderExplanation(question);
   if (els.inferredNote) els.inferredNote.classList.toggle("is-hidden", !question.inferred);
   els.nextButton.textContent = position === queue.length - 1 ? "結果を見る" : "次の問題へ";
