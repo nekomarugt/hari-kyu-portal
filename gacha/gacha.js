@@ -70,18 +70,29 @@
   }
 
   /* きろく：入手済みのキャラだけ。本文は game/lore.js（必要になったときに読み込む）。ひらいていない本の本文は画面にもHTMLにも出さない。 */
+  var LOREOPEN = {}, GHOST = '<span class="jkc-ghost" aria-hidden="true"><i></i><i></i><i></i></span>'; // 2本目以降のひらいた本は、最初はたたんでおく（タップで開閉）。ダミーの線は文字を持たない
   function renderLore(id) {
     var box = $("lore"); if (!box || box.getAttribute("data-id") !== id || !G.owned()[id]) return;
     if (!window.JKLore) { box.innerHTML = '<p class="jkc-lore-wait">きろくを読みこみ中…</p>'; G.loadLore(function () { renderLore(id); }); return; }
     var d = AV.get(id), texts = window.JKLore[id] || [], n = G.loreCount(id), coins = G.coins(), h = "";
     for (var k = 1; k <= d.lm; k++) {
-      if (k <= n) h += '<li class="is-open"><b>きろく' + k + '</b><p>' + esc(texts[k - 1] || "") + '</p></li>';
-      else if (k > d.lr) h += '<li class="is-soon"><b>きろく' + k + '</b><span>じゅんびちゅう</span></li>';
-      else if (k === n + 1) { var c = G.loreCost(id); h += '<li class="is-lock is-next"><b>🔒 きろく' + k + '</b>' + (coins >= c ? '<button type="button" class="jkq-secondary jkc-lbtn" data-lore="' + id + '">🪙 ' + c + ' コインでひらく</button>' : '<button type="button" class="jkq-secondary jkc-lbtn" disabled>🪙 ' + c + ' コイン（あと ' + (c - coins) + '）</button>') + '</li>'; }
-      else h += '<li class="is-lock"><b>🔒 きろく' + k + '</b><span>？？？</span></li>';
+      var t = "きろく" + k;
+      if (k <= n) {
+        if (k === 1) { h += '<li class="is-open"><b>' + t + '</b><p>' + esc(texts[0] || "") + '</p></li>'; continue; }
+        var ex = !!LOREOPEN[id + ":" + k];
+        h += '<li class="is-open' + (ex ? "" : " is-fold") + '"><button type="button" class="jkc-fold" data-fold="' + k + '" aria-expanded="' + ex + '" aria-controls="lorep-' + k + '"><b>' + t + '</b><span class="jkc-chev" aria-hidden="true"></span></button>' +
+          '<p id="lorep-' + k + '"' + (ex ? "" : " hidden") + '>' + esc(texts[k - 1] || "") + '</p></li>';
+      }
+      else if (k > d.lr) h += '<li class="is-soon"><b>🔒 ' + t + '</b><span class="jkc-lk">ひみつの きろく</span>' + GHOST + '</li>';
+      else {
+        var need = k - n, next = k === n + 1;
+        h += '<li class="is-lock' + (next ? " is-next" : "") + '"><b>🔒 ' + t + '</b><span class="jkc-lk">かぶりで ひらく ／ あと' + need + '回 かぶると読めるよ</span>' + GHOST;
+        if (next) { var c = G.loreCost(id); h += (coins >= c ? '<button type="button" class="jkq-secondary jkc-lbtn" data-lore="' + id + '">🪙 ' + c + ' コインでひらく</button>' : '<button type="button" class="jkq-secondary jkc-lbtn" disabled>🪙 ' + c + ' コイン（あと ' + (c - coins) + '）</button>'); }
+        h += '</li>';
+      }
     }
     box.innerHTML = '<h3 class="jkc-lore-h">きろく <small>' + n + '/' + d.lm + '</small></h3><ol class="jkc-lore-list">' + h + '</ol>' +
-      '<p class="jkq-note">かぶりが出ると、次のきろくが1つ無料でひらきます。</p>';
+      (n < d.lr ? '<p class="jkq-note">かぶりが出ると、次のきろくが1つ無料でひらきます。</p>' : "");
   }
 
   function burst(r) {
@@ -148,8 +159,10 @@
       }
       return;
     }
+    var fb = e.target.closest && e.target.closest("[data-fold]");
+    if (fb) { var fid = $("lore") && $("lore").getAttribute("data-id"), fk = fb.getAttribute("data-fold"); if (fid) { LOREOPEN[fid + ":" + fk] = !LOREOPEN[fid + ":" + fk]; renderLore(fid); var fb2 = document.querySelector('#lore [data-fold="' + fk + '"]'); if (fb2) fb2.focus(); } return; }
     var lb = e.target.closest && e.target.closest("[data-lore]");
-    if (lb && !lb.disabled) { var lid = lb.getAttribute("data-lore"), r = G.loreUnlock(lid); renderLore(lid); if (r.ok) { var li = document.querySelectorAll("#lore .is-open"); if (li.length) li[li.length - 1].scrollIntoView({ block: "nearest", behavior: "auto" }); } return; }
+    if (lb && !lb.disabled) { var lid = lb.getAttribute("data-lore"), r = G.loreUnlock(lid); if (r.ok) LOREOPEN[lid + ":" + G.loreCount(lid)] = true; renderLore(lid); if (r.ok) { var li = document.querySelectorAll("#lore .is-open"); if (li.length) li[li.length - 1].scrollIntoView({ block: "nearest", behavior: "auto" }); } return; }
     var c = e.target.closest && e.target.closest(".jkc-cell");
     if (c) { showDetail(c.getAttribute("data-id")); $("detail").scrollIntoView({ block: "nearest", behavior: "auto" }); }
   });
