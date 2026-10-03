@@ -3,7 +3,7 @@
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v14';
+const VERSION = 'v15';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
