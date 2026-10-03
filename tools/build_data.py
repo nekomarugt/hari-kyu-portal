@@ -4,6 +4,7 @@ import json, re, sys, collections, os
 W = "/workspace/hk-portal-work/"
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KIJ = json.load(open(W + "kijun_anat_physio.json"))
+EXPL = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "explanations_hk.json"), encoding="utf8"))  # 短い「なぜ」解説（科目→"回-番"）
 FW = str.maketrans("ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ０１２３４５６７８９",
                   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
 def norm(s):
@@ -11,7 +12,7 @@ def norm(s):
     s = re.sub(r"[─―]{2,}", "　―　", s)          # 組合せ問題の罫線を見やすく
     s = re.sub(r"[ \t]+\n", "\n", s).strip()
     return s
-def load(subj, fn, dai_prefix):
+def load(subj, fn, dai_prefix, dir_=None):
     d = json.load(open(W + fn))
     ents = [q for q in d["questions"] if not q.get("chapter_defect")]
     by = collections.OrderedDict()
@@ -26,7 +27,7 @@ def load(subj, fn, dai_prefix):
         assert ans and all(0 <= a < 4 for a in ans), k
         assert len(q["options"]) == 4, k
         e = {"exam": q["kai"], "number": q["no"], "question": norm(q["stem"]),
-             "choices": [norm(o) for o in q["options"]], "answers": sorted(ans), "explanation": "",
+             "choices": [norm(o) for o in q["options"]], "answers": sorted(ans), "explanation": (EXPL.get(dir_, {}).get(f'{q["kai"]}-{q["no"]}', "") if not str(q.get("answer_source", "")).startswith("inferred") else ""),
              "field": q["kijun_dai"], "chu": q["kijun_chu"]}
         if len(ans) > 1: e["note"] = "※正解は複数あります。どれか1つを選んで。"   # 複数正解＝どれか1つを選べば正解
         elif q.get("note"): e["note"] = q["note"]
@@ -40,7 +41,7 @@ def kinfo(subj):
 if __name__ == "__main__":
     res = {}
     for subj, fn, dir_ in (("anat", "anat_filled2.json", "anatomy"), ("physio", "physio_filled.json", "physiology")):
-        out, ents = load(subj, fn, None)
+        out, ents = load(subj, fn, None, dir_)
         d = json.load(open(W + fn))
         dai_name, chu_name, dai_of_chu = {}, {}, {}
         for q in d["questions"]:
