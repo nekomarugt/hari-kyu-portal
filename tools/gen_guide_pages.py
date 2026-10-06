@@ -63,7 +63,7 @@ def viewer(subj, label, short):
     </main>
     <script src="./content.js"></script>
     <script src="../guide.js"></script>
-''' + FOOT
+''' + ('' if subj != 'anatomy' else '    <script src="../../bridges/meridian-bridges.js" defer></script>\n') + FOOT
 
 def landing():
     return head(1, "学習資料", "解剖学・生理学の学習資料。出題基準（2026年版）の順に整理し、過去問と相互にリンクしています。") + '''  <body class="g-body" data-page="landing">
