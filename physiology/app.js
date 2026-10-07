@@ -363,7 +363,12 @@ function submitAnswer() {
   history[id] = stats;
   saveHistory();
   if (window.JKGame) JKGame.record(SUBJECT_KEY, questionId(question), correct);
+  paintAnswer(question, correct);
+}
 
+// 答えたあとの表示（記録はしない）。学習資料から戻ったときの復元でも使う
+function paintAnswer(question, correct) {
+  const answers = new Set(question.answers);
   [...els.choices.children].forEach((button, index) => {
     button.disabled = true;
     button.classList.remove("is-selected");
@@ -395,7 +400,7 @@ function renderGuideLink(question) {
   if (!box) return;
   box.classList.add("is-hidden");
   box.replaceChildren();
-  loadGuideLinks().then((data) => {
+  return loadGuideLinks().then((data) => {
     if (!data || queue[position] !== question) return;
     const ids = (data[SUBJECT_KEY][questionId(question)] || []);
     if (!ids.length) return;
@@ -414,6 +419,61 @@ function renderGuideLink(question) {
     box.classList.remove("is-hidden");
   });
 }
+
+// ---- 学習資料へ移って戻ってきたとき、出題の位置（何問目・答えたか・スクロール）を戻す ----
+// このタブの sessionStorage だけに置く。戻る／再読み込みで開いたときだけ使う
+const RESUME_KEY = "hk-resume:" + location.pathname;
+function saveResume() {
+  try {
+    if (els.quiz.classList.contains("is-hidden") || !queue.length) { sessionStorage.removeItem(RESUME_KEY); return; }
+    sessionStorage.setItem(RESUME_KEY, JSON.stringify({
+      t: Date.now(), ids: queue.map(questionId), position, correctCount,
+      wrong: wrongQuestions.map(questionId), answered, selected: [...selected], y: window.scrollY,
+    }));
+  } catch (error) { /* 保存できなくても出題は続けられる */ }
+}
+function takeResume() {
+  try {
+    const nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+    if (!nav || (nav.type !== "back_forward" && nav.type !== "reload")) return null;
+    const saved = JSON.parse(sessionStorage.getItem(RESUME_KEY) || "null");
+    return saved && Date.now() - saved.t < 12 * 60 * 60 * 1000 ? saved : null;
+  } catch (error) {
+    return null;
+  }
+}
+function resumeQuiz() {
+  const saved = takeResume();
+  if (!saved || !Array.isArray(saved.ids)) return false;
+  const byId = new Map(questions.map((question) => [questionId(question), question]));
+  const items = saved.ids.map((id) => byId.get(id));
+  if (!items.length || items.some((question) => !question) || !(saved.position >= 0 && saved.position < items.length)) return false;
+  queue = items;
+  position = saved.position;
+  correctCount = saved.correctCount || 0;
+  wrongQuestions = (saved.wrong || []).map((id) => byId.get(id)).filter(Boolean);
+  show(els.quiz);
+  renderQuestion();
+  const picked = (saved.selected || []).filter((index) => els.choices.children[index]);
+  if (saved.answered && picked.length) {
+    const question = queue[position];
+    selected = new Set(picked);
+    answered = true;
+    paintAnswer(question, selected.size === 1 && new Set(question.answers).has([...selected][0]));
+  } else if (picked.length) {
+    choose(picked[0], false, els.choices.children[picked[0]]);
+  }
+  const y = Number(saved.y) || 0;
+  const scroll = () => window.scrollTo({ top: y, behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(scroll));
+  loadGuideLinks().then(() => requestAnimationFrame(scroll));
+  return true;
+}
+// 資料リンクを押した時点の位置を残す（離れる途中のスクロールで上書きしない）
+let resumeClickAt = 0;
+window.addEventListener("pagehide", () => { if (Date.now() - resumeClickAt > 3000) saveResume(); });
+const guideLinkBox = document.getElementById("guide-link");
+if (guideLinkBox) guideLinkBox.addEventListener("click", (event) => { if (event.target.closest("a")) { saveResume(); resumeClickAt = Date.now(); } });
 
 function nextQuestion() {
   if (position < queue.length - 1) {
@@ -470,7 +530,7 @@ fetch("./questions.json")
   .then((data) => {
     questions = data;
     populateSetup();
-    loadFields().then(() => { if (!launchFromIds()) launchFromField(); });
+    loadFields().then(() => { if (!resumeQuiz() && !launchFromIds()) launchFromField(); });
     show(els.setup);
   })
   .catch(() => show(els.error));

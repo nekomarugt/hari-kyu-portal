@@ -26,6 +26,7 @@ def head(depth, title, desc, extra_css=""):
     <title>{title}｜はり師きゅう師 解剖学・生理学ポータル</title>
     <link rel="stylesheet" href="{up}theme.css" />
     <link rel="stylesheet" href="{up}guide/guide.css" />
+    <script src="{up}backnav.js"></script>
   </head>
 '''
 FOOT = '''  </body>
