@@ -1,6 +1,7 @@
-/* 解剖学の骨・筋 ⇄ 経穴・経絡（試行）。
+/* 解剖学の骨・筋 ⇄ 経穴・経絡。
  * データ: ../data/meridian-bridges.json（対応表）→ ここで描画するだけ。リンクを HTML に直書きしない。
  * 解剖学の節：折りたたみの「つながり」バー（← 骨・筋の目印 ｜ → 経穴・経絡）。経穴ガイドが無い間は、取穴の一行リストを中に出す。
+ * 経穴は過去問での出題数の順（データ側で並べ済み）。pt.hot なら「頻出」、pt.freq があれば出題数を小さく出す。
  * 学習資料側が描き直しても MutationObserver で付け直す。データが読めなければ何もしない。 */
 (function () {
   'use strict';
@@ -15,7 +16,9 @@
   }
 
   var byAnat = {};
+  var FREQ = null;
   function index(data) {
+    FREQ = data.freq || null;
     (data.slices || []).forEach(function (slice) {
       (slice.rows || []).forEach(function (row) {
         (row.anatomy || []).forEach(function (a) {
@@ -39,7 +42,10 @@
           '<span class="mb-pt-name"><strong>' + esc(pt.name) + '</strong>' +
           (pt.kana ? '<span class="mb-pt-kana">（' + esc(pt.kana) + '）</span>' : '') +
           (pt.code ? '<span class="mb-pt-code">' + esc(pt.code) + '</span>' : '') +
+          (pt.hot ? '<span class="mb-hot">頻出</span>' : '') +
           '</span>' +
+          (pt.freq ? '<span class="mb-pt-freq">過去問 ' + esc(pt.freq.all) + '問' +
+            (pt.freq.since20 != null ? '（第20回以降 ' + esc(pt.freq.since20) + '問）' : '') + '</span>' : '') +
           (pt.meridian ? '<span class="mb-pt-mer">' + esc(pt.meridian) + '</span>' : '') +
           '<span class="mb-pt-loc">' + esc(pt.loc) + '</span>' +
           '</li>';
@@ -49,9 +55,11 @@
         (mers ? '<p class="mb-go"><span class="mb-k">経絡</span>' + mers + '</p>' : '') +
         (pts ? '<p class="mb-k mb-k-block">→ 経穴（取穴・骨筋の目印）</p><ul class="mb-pts">' + pts + '</ul>' : '') +
         (r.hint ? '<p class="mb-hint">' + esc(r.hint) + '</p>' : '') +
-        '<p class="mb-note">経穴の学習資料ページはまだ無いため、ここには取穴の要約だけを載せています。詳しい経穴ガイドができたら、そこへ相互リンクします。</p>' +
         '</div>';
     }).join('');
+    body += (FREQ ? '<p class="mb-note mb-freq-note">並びは過去問（経絡経穴概論 ' + esc(FREQ.years ? FREQ.years.split('（')[0] : '') +
+        '）で名前が出た問題の数が多い順。' + esc(FREQ.hot || '') + '。' + esc(FREQ.min || '') + '。</p>' : '') +
+      '<p class="mb-note">経穴の学習資料ページはまだ無いため、ここには取穴の要約だけを載せています。詳しい経穴ガイドができたら、そこへ相互リンクします。</p>';
     var d = document.createElement('details');
     d.className = 'meridian-bridge';
     d.setAttribute('data-meridian-bridge', id);
@@ -91,6 +99,8 @@
     '.mb-pt{margin:0 0 8px;padding:8px 10px;border-radius:10px;background:#fff;border:1px solid #d5e8df}' +
     '.mb-pt-name{display:block;font-size:1rem}.mb-pt-kana{margin-left:4px;font-size:.85rem;color:#5a7a70;font-weight:400}' +
     '.mb-pt-code{margin-left:8px;font-size:.8rem;color:#0c4a40;font-weight:700}' +
+    '.mb-hot{display:inline-block;margin-left:8px;padding:0 8px;border-radius:999px;background:#c2410c;color:#fff;font-size:.75rem;font-weight:800;line-height:1.7;vertical-align:1px}' +
+    '.mb-pt-freq{display:block;font-size:.78rem;color:#7a5a2a;margin-top:1px}' +
     '.mb-pt-mer{display:block;font-size:.82rem;color:#3d6a5c;margin-top:2px}' +
     '.mb-pt-loc{display:block;font-size:.9rem;color:#243830;margin-top:2px;line-height:1.55}' +
     '.mb-hint{font-size:.9rem;line-height:1.6;color:#33473f;padding:4px 10px;border-left:3px solid #c4a35a;background:#fffaf0}' +
