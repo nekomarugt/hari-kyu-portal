@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c4a40" />
+    <!-- PWA -->
+    <link rel="manifest" href="../../manifest.webmanifest" />
+    <link rel="icon" href="../../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../../sw.js",{scope:"../../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="14経絡の走行と、過去問によく出る経穴の取穴を骨・筋の目印で整理。解剖学の節へのリンクつき。" />
+    <title>経穴・経絡｜学習資料</title>
+    <link rel="stylesheet" href="../../theme.css" />
+    <link rel="stylesheet" href="../../guide/guide.css" />
+    <link rel="stylesheet" href="../../guide/extra.css" />
+    <script src="../../backnav.js"></script>
+  </head>
+  <body class="g-body">
+    <a class="g-return" href="../">← 学習資料トップへ</a>
+    <main class="g-shell">
+      <header class="g-head">
+        <img class="g-logo" src="../../icons/logo.svg" width="48" height="48" alt="" />
+        <div>
+          <p class="g-eyebrow">学習資料　骨・筋の目印で取穴</p>
+          <h1>経穴・経絡</h1>
+          <p class="g-sub">14経絡の走行と、よく出る経穴</p>
+        </div>
+      </header>
+      <section class="g-tools" aria-label="ほかのページ"><a class="g-toggle" href="../anatomy/">解剖学 学習資料</a><a class="g-toggle" href="../anatomy/tooru.html">通るシリーズ</a></section>
+      <div class="tr-wrap" id="keiketsu"><p class="g-loading">読み込んでいます…</p></div>
+    </main>
+    <script src="./keiketsu-data.js"></script>
+    <script src="../keiketsu.js"></script>
+  </body>
+</html>

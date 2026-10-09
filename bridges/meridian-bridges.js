@@ -1,6 +1,6 @@
 /* 解剖学の骨・筋 ⇄ 経穴・経絡。
  * データ: ../data/meridian-bridges.json（対応表）→ ここで描画するだけ。リンクを HTML に直書きしない。
- * 解剖学の節：折りたたみの「つながり」バー（← 骨・筋の目印 ｜ → 経穴・経絡）。経穴ガイドが無い間は、取穴の一行リストを中に出す。
+ * 解剖学の節：折りたたみの「つながり」バー（← 骨・筋の目印 ｜ → 経穴・経絡）。取穴の一行リストを中に出し、経穴名から経穴・経絡ページ（guide/keiketsu/）へリンクする。
  * 経穴は過去問での出題数の順（データ側で並べ済み）。pt.hot なら「頻出」、pt.freq があれば出題数を小さく出す。
  * 学習資料側が描き直しても MutationObserver で付け直す。データが読めなければ何もしない。 */
 (function () {
@@ -39,7 +39,7 @@
       }).join('');
       var pts = (r.points || []).map(function (pt) {
         return '<li class="mb-pt">' +
-          '<span class="mb-pt-name"><strong>' + esc(pt.name) + '</strong>' +
+          '<span class="mb-pt-name"><a class="mb-pt-link" href="../keiketsu/#pt-' + esc(pt.code) + '"><strong>' + esc(pt.name) + '</strong></a>' +
           (pt.kana ? '<span class="mb-pt-kana">（' + esc(pt.kana) + '）</span>' : '') +
           (pt.code ? '<span class="mb-pt-code">' + esc(pt.code) + '</span>' : '') +
           (pt.hot ? '<span class="mb-hot">頻出</span>' : '') +
@@ -59,7 +59,7 @@
     }).join('');
     body += (FREQ ? '<p class="mb-note mb-freq-note">並びは過去問（経絡経穴概論 ' + esc(FREQ.years ? FREQ.years.split('（')[0] : '') +
         '）で名前が出た問題の数が多い順。' + esc(FREQ.hot || '') + '。' + esc(FREQ.min || '') + '。</p>' : '') +
-      '<p class="mb-note">経穴の学習資料ページはまだ無いため、ここには取穴の要約だけを載せています。詳しい経穴ガイドができたら、そこへ相互リンクします。</p>';
+      '<p class="mb-note">経穴名をタップすると「経穴・経絡」ページのその穴へ。<a class="mb-pt-link" href="../keiketsu/">→ 経穴・経絡ページ（14経絡の走行とよく出る経穴）</a></p>';
     var d = document.createElement('details');
     d.className = 'meridian-bridge';
     d.setAttribute('data-meridian-bridge', id);
@@ -104,7 +104,8 @@
     '.mb-pt-mer{display:block;font-size:.82rem;color:#3d6a5c;margin-top:2px}' +
     '.mb-pt-loc{display:block;font-size:.9rem;color:#243830;margin-top:2px;line-height:1.55}' +
     '.mb-hint{font-size:.9rem;line-height:1.6;color:#33473f;padding:4px 10px;border-left:3px solid #c4a35a;background:#fffaf0}' +
-    '.mb-note{font-size:.82rem;color:#5a7a70;margin-top:6px}';
+    '.mb-note{font-size:.82rem;color:#5a7a70;margin-top:6px}' +
+    '.mb-pt-link{color:#0c4a40;text-decoration:underline;text-underline-offset:2px}';
 
   function start(data) {
     index(data);
