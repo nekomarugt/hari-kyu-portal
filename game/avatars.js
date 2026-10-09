@@ -49,8 +49,8 @@
     { id: "ssr02", n: "ジン", r: "SSR", f: "コートの橙の線が光ったら、ひと仕事の合図。", a: 37 },
     { id: "ssr03", n: "ネオン", r: "SSR", f: "ハートの銃でバグを撃退。ファンへのウインクつき。", a: 38 }
   ];
-  // きろく：最大本数 lm（SR/SSRは5、ほかは3）／書き上がっている本数 lr（SR/SSRは5、ほかは今は1）。game/lore.js の本数と合わせること。
-  D.forEach(function (d) { var top = d.r === "SR" || d.r === "SSR"; d.lm = top ? 5 : 3; d.lr = top ? 5 : 1; });
+  // きろく：最大本数 lm（SR/SSRは5、N/Rは3）／書き上がっている本数 lr（いまは全員 lm と同じ）。game/lore.js の本数と合わせること。
+  D.forEach(function (d) { var top = d.r === "SR" || d.r === "SSR"; d.lm = top ? 5 : 3; d.lr = d.lm; });
   var BYID = {}, BYR = { N: [], R: [], SR: [], SSR: [] };
   D.forEach(function (d) { BYID[d.id] = d; BYR[d.r].push(d.id); });
   // ずかんの表示順：レア度がばれないよう、固定のシャッフル順（ID順・レア度順にしない）

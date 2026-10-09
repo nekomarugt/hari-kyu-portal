@@ -383,6 +383,17 @@
     S.coins -= cost; S.lore[id] = n + 1; save(); renderAll();
     return { ok: true, n: n + 1, cost: cost, coins: S.coins };
   }
+  // 昔のかぶり分：N/R のきろくが1本しかなかったころにかぶった人にも、かぶった回数ぶん（最大 lr 本）ひらく。何回呼んでも同じ結果（減らすことはない）
+  function retroLore() {
+    var av = A(); if (!av) return;
+    var ch = false;
+    Object.keys(S.own).forEach(function (id) {
+      var d = av.get(id); if (!d || (d.r !== "N" && d.r !== "R")) return;
+      var want = Math.min(d.lr, Math.max(1, Math.floor(+S.own[id]) || 1));
+      if (want > loreCount(id)) { S.lore[id] = want; ch = true; }
+    });
+    if (ch) { save(); renderAll(); }
+  }
   function spend(n) { n = Math.floor(n); if (!(n > 0 && n <= 100) || S.coins < n) return false; S.coins -= n; save(); renderAll(); return true; } // おみくじなど：コインを使うだけ
   function ownedCount() { return Object.keys(S.own).length; }
   function setAvatar(id) { if (!S.own[id]) return false; S.sel = id; save(); renderAll(); return true; }
@@ -593,5 +604,5 @@
     (document.head || document.documentElement).appendChild(el);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mountAll); else mountAll();
-  loadExtra("avatars.js", function () { return !!window.JKAvatars; });
+  loadExtra("avatars.js", function () { return !!window.JKAvatars; }, retroLore);
 })();
