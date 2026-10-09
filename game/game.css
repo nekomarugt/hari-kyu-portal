@@ -257,3 +257,12 @@ a.jkq-secondary { text-decoration: none; box-sizing: border-box; }
   .jk-modes strong { flex: 0 0 4.6em; }
   .jkg-sech { font-size: 1.3rem; }
 }
+
+/* 限界突破カード */
+.jkg-gate { margin: 10px 0 4px; padding: 10px 12px; border: 2px dashed #e3a33a; border-radius: 14px; background: #fff8e8; }
+.jkg-gate-h { font-weight: 900; font-size: .98rem; }
+.jkg-gate-h small { margin-left: 4px; font-weight: 600; font-size: .76rem; color: var(--jk-muted); }
+.jkg-gate ol { margin: 6px 0 6px 1.3em; padding: 0; font-size: .88rem; line-height: 1.5; }
+.jkg-gate li.is-ok { color: var(--jk-teal); font-weight: 800; }
+.jkg-gate .jkg-actions { margin-top: 4px; }
+.jkg-chip.is-gate { border: 0; background: #ffe7b3; color: #7a4b00; font: inherit; font-weight: 800; font-size: .86rem; cursor: pointer; }

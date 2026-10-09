@@ -36,6 +36,12 @@
     [36300, "伝説の入り口"], [37800, "伝説の学生"], [39300, "無敵モード"], [40800, "超人"], [42350, "レジェンド"],
     [43950, "殿堂入り"], [45550, "神ってる"], [47150, "解剖生理の神見習い"], [48800, "あと一歩で神"], [50500, "解剖生理の神"]
   ];
+  /* 限界突破：Lv10・20・30・40 の壁。XPはたまり続けるが、表示レベルは条件クリアまで壁のレベルで止まる。
+   * 条件 ①苦手克服（壁に着いてから、まちがえた問題を2回連続で正解した数）②資料を読む（苦手な科目の学習資料を開く）→ その科目で正解。
+   * 資料を開いたかどうかは、ページ内の「資料へのリンク」を押したことで数える（資料ページ側は変えない。開いた先が何のページでも数える）。 */
+  var GATES = [10, 20, 30, 40];
+  function gateNeed(g) { return g === 10 ? { gr: 3, rc: 3 } : { gr: 5, rc: 5 }; }
+  var GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/" }; // 科目ごとの学習資料の入口（ROOT からの相対）
   var BADGES = [
     { id: "first", n: "はじめの一歩", d: "はじめて1問答えた", t: function (s) { return s.att >= 1; } },
     { id: "c10", n: "10問正解", d: "正解が合計10問", t: function (s) { return s.cor >= 10; } },
@@ -90,11 +96,11 @@
     { id: "phy450", n: "生理学 過去問450問", d: "生理学の過去問で450問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 450; } },
     { id: "bal50", n: "2科目バランス", d: "解剖学・生理学の過去問それぞれ50問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 50 && (s.ec.phy || 0) >= 50; } },
     { id: "bal200", n: "2科目どっちも強い", d: "解剖学・生理学の過去問それぞれ200問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 200 && (s.ec.phy || 0) >= 200; } },
-    { id: "lv15", n: "Lv15到達", d: "レベル15になった", t: function (s) { return levelInfo(s.xp).lv >= 15; } },
-    { id: "lv20", n: "Lv20到達", d: "レベル20になった", t: function (s) { return levelInfo(s.xp).lv >= 20; } },
-    { id: "lv30", n: "Lv30到達", d: "レベル30になった", t: function (s) { return levelInfo(s.xp).lv >= 30; } },
-    { id: "lv40", n: "Lv40到達", d: "レベル40になった", t: function (s) { return levelInfo(s.xp).lv >= 40; } },
-    { id: "lv50", n: "Lv50到達", d: "レベル50になった", t: function (s) { return levelInfo(s.xp).lv >= 50; } },
+    { id: "lv15", n: "Lv15到達", d: "レベル15になった", t: function (s) { return lvInfo().lv >= 15; } },
+    { id: "lv20", n: "Lv20到達", d: "レベル20になった", t: function (s) { return lvInfo().lv >= 20; } },
+    { id: "lv30", n: "Lv30到達", d: "レベル30になった", t: function (s) { return lvInfo().lv >= 30; } },
+    { id: "lv40", n: "Lv40到達", d: "レベル40になった", t: function (s) { return lvInfo().lv >= 40; } },
+    { id: "lv50", n: "Lv50到達", d: "レベル50になった", t: function (s) { return lvInfo().lv >= 50; } },
     { id: "gp10", n: "ガチャ10回", d: "ガチャを合計10回まわした", t: function (s) { return s.pulls >= 10; } },
     { id: "gp50", n: "ガチャ50回", d: "ガチャを合計50回まわした", t: function (s) { return s.pulls >= 50; } },
     { id: "gp100", n: "ガチャ100回", d: "ガチャを合計100回まわした", t: function (s) { return s.pulls >= 100; } },
@@ -108,7 +114,7 @@
   function blank() {
     return { v: 1, xp: 0, att: 0, cor: 0, days: [], best: 0, qs: {}, ec: {}, weak: {}, badges: {}, mast: {}, past: {},
       quests: 0, perfect: 0, grads: 0, perfChap: 0, subjDone: 0, seen: {}, td: { d: "", n: 0 }, maxDay: 0, qb: { d: "", m: {} },
-      coins: 0, own: {}, sel: "", pulls: 0, pity: 0, grant: 0, ms: {}, shown: {}, lore: {} };
+      coins: 0, own: {}, sel: "", pulls: 0, pity: 0, grant: 0, ms: {}, shown: {}, lore: {}, gd: {}, gs: null, gv: 0, lw: null };
   }
   function load() {
     var raw = null;
@@ -128,6 +134,10 @@
     s.qb = obj(s.qb); s.qb.m = obj(s.qb.m); s.td = obj(s.td);
     s.own = obj(s.own); s.ms = obj(s.ms); s.shown = obj(s.shown);
     s.lore = obj(s.lore); Object.keys(s.lore).forEach(function (k) { var v = Math.floor(+s.lore[k]); if (!(v >= 1 && v <= 5) || !s.own[k]) delete s.lore[k]; else s.lore[k] = v; });
+    s.gd = obj(s.gd); s.gv = s.gv ? 1 : 0;
+    s.gs = s.gs && typeof s.gs === "object" && GATES.indexOf(s.gs.lv) > -1 ? s.gs : null;
+    if (s.gs) { s.gs.g0 = num(s.gs.g0); s.gs.rc = num(s.gs.rc); s.gs.t0 = num(s.gs.t0); if (!(s.gs.read && typeof s.gs.read === "object" && SUBJ[s.gs.read.s])) s.gs.read = null; }
+    s.lw = s.lw && typeof s.lw === "object" && SUBJ[s.lw.s] ? s.lw : null;
     s.sel = typeof s.sel === "string" && s.own[s.sel] ? s.sel : "";
     return s;
   }
@@ -135,6 +145,16 @@
   function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* private mode etc.: keep in memory */ } }
   var S = load();
   starter();
+  migrateGates();
+  // 新しいコードで初めて開いたとき：今のXPですでに越えている壁は「突破ずみ」にする（レベルが下がる人を出さない）
+  function migrateGates() {
+    if (!S.gv) {
+      var raw = levelInfo(S.xp).lv;
+      GATES.forEach(function (g) { if (raw > g) S.gd[g] = "old"; });
+      S.gv = 1;
+    }
+    gateSync(null); save();
+  }
 
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   function today() { var d = new Date(); return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
@@ -152,6 +172,56 @@
     var i = 0; while (i + 1 < LEVELS.length && xp >= LEVELS[i + 1][0]) i++;
     var cur = LEVELS[i][0], next = i + 1 < LEVELS.length ? LEVELS[i + 1][0] : null;
     return { lv: i + 1, title: LEVELS[i][1], cur: cur, next: next, pct: next ? Math.min(100, Math.round((xp - cur) / (next - cur) * 100)) : 100, max: next === null };
+  }
+
+  function gateNow() { // いま挑戦中の壁（レベルが壁に着いていて、まだ突破していない一番下の壁）
+    var raw = levelInfo(S.xp).lv;
+    for (var i = 0; i < GATES.length; i++) if (raw >= GATES[i] && !S.gd[GATES[i]]) return GATES[i];
+    return 0;
+  }
+  function lvInfo() { // 表示用のレベル（壁で止まる）
+    var raw = levelInfo(S.xp), g = gateNow();
+    if (g && raw.lv > g) { var b = LEVELS[g - 1]; return { lv: g, title: b[1], cur: b[0], next: LEVELS[g][0], pct: 100, max: false, gate: g, held: true, rawLv: raw.lv }; }
+    raw.gate = g; raw.held = false; raw.rawLv = raw.lv; return raw;
+  }
+  function gateProg() {
+    var g = gateNow(); if (!g || !S.gs || S.gs.lv !== g) return null;
+    var nd = gateNeed(g), gr = S.grads - S.gs.g0;
+    return { g: g, gr: Math.min(gr, nd.gr), grN: nd.gr, read: S.gs.read, rc: Math.min(S.gs.rc, nd.rc), rcN: nd.rc };
+  }
+  function gateSync(ev) { // 壁の開始・突破チェック
+    for (var k = 0; k < GATES.length; k++) {
+      var g = gateNow(); if (!g) { S.gs = null; return; }
+      if (!S.gs || S.gs.lv !== g) S.gs = { lv: g, g0: S.grads, t0: Date.now(), read: null, rc: 0 };
+      var pr = gateProg();
+      if (!(pr.gr >= pr.grN && pr.read && pr.rc >= pr.rcN)) return;
+      S.gd[g] = today(); S.gs = null;
+      if (ev) (ev.gates = ev.gates || []).push(g);
+    }
+  }
+  function weakSubj() { // まちがえた問題がいちばん多い科目
+    var best = "", bn = 0;
+    Object.keys(SUBJ).forEach(function (k) { var n = weakCount(k); if (n > bn) { bn = n; best = k; } });
+    return best;
+  }
+  function visit(subj, href, title) { // 学習資料へのリンクを押した
+    if (!SUBJ[subj]) return false;
+    gateSync(null);
+    if (!S.gs || S.gs.read) return false;
+    // 苦手な科目の資料だけ数える（その科目にまちがえた問題がある／壁に着いてからその科目でまちがえた）。まちがえた問題がどこにもない人は、どの科目でもOK
+    var ok = weakCount(subj) > 0 || (S.lw && S.lw.s === subj && S.lw.t >= S.gs.t0) || !weakSubj();
+    if (!ok) return false;
+    S.gs.read = { s: subj, h: String(href || "").slice(0, 300), t: String(title || "").replace(/\s+/g, " ").trim().slice(0, 40) || SUBJ[subj] + "の資料" };
+    S.gs.rc = 0; save(); renderAll();
+    var nd = gateNeed(S.gs.lv);
+    toastQ.push({ t: "資料を開いた！ あとは" + SUBJ[subj] + "で" + nd.rc + "問正解すると、限界突破の②クリア", k: "up" }); ensureToastBox(); pump();
+    return true;
+  }
+  function guideSubj(href) { // URL → 科目（学習資料のページでなければ ""）
+    try { var path = new URL(href, location.href).pathname; } catch (e) { return ""; }
+    var hit = "";
+    Object.keys(GUIDE).forEach(function (k) { try { if (path.indexOf(new URL(GUIDE[k], ROOT).pathname) === 0) hit = k; } catch (e) {} });
+    return hit;
   }
 
   /* ---------- banks（互換用・未使用） ---------- */
@@ -186,7 +256,7 @@
   function record(src, id, ok, topic, opts) { // opts.ms: 問題を出してから答えるまでのミリ秒（4択クイズのみ。速すぎるとコインなし）
     if (!SRC_SUBJ[src]) return null;
     var ev = { xp: 0, coins: 0, badges: [], titles: [], levelUp: null, grad: false, ms: [] };
-    var before = levelInfo(S.xp).lv;
+    var before = lvInfo().lv;
     var k = src + ":" + id, r = S.qs[k] || (S.qs[k] = [0, 0, 0]);
     var firstOk = ok && !r[2];
     var d = today();
@@ -205,7 +275,8 @@
       if (c > 0) { r[3] = d; S.td.c = (S.td.c || 0) + c; }
       if ((S.td.c || 0) >= ECO.CAP && !S.td.cm) { S.td.cm = 1; ev.capHit = true; }
       ev.coins = c;
-    } else ev.xp = 2;
+    } else { ev.xp = 2; S.lw = { s: SRC_SUBJ[src], t: Date.now() }; }
+    if (ok && S.gs && S.gs.read && S.gs.read.s === SRC_SUBJ[src]) S.gs.rc++; // 限界突破②：資料を読んだあと、その科目で正解
     S.xp += ev.xp;
     if (S.days[S.days.length - 1] !== d) { S.days.push(d); if (S.days.length > 400) S.days.splice(0, S.days.length - 400); }
     var sn = streakNow().n; if (sn > S.best) S.best = sn;
@@ -236,16 +307,17 @@
       S.quests++; if (perfect) S.perfect++;
       ev.quiz = { total: total, score: score, perfect: perfect, coins: ev.coins };
     }
-    var before = levelInfo(S.xp).lv;
+    var before = lvInfo().lv;
     S.xp += ev.xp;
     finish(ev, before, true);
     return ev;
   }
   function finish(ev, before, bonus) {
+    gateSync(ev);
     BADGES.forEach(function (b) { if (!S.badges[b.id] && b.t(S)) { S.badges[b.id] = today(); ev.badges.push(b.n); ev.coins += ECO.BADGE; } });
     var sn = streakNow().n;
     MILESTONES.forEach(function (m) { if (sn >= m && !S.ms[m]) { S.ms[m] = today(); ev.ms.push(m); ev.coins += ECO.MILESTONE; } });
-    var after = levelInfo(S.xp);
+    var after = lvInfo();
     if (after.lv > before) ev.levelUp = after;
     S.coins += ev.coins;
     save(); renderAll(); showToasts(ev, bonus);
@@ -317,7 +389,7 @@
 
   function weakIds(src) { return Object.keys(S.weak[src] || {}); }
   function weakCount(subj) { var n = 0; [subj, subj + "Q"].forEach(function (s) { n += weakIds(s).length; }); return n; }
-  function reset() { S = blank(); try { localStorage.removeItem(KEY); } catch (e) {} starter(); renderAll(); } // コイン・アバター・ガチャ履歴も消える（最初のコイン30枚だけ再び付与）
+  function reset() { S = blank(); try { localStorage.removeItem(KEY); } catch (e) {} starter(); migrateGates(); renderAll(); } // コイン・アバター・ガチャ履歴も消える（最初のコイン30枚だけ再び付与）
 
   /* ---------- UI helpers ---------- */
   function esc(v) { return String(v).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
@@ -327,6 +399,7 @@
     if (ev.xp) msgs.push({ t: "+" + ev.xp + " XP" + (ev.coins && !bonus ? "　+" + ev.coins + " コイン" : ""), k: "xp" });
     else if (ev.coins) msgs.push({ t: "+" + ev.coins + " コイン", k: "xp" });
     if (ev.grad) msgs.push({ t: "弱点を1つ克服！", k: "up" });
+    (ev.gates || []).forEach(function (g) { msgs.push({ t: "限界突破！ Lv" + g + "の壁をこえた！", k: "up" }); });
     if (ev.levelUp) msgs.push({ t: "レベルアップ！ Lv" + ev.levelUp.lv + "「" + ev.levelUp.title + "」", k: "up" });
     if (ev.badges.length > 2) msgs.push({ t: "バッジ " + ev.badges.length + "個ゲット！（" + ev.badges.slice(0, 2).join("・") + " ほか）", k: "up" }); // 昔の記録の分がまとめて来たとき
     else ev.badges.forEach(function (b) { msgs.push({ t: "バッジ：" + b, k: "up" }); });
@@ -334,13 +407,15 @@
     ev.ms.forEach(function (m) { msgs.push({ t: m + "日連続！ ボーナス +" + ECO.MILESTONE + " コイン", k: "up" }); });
     if (bonus) msgs = msgs.filter(function (m) { return m.k !== "xp"; }); // クイズ結果画面で表示するので省略
     if (ev.capHit) msgs.push({ t: "今日の回答コインは上限（" + ECO.CAP + "）に達しました。XPは引き続きもらえます。", k: "up" });
-    if (!toastBox) {
-      toastBox = document.createElement("div"); toastBox.className = "jkg-toasts"; toastBox.setAttribute("aria-live", "polite");
-      document.body.appendChild(toastBox);
-    }
+    ensureToastBox();
     // 連続回答で画面がうるさくならないよう、XPだけのときは1つに保つ
     if (msgs.length === 1 && msgs[0].k === "xp") { toastQ = toastQ.filter(function (m) { return m.k !== "xp"; }); }
     toastQ = toastQ.concat(msgs); pump();
+  }
+  function ensureToastBox() {
+    if (toastBox) return;
+    toastBox = document.createElement("div"); toastBox.className = "jkg-toasts"; toastBox.setAttribute("aria-live", "polite");
+    document.body.appendChild(toastBox);
   }
   function pump() {
     if (toasting || !toastQ.length) return;
@@ -372,9 +447,25 @@
   function gachaBtn() { return '<a class="jkg-btn is-gacha" href="' + ROOT + 'gacha/">🎁 ガチャを回す <span class="jkg-coinb">🪙 ' + S.coins + '</span></a>'; }
   function quizUrl(subj, extra) { return ROOT + "quiz/?s=" + SUBJ_PAGE[subj] + (extra || ""); }
 
+  function gateCard() { // 限界突破カード（壁に着いている間だけ）
+    var pr = gateProg(); if (!pr) return "";
+    var li = lvInfo(), ws = weakSubj(), rs = pr.read ? pr.read.s : ws || Object.keys(SUBJ)[0];
+    var one = pr.gr >= pr.grN ? '✓ 苦手を' + pr.grN + '問克服' : '苦手をあと <strong>' + (pr.grN - pr.gr) + '</strong>問克服（まちがえた問題を2回つづけて正解）';
+    var two = !pr.read ? '苦手な科目の資料を読む（過去問の「関連資料」からでもOK）→ その科目で' + pr.rcN + '問正解'
+      : pr.rc >= pr.rcN ? '✓ 資料を読んで' + SUBJ[pr.read.s] + 'で' + pr.rcN + '問正解'
+      : '✓「' + esc(pr.read.t) + '」を読んだ → ' + SUBJ[pr.read.s] + 'であと <strong>' + (pr.rcN - pr.rc) + '</strong>問正解';
+    var btns = '';
+    if (pr.gr < pr.grN) btns += ws ? '<a class="jkg-btn is-weak" href="' + quizUrl(ws, "&mode=weak") + '">まちがえた問題へ（' + SUBJ[ws] + '）</a>' : '<span class="jkg-sub">まずは過去問をといて、まちがえた問題を2回つづけて正解しよう。</span>';
+    if (!pr.read) btns += '<a class="jkg-btn" href="' + ROOT + GUIDE[rs] + '">📖 ' + SUBJ[rs] + 'の資料を開く</a>';
+    else if (pr.rc < pr.rcN) btns += '<a class="jkg-btn" href="' + quizUrl(pr.read.s) + '">' + SUBJ[pr.read.s] + 'の4択クイズへ</a>';
+    return '<div class="jkg-gate"><div class="jkg-gate-h">🔓 ' + (li.held ? 'Lv' + pr.g + ' 限界突破まで<small>（XPはLv' + li.rawLv + 'ぶん、たまってるよ）</small>' : 'Lv' + pr.g + 'の壁：次の限界突破の準備') + '</div>' +
+      '<ol><li class="' + (pr.gr >= pr.grN ? 'is-ok' : '') + '">' + one + '</li><li class="' + (pr.read && pr.rc >= pr.rcN ? 'is-ok' : '') + '">' + two + '</li></ol>' +
+      (btns ? '<div class="jkg-actions">' + btns + '</div>' : '') + '</div>';
+  }
+  function lvSub(li) { return li.held ? "限界突破で Lv" + li.rawLv + " へ！" : li.max ? "最高レベル！ " + S.xp + " XP" : "あと " + (li.next - S.xp) + " XP で Lv" + (li.lv + 1); }
   function badgeCount() { return BADGES.filter(function (b) { return S.badges[b.id]; }).length; }
   function renderHome(el) {
-    var st = streakNow(), li = levelInfo(S.xp), n = S.td.d === today() ? S.td.n : 0;
+    var st = streakNow(), li = lvInfo(), n = S.td.d === today() ? S.td.n : 0;
     var rows = ["ana", "phy"].map(function (s) {
       var wc = weakIds(s).length; // 4択クイズの復習は過去問の分だけ
       return '<div class="jkg-subrow"><span class="jkg-subname">' + SUBJ[s] + '</span>' +
@@ -388,8 +479,8 @@
       '<div class="jkg-top">' +
       '<div class="jkg-streak"><span class="jkg-fire" aria-hidden="true">🔥</span><div><div class="jkg-streak-n">' + streakText(st) + '</div><div class="jkg-sub">' + streakHint(st) + '</div></div></div>' +
       '<div class="jkg-level' + (S.sel && A() ? " has-ava" : "") + '">' + avaHtml(58) + '<div class="jkg-lvbody"><div class="jkg-lvline"><span class="jkg-lv">Lv' + li.lv + '</span><span class="jkg-lvtitle">' + esc(li.title) + '</span></div>' + barHtml(li) +
-      '<div class="jkg-sub">' + (li.max ? "最高レベル！ " + S.xp + " XP" : "あと " + (li.next - S.xp) + " XP で Lv" + (li.lv + 1)) + '</div></div></div>' +
-      '</div>' +
+      '<div class="jkg-sub">' + lvSub(li) + '</div></div></div>' +
+      '</div>' + gateCard() +
       '<p class="jkg-today">' + (n ? "今日は <strong>" + n + "</strong> 問といたよ。" : "今日はまだ0問。まずは1問だけやってみよう。") + '</p>' +
       '<div class="jkg-subrows">' + rows + '</div>' +
       '<div class="jkg-gacha">' + gachaBtn() + '</div>' +
@@ -398,10 +489,10 @@
   }
   function renderPanel(el) {
     var subj = el.getAttribute("data-subject");
-    var st = streakNow(), li = levelInfo(S.xp), wc = weakIds(subj).length;
+    var st = streakNow(), li = lvInfo(), wc = weakIds(subj).length;
     el.innerHTML =
       '<div class="jkg-card is-compact">' +
-      '<div class="jkg-strip">' + avaHtml(30, true) + '<span class="jkg-chip">🔥 ' + streakText(st) + '</span><span class="jkg-chip">Lv' + li.lv + ' ' + esc(li.title) + '</span>' +
+      '<div class="jkg-strip">' + avaHtml(30, true) + '<span class="jkg-chip">🔥 ' + streakText(st) + '</span><span class="jkg-chip">Lv' + li.lv + ' ' + esc(li.title) + '</span>' + (li.held ? '<button type="button" class="jkg-chip is-gate" data-jkg-open>🔓 限界突破</button>' : '') +
       '<span class="jkg-chip is-coin">🪙 ' + S.coins + '</span><button type="button" class="jkg-link" data-jkg-open>きろく</button></div>' +
       '<div class="jkg-actions"><a class="jkg-btn" href="' + quizUrl(subj) + '">4択クイズ（10・30・50問）</a>' +
       (wc ? '<a class="jkg-btn is-weak" href="' + quizUrl(subj, "&mode=weak") + '">まちがえた問題だけ復習（' + wc + '問）</a>'
@@ -418,6 +509,11 @@
     if (overlay && !overlay.hidden) renderRecord();
     try { document.dispatchEvent(new CustomEvent("jkg-change")); } catch (e) {}
   }
+  // 学習資料へのリンク（過去問の「関連資料」・カードのボタンなど）を押したら、限界突破②の「資料を読む」に数える
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]"); if (!a) return;
+    var subj = guideSubj(a.href); if (subj) visit(subj, a.href, a.textContent);
+  }, true);
   document.addEventListener("click", function (e) {
     var b = e.target.closest && e.target.closest("[data-jkg-open]");
     if (b) { e.preventDefault(); openRecord(); }
@@ -443,7 +539,7 @@
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
   function renderRecord() {
-    var st = streakNow(), li = levelInfo(S.xp);
+    var st = streakNow(), li = lvInfo();
     function bli(b) {
       var got = S.badges[b.id];
       return '<li class="jkg-badge' + (got ? " is-got" : "") + '"><span class="jkg-bico" aria-hidden="true">' + (got ? "🏅" : "🔒") + '</span><span><strong>' + esc(b.n) + '</strong><small>' + esc(b.d) + '</small></span></li>';
@@ -461,7 +557,7 @@
       '<div class="jkg-mgrid"><div class="jkg-stat"><small>連続日数</small><strong>' + st.n + '<em>日</em></strong><span>最高 ' + Math.max(S.best, st.n) + '日</span></div>' +
       '<div class="jkg-stat"><small>レベル</small><strong>Lv' + li.lv + '</strong><span>' + esc(li.title) + '</span></div>' +
       '<div class="jkg-stat"><small>正解した数</small><strong>' + S.cor + '<em>問</em></strong><span>挑戦 ' + S.att + '問</span></div></div>' +
-      '<div class="jkg-lvbox">' + barHtml(li) + '<span class="jkg-sub">' + S.xp + ' XP' + (li.max ? "（最高レベル）" : " ／ 次のレベルまで " + (li.next - S.xp) + " XP") + '</span></div>' +
+      '<div class="jkg-lvbox">' + barHtml(li) + '<span class="jkg-sub">' + S.xp + ' XP' + (li.held ? "（限界突破で Lv" + li.rawLv + " へ）" : li.max ? "（最高レベル）" : " ／ 次のレベルまで " + (li.next - S.xp) + " XP") + '</span></div>' + gateCard() +
       '<h4>バッジ（' + badgeCount() + '/' + BADGES.length + '）</h4>' + badges +
       '<h4>称号</h4>' + (titles.length ? '<ul class="jkg-titles">' + titles.map(function (t) { return "<li>🎖 " + esc(t) + "</li>"; }).join("") + '</ul>' : '<p class="jkg-sub">まだありません。過去問で100問・300問に正解（重複なし）すると、科目ごとの称号がもらえます。</p>') +
       (prog ? '<h4>分野ごとの進みぐあい</h4><p class="jkg-sub">正解したことがある問題の数。80%で称号。</p>' + prog : '') +
@@ -469,7 +565,8 @@
       '<li>コイン：はじめての正解 +3（同じ問題の2回目以降は +1）。同じ問題のコインは1日1回まで、答えるのが速すぎる（1.5秒未満）とコインなし、回答コインは1日 '+ECO.CAP+' まで。</li>' +
       '<li>4択クイズの完走ボーナス（60%以上正解・1問3秒以上かけた場合、1日1モードにつき1回）：30問 +5／50問 +10。新しいバッジ +5 ／ 3・7・14・30日連続 +10。ガチャは1回10コイン、10連は100コイン、おみくじは1回5コイン、キャラのきろくは2つ目から20・50・80・120コイン（出る確率：N 75%／R 22%／SR 2%／SSR 1%）。</li>' +
       '<li>連続日数：1日1問でも答えれば、その日は数えます（端末の日付で、0時に切り替わります）。</li>' +
-      '<li>まちがえた問題は「復習リスト」に入り、2回つづけて正解すると外れます。</li></ul></div>' +
+      '<li>まちがえた問題は「復習リスト」に入り、2回つづけて正解すると外れます。</li>' +
+      '<li>限界突破：Lv10・20・30・40 には壁があります。壁に着いたら ①苦手を克服（Lv10は3問、Lv20から5問）②苦手な科目の資料を開いて、その科目で正解（Lv10は3問、Lv20から5問）。そのあいだもXPはたまり、突破すると一気にレベルが上がります。</li></ul></div>' +
       '<p class="jkg-note">記録は、この端末（このブラウザ）の中だけに保存されます。サーバーには送りません。別の端末とは共有されません。</p>' +
       '<button type="button" class="jkg-reset" data-jkg-reset>記録を消す（ゲームの記録だけ）</button></div>';
     overlay.querySelector("[data-jkg-close]").addEventListener("click", closeRecord);
@@ -481,7 +578,7 @@
   /* ---------- public ---------- */
   window.JKGame = {
     record: record, quizDone: quizDone, registerBank: registerBank, weakIds: weakIds, weakCount: weakCount,
-    streak: streakNow, level: function () { return levelInfo(S.xp); }, xp: function () { return S.xp; },
+    streak: streakNow, level: function () { return lvInfo(); }, visit: visit, gate: gateProg, xp: function () { return S.xp; },
     openRecord: openRecord, reset: reset,
     coins: function () { return S.coins; }, owned: function () { return S.own; }, ownedCount: ownedCount, loreCount: loreCount, loreCost: loreCost, loreUnlock: loreUnlock, spend: spend, loadLore: function (cb) { loadExtra("lore.js", function () { return !!window.JKLore; }, cb); }, selected: function () { return S.sel; },
     markShown: markShown, pull: pull, roll: roll, setAvatar: setAvatar, pulls: function () { return S.pulls; }, pity: function () { return S.pity; }, ECO: ECO, rootUrl: ROOT, isMastered: function (subj, topic) { return !!S.mast[subj + "|" + topic]; },

@@ -17,6 +17,7 @@
       if (ev.quiz.perfect) out.push({ icon: "🎉", title: "パーフェクト！", sub: ev.quiz.total + "問ぜんぶ正解！" + cs, size: 3 });
       else out.push({ icon: "✅", title: "クイズクリア！", sub: ev.quiz.score + "/" + ev.quiz.total + " 正解" + cs, size: 2 });
     }
+    (ev.gates || []).forEach(function (g) { out.push({ key: "gate:" + g, icon: "🔓", title: "限界突破！", sub: "Lv" + g + "の壁をこえた！", size: 3 }); });
     if (ev.levelUp) out.push({ key: "lv:" + ev.levelUp.lv, icon: "⬆️", title: "レベルアップ！", sub: "Lv" + ev.levelUp.lv + "「" + ev.levelUp.title + "」", size: 3 });
     (ev.ms || []).forEach(function (m) { out.push({ key: "ms:" + m, icon: "🔥", title: m + "日連続！", sub: "ボーナス +10 コイン", size: m >= 14 ? 3 : 2 }); });
     (ev.badges || []).forEach(function (b) { out.push({ key: "badge:" + b, icon: "🏅", title: "新しいバッジ！", sub: b + "　+5 コイン", size: 2 }); });
