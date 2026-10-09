@@ -68,6 +68,8 @@
 .g-tips-b { padding: 4px 12px 10px; }
 .g-tips-fig { margin: 0; }
 .g-tips-fig a { display: block; }
+.g-tips-fig a + a { margin-top: 10px; }
+.g-tips-fig.g-tips-multi img { max-width: 800px; }
 .g-tips-fig img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; border-radius: 6px; }
 .g-tips-fig figcaption { margin-top: 6px; font-size: .82rem; line-height: 1.65; }
 .g-tips-note { margin: 6px 0 0; font-size: .78rem; color: var(--hk-muted,#55675e); }

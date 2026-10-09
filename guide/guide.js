@@ -190,9 +190,13 @@
     (s.tips || []).forEach(function (t) {
       var tp = h("details", "g-tips"); tp.appendChild(h("summary", "", "TIPS：" + t.t));
       var inner = h("div", "g-tips-b");
-      var fg = h("figure", "g-tips-fig"); var a = h("a"); a.href = t.src; a.target = "_blank"; a.rel = "noopener";
-      var im = h("img"); im.src = t.src; im.alt = t.alt; im.width = t.w; im.height = t.h; im.loading = "lazy"; im.decoding = "async";
-      a.appendChild(im); fg.appendChild(a); fg.appendChild(h("figcaption", "", t.cap)); inner.appendChild(fg);
+      var fg = h("figure", t.imgs ? "g-tips-fig g-tips-multi" : "g-tips-fig");
+      (t.imgs || [{ src: t.src, alt: t.alt, w: t.w, h: t.h }]).forEach(function (x) {
+        var a = h("a"); a.href = x.src; a.target = "_blank"; a.rel = "noopener";
+        var im = h("img"); im.src = x.src; im.alt = x.alt; im.width = x.w; im.height = x.h; im.loading = "lazy"; im.decoding = "async";
+        a.appendChild(im); fg.appendChild(a);
+      });
+      fg.appendChild(h("figcaption", "", t.cap)); inner.appendChild(fg);
       inner.appendChild(h("p", "g-tips-note", t.note));
       tp.appendChild(inner); b.appendChild(tp);
     });
