@@ -188,16 +188,16 @@
       dt.appendChild(inner); b.appendChild(dt);
     });
     (s.tips || []).forEach(function (t) {
-      var tp = h("details", "g-tips"); tp.appendChild(h("summary", "", "TIPS：" + t.t));
+      var tp = h("details", t.lab ? "g-tips g-tips-zu" : "g-tips"); tp.appendChild(h("summary", "", (t.lab || "TIPS") + "：" + t.t));
       var inner = h("div", "g-tips-b");
-      var fg = h("figure", t.imgs ? "g-tips-fig g-tips-multi" : "g-tips-fig");
+      var fg = h("figure", t.imgs || t.lab ? "g-tips-fig g-tips-multi" : "g-tips-fig");
       (t.imgs || [{ src: t.src, alt: t.alt, w: t.w, h: t.h }]).forEach(function (x) {
         var a = h("a"); a.href = x.src; a.target = "_blank"; a.rel = "noopener";
         var im = h("img"); im.src = x.src; im.alt = x.alt; im.width = x.w; im.height = x.h; im.loading = "lazy"; im.decoding = "async";
         a.appendChild(im); fg.appendChild(a);
       });
       fg.appendChild(h("figcaption", "", t.cap)); inner.appendChild(fg);
-      inner.appendChild(h("p", "g-tips-note", t.note));
+      if (t.note) inner.appendChild(h("p", "g-tips-note", t.note));
       tp.appendChild(inner); b.appendChild(tp);
     });
     var q = h("div", "g-q");

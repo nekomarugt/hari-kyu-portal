@@ -72,6 +72,8 @@
 .g-tips-fig.g-tips-multi img { max-width: 800px; }
 .g-tips-fig img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; border-radius: 6px; }
 .g-tips-fig figcaption { margin-top: 6px; font-size: .82rem; line-height: 1.65; }
+.g-tips-zu { border-style: solid; border-color: #f0b4b4; background: #fffafa; }
+.g-tips-zu > summary { color: #9b1c1c; }
 .g-tips-note { margin: 6px 0 0; font-size: .78rem; color: var(--hk-muted,#55675e); }
 .g-q { margin-top: 14px; padding: 10px 12px; background: var(--hk-jade-100,#dff0e9); border-radius: 8px; }
 .g-q h4 { margin: 0 0 6px; font-size: .92rem; color: var(--hk-jade-900,#0c4a40); }
