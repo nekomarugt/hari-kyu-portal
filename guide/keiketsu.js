@@ -10,6 +10,9 @@
       return '<figure><a href="' + esc(f.src) + '" target="_blank" rel="noopener"><img src="' + esc(f.src) + '" width="' + f.w + '" height="' + f.h + '" alt="' + esc(f.alt) +
         '" loading="lazy" decoding="async"></a><figcaption>' + esc(f.cap) + '（タップで拡大）</figcaption></figure>';
     }).join('') + '</div></details>';
+  if (D.taihyo && D.taihyo.length) h += '<p class="kk-anat kk-taihyo"><span class="kk-anat-k">取穴に関わる体表解剖（図説）</span>' + D.taihyo.map(function (x) {
+    return '<a href="../anatomy/#' + esc(x.id) + '">' + esc(x.t) + '</a>';
+  }).join('') + '</p>';
   h += D.goro.map(function (x) {
     return '<div class="tr-goro"><p class="tr-goro-g"><span class="tr-goro-k">語呂</span>' + esc(x.g) + '</p><ul>' + x.dec.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul></div>';
   }).join('');

@@ -197,6 +197,11 @@
         a.appendChild(im); fg.appendChild(a);
       });
       fg.appendChild(h("figcaption", "", t.cap)); inner.appendChild(fg);
+      if (t.ch && t.ch.length) { // 経穴・経絡ページ（#pt-コード）へのリンク
+        var cp = h("p", "g-kchips"); cp.appendChild(h("span", "g-kchips-k", "経穴・経絡ページで見る"));
+        t.ch.forEach(function (c) { var a = h("a", "g-kchip", c.n); a.href = "../keiketsu/#pt-" + c.c; cp.appendChild(a); });
+        inner.appendChild(cp);
+      }
       if (t.note) inner.appendChild(h("p", "g-tips-note", t.note));
       tp.appendChild(inner); b.appendChild(tp);
     });

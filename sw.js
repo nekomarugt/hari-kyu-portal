@@ -3,7 +3,7 @@
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v29';
+const VERSION = 'v30';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
@@ -18,6 +18,7 @@ const PRECACHE = [
   './guide/anatomy/', './guide/anatomy/content.js', './guide/physiology/', './guide/physiology/content.js',
   './guide/anatomy/tooru.html', './guide/anatomy/tooru-data.js', './guide/tooru.js', './guide/extra.css',
   './guide/keiketsu/', './guide/keiketsu/keiketsu-data.js', './guide/keiketsu.js', './guide/keiketsu/assets/kei-04-tokunin.webp',
+  './guide/anatomy/assets/taihyo-kotsudo-hk.webp', './guide/anatomy/assets/taihyo-back-hk.webp', './guide/anatomy/assets/taihyo-wrist-hk.webp', './guide/anatomy/assets/taihyo-snuff-hk.webp', './guide/anatomy/assets/taihyo-knee-hk.webp', './guide/anatomy/assets/taihyo-ankle-hk.webp',
   './data/meridian-bridges.json', './bridges/meridian-bridges.js',
   './gacha/', './gacha/gacha.js', './gacha/omikuji.js', './gacha/gacha.css', './manifest.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon.svg'

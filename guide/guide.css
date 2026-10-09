@@ -129,3 +129,6 @@
 .g-ptq { display: flex; flex-wrap: wrap; gap: 4px; }
 .g-tr { margin: 6px 0 10px; font-size: .82rem; color: #4a4a4a; }
 .g-new { background: #0b6b57; color: #fff; }
+.g-kchips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0 2px; }
+.g-kchips-k { font-size: .74rem; font-weight: 800; color: #0c4a40; }
+.g-kchip { display: inline-block; padding: 4px 10px; border: 1px solid #9bc4b4; border-radius: 999px; background: #f4fbf8; color: #1f4a40; text-decoration: none; font-size: .84rem; font-weight: 700; }
