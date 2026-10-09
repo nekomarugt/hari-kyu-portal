@@ -1,7 +1,7 @@
 /* はり師きゅう師 解剖学・生理学ポータル：学習ゲーム機能（連続日数・バッジ・レベル・弱点ステージ）
  * - すべて端末内（localStorage "jkp-hk-game-v1"）。サーバー送信・個人情報・計測なし。
  * - 各ドリルから JKGame.record(src, id, correct) を呼ぶだけ。
- *   src: ana/phy = 過去問(解剖学/生理学)
+ *   src: ana/phy/kei = 過去問(解剖学/生理学/経絡経穴概論)
  */
 (function () {
   "use strict";
@@ -9,10 +9,10 @@
   var script = document.currentScript || document.querySelector('script[src*="game/game.js"]');
   var ROOT = script && script.src ? new URL("../", script.src).href : "../";
 
-  var SUBJ = { ana: "解剖学", phy: "生理学" };
-  var SUBJ_PAGE = { ana: "anatomy", phy: "physiology" };
+  var SUBJ = { ana: "解剖学", phy: "生理学", kei: "経絡経穴概論" };
+  var SUBJ_PAGE = { ana: "anatomy", phy: "physiology", kei: "keiketsu" };
   var QS = {}; // 短答ドリルは本サイトにはない（互換のため空のまま）
-  var SRC_SUBJ = { ana: "ana", phy: "phy" };
+  var SRC_SUBJ = { ana: "ana", phy: "phy", kei: "kei" };
   var WEAK_OUT = 2;      // 弱点リストから外れる連続正解数
   var MASTER_RATE = 0.8;
   var PAST_TITLES = [[100, ""], [300, "|300"]]; // 過去問で100問・300問（重複なし）に正解
@@ -41,7 +41,7 @@
    * 資料を開いたかどうかは、ページ内の「資料へのリンク」を押したことで数える（資料ページ側は変えない。開いた先が何のページでも数える）。 */
   var GATES = [10, 20, 30, 40];
   function gateNeed(g) { return g === 10 ? { gr: 3, rc: 3 } : { gr: 5, rc: 5 }; }
-  var GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/" }; // 科目ごとの学習資料の入口（ROOT からの相対）
+  var GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/", kei: "guide/keiketsu/" }; // 科目ごとの学習資料の入口（ROOT からの相対）
   var BADGES = [
     { id: "first", n: "はじめの一歩", d: "はじめて1問答えた", t: function (s) { return s.att >= 1; } },
     { id: "c10", n: "10問正解", d: "正解が合計10問", t: function (s) { return s.cor >= 10; } },
@@ -55,8 +55,8 @@
     { id: "q10", n: "満点クイズ", d: "4択クイズで全問正解", t: function (s) { return s.perfect >= 1; } },
     { id: "grad", n: "弱点を1つ克服", d: "まちがえた問題を2回連続で正解した", t: function (s) { return s.grads >= 1; } },
     { id: "both", n: "2科目デビュー", d: "解剖学・生理学の両方を1問以上といた", t: function (s) { return s.seen.ana && s.seen.phy; } },
-    { id: "p100", n: "過去問100問クリア", d: "どちらかの科目で、過去問100問に正解（重複なし）", t: function (s) { return Object.keys(s.past).some(function (k) { return k.indexOf("|300") < 0; }); } },
-    { id: "p300", n: "過去問300問クリア", d: "どちらかの科目で、過去問300問に正解（重複なし）", t: function (s) { return Object.keys(s.past).some(function (k) { return k.indexOf("|300") > 0; }); } },
+    { id: "p100", n: "過去問100問クリア", d: "どれかの科目で、過去問100問に正解（重複なし）", t: function (s) { return Object.keys(s.past).some(function (k) { return k.indexOf("|300") < 0; }); } },
+    { id: "p300", n: "過去問300問クリア", d: "どれかの科目で、過去問300問に正解（重複なし）", t: function (s) { return Object.keys(s.past).some(function (k) { return k.indexOf("|300") > 0; }); } },
     { id: "d20", n: "1日20問", d: "1日で20問といた", t: function (s) { return s.maxDay >= 20; } },
     // ---- ここから追加バッジ（条件はすでにある記録だけで判定。次に1問答えたとき、昔の記録の分もまとめてもらえる） ----
     { id: "c250", n: "250問正解", d: "正解が合計250問", t: function (s) { return s.cor >= 250; } },
@@ -94,6 +94,9 @@
     { id: "phy100", n: "生理学 過去問100問", d: "生理学の過去問で100問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 100; } },
     { id: "phy300", n: "生理学 過去問300問", d: "生理学の過去問で300問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 300; } },
     { id: "phy450", n: "生理学 過去問450問", d: "生理学の過去問で450問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 450; } },
+    { id: "kei100", n: "経絡経穴 過去問100問", d: "経絡経穴概論の過去問で100問に正解（重複なし）", t: function (s) { return (s.ec.kei || 0) >= 100; } },
+    { id: "kei300", n: "経絡経穴 過去問300問", d: "経絡経穴概論の過去問で300問に正解（重複なし）", t: function (s) { return (s.ec.kei || 0) >= 300; } },
+    { id: "trio", n: "3科目デビュー", d: "解剖学・生理学・経絡経穴概論のすべてを1問以上といた", t: function (s) { return s.seen.ana && s.seen.phy && s.seen.kei; } },
     { id: "bal50", n: "2科目バランス", d: "解剖学・生理学の過去問それぞれ50問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 50 && (s.ec.phy || 0) >= 50; } },
     { id: "bal200", n: "2科目どっちも強い", d: "解剖学・生理学の過去問それぞれ200問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 200 && (s.ec.phy || 0) >= 200; } },
     { id: "lv15", n: "Lv15到達", d: "レベル15になった", t: function (s) { return lvInfo().lv >= 15; } },
@@ -477,7 +480,7 @@
   function badgeCount() { return BADGES.filter(function (b) { return S.badges[b.id]; }).length; }
   function renderHome(el) {
     var st = streakNow(), li = lvInfo(), n = S.td.d === today() ? S.td.n : 0;
-    var rows = ["ana", "phy"].map(function (s) {
+    var rows = ["ana", "phy", "kei"].map(function (s) {
       var wc = weakIds(s).length; // 4択クイズの復習は過去問の分だけ
       return '<div class="jkg-subrow"><span class="jkg-subname">' + SUBJ[s] + '</span>' +
         '<a class="jkg-btn" href="' + quizUrl(s) + '">4択クイズ（10・30・50問）</a>' +

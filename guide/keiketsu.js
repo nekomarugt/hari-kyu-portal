@@ -15,6 +15,18 @@
   }).join('');
   h += '<nav class="tr-jump" aria-label="経絡へ移動">' + D.mers.map(function (m) { return '<a href="#' + m.id + '">' + esc(m.short) + '<span>' + m.id + '</span></a>'; }).join('') + '</nav>';
   h += '<p class="tr-tools"><button type="button" id="trOpenAll" aria-pressed="false">すべて開く</button></p>';
+  function zuHtml(m) { // 督脈・任脈：横並びの図とミニ表（穴名／目印）
+    var z = m.zu; if (!z) return '';
+    var shown = {}; m.pts.forEach(function (p) { shown[p.code] = 1; });
+    return '<details class="tr-zu kk-zu"><summary><span class="tr-zu-k">図説</span>' + esc(z.title) + '<span class="tr-open" aria-hidden="true">ひらく</span></summary><div class="tr-zu-b">' +
+      '<figure><a href="' + esc(z.src) + '" target="_blank" rel="noopener"><img src="' + esc(z.src) + '" width="' + z.w + '" height="' + z.h + '" alt="' + esc(z.alt) +
+      '" loading="lazy" decoding="async"></a><figcaption>' + esc(z.cap) + '（タップで拡大）</figcaption></figure>' +
+      '<table class="kk-zu-t"><caption>' + esc(m.short) + '：図の穴と目印</caption><thead><tr><th scope="col">穴名</th><th scope="col">目印</th></tr></thead><tbody>' +
+      z.rows.map(function (r) {
+        var nm = shown[r.code] ? '<a href="#pt-' + esc(r.code) + '">' + esc(r.name) + '</a>' : esc(r.name);
+        return '<tr><th scope="row">' + nm + '</th><td>' + esc(r.mark) + '</td></tr>';
+      }).join('') + '</tbody></table></div></details>';
+  }
   function ep(lab, p) { return '<p class="kk-ep"><span class="kk-ep-k">' + lab + '</span><strong>' + esc(p.name) + '</strong>（' + esc(p.kana) + '・' + esc(p.code) + '）<span class="kk-loc">' + esc(p.loc) + '</span></p>'; }
   h += D.mers.map(function (m) {
     var pts = m.pts.map(function (p) {
@@ -28,9 +40,11 @@
     }).join('');
     return '<details class="tr-group" id="' + m.id + '"><summary><span class="tr-g-name">' + esc(m.name) + '</span><span class="tr-g-meta">' + m.n + '穴・よく出る' + m.pts.length +
       '</span><span class="tr-open" aria-hidden="true">ひらく</span></summary><div class="tr-g-b">' +
+      zuHtml(m) +
       '<p class="kk-route"><span class="kk-route-k">走行</span>' + m.path.map(esc).join(' → ') + '</p>' +
       ep('始まり', m.start) + ep('終わり', m.end) +
-      '<h3 class="kk-h">よく出る経穴（過去問の多い順）</h3><ul class="kk-pts">' + pts + '</ul></div></details>';
+      '<h3 class="kk-h">よく出る経穴（過去問の多い順）</h3><ul class="kk-pts">' + pts + '</ul>' +
+      '<p class="kk-q"><a href="../../keiketsu/?field=K4&amp;sub=K4-' + esc(m.id) + '">✎ ' + esc(m.short) + 'の取穴部位の過去問を解く</a></p></div></details>';
   }).join('');
   h += '<p class="tr-src">' + esc(D.note) + '</p>';
   root.innerHTML = h;

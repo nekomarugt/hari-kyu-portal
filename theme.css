@@ -77,6 +77,7 @@ h1::after { content: ""; display: block; width: 44px; height: 4px; margin-top: 7
 .subject-card { border: 2px solid var(--hk-line); border-left: 10px solid var(--accent); border-radius: var(--hk-leaf); background: linear-gradient(155deg, var(--hk-paper) 40%, var(--tint)); }
 .subject-card.anatomy { --accent: var(--hk-jade-800); --tint: #e8f3ee; }
 .subject-card.physiology { --accent: var(--hk-moxa); --tint: #fbeedf; }
+.subject-card.keiketsu { --accent: #6d28d9; --tint: #f1ecfb; }
 .subject-card::after { right: -28px; bottom: -28px; width: 110px; height: 110px; border: 0; border-radius: 0; transform: rotate(45deg); background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .card-number { border-radius: 99px; }
 .card-label { color: var(--hk-muted); }

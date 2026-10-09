@@ -1,0 +1,9260 @@
+[
+ {
+  "exam": 1,
+  "number": 112,
+  "question": "兪穴と募穴との組合せで正しいのはどれか。",
+  "choices": [
+   "脾兪 ― 章門",
+   "肝兪 ― 巨闕",
+   "胆兪 ― 関元",
+   "胃兪 ― 天枢"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "脾兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR13",
+    "t": "章門（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV14",
+    "t": "巨闕（任脈）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 113,
+  "question": "経絡の流注で接続部が内眼角にあるのはどれか。",
+  "choices": [
+   "足の厥陰経と手の太陰経",
+   "手の太陰経と手の陽明経",
+   "手の少陽経と足の少陽経",
+   "手の太陽経と足の太陽経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 117,
+  "question": "四総穴のうち頭部・項部の病に用いられるのはどれか。",
+  "choices": [
+   "合谷",
+   "足三里",
+   "列欠",
+   "委中"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 118,
+  "question": "経絡と原穴との組合せで正しいのはどれか。",
+  "choices": [
+   "手の厥陰心包経 ― 郄門",
+   "手の少陽三焦経 ― 外関",
+   "足の太陽膀胱経 ― 京骨",
+   "足の少陰腎経 ― 湧泉"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "京骨（膀胱経・BL64）は「足外側、第5中足骨粗面の遠位、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "京骨（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC4",
+    "t": "郄門（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE5",
+    "t": "外関（三焦経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 120,
+  "question": "兪・土・原穴はどれか。",
+  "choices": [
+   "神門",
+   "大都",
+   "中封",
+   "陥谷"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "神門（心経・HT7）は「手関節前内側、尺側手根屈筋腱の橈側縁、手関節掌側横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-HT7",
+    "t": "神門（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "大都（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR4",
+    "t": "中封（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 122,
+  "question": "経絡の流注で正しいのはどれか。",
+  "choices": [
+   "足の太陽経は足の指先から始まり顔面に終わる。",
+   "足の太陰経は足の指先から始まり胸腹部を通り舌に終わる。",
+   "手の陽明経は顔面から始まり指先に終わる。",
+   "手の厥陰経は手の指先から始まり胸部に終わる。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 123,
+  "question": "任脈上にある募穴の数はどれか。",
+  "choices": [
+   "6",
+   "7",
+   "4",
+   "3"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 1,
+  "number": 124,
+  "question": "誤っている組合せはどれか。",
+  "choices": [
+   "圧診点 ― 小野寺直助",
+   "良導点 ― 中谷義雄",
+   "皮電点 ― 石川太刀雄",
+   "撮診点 ― 藤田六朗"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 2,
+  "number": 112,
+  "question": "要穴について正しい記述はどれか。",
+  "choices": [
+   "陰陵泉は足の太陰脾経の絡穴である。",
+   "膻中は手の厥陰心包経の郄穴である。",
+   "中脘は足の陽明胃経の募穴である。",
+   "委中は足の太陽膀胱経の滎穴である。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "中脘（任脈・CV12）は「上腹部、前正中線上、臍中央の上方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-CV12",
+    "t": "中脘（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP9",
+    "t": "陰陵泉（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV17",
+    "t": "膻中（任脈）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 2,
+  "number": 113,
+  "question": "鼻の傍らに経絡の接続部がある流注で正しい組合せはどれか。",
+  "choices": [
+   "足の少陽胆経 ― 足の厥陰肝経",
+   "足の太陽膀胱経 ― 足の少陰腎経",
+   "足の太陰脾経 ― 手の少陰心経",
+   "手の陽明大腸経 ― 足の陽明胃経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 2,
+  "number": 114,
+  "question": "八会穴について誤っている組合せはどれか。",
+  "choices": [
+   "太淵 ― 気会",
+   "大杼 ― 骨会",
+   "膈兪 ― 血会",
+   "章門 ― 臓会"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "太淵（肺経・LU9）の正しい部位は「手関節前外側、橈骨茎状突起と舟状骨の間、長母指外転筋腱の尺側陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL11",
+    "t": "大杼（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 2,
+  "number": 115,
+  "question": "経絡の並びかたで正しいのはどれか。",
+  "choices": [
+   "前腕前面では尺側から肺経、心包経、心経",
+   "腹部では正中から脾経、腎経、胃経",
+   "胸部では正中から任脈、腎経、胃経",
+   "前腕後面では橈側から小腸経、三焦経、大腸経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 2,
+  "number": 116,
+  "question": "四総穴の主治で正しい組合せはどれか。",
+  "choices": [
+   "列欠 ― 面目の病",
+   "足三里 ― 四肢の病",
+   "合谷 ― 頭項の病",
+   "委中 ― 腰背の病"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "委中（膀胱経・BL40）は「膝後面、膝窩横紋の中点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL40",
+    "t": "委中（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 112,
+  "question": "足の第1指内端（内側爪甲根部）に始まる経絡はどれか。",
+  "choices": [
+   "足の太陰脾経",
+   "足の厥陰肝経",
+   "足の少陰腎経",
+   "足の陽明胃経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 113,
+  "question": "自経の経穴を募穴としているのはどれか。",
+  "choices": [
+   "手の少陰心経",
+   "足の厥陰肝経",
+   "手の陽明大腸経",
+   "足の太陰脾経"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 114,
+  "question": "四総穴に含まれない経穴はどれか。",
+  "choices": [
+   "委中",
+   "合谷",
+   "公孫",
+   "列欠"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "公孫（脾経・SP4）は「足内側、第1中足骨底内側の遠位陥凹部、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL40",
+    "t": "委中（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 115,
+  "question": "八会穴で合穴はどれか。",
+  "choices": [
+   "太淵",
+   "中脘",
+   "曲池",
+   "陽陵泉"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "陽陵泉（胆経・GB34）は「下腿外側、腓骨頭前下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV12",
+    "t": "中脘（任脈）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 116,
+  "question": "中風七穴と脚気八処の穴とに共通する経穴はどれか。",
+  "choices": [
+   "足三里",
+   "百会",
+   "伏兎",
+   "肩井"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "足三里（胃経・ST36）は「下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GV20",
+    "t": "百会（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "伏兎（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 122,
+  "question": "郄穴はどれか。",
+  "choices": [
+   "偏歴",
+   "浮郄",
+   "地機",
+   "四瀆"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "地機（脾経・SP8）は「下腿内側（脛側）、脛骨内縁の後際、陰陵泉の下方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "地機（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI6",
+    "t": "偏歴（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "浮郄（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 3,
+  "number": 123,
+  "question": "手の太陰肺経の絡穴はどれか。",
+  "choices": [
+   "孔最",
+   "列欠",
+   "中府",
+   "太淵"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU6",
+    "t": "孔最（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "中府（肺経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 4,
+  "number": 112,
+  "question": "奇経と経穴との組合せで正しいのはどれか。",
+  "choices": [
+   "陽維脈 ― 金門",
+   "陰維脈 ― 申脈",
+   "陰蹻脈 ― 築賓",
+   "陽蹻脈 ― 然谷"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "金門（膀胱経・BL63）は「足背、外果前縁の遠位、第5中足骨粗面の後方、立方骨下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "金門（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL62",
+    "t": "申脈（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 4,
+  "number": 114,
+  "question": "兪穴と募穴との組合せで誤っているのはどれか。",
+  "choices": [
+   "心兪 ― 巨闕",
+   "厥陰兪 ― 膻中",
+   "胃兪 ― 天枢",
+   "小腸兪 ― 関元"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST25",
+    "t": "天枢（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL21",
+    "t": "胃兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV14",
+    "t": "巨闕（任脈）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 4,
+  "number": 115,
+  "question": "五兪穴の主治で体重節痛を主る経穴はどれか。",
+  "choices": [
+   "太白",
+   "経渠",
+   "中封",
+   "復溜"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "太白（脾経・SP3）は「足内側、第1中足指節関節内側の近位陥凹部、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP3",
+    "t": "太白（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU8",
+    "t": "経渠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR4",
+    "t": "中封（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 4,
+  "number": 116,
+  "question": "内眼角で接続している経絡はどれか。",
+  "choices": [
+   "手の陽明大腸経と足の陽明胃経",
+   "足の少陰腎経と手の厥陰心包経",
+   "手の太陽小腸経と足の太陽膀胱経",
+   "手の少陽三焦経と足の少陽胆経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 4,
+  "number": 123,
+  "question": "四総穴に含まれるのはどれか。",
+  "choices": [
+   "太淵",
+   "経渠",
+   "列欠",
+   "孔最"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU8",
+    "t": "経渠（肺経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 4,
+  "number": 124,
+  "question": "経穴現象で誤っているのはどれか。",
+  "choices": [
+   "皮膚通電抵抗の上昇",
+   "皮膚通電抵抗の低下",
+   "皮膚温低下",
+   "皮膚温上昇"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 112,
+  "question": "原穴でないのはどれか。",
+  "choices": [
+   "合谷",
+   "神門",
+   "太白",
+   "公孫"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "公孫（脾経・SP4）は「足内側、第1中足骨底内側の遠位陥凹部、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT7",
+    "t": "神門（心経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 113,
+  "question": "絡穴はどれか。",
+  "choices": [
+   "中都",
+   "地機",
+   "梁丘",
+   "光明"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "光明（胆経・GB37）は「下腿外側、腓骨の前方、外果尖の上方5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB37",
+    "t": "光明（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR6",
+    "t": "中都（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "地機（脾経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 114,
+  "question": "薬指末端から始まる経絡はどれか。",
+  "choices": [
+   "手の少陰心経",
+   "手の太陽小腸経",
+   "手の厥陰心包経",
+   "手の少陽三焦経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "心経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 115,
+  "question": "兪穴と募穴との組合せで正しいのはどれか。",
+  "choices": [
+   "胆兪 ― 京門",
+   "肝兪 ― 石門",
+   "肺兪 ― 期門",
+   "脾兪 ― 章門"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "脾兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR13",
+    "t": "章門（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "京門（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 116,
+  "question": "帯脈に属さない経穴はどれか。",
+  "choices": [
+   "五枢",
+   "維道",
+   "期門",
+   "章門"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "期門（肝経・LR14）は「前胸部、第6肋間、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR14",
+    "t": "期門（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "五枢（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR13",
+    "t": "章門（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 117,
+  "question": "太淵穴について正しいのはどれか。",
+  "choices": [
+   "土穴",
+   "郄穴",
+   "腑会",
+   "滎穴"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 120,
+  "question": "五行穴のうち喘咳寒熱を主るのはどれか。",
+  "choices": [
+   "井穴",
+   "合穴",
+   "滎穴",
+   "経穴"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 5,
+  "number": 124,
+  "question": "正しい組合せはどれか。",
+  "choices": [
+   "圧診点 ― 中谷義雄",
+   "良導点 ― 藤井秀二",
+   "圧反射 ― 高木健太郎",
+   "皮電点 ― マッケンジー"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 112,
+  "question": "陽の海といわれている経脈はどれか。",
+  "choices": [
+   "任脈",
+   "督脈",
+   "衝脈",
+   "帯脈"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 113,
+  "question": "手の小指尺側爪甲根部から始まる経絡はどれか。",
+  "choices": [
+   "手の陽明大腸経",
+   "手の厥陰心包経",
+   "手の少陰心経",
+   "手の太陽小腸経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "心経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 117,
+  "question": "経絡と絡穴との組合せで正しいのはどれか。",
+  "choices": [
+   "大腸経 ― 支正",
+   "腎経 ― 飛陽",
+   "脾経 ― 公孫",
+   "肺経 ― 内関"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "公孫（脾経・SP4）は「足内側、第1中足骨底内側の遠位陥凹部、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI7",
+    "t": "支正（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC6",
+    "t": "内関（心包経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 118,
+  "question": "四総穴でないのはどれか。",
+  "choices": [
+   "委中",
+   "合谷",
+   "列欠",
+   "手三里"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "手三里（大腸経・LI10）は「前腕後外側、陽渓と曲池を結ぶ線上、肘窩横紋の下方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LI10",
+    "t": "手三里（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL40",
+    "t": "委中（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 119,
+  "question": "手の太陽小腸経の募穴はどれか。",
+  "choices": [
+   "石門",
+   "中極",
+   "関元",
+   "中脘"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "関元（任脈・CV4）は「下腹部、前正中線上、臍中央の下方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-CV4",
+    "t": "関元（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV5",
+    "t": "石門（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV3",
+    "t": "中極（任脈）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 123,
+  "question": "五行穴（五兪穴）でない経穴はどれか。",
+  "choices": [
+   "陽谷",
+   "前谷",
+   "合谷",
+   "陥谷"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "合谷（大腸経・LI4）は「手背、第2中手骨中点の橈側」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI5",
+    "t": "陽谷（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "前谷（小腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 6,
+  "number": 124,
+  "question": "皮膚をつまんで知覚過敏を検査するのはどれか。",
+  "choices": [
+   "皮電点",
+   "圧診点",
+   "良導点",
+   "撮診点"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 113,
+  "question": "膀胱経について正しい記述はどれか。",
+  "choices": [
+   "心包経と表裏関係にある。",
+   "下腿の流注は遠心性である。",
+   "陰に属する経絡である。",
+   "腎経から連なる。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 114,
+  "question": "足の第4指末端に終わる経絡はどれか。",
+  "choices": [
+   "足の厥陰肝経",
+   "足の少陰腎経",
+   "足の少陽胆経",
+   "足の太陽膀胱経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 115,
+  "question": "女子胞から起こって腹部を上行する経絡はどれか。",
+  "choices": [
+   "帯脈",
+   "肝経",
+   "腎経",
+   "衝脈"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 117,
+  "question": "八会と経穴との組合せで正しいのはどれか。",
+  "choices": [
+   "筋会 ― 陽陵泉",
+   "腑会 ― 章門",
+   "血会 ― 大杼",
+   "臓会 ― 中脘"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "陽陵泉（胆経・GB34）は「下腿外側、腓骨頭前下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR13",
+    "t": "章門（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL11",
+    "t": "大杼（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 121,
+  "question": "八総穴の組合せで誤っているのはどれか。",
+  "choices": [
+   "後渓 ― 申脈",
+   "公孫 ― 内関",
+   "丘墟 ― 外関",
+   "列欠 ― 照海"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-TE5",
+    "t": "外関（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB40",
+    "t": "丘墟（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "後渓（小腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 123,
+  "question": "原穴はどれか。",
+  "choices": [
+   "陽陵泉",
+   "陽輔",
+   "陽谷",
+   "陽池"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "陽池（三焦経・TE4）は「手関節後面、総指伸筋腱の尺側陥凹部、手関節背側横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-TE4",
+    "t": "陽池（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "陽輔（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 7,
+  "number": 124,
+  "question": "絡穴はどれか。",
+  "choices": [
+   "豊隆",
+   "京門",
+   "中都",
+   "大陵"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "豊隆（胃経・ST40）は「下腿前外側、前脛骨筋の外縁、外果尖の上方8寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST40",
+    "t": "豊隆（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "京門（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR6",
+    "t": "中都（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 8,
+  "number": 113,
+  "question": "足の第1指外側爪甲根部に始まる経絡はどれか。",
+  "choices": [
+   "足の陽明胃経",
+   "足の少陽胆経",
+   "足の厥陰肝経",
+   "足の太陰脾経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 8,
+  "number": 114,
+  "question": "かかとから始まり足の少陰の別脈といわれるのはどれか。",
+  "choices": [
+   "陰維脈",
+   "陽維脈",
+   "陰蹻脈",
+   "陽蹻脈"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 8,
+  "number": 122,
+  "question": "五行穴の主治で誤っている記述はどれか。",
+  "choices": [
+   "滎穴は喘咳寒熱を主る。",
+   "兪穴は体重節痛を主る。",
+   "井穴は心下満を主る。",
+   "合穴は逆気して泄を主る。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 8,
+  "number": 123,
+  "question": "絡穴はどれか。",
+  "choices": [
+   "孔最",
+   "大鐘",
+   "養老",
+   "衝陽"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "大鐘（腎経・KI4）は「足内側、内果後下方、踵骨上方、アキレス腱付着部内側前方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "大鐘（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU6",
+    "t": "孔最（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "養老（小腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 8,
+  "number": 124,
+  "question": "八会穴に属さない経穴はどれか。",
+  "choices": [
+   "膻中",
+   "三陰交",
+   "膈兪",
+   "懸鐘（絶骨）"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "三陰交（脾経・SP6）は「下腿内側、脛骨内縁の後際、内果尖の上方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP6",
+    "t": "三陰交（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV17",
+    "t": "膻中（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 9,
+  "number": 112,
+  "question": "次の文で示す奇経はどれか。「足の少陰の築賓から起こり、大腿内側を上って下腹部に入る。」",
+  "choices": [
+   "陰蹻脈",
+   "陰維脈",
+   "帯脈",
+   "衝脈"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 9,
+  "number": 113,
+  "question": "外眼角で接続している経絡はどれか。",
+  "choices": [
+   "足の太陰脾経と手の少陰心経",
+   "手の少陽三焦経と足の少陽胆経",
+   "手の陽明大腸経と足の陽明胃経",
+   "手の太陽小腸経と足の太陽膀胱経"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 9,
+  "number": 120,
+  "question": "手の小指に始まり、前腕後面の尺側から肩甲部を経て顔面に至る経絡はどれか。",
+  "choices": [
+   "手の太陽小腸経",
+   "手の少陰心経",
+   "手の厥陰心包経",
+   "手の少陽三焦経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "心経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 9,
+  "number": 121,
+  "question": "自経の経穴を募穴とするのはどれか。",
+  "choices": [
+   "足の少陽胆経",
+   "手の少陽三焦経",
+   "足の太陽膀胱経",
+   "手の陽明大腸経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 9,
+  "number": 122,
+  "question": "体重節痛を主る経穴はどれか。",
+  "choices": [
+   "陰谷",
+   "太白",
+   "魚際",
+   "霊道"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "太白（脾経・SP3）は「足内側、第1中足指節関節内側の近位陥凹部、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP3",
+    "t": "太白（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI10",
+    "t": "陰谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "魚際（肺経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 10,
+  "number": 113,
+  "question": "至陰穴で脈気を受けて始まる経絡はどれか。",
+  "choices": [
+   "足の太陽膀胱経",
+   "足の太陰脾経",
+   "足の陽明胃経",
+   "足の少陰腎経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "至陰（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 10,
+  "number": 114,
+  "question": "気血の循行で誤っているのはどれか。",
+  "choices": [
+   "手の陽明大腸経から足の陽明胃経へ",
+   "手の太陽小腸経から足の太陽膀胱経へ",
+   "足の少陽胆経から手の少陽三焦経へ",
+   "足の厥陰肝経から手の太陰肺経へ"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 10,
+  "number": 118,
+  "question": "小児斜差の灸に用いる経穴はどれか。",
+  "choices": [
+   "肝兪",
+   "肺兪",
+   "腎兪",
+   "膈兪"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "肝兪（膀胱経・BL18）は「上背部、第9胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL18",
+    "t": "肝兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "肺兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 10,
+  "number": 120,
+  "question": "膝関節より上方にある郄穴はどれか。",
+  "choices": [
+   "梁丘",
+   "外丘",
+   "中都",
+   "地機"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "梁丘（胃経・ST34）は「大腿前外側、外側広筋と大腿直筋腱外縁の間、膝蓋骨底の上方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "梁丘（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR7",
+    "t": "膝関（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB36",
+    "t": "外丘（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 10,
+  "number": 121,
+  "question": "原穴のうち八会穴はどれか。",
+  "choices": [
+   "衝陽",
+   "太淵",
+   "合谷",
+   "太衝"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "太淵（肺経・LU9）は「手関節前外側、橈骨茎状突起と舟状骨の間、長母指外転筋腱の尺側陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST42",
+    "t": "衝陽（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 10,
+  "number": 123,
+  "question": "五行穴のうち合土穴はどれか。",
+  "choices": [
+   "中封",
+   "陰陵泉",
+   "足三里",
+   "足臨泣"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "足三里（胃経・ST36）は「下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR4",
+    "t": "中封（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP9",
+    "t": "陰陵泉（脾経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 112,
+  "question": "肝経について正しい記述はどれか。",
+  "choices": [
+   "大腿では脾経と腎経との間を上行する。",
+   "足の少陰経に連なる。",
+   "足の第1指爪甲根部内側に起こる。",
+   "腹部では任脈に沿って上行する。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 114,
+  "question": "足の小指で接続する経絡の組合せで正しいのはどれか。",
+  "choices": [
+   "膀胱経 ― 腎経",
+   "胆経 ― 膀胱経",
+   "脾経 ― 胆経",
+   "胃経 ― 脾経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 117,
+  "question": "中風七穴でないのはどれか。",
+  "choices": [
+   "足三里",
+   "曲池",
+   "百会",
+   "伏兎"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "伏兎（胃経・ST32）は「大腿前外側、膝蓋骨底外端と上前腸骨棘を結ぶ線上、膝蓋骨底の上方6寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "伏兎（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI11",
+    "t": "曲池（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 121,
+  "question": "三陰交で交わらない経脈はどれか。",
+  "choices": [
+   "胃経",
+   "肝経",
+   "腎経",
+   "脾経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP6",
+    "t": "三陰交（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 122,
+  "question": "経絡と郄穴との組合せで誤っているのはどれか。",
+  "choices": [
+   "心経 ― 陰郄",
+   "肝経 ― 中都",
+   "腎経 ― 築賓",
+   "脾経 ― 地機"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "築賓（腎経・KI9）の正しい部位は「下腿後内側、ヒラメ筋とアキレス腱の間、内果尖の上方5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "陰郄（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR6",
+    "t": "中都（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 123,
+  "question": "腸脛靭帯上にある経穴はどれか。",
+  "choices": [
+   "闌尾",
+   "風市",
+   "鶴頂",
+   "外膝眼"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "風市（胆経・GB31）は「大腿部外側、直立して腕を下垂し、手掌を大腿部に付けたとき、中指の先端があたる腸脛靱帯の後方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB31",
+    "t": "風市（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 11,
+  "number": 124,
+  "question": "皮膚電気抵抗低下現象として報告されているのはどれか。",
+  "choices": [
+   "圧診点",
+   "撮診点",
+   "丘診点",
+   "良導点"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 12,
+  "number": 113,
+  "question": "腎経の流注で誤っているのはどれか。",
+  "choices": [
+   "下腿では脛骨の内側縁を通る。",
+   "胸中で手の少陰心経と連なる。",
+   "腹部では任脈の外側5分の部を上行する。",
+   "足の第5指外側より脈気を受け、足底を通る。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "心経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 12,
+  "number": 121,
+  "question": "経穴について誤っている記述はどれか。",
+  "choices": [
+   "委中は四総穴の一つである。",
+   "水泉は絡穴である。",
+   "温溜は郄穴である。",
+   "公孫は八総穴として用いられる。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "水泉（腎経・KI5）の正しい部位は「足内側、太渓の下方1寸、踵骨隆起前方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "水泉（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL40",
+    "t": "委中（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI7",
+    "t": "温溜（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 12,
+  "number": 122,
+  "question": "八会穴の組合わせで正しいのはどれか。",
+  "choices": [
+   "臓会 ― 中脘",
+   "脈会 ― 陽陵泉",
+   "気会 ― 懸鐘（絶骨）",
+   "骨会 ― 大杼"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "大杼（膀胱経・BL11）は「上背部、第1胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL11",
+    "t": "大杼（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV12",
+    "t": "中脘（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 12,
+  "number": 124,
+  "question": "皮膚温の変化として報告されたのはどれか。",
+  "choices": [
+   "ヘッド帯",
+   "良導絡",
+   "皮電点",
+   "エアポケット現象"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 13,
+  "number": 112,
+  "question": "経脈流注と接続部との組合せで正しいのはどれか。",
+  "choices": [
+   "肺経から大腸経 ― 内眼角",
+   "胃経から脾経 ― 足の母指内側端",
+   "三焦経から胆経 ― 手の示指端",
+   "小腸経から膀胱経 ― 外眼角"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 13,
+  "number": 113,
+  "question": "十二経脈について誤っているのはどれか。",
+  "choices": [
+   "表裏関係にある臓腑と連絡する。",
+   "身体の内外を走行する。",
+   "肺経に始まり肝経に終わる。",
+   "正経と奇経からなる。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 13,
+  "number": 124,
+  "question": "絡穴と郄穴との組合せで誤っているのはどれか。",
+  "choices": [
+   "光明 ― 外丘",
+   "飛陽 ― 金門",
+   "大鐘 ― 築賓",
+   "蠡溝 ― 中都"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "大鐘（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB36",
+    "t": "外丘（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 14,
+  "number": 112,
+  "question": "奇経八脈について正しい記述はどれか。",
+  "choices": [
+   "陽維脈は築賓に発する。",
+   "帯脈は踵から起こる。",
+   "陰維脈は金門に発する。",
+   "衝脈は子宮から起こる。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "金門（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 14,
+  "number": 121,
+  "question": "任脈上に募穴がない経脈はどれか。",
+  "choices": [
+   "心包経",
+   "三焦経",
+   "脾経",
+   "小腸経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 14,
+  "number": 122,
+  "question": "経火穴と栄水穴との組合せで正しいのはどれか。",
+  "choices": [
+   "崑崙 ― 束骨",
+   "商丘 ― 大都",
+   "支溝 ― 液門",
+   "霊道 ― 少府"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "液門（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL60",
+    "t": "崑崙（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "束骨（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 15,
+  "number": 106,
+  "question": "次の文で示す経脈はどれか。「足の第5指末端から足底を通り、内果の後ろをめぐり、下腿内側を上行する。」",
+  "choices": [
+   "膀胱経",
+   "腎経",
+   "脾経",
+   "肝経"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 15,
+  "number": 111,
+  "question": "商丘穴について正しいのはどれか。",
+  "choices": [
+   "髄会",
+   "郄穴",
+   "経金穴",
+   "八総穴"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP5",
+    "t": "商丘（脾経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 15,
+  "number": 112,
+  "question": "手の尺側爪甲根部にある井穴はどれか。",
+  "choices": [
+   "中衝",
+   "少沢",
+   "商陽",
+   "少衝"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "少沢（小腸経・SI1）は「小指、末節骨尺側、爪甲角の近位内方1分、爪甲尺側縁の垂線と爪甲基底部の水平線の交点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI1",
+    "t": "少沢（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC9",
+    "t": "中衝（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI1",
+    "t": "商陽（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 15,
+  "number": 116,
+  "question": "所属する経脈が表裏関係にない原穴の組合せはどれか。",
+  "choices": [
+   "神門 ― 腕骨",
+   "太白 ― 衝陽",
+   "太淵 ― 合谷",
+   "太渓 ― 丘墟"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI3",
+    "t": "太渓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB40",
+    "t": "丘墟（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT7",
+    "t": "神門（心経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 15,
+  "number": 117,
+  "question": "胃の六ッ灸で使用しない経穴はどれか。",
+  "choices": [
+   "胃兪",
+   "肝兪",
+   "膈兪",
+   "脾兪"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "胃兪（膀胱経・BL21）は「上背部、第12胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL21",
+    "t": "胃兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL18",
+    "t": "肝兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 16,
+  "number": 106,
+  "question": "経脈と流注との組合せで誤っているのはどれか。",
+  "choices": [
+   "三焦経 ― 心包を絡う",
+   "脾経 ― 腎を絡う",
+   "肺経 ― 大腸を絡う",
+   "小腸経 ― 心を絡う"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 16,
+  "number": 114,
+  "question": "経穴について誤っている記述はどれか。",
+  "choices": [
+   "肝兪は小児斜差の灸の一つである。",
+   "足三里は中風七穴の一つである。",
+   "風市は脚気八処の一つである。",
+   "胃兪は胃の六ツ灸の一つである。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "胃兪（膀胱経・BL21）の正しい部位は「上背部、第12胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL21",
+    "t": "胃兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL18",
+    "t": "肝兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 16,
+  "number": 115,
+  "question": "内関・公孫・列欠の3穴に共通する項目はどれか。",
+  "choices": [
+   "八会穴",
+   "絡穴",
+   "経金穴",
+   "四総穴"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC6",
+    "t": "内関（心包経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 16,
+  "number": 116,
+  "question": "榮水穴はどれか。",
+  "choices": [
+   "解渓",
+   "侠渓",
+   "陽渓",
+   "後渓"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "侠渓（胆経・GB43）は「足背、第4・第5指間、みずかきの近位、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "侠渓（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST41",
+    "t": "解渓（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI5",
+    "t": "陽渓（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 16,
+  "number": 117,
+  "question": "奇穴とその主治で誤っている組合せはどれか。",
+  "choices": [
+   "太陽 ― 頭痛",
+   "気海兪 ― 便秘",
+   "印堂 ― 耳鳴り",
+   "痞根 ― 腰痛"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "気海兪（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 16,
+  "number": 118,
+  "question": "奇経と経穴との組合せで誤っているのはどれか。",
+  "choices": [
+   "陽蹻脈 ― 申脈",
+   "衝脈 ― 肓兪",
+   "帯脈 ― 京門",
+   "陰蹻脈 ― 然谷"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "京門（胆経・GB25）の正しい部位は「側腹部、第12肋骨端下縁」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "京門（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL62",
+    "t": "申脈（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "肓兪（腎経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 17,
+  "number": 117,
+  "question": "兪木穴はどれか。",
+  "choices": [
+   "陽谷",
+   "足通谷",
+   "前谷",
+   "陥谷"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "陥谷（胃経・ST43）は「足背、第2・3中足骨間、第2中足指節関節の近位陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "陥谷（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI5",
+    "t": "陽谷（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "足通谷（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 18,
+  "number": 106,
+  "question": "経脈の始まりの経穴と終わりの経穴との組合せで正しいのはどれか。",
+  "choices": [
+   "湧泉 ― 大包",
+   "大敦 ― 日月",
+   "中衝 ― 糸竹空",
+   "少沢 ― 聴宮"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI1",
+    "t": "少沢（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "聴宮（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "大包（脾経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 18,
+  "number": 107,
+  "question": "奇経八脈と八総穴との組合せで正しいのはどれか。",
+  "choices": [
+   "陰維脈 ― 外関",
+   "帯脈 ― 後渓",
+   "陽蹻脈 ― 申脈",
+   "任脈 ― 照海"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "申脈（膀胱経・BL62）は「足外側、外果尖の直下、外果下縁と踵骨の間の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL62",
+    "t": "申脈（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE5",
+    "t": "外関（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "後渓（小腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 18,
+  "number": 114,
+  "question": "五兪穴（五行穴）で脈気が注ぐ穴の主治はどれか。",
+  "choices": [
+   "体重節痛",
+   "喘咳寒熱",
+   "身熱",
+   "心窩満"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 18,
+  "number": 116,
+  "question": "太淵と足三里に共通するのはどれか。",
+  "choices": [
+   "原穴",
+   "四総穴",
+   "土穴",
+   "中風七穴"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 18,
+  "number": 117,
+  "question": "自経に募穴がないのはどれか。",
+  "choices": [
+   "手太陰肺経",
+   "足少陽胆経",
+   "足太陰脾経",
+   "足厥陰肝経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 19,
+  "number": 107,
+  "question": "奇経と郄穴との組合せで正しいのはどれか。",
+  "choices": [
+   "陰維脈 ― 築賓",
+   "陽維脈 ― 跗陽",
+   "陰蹻脈 ― 陽交",
+   "陽蹻脈 ― 交信"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "築賓（腎経・KI9）は「下腿後内側、ヒラメ筋とアキレス腱の間、内果尖の上方5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL59",
+    "t": "跗陽（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "陽交（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 19,
+  "number": 116,
+  "question": "原穴と所属経脈との組合せで正しいのはどれか。",
+  "choices": [
+   "衝陽 ― 胃経",
+   "丘墟 ― 肝経",
+   "京骨 ― 小腸経",
+   "大陵 ― 心経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "衝陽（胃経・ST42）は「足背、第2中足骨底部と中間楔状骨の間、足背動脈拍動部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST42",
+    "t": "衝陽（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB40",
+    "t": "丘墟（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "京骨（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 19,
+  "number": 117,
+  "question": "八総穴であって木に属する経穴はどれか。",
+  "choices": [
+   "申脈",
+   "公孫",
+   "大敦",
+   "足臨泣"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "足臨泣（胆経・GB41）は「足背、第4・第5中足骨底接合部の遠位、第5指の長指伸筋腱外側の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB41",
+    "t": "足臨泣（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL62",
+    "t": "申脈（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 19,
+  "number": 118,
+  "question": "脚気八処の穴のうち一側の膝関節部にある経穴はいくつあるか。",
+  "choices": [
+   "3穴",
+   "2穴",
+   "4穴",
+   "1穴"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR7",
+    "t": "膝関（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 20,
+  "number": 106,
+  "question": "経絡の概要について正しい記述はどれか。",
+  "choices": [
+   "孫絡は正経十二経脈から分かれた支脈である。",
+   "脾の大絡は脾経の公孫から分かれ出る絡脈である。",
+   "奇経八脈は帯脈を除き上行性の流注である。",
+   "十二経筋は臓腑に連絡する。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 20,
+  "number": 107,
+  "question": "骨度法で殿溝から膝窩までの長さはどれか。",
+  "choices": [
+   "1尺4寸",
+   "1尺8寸",
+   "2尺",
+   "1尺2寸"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 20,
+  "number": 108,
+  "question": "関門と同じ高さに取穴する経穴はどれか。",
+  "choices": [
+   "下脘",
+   "陰都",
+   "関元",
+   "腹哀"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "腹哀（脾経・SP16）は「上腹部、臍中央の上方3寸、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP16",
+    "t": "腹哀（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "関門（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "下脘（任脈）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 109,
+  "question": "前正中線から最も離れているのはどれか。",
+  "choices": [
+   "肺の募穴",
+   "肝の募穴",
+   "大腸の募穴",
+   "胆の募穴"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 20,
+  "number": 110,
+  "question": "取穴法で舌骨を指標とする経穴はどれか。",
+  "choices": [
+   "水突",
+   "天窓",
+   "人迎",
+   "廉泉"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "廉泉（任脈・CV23）は「前頸部、前正中線上、喉頭隆起上方、舌骨の上方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "廉泉（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "水突（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "天窓（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 111,
+  "question": "大後頭神経の支配領域にないのはどれか。",
+  "choices": [
+   "玉枕",
+   "絡却",
+   "脳空",
+   "承光"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "承光（膀胱経・BL6）は「頭部、前髪際の後方2寸5分、前正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "承光（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "脳空（胆経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 112,
+  "question": "胸鎖乳突筋の前縁と後縁の間に取る経穴はどれか。",
+  "choices": [
+   "扶突",
+   "天牖",
+   "天容",
+   "人迎"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "扶突（大腸経・LI18）は「前頸部、甲状軟骨上縁と同じ高さ、胸鎖乳突筋の前縁と後縁の間」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "扶突（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "天牖（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI17",
+    "t": "天容（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 113,
+  "question": "取穴部位が大腿三角の領域にない経穴はどれか。",
+  "choices": [
+   "足五里",
+   "衝門",
+   "陰廉",
+   "陰包"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "陰包（肝経・LR9）は「大腿部内側、薄筋と縫工筋の間、膝蓋骨底の上方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR9",
+    "t": "陰包（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "足五里（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "衝門（脾経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 114,
+  "question": "督兪と同じ高さにあるのはどれか。",
+  "choices": [
+   "膈兪",
+   "譩譆",
+   "魂門",
+   "膏肓"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "譩譆（膀胱経・BL45）は「上背部、第6胸椎棘突起下縁と同じ高さ、後正中線の外方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "譩譆（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 115,
+  "question": "手関節掌側横紋の上方3寸にある経穴はどれか。",
+  "choices": [
+   "支溝",
+   "間使",
+   "偏歴",
+   "会宗"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "間使（心包経・PC5）は「前腕前面、長掌筋腱と橈側手根屈筋腱の間、手関節掌側横紋の上方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-PC5",
+    "t": "間使（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "支溝（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI6",
+    "t": "偏歴（大腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 116,
+  "question": "脾経の合水穴の取穴部位はどれか。",
+  "choices": [
+   "下腿内側、脛骨内側顆下縁と脛骨内縁が接する陥凹部。",
+   "膝内側、半腱・半膜様筋腱内側の陥凹部、膝窩横紋の内側端。",
+   "膝後内側、半腱様筋腱の外縁、膝窩横紋上。",
+   "肘前内側、上腕骨内側上顆の前縁、肘窩横紋と同じ高さ。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI4",
+    "t": "腕骨（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 20,
+  "number": 117,
+  "question": "八会穴のうち取穴部位が最も高い位置にあるのはどれか。",
+  "choices": [
+   "骨会",
+   "血会",
+   "気会",
+   "髄会"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 20,
+  "number": 118,
+  "question": "中風七穴と脚気八処の穴に共通する経穴はどれか。",
+  "choices": [
+   "百会",
+   "足三里",
+   "上巨虚",
+   "曲池"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "足三里（胃経・ST36）は「下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GV20",
+    "t": "百会（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "上巨虚（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 106,
+  "question": "大腿の前内側を上行する経脈はどれか。",
+  "choices": [
+   "脾経",
+   "肝経",
+   "胃経",
+   "腎経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 107,
+  "question": "経脈流注と接続部との組合せで正しいのはどれか。",
+  "choices": [
+   "心包経から三焦経 ― 手の中指端",
+   "肝経から肺経 ― 中焦",
+   "小腸経から膀胱経 ― 足の小指端",
+   "大腸経から胃経 ― 口角外方"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 108,
+  "question": "経穴間が最も短いのはどれか。",
+  "choices": [
+   "石関と腹哀",
+   "気衝と足五里",
+   "外丘と懸鍾",
+   "懸枢と痞根"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "足五里（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "気衝（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP16",
+    "t": "腹哀（脾経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 21,
+  "number": 109,
+  "question": "骨度で最も短いのはどれか。",
+  "choices": [
+   "膝蓋骨尖から内果尖",
+   "恥骨結合上縁から膝蓋骨上縁",
+   "殿溝の中央から膝窩",
+   "大転子頂点から膝窩"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 110,
+  "question": "膝窩横紋上で半腱様筋腱の外側縁にあるのはどれか。",
+  "choices": [
+   "陰陵泉",
+   "曲泉",
+   "膝関",
+   "陰谷"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "陰谷（腎経・KI10）は「膝後内側、半腱様筋腱の外縁、膝窩横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI10",
+    "t": "陰谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP9",
+    "t": "陰陵泉（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR8",
+    "t": "曲泉（肝経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 21,
+  "number": 111,
+  "question": "上腕二頭筋の外側縁にある経穴はどれか。",
+  "choices": [
+   "天府",
+   "天髎",
+   "天泉",
+   "天渓"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "天府（肺経・LU3）は「上腕前外側、上腕二頭筋外側縁、腋窩横紋前端の下方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "天府（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE15",
+    "t": "天髎（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC2",
+    "t": "天泉（心包経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 21,
+  "number": 112,
+  "question": "肘関節から最も遠いのはどれか。",
+  "choices": [
+   "三焦経の土穴",
+   "小腸経の絡穴",
+   "心包経の金穴",
+   "肺経の郄穴"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 21,
+  "number": 113,
+  "question": "胸鎖乳突筋の後縁で輪状軟骨の高さにある経穴はどれか。",
+  "choices": [
+   "扶突",
+   "水突",
+   "天鼎",
+   "人迎"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "天鼎（大腸経・LI17）は「前頸部、輪状軟骨と同じ高さ、胸鎖乳突筋の後縁」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "天鼎（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "水突（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST9",
+    "t": "人迎（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 21,
+  "number": 114,
+  "question": "陽維脈の郄穴の部位はどれか。",
+  "choices": [
+   "腓骨の後方、外果尖の上方7寸",
+   "腓骨とアキレス腱の間、崑崙の上方3寸",
+   "腓骨の前方、外果尖の上方7寸",
+   "腓骨の前方、外果尖の上方3寸"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL60",
+    "t": "崑崙（膀胱経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 21,
+  "number": 115,
+  "question": "自経にある募穴はどれか。",
+  "choices": [
+   "巨闕",
+   "期門",
+   "天枢",
+   "章門"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "期門（肝経・LR14）は「前胸部、第6肋間、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR14",
+    "t": "期門（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV14",
+    "t": "巨闕（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST25",
+    "t": "天枢（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 116,
+  "question": "四総穴で頭項の病変に用いるのはどれか。",
+  "choices": [
+   "足三里",
+   "列欠",
+   "合谷",
+   "委中"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 117,
+  "question": "募合配穴で天枢と併せて用いるのはどれか。",
+  "choices": [
+   "足三里",
+   "上巨虚",
+   "陽陵泉",
+   "下巨虚"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "上巨虚（胃経・ST37）は「下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方6寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "上巨虚（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST25",
+    "t": "天枢（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 21,
+  "number": 118,
+  "question": "八会穴で陽経に属するのはどれか。",
+  "choices": [
+   "脈会",
+   "髄会",
+   "腑会",
+   "気会"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 22,
+  "number": 106,
+  "question": "所属経脈が表裏関係にあるのはどれか。",
+  "choices": [
+   "腰陽関と膝陽関",
+   "手三里と足三里",
+   "足通谷と腹通谷",
+   "頭臨泣と足臨泣"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "足通谷（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腹通谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "腰陽関（督脈）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 107,
+  "question": "経脈間の接続とその部位との組合せで正しいのはどれか。",
+  "choices": [
+   "小腸経から膀胱経 ― 鼻翼外方",
+   "三焦経から胆経 ― 外眼角",
+   "脾経から心経 ― 側胸部",
+   "腎経から心包経 ― 心中"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 22,
+  "number": 108,
+  "question": "小円筋、肩甲挙筋、胸鎖乳突筋のすべてを流注するのはどれか。",
+  "choices": [
+   "手の太陽経",
+   "足の陽明経",
+   "手の少陰経",
+   "手の少陽経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "心経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 22,
+  "number": 109,
+  "question": "足の陽明経の郄穴の部位はどれか。",
+  "choices": [
+   "縫工筋と長内転筋の間",
+   "大腿二頭筋と半腱様筋の間",
+   "薄筋と縫工筋の間",
+   "外側広筋と大腿直筋腱の間"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 110,
+  "question": "骨度が最も短いのはどれか。",
+  "choices": [
+   "建里から腹哀",
+   "前髪際から承光",
+   "外果尖から懸鍾",
+   "大陵から間使"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "承光（膀胱経・BL6）は「頭部、前髪際の後方2寸5分、前正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "承光（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "建里（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP16",
+    "t": "腹哀（脾経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 112,
+  "question": "経穴で同じ高さに並ぶのはどれか。",
+  "choices": [
+   "脳戸と絡却",
+   "水突と扶突",
+   "眉衝と本神",
+   "風門と陶道"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "眉衝（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "本神（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "脳戸（督脈）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 113,
+  "question": "玉堂と同じ高さにあるのはどれか。",
+  "choices": [
+   "乳根",
+   "神封",
+   "庫房",
+   "霊墟"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "霊墟（腎経・KI24）は「前胸部、第3肋間、前正中線の外方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "霊墟（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "玉堂（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "乳根（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 114,
+  "question": "肩甲骨上角の上方陥凹部に位置するのはどれか。",
+  "choices": [
+   "肩外兪",
+   "曲垣",
+   "肩井",
+   "天髎"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "天髎（三焦経・TE15）は「肩甲部、肩甲骨上角の上方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-TE15",
+    "t": "天髎（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI14",
+    "t": "肩外兪（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI13",
+    "t": "曲垣（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 115,
+  "question": "取穴法で正しいのはどれか。",
+  "choices": [
+   "支正は陽谷の上方4寸に取る。",
+   "三陽絡は陽池の上方4寸に取る。",
+   "温溜は陽渓の上方4寸に取る。",
+   "孔最は太淵の上方4寸に取る。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-TE8",
+    "t": "三陽絡（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE4",
+    "t": "陽池（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI5",
+    "t": "陽谷（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 116,
+  "question": "経穴と動脈との組合せで正しいのはどれか。",
+  "choices": [
+   "聴会 ― 顔面動脈",
+   "足五里 ― 大腿動脈",
+   "合谷 ― 尺骨動脈",
+   "豊隆 ― 後脛骨動脈"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "足五里（肝経・LR10）は「大腿部内側、気衝の下方3寸、動脈拍動部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "足五里（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "聴会（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 22,
+  "number": 117,
+  "question": "五要穴で急性症状に用いるのはどれか。",
+  "choices": [
+   "孔最",
+   "列欠",
+   "太淵",
+   "魚際"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "孔最（肺経・LU6）は「前腕前外側、尺沢と太淵を結ぶ線上、手関節掌側横紋の上方7寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU6",
+    "t": "孔最（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 22,
+  "number": 118,
+  "question": "骨会はどれか。",
+  "choices": [
+   "大杼",
+   "三陰交",
+   "肩中兪",
+   "跗陽"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "大杼（膀胱経・BL11）は「上背部、第1胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL11",
+    "t": "大杼（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP6",
+    "t": "三陰交（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "肩中兪（小腸経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 23,
+  "number": 102,
+  "question": "腎経と心包経の接続部はどれか。",
+  "choices": [
+   "胸中",
+   "中焦",
+   "心中",
+   "舌根"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 23,
+  "number": 104,
+  "question": "経穴間の組合せで最も長いのはどれか。",
+  "choices": [
+   "大腸経の下合穴 ― 条口",
+   "三焦の募穴 ― 建里",
+   "脾経の郄穴 ― 漏谷",
+   "大腸経の土穴 ― 手三里"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "建里（任脈・CV11）は「上腹部、前正中線上、臍中央の上方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "建里（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "条口（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "漏谷（脾経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 23,
+  "number": 105,
+  "question": "尺骨神経溝部にある経穴はどれか。",
+  "choices": [
+   "臂臑",
+   "小海",
+   "支正",
+   "少海"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "小海（小腸経・SI8）は「肘後内側、肘頭と上腕骨内側上顆の間の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小海（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI14",
+    "t": "臂臑（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI7",
+    "t": "支正（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 23,
+  "number": 106,
+  "question": "耳珠と下顎骨関節突起の間の陥凹部で縦に並ぶ経穴が属さない経脈はどれか。",
+  "choices": [
+   "三焦経",
+   "胆経",
+   "小腸経",
+   "胃経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 23,
+  "number": 107,
+  "question": "足の太陰経の絡穴の取穴で正しいのはどれか。",
+  "choices": [
+   "第1中足骨底内側の前下方",
+   "第1中足指節関節内側の近位陥凹部",
+   "第1中足指節関節内側の遠位陥凹部",
+   "舟状骨粗面と内果尖の中央陥凹部"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 23,
+  "number": 108,
+  "question": "聴診三角にあたる経穴はどれか。",
+  "choices": [
+   "膏肓",
+   "譩譆",
+   "魄戸",
+   "魂門"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "譩譆（膀胱経・BL45）は「上背部、第6胸椎棘突起下縁と同じ高さ、後正中線の外方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "譩譆（膀胱経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 23,
+  "number": 109,
+  "question": "陰蹻脈の郄穴はどれか。",
+  "choices": [
+   "築賓",
+   "交信",
+   "跗陽",
+   "陽交"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "交信（腎経・KI8）は「下腿内側、脛骨内縁の後方の陥凹部、内果尖の上方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI8",
+    "t": "交信（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL59",
+    "t": "跗陽（膀胱経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 23,
+  "number": 110,
+  "question": "八会穴と下合穴の両方に属する経穴はどれか。",
+  "choices": [
+   "陽陵泉",
+   "足三里",
+   "下巨虚",
+   "懸鐘"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "陽陵泉（胆経・GB34）は「下腿外側、腓骨頭前下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "下巨虚（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 23,
+  "number": 111,
+  "question": "腰眼の取穴法で正しいのはどれか。",
+  "choices": [
+   "第5腰椎棘突起下縁、外方3寸5分",
+   "第2腰椎棘突起下縁、外方3寸5分",
+   "第3腰椎棘突起下縁、外方3寸5分",
+   "第4腰椎棘突起下縁、外方3寸5分"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 23,
+  "number": 112,
+  "question": "経穴とその部にある筋の支配神経の組合せで正しいのはどれか。",
+  "choices": [
+   "三陰交 ― 脛骨神経",
+   "外関 ― 正中神経",
+   "足三里 ― 浅腓骨神経",
+   "温溜 ― 尺骨神経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "三陰交（脾経・SP6）は「下腿内側、脛骨内縁の後際、内果尖の上方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP6",
+    "t": "三陰交（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE5",
+    "t": "外関（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 23,
+  "number": 113,
+  "question": "大腿部にある郄穴への刺鍼部位はどれか。",
+  "choices": [
+   "薄筋と縫工筋の間、膝蓋骨底の上方4寸",
+   "外側広筋と大腿直筋腱外縁の間、膝蓋骨底の上方2寸",
+   "大腿二頭筋腱の内縁、膝窩横紋の上方1寸",
+   "腸脛靭帯の後方、膝窩横紋の上方7寸"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 102,
+  "question": "少海から神門までと同じ骨度はどれか。",
+  "choices": [
+   "足三里から解渓",
+   "胸骨体下端から恥骨結合上縁",
+   "脛骨内側顆下縁から内果尖",
+   "足指尖から踵"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-HT3",
+    "t": "少海（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT7",
+    "t": "神門（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 24,
+  "number": 103,
+  "question": "経穴の部位と動脈の組合せで正しいのはどれか。",
+  "choices": [
+   "太衝 ― 足背動脈",
+   "曲沢 ― 尺骨動脈",
+   "人迎 ― 顔面動脈",
+   "申脈 ― 後脛骨動脈"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "太衝（肝経・LR3）は「足背、第1・第2中足骨間、中足骨底接合部遠位の陥凹部、足背動脈拍動部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR3",
+    "t": "太衝（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC3",
+    "t": "曲沢（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST9",
+    "t": "人迎（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 104,
+  "question": "長母指外転筋腱と短母指伸筋腱の間にとる経穴はどれか。",
+  "choices": [
+   "偏歴",
+   "太淵",
+   "列欠",
+   "陽渓"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI6",
+    "t": "偏歴（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU9",
+    "t": "太淵（肺経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 105,
+  "question": "伏在神経の支配領域にある経穴はどれか。",
+  "choices": [
+   "豊隆",
+   "犢鼻",
+   "梁丘",
+   "足三里"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "犢鼻（胃経・ST35）は「膝前面、膝蓋靱帯外方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "犢鼻（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST40",
+    "t": "豊隆（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 106,
+  "question": "直刺して円回内筋にあたる経穴はどれか。",
+  "choices": [
+   "尺沢",
+   "少海",
+   "四瀆",
+   "郄門"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "少海（心経・HT3）は「肘前内側、上腕骨内側上顆の前縁、肘窩横紋と同じ高さ」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-HT3",
+    "t": "少海（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "尺沢（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "四瀆（三焦経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 107,
+  "question": "経穴と筋・腱の位置関係で正しいのはどれか。",
+  "choices": [
+   "間使は長掌筋腱と橈側手根屈筋腱の間にある。",
+   "支正は尺側手根伸筋と小指伸筋の間にある。",
+   "曲沢は上腕二頭筋腱の橈側にある。",
+   "霊道は尺側手根屈筋腱の尺側にある。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "間使（心包経・PC5）は「前腕前面、長掌筋腱と橈側手根屈筋腱の間、手関節掌側横紋の上方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-PC5",
+    "t": "間使（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI7",
+    "t": "支正（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC3",
+    "t": "曲沢（心包経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 108,
+  "question": "気衝との位置関係で正しいのはどれか。",
+  "choices": [
+   "上方1寸に水道がある。",
+   "外方2寸に衝門がある。",
+   "下方3寸に足五里がある。",
+   "内方5分に急脈がある。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "足五里（肝経・LR10）は「大腿部内側、気衝の下方3寸、動脈拍動部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "足五里（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "気衝（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "衝門（脾経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 109,
+  "question": "取穴法で正しいのはどれか。",
+  "choices": [
+   "中都は脛骨内側面の中央、内果尖の上方8寸に取る。",
+   "豊隆は前脛骨筋の外縁、外果尖の上方6寸に取る。",
+   "光明は腓骨の前縁、外果尖の上方5寸に取る。",
+   "復溜はアキレス腱の前縁、内果尖の上方4寸に取る。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "光明（胆経・GB37）は「下腿外側、腓骨の前方、外果尖の上方5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB37",
+    "t": "光明（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR6",
+    "t": "中都（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST40",
+    "t": "豊隆（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 110,
+  "question": "前腕部にある絡穴の部位はどれか。",
+  "choices": [
+   "尺骨の橈側縁、手関節背側横紋の上方3寸",
+   "尺側手根屈筋腱の橈側縁、手関節掌側横紋の上方1寸",
+   "長掌筋腱と橈側手根屈筋腱の間、手関節掌側横紋の上方3寸",
+   "尺骨頭橈側の陥凹部、手関節背側横紋の上方1寸"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 24,
+  "number": 111,
+  "question": "絡穴が八脈交会穴である経脈はどれか。",
+  "choices": [
+   "手の少陽経",
+   "手の太陽経",
+   "足の太陽経",
+   "足の少陽経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 24,
+  "number": 112,
+  "question": "奇穴の取穴と主治の組合せで正しいのはどれか。",
+  "choices": [
+   "翳風の後方約1寸 ― 歯根炎",
+   "中極の外方3寸 ― 膀胱炎",
+   "足三里の下方約2寸 ― 胆嚢炎",
+   "百会の前後左右の各1寸 ― 胃炎"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-CV3",
+    "t": "中極（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE17",
+    "t": "翳風（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 24,
+  "number": 113,
+  "question": "奇穴の取り方で正しいのはどれか。",
+  "choices": [
+   "痞根は第1腰椎棘突起下縁と同じ高さ、後正中線の外方3寸に取る。",
+   "十七椎は後正中線上、第5腰椎棘突起下方の陥凹部に取る。",
+   "腰痛点は手背、第2・第3および第3・第4中手骨底間の陥凹部の2点に取る。",
+   "内膝眼は膝関節部、膝蓋骨底上際中央の陥凹部に取る。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR7",
+    "t": "膝関（肝経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 24,
+  "number": 114,
+  "question": "肩甲挙筋のトリガーポイント好発部位に当たるのはどれか。",
+  "choices": [
+   "天髎",
+   "肩井",
+   "肩外兪",
+   "肩髃"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "肩外兪（小腸経・SI14）は「上背部、第1胸椎棘突起下縁と同じ高さ、後正中線の外方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI14",
+    "t": "肩外兪（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE15",
+    "t": "天髎（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB21",
+    "t": "肩井（胆経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 102,
+  "question": "内眼角で接続する経脈の井穴の組合せで正しいのはどれか。",
+  "choices": [
+   "関衝 ― 足竅陰",
+   "少沢 ― 至陰",
+   "商陽 ― 厲兌",
+   "隠白 ― 少衝"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI1",
+    "t": "少沢（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "至陰（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "足竅陰（胆経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 25,
+  "number": 103,
+  "question": "骨度で犢鼻から下巨虚までと同じなのはどれか。",
+  "choices": [
+   "腋窩横紋前端から肘窩",
+   "前髪際中点から後髪際中点",
+   "胸骨体下端から臍中央",
+   "中指尖から手関節横紋"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "下巨虚（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 25,
+  "number": 104,
+  "question": "骨度で大腸経の郄穴から臂臑までと同じなのはどれか。",
+  "choices": [
+   "胃経の郄穴から気衝",
+   "陽蹻脈の郄穴から委陽",
+   "陽維脈の郄穴から中瀆",
+   "膀胱経の合土穴から承扶"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "承扶（膀胱経・BL36）は「殿部、殿溝の中点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "承扶（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI14",
+    "t": "臂臑（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "気衝（胃経）"
+   }
+  ],
+  "basis": "book"
+ },
+ {
+  "exam": 25,
+  "number": 105,
+  "question": "陽蹻脈の八脈交会穴の部位で正しいのはどれか。",
+  "choices": [
+   "第4・第5中足骨底接合部の遠位、第5指の長指伸筋腱外側の陥凹部",
+   "外果尖の直下、外果下縁と踵骨の間の陥凹部",
+   "内果後下方、踵骨上方、アキレス腱付着部内側前方の陥凹部",
+   "内果尖の下方1寸、内果下方の陥凹部"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 106,
+  "question": "三叉神経第1枝の領域にある経穴はどれか。",
+  "choices": [
+   "迎香",
+   "四白",
+   "下関",
+   "素髎"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "素髎（督脈・GV25）は「顔面部、鼻の尖端」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "素髎（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "迎香（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST2",
+    "t": "四白（胃経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 107,
+  "question": "デルマトームでＣ6領域上に位置する経穴はどれか。",
+  "choices": [
+   "中渚",
+   "液門",
+   "後渓",
+   "魚際"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "魚際（肺経・LU10）は「手掌、第1中手骨中点の橈側、赤白肉際」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "魚際（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "中渚（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "後渓（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 108,
+  "question": "経穴と腱の位置関係で正しいのはどれか。",
+  "choices": [
+   "通里は尺側手根屈筋腱の尺側にある。",
+   "陰谷は半腱様筋腱の外縁にある。",
+   "中封は後脛骨筋腱の前縁にある。",
+   "陽渓は長母指外転筋腱と短母指伸筋腱の間にある。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "陰谷（腎経・KI10）は「膝後内側、半腱様筋腱の外縁、膝窩横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI10",
+    "t": "陰谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT5",
+    "t": "通里（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR4",
+    "t": "中封（肝経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 109,
+  "question": "奇穴の子宮と同じ高さにある経穴はどれか。",
+  "choices": [
+   "府舎",
+   "急脈",
+   "大赫",
+   "水道"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "大赫（腎経・KI12）は「下腹部、臍中央の下方4寸、前正中線外方5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "大赫（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "府舎（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "急脈（肝経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 110,
+  "question": "体重節痛の際に用いる経穴部位で正しいのはどれか。",
+  "choices": [
+   "内果後下方、踵骨上方、アキレス腱付着部内側前方の陥凹部",
+   "第4・第5中足骨底接合部の遠位、第5指の長指伸筋腱外側の陥凹部",
+   "足外側、第5中足骨粗面の遠位、赤白肉際",
+   "足関節前内側、前脛骨筋腱内側の陥凹部、内果尖の前方"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 111,
+  "question": "下肢にある郄穴の部位はどれか。",
+  "choices": [
+   "外果尖の直下、外果下縁と踵骨の間の陥凹部",
+   "脛骨内側面の中央、内果尖の上方5寸",
+   "腓骨の前方、外果尖の上方7寸",
+   "内側広筋隆起部、膝蓋骨底内端の上方2寸"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 112,
+  "question": "八総穴で督脈の主治穴の部位はどれか。",
+  "choices": [
+   "第5中手指節関節尺側の近位陥凹部、赤白肉際",
+   "橈骨と尺骨の骨間の中点、手関節背側横紋の上方2寸",
+   "長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1寸5分",
+   "長掌筋腱と橈側手根屈筋腱の間、手関節掌側横紋の上方2寸"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 113,
+  "question": "奇穴と経穴が同じ高さにある組合せはどれか。",
+  "choices": [
+   "定喘 ― 肩外兪",
+   "接脊 ― 胃兪",
+   "痞根 ― 腎兪",
+   "腰眼 ― 関元兪"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "胃兪（膀胱経・BL21）は「上背部、第12胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL21",
+    "t": "胃兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI14",
+    "t": "肩外兪（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "腎兪（膀胱経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 25,
+  "number": 114,
+  "question": "小円筋のトリガーポイント好発部位に当たるのはどれか。",
+  "choices": [
+   "秉風",
+   "天宗",
+   "肩貞",
+   "肩外兪"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "肩貞（小腸経・SI9）は「肩周囲部、肩関節の後下方、腋窩横紋後端の上方1寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "肩貞（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI11",
+    "t": "天宗（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI14",
+    "t": "肩外兪（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 94,
+  "question": "体重節痛を起こした場合、治療部位として適切なのはどれか。",
+  "choices": [
+   "第5中足指節関節の近位陥凹部、赤白肉際",
+   "足内側、舟状骨粗面の下方、赤白肉際",
+   "第4・第5中足骨間、第4中足指節関節近位の陥凹部",
+   "前脛骨筋腱内側の陥凹部、内果尖の前方"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 102,
+  "question": "経脈の走行について正しいのはどれか。",
+  "choices": [
+   "腹部では腎経と胃経の間を脾経が上行する。",
+   "下腿内側では肝経と脾経の間を腎経が上行する。",
+   "頸部では胃経と小腸経の間を大腸経が上行する。",
+   "前腕後面では大腸経と三焦経の間を小腸経が上行する。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 103,
+  "question": "奇経と関係する経穴の組合せで正しいのはどれか。",
+  "choices": [
+   "陽蹻脈 ― 金門",
+   "陰蹻脈 ― 築賓",
+   "陽維脈 ― 居髎",
+   "陰維脈 ― 府舎"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "府舎（脾経・SP13）は「下腹部、臍中央の下方4寸3分、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "府舎（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "金門（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI9",
+    "t": "築賓（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 26,
+  "number": 104,
+  "question": "心包経の経金穴と合水穴の間と同じ骨度はどれか。",
+  "choices": [
+   "眉間から前髪際中点",
+   "両乳頭間",
+   "臍中央から恥骨結合上縁",
+   "両乳様突起間"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 105,
+  "question": "経穴とその部位を支配している神経の組合せで正しいのはどれか。",
+  "choices": [
+   "天牖 ― 大後頭神経",
+   "天突 ― 頸横神経",
+   "天窓 ― 大耳介神経",
+   "欠盆 ― 鎖骨下神経"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "天突（任脈・CV22）は「前頸部、前正中線上、頸窩（胸骨上窩）の中央」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "天突（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "天牖（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "天窓（小腸経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 106,
+  "question": "八会穴の腑会の部位はどれか。",
+  "choices": [
+   "前正中線上、胸骨体下端の下方1寸",
+   "前正中線上、第4肋間と同じ高さ",
+   "前正中線上、臍中央の上方6寸",
+   "前正中線上、臍中央の上方4寸"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 107,
+  "question": "経穴と体表指標の組合せで同じ高さにあるのはどれか。",
+  "choices": [
+   "髀関 ― 大転子頂点",
+   "天鼎 ― 甲状軟骨上縁",
+   "天柱 ― 外後頭隆起",
+   "胞肓 ― 仙骨裂孔"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "髀関（胃経・ST31）は「大腿前面、3筋（大腿直筋、縫工筋、大腿筋膜張筋）の近位部の間の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "髀関（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "天鼎（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "天柱（膀胱経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 108,
+  "question": "部位と経穴の組合せで正しいのはどれか。",
+  "choices": [
+   "縫工筋と長内転筋の間 ― 箕門",
+   "大腿二頭筋と半腱様筋の間 ― 膝陽関",
+   "外側広筋と大腿直筋腱の間 ― 血海",
+   "薄筋と縫工筋の間 ― 足五里"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "箕門（脾経・SP11）は「大腿内側、膝蓋骨底内端と衝門を結ぶ線上、衝門から3分の1、縫工筋と長内転筋の間、大腿動脈拍動部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "箕門（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "膝陽関（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP10",
+    "t": "血海（脾経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 109,
+  "question": "取穴法で正しいのはどれか。",
+  "choices": [
+   "丘墟は、長指伸筋腱内側の陥凹部、外果尖の前下方に取る。",
+   "水泉は、太渓の下1寸、踵骨隆起前方の陥凹部に取る。",
+   "申脈は、外果尖の直下、外果下縁と距骨の間の陥凹部に取る。",
+   "太衝は、第1・第2中足骨間、中足骨底接合部近位の陥凹部に取る。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI3",
+    "t": "太渓（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "水泉（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB40",
+    "t": "丘墟（胆経）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 110,
+  "question": "五要穴で慢性症状に用いるのに適した経穴の部位はどれか。",
+  "choices": [
+   "内果尖とアキレス腱の間の陥凹部",
+   "腓骨の前方、外果尖の上方7寸",
+   "脛骨内側面の中央、内果尖の上方5寸",
+   "大腿二頭筋腱の内縁、膝窩横紋上"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "book+who"
+ },
+ {
+  "exam": 26,
+  "number": 112,
+  "question": "奇穴とその主治の組合せで正しいのはどれか。",
+  "choices": [
+   "八邪 ― 頭痛",
+   "四縫 ― 足の痛み",
+   "十宣 ― 歯の痛み",
+   "八風 ― 手の痛み"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 26,
+  "number": 113,
+  "question": "奇穴とその部位の組合せで正しいのはどれか。",
+  "choices": [
+   "失眠 ― 足底部の中央",
+   "胆嚢点 ― 陽陵泉の下約1寸",
+   "鶴頂 ― 膝蓋骨底上際中央の上約1寸",
+   "闌尾 ― 足三里の下約1寸"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 26,
+  "number": 114,
+  "question": "圧痛部を押すと特定のパターンの関連痛を示し、索状硬結を認めた。最も適切な反応点はどれか。",
+  "choices": [
+   "トリガーポイント",
+   "丘疹点",
+   "撮診点",
+   "圧診点"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 99,
+  "question": "大腸の病変に用いる下合穴はどれか。",
+  "choices": [
+   "陽陵泉",
+   "足三里",
+   "上巨虚",
+   "委陽"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "上巨虚（胃経・ST37）は「下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方6寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "上巨虚（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST36",
+    "t": "足三里（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 102,
+  "question": "骨度法で最も短いのはどれか。",
+  "choices": [
+   "前髪際中点から後髪際中点",
+   "胸骨体下端から臍中央",
+   "腋窩横紋前端から肘窩",
+   "中指尖から手関節横紋"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 103,
+  "question": "正経十二経脈の説明で正しいのはどれか。",
+  "choices": [
+   "陽経は臓に属して腑に絡する。",
+   "手の三陽経は顔面部から手部に流れる。",
+   "経脈は上焦に起こり足の厥陰経で一巡する。",
+   "経脈は各々が独立しながらも連絡している。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 104,
+  "question": "経脈間の接続とその部位の組合せで正しいのはどれか。",
+  "choices": [
+   "手の陽明経から足の陽明経 ― 内眼角",
+   "足の太陰経から手の少陰経 ― 側胸部",
+   "足の少陰経から手の厥陰経 ― 胸中",
+   "手の太陽経から足の太陽経 ― 外眼角"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 105,
+  "question": "陰維脈の郄穴の部位はどれか。",
+  "choices": [
+   "下腿前内側、脛骨内側面の中央、内果尖の上方5寸",
+   "下腿後内側、アキレス腱の前縁、内果尖の上方2寸",
+   "下腿後内側、ヒラメ筋とアキレス腱の間、内果尖の上方5寸",
+   "下腿内側、脛骨内縁の後方の陥凹部、内果尖の上方2寸"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 106,
+  "question": "八脈交会穴の部位はどれか。",
+  "choices": [
+   "足内側、太渓の下方1寸、踵骨隆起前方の陥凹部",
+   "足内側、内果尖の下方1寸、内果下方の陥凹部",
+   "下腿外側、腓骨の前方、外果尖の上方7寸",
+   "下腿外側、腓骨の前方、外果尖の上方5寸"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI3",
+    "t": "太渓（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 107,
+  "question": "要穴で横に並ぶ組合せはどれか。",
+  "choices": [
+   "小腸経の絡穴 ― 大腸経の絡穴",
+   "心の募穴 ― 肝の募穴",
+   "任脈の絡穴 ― 胆の募穴",
+   "心包の募穴 ― 脾の大絡の絡穴"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 108,
+  "question": "筋と筋の間に取穴しないのはどれか。",
+  "choices": [
+   "殷門",
+   "箕門",
+   "風市",
+   "陰包"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "風市（胆経・GB31）は「大腿部外側、直立して腕を下垂し、手掌を大腿部に付けたとき、中指の先端があたる腸脛靱帯の後方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB31",
+    "t": "風市（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "殷門（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "箕門（脾経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 109,
+  "question": "部位と経穴の組合せで正しいのはどれか。",
+  "choices": [
+   "総指伸筋腱の内側 ― 陽池",
+   "尺側手根屈筋腱の内側 ― 通里",
+   "大腿二頭筋腱の外側 ― 委陽",
+   "長指伸筋腱の外側 ― 解渓"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "陽池（三焦経・TE4）は「手関節後面、総指伸筋腱の尺側陥凹部、手関節背側横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-TE4",
+    "t": "陽池（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT5",
+    "t": "通里（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "委陽（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 110,
+  "question": "五要穴で急性症状に用いるのに適した経穴の部位はどれか。",
+  "choices": [
+   "大腿前外側、外側広筋と大腿直筋腱外縁の間、膝蓋骨底の上方2寸",
+   "下腿外側、腓骨の前方、外果尖の上方5寸",
+   "下腿前外側、前脛骨筋の外縁、外果尖の上方8寸",
+   "足背、第2中足骨底部と中間楔状骨の間、足背動脈拍動部"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 111,
+  "question": "次の文で示す症状に対して八会穴を用いる場合に最も適切な経穴はどれか。 「20歳の女性。月経時に腹部にさし込む痛みがあり、血塊を伴う。」",
+  "choices": [
+   "大杼",
+   "膈兪",
+   "陽陵泉",
+   "懸鍾"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "膈兪（膀胱経・BL17）は「上背部、第7胸椎棘突起下縁と同じ高さ、後正中線の外方1寸5分」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL11",
+    "t": "大杼（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 112,
+  "question": "経穴とその部位にある筋の支配神経の組合せで正しいのはどれか。",
+  "choices": [
+   "偏歴 ― 尺骨神経",
+   "会宗 ― 正中神経",
+   "合陽 ― 脛骨神経",
+   "足三里 ― 浅腓骨神経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "合陽（膀胱経・BL55）は「下腿後面、腓腹筋外側頭と内側頭の間、膝窩横紋の下方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "合陽（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI6",
+    "t": "偏歴（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE7",
+    "t": "会宗（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 113,
+  "question": "経穴とデルマトームの組合せで正しいのはどれか。",
+  "choices": [
+   "魚際 ― C8",
+   "温溜 ― Th1",
+   "丘墟 ― L4",
+   "至陰 ― S1"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "至陰（膀胱経・BL67）は「足の第5指、末節骨外側、爪甲角の近位外方1分、爪甲外側縁の垂線と爪甲基底部の水平線の交点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "至陰（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "魚際（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI7",
+    "t": "温溜（大腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 27,
+  "number": 114,
+  "question": "皮下組織をつまみ上げて軽く圧迫すると、その部位にピリピリした異常な 知覚が発生する反応点はどれか。",
+  "choices": [
+   "撮診点",
+   "丘疹点",
+   "良導点",
+   "トリガーポイント"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 102,
+  "question": "経脈の流注で横隔膜を貫かないのはどれか。",
+  "choices": [
+   "手の太陰経",
+   "手の陽明経",
+   "足の少陰経",
+   "足の太陽経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 103,
+  "question": "骨度で最も長いのはどれか。",
+  "choices": [
+   "委中から承山",
+   "曲泉から中都",
+   "陰谷から復溜",
+   "陰陵泉から三陰交"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI7",
+    "t": "復溜（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI10",
+    "t": "陰谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL40",
+    "t": "委中（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 104,
+  "question": "八会穴の気会と同じ高さにある経穴はどれか。",
+  "choices": [
+   "梁門",
+   "大包",
+   "食竇",
+   "神封"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "神封（腎経・KI23）は「前胸部、第4肋間、前正中線の外方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "神封（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "梁門（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "大包（脾経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 105,
+  "question": "三叉神経第2枝の領域にある経穴はどれか。",
+  "choices": [
+   "素髎",
+   "兌端",
+   "承漿",
+   "下関"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "兌端（督脈・GV27）は「顔面部、上唇結節上縁の中点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "兌端（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "承漿（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "下関（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 106,
+  "question": "長母指外転筋腱と短母指伸筋腱の間に取るのはどれか。",
+  "choices": [
+   "温溜",
+   "外関",
+   "郄門",
+   "列欠"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI7",
+    "t": "温溜（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE5",
+    "t": "外関（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 107,
+  "question": "胸背部の打診法で清音が聴取される部位に位置する経穴はどれか。",
+  "choices": [
+   "膻中",
+   "屋翳",
+   "中府",
+   "章門"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "屋翳（胃経・ST15）は「前胸部、第2肋間、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "屋翳（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV17",
+    "t": "膻中（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "中府（肺経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 108,
+  "question": "経穴とその部位にある筋の支配神経の組合せで正しいのはどれか。",
+  "choices": [
+   "孔最 ― 尺骨神経",
+   "支正 ― 正中神経",
+   "三陰交 ― 脛骨神経",
+   "陽陵泉 ― 深腓骨神経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "三陰交（脾経・SP6）は「下腿内側、脛骨内縁の後際、内果尖の上方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP6",
+    "t": "三陰交（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LU6",
+    "t": "孔最（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI7",
+    "t": "支正（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 109,
+  "question": "取穴法で正しいのはどれか。",
+  "choices": [
+   "聴会は耳珠の前上方で頬骨弓の後端に取る。",
+   "聴宮は耳珠と下顎骨との間にある陥凹部で、下顎骨関節突起の後縁に取る。",
+   "耳門は珠間切痕の直前陥凹中で、口を開くと深くくぼむところに取る。",
+   "翳風は後頭骨の下方で、胸鎖乳突筋と僧帽筋の間の陥凹中に取る。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "聴宮（小腸経・SI19）は「顔面部、耳珠中央の前縁と下顎骨関節突起の間の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "聴宮（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "聴会（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "耳門（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 110,
+  "question": "深刺すると椎骨動脈を損傷するリスクが最も高い経穴はどれか。",
+  "choices": [
+   "風府",
+   "風池",
+   "秉風",
+   "翳風"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "風池（胆経・GB20）は「後頸部、後頭骨の下方、胸鎖乳突筋と僧帽筋の起始部の間、陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "風池（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "風府（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "秉風（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 111,
+  "question": "五要穴で急性症状に用いる経穴の部位はどれか。",
+  "choices": [
+   "前脛骨筋の外縁、外果尖の上方8寸",
+   "内果尖の下方1寸の陥凹部",
+   "腓骨の前方、外果尖の上方7寸",
+   "側胸部、第6肋間、中腋窩線上"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 112,
+  "question": "陽蹻脈の郄穴の部位はどれか。",
+  "choices": [
+   "下腿外側、腓骨の前方、外果尖の上方7寸",
+   "下腿内側、脛骨内縁の後際、陰陵泉の下方3寸",
+   "下腿前内側、脛骨内側面の中央、内果尖の上方7寸",
+   "下腿後外側、腓骨とアキレス腱の間、崑崙の上方3寸"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL60",
+    "t": "崑崙（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP9",
+    "t": "陰陵泉（脾経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 113,
+  "question": "奇穴で顔面神経麻痺が主治でないのはどれか。",
+  "choices": [
+   "太陽",
+   "夾承漿",
+   "牽正",
+   "翳明"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "承漿（任脈）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 28,
+  "number": 114,
+  "question": "トリガーポイントの特徴でないのはどれか。",
+  "choices": [
+   "発汗量の低下",
+   "関連痛の出現",
+   "痛覚閾値の低下",
+   "索状硬結の触知"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 107,
+  "question": "外眼角で接続する経脈の井穴の組合せで正しいのはどれか。",
+  "choices": [
+   "少商 ― 商陽",
+   "少沢 ― 至陰",
+   "湧泉 ― 中衝",
+   "関衝 ― 足竅陰"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "足竅陰（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "関衝（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "少商（肺経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 108,
+  "question": "すべての陽経脈と連絡している奇経の郄穴はどれか。",
+  "choices": [
+   "跗陽",
+   "交信",
+   "陽交",
+   "築賓"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "陽交（胆経・GB35）は「下腿外側、腓骨の後方、外果尖の上方7寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "陽交（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL59",
+    "t": "跗陽（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI8",
+    "t": "交信（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 109,
+  "question": "骨度で脛骨内側顆下縁から膝蓋骨尖までと同じなのはどれか。",
+  "choices": [
+   "臍中央から小腸の募穴",
+   "前正中線から肝の募穴",
+   "胸骨体下端から心の募穴",
+   "恥骨結合上縁から三焦の募穴"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 110,
+  "question": "八脈交会穴が関係する奇経の組合せで正しいのはどれか。",
+  "choices": [
+   "陰維脈 ― 帯脈",
+   "陽維脈 ― 督脈",
+   "陽蹻脈 ― 衝脈",
+   "陰蹻脈 ― 任脈"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 111,
+  "question": "任脈上に募穴がある臓腑の所属経脈の原穴はどれか。",
+  "choices": [
+   "合谷",
+   "太渓",
+   "陽池",
+   "太衝"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "陽池（三焦経・TE4）は「手関節後面、総指伸筋腱の尺側陥凹部、手関節背側横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-TE4",
+    "t": "陽池（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI3",
+    "t": "太渓（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 112,
+  "question": "甲状軟骨上縁の高さにないのはどれか。",
+  "choices": [
+   "扶突",
+   "人迎",
+   "天窓",
+   "天牖"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "天牖（三焦経・TE16）は「前頸部、下顎角と同じ高さ、胸鎖乳突筋の後方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "天牖（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "扶突（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST9",
+    "t": "人迎（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 113,
+  "question": "腹哀の高さで正しいのはどれか。",
+  "choices": [
+   "臍中央の上方2寸",
+   "臍中央の上方3寸",
+   "臍中央の上方4寸",
+   "臍中央の上方5寸"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP16",
+    "t": "腹哀（脾経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 114,
+  "question": "郄穴の部位はどれか。",
+  "choices": [
+   "膝蓋骨底外端の上方2寸",
+   "腓骨の前方、外果尖の上方5寸",
+   "腓腹筋外側頭下縁とアキレス腱の間",
+   "内果後下方、踵骨上方、アキレス腱の前陥凹部"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 115,
+  "question": "経穴と解剖学的部位の組合せで正しいのはどれか。",
+  "choices": [
+   "曲垣 ― 棘上窩",
+   "天府 ― 鎖骨下窩",
+   "欠盆 ― 小鎖骨上窩",
+   "気舎 ― 大鎖骨上窩"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "曲垣（小腸経・SI13）は「肩甲部、肩甲棘内端の上方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI13",
+    "t": "曲垣（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "天府（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "欠盆（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 116,
+  "question": "鵞足を構成する筋上にないのはどれか。",
+  "choices": [
+   "陰陵泉",
+   "血海",
+   "陰包",
+   "陰谷"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "血海（脾経・SP10）は「大腿前内側、内側広筋隆起部、膝蓋骨底内端の上方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP10",
+    "t": "血海（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP9",
+    "t": "陰陵泉（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR9",
+    "t": "陰包（肝経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 117,
+  "question": "標準体型の男性において直刺で刺鍼した場合、肺を損傷するリスクが最も 高いのはどれか。",
+  "choices": [
+   "肺の募穴",
+   "任脈の絡穴",
+   "胃の背部兪穴",
+   "脾の大絡の絡穴"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 118,
+  "question": "尺側手根屈筋腱の橈側縁、手関節掌側横紋の上方1寸にある経穴はどれか。",
+  "choices": [
+   "間使",
+   "養老",
+   "経渠",
+   "通里"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "通里（心経・HT5）は「前腕前内側、尺側手根屈筋腱の橈側縁、手関節掌側横紋の上方1寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-HT5",
+    "t": "通里（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC5",
+    "t": "間使（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "養老（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 119,
+  "question": "肩関節の外旋に作用する筋上の経穴はどれか。",
+  "choices": [
+   "臂臑",
+   "天宗",
+   "臑会",
+   "肩髎"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "天宗（小腸経・SI11）は「肩甲部、肩甲棘の中央と肩甲骨下角を結んだ線上、肩甲棘から1/3にある陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI11",
+    "t": "天宗（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI14",
+    "t": "臂臑（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "臑会（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 120,
+  "question": "前腕後面の経穴で小指伸筋腱と尺側手根伸筋の間に取るのはどれか。",
+  "choices": [
+   "三焦経の経火穴",
+   "三焦経の郄穴",
+   "小腸経の経火穴",
+   "小腸経の絡穴"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "三焦経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 121,
+  "question": "顔面神経支配の筋にある経穴の部位はどれか。",
+  "choices": [
+   "頬骨弓中央の上際の陥凹部",
+   "外眼角の直下、頬骨下方の陥凹部",
+   "珠間切痕と下顎骨関節突起の間の陥凹部",
+   "耳珠上の切痕と下顎骨関節突起の間の陥凹部"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 122,
+  "question": "経穴の部位で正しいのはどれか。",
+  "choices": [
+   "秩辺は、第2後仙骨孔と同じ高さ、正中仙骨稜の外方3寸にある。",
+   "三陽絡は、橈骨と尺骨の骨間の中点、肘頭の下方5寸にある。",
+   "蠡溝は、脛骨内側面の中央、内果尖の上方5寸にある。",
+   "本神は、前髪際から入ること 5分、瞳孔線上にある。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "蠡溝（肝経・LR5）は「下腿前内側、脛骨内側面の中央、内果尖の上方5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "蠡溝（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "秩辺（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE8",
+    "t": "三陽絡（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 123,
+  "question": "経金穴の部位はどれか。",
+  "choices": [
+   "長掌筋腱と橈側手根屈筋腱の間、手関節掌側横紋の上方3寸",
+   "長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1寸5分",
+   "橈骨と尺骨の骨間の中点、手関節背側横紋の上方3寸",
+   "尺骨内縁と尺側手根屈筋の間、手関節背側横紋の上方5寸"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 124,
+  "question": "五兪穴の滎穴が深腓骨神経の分布領域にあるのはどれか。",
+  "choices": [
+   "肝経",
+   "脾経",
+   "腎経",
+   "胆経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 125,
+  "question": "少陽経の郄穴が位置する筋はどれか。",
+  "choices": [
+   "前脛骨筋",
+   "長腓骨筋",
+   "ヒラメ筋",
+   "長指伸筋"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 29,
+  "number": 126,
+  "question": "関元兪と同じ高さにある奇穴の主治はどれか。",
+  "choices": [
+   "咳嗽",
+   "動悸",
+   "不眠",
+   "月経痛"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "関元兪（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 107,
+  "question": "経脈の流注で生殖器をめぐるのはどれか。",
+  "choices": [
+   "足の陽明経",
+   "足の太陰経",
+   "足の少陰経",
+   "足の厥陰経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 108,
+  "question": "八会穴で募穴でもある経穴が所属する経脈はどれか。",
+  "choices": [
+   "足の太陰経",
+   "足の厥陰経",
+   "足の太陽経",
+   "足の少陽経"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 109,
+  "question": "骨度で胸骨体下端から臍中央と同じ寸法はどれか。",
+  "choices": [
+   "内果尖から肝経の絡穴",
+   "外果尖から胃経の絡穴",
+   "手関節掌側横紋から肺経の郄穴",
+   "手関節背側横紋から大腸経の郄穴"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 110,
+  "question": "デルマトームの Th7 から Th10領域に位置する募穴の臓腑はどれか。",
+  "choices": [
+   "胃",
+   "小腸",
+   "心包",
+   "三焦"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 111,
+  "question": "胸骨角を基準に取るのはどれか。",
+  "choices": [
+   "幽門",
+   "鳩尾",
+   "玉堂",
+   "気舎"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "玉堂（任脈・CV18）は「前胸部、前正中線上、第3肋間と同じ高さ」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "玉堂（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "幽門（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "気舎（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 112,
+  "question": "督脈の経穴で、外方3寸に膀胱経の経穴がないのはどれか。",
+  "choices": [
+   "陶道",
+   "霊台",
+   "懸枢",
+   "腰兪"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "陶道（督脈・GV13）は「上背部、後正中線上、第1胸椎棘突起下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "陶道（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 113,
+  "question": "深刺の際に最も注意すべき腧穴はどれか。",
+  "choices": [
+   "八風",
+   "秉風",
+   "風市",
+   "風池"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "風池（胆経・GB20）は「後頸部、後頭骨の下方、胸鎖乳突筋と僧帽筋の起始部の間、陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "風池（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "秉風（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB31",
+    "t": "風市（胆経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 114,
+  "question": "経穴の部位で正しいのはどれか。",
+  "choices": [
+   "伏兎は、大腿前外側、大腿直筋腱の外側で膝蓋骨底の上方3寸にある。",
+   "承扶は、大腿部後面、大腿二頭筋と半腱様筋の間、殿溝の下方6寸にある。",
+   "風市は、大腿部外側、腸脛靱帯の後方で、膝窩横紋の上方7寸にある。",
+   "陰包は、大腿部内側、薄筋と縫工筋の間、膝蓋骨底の上方4寸にある。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "陰包（肝経・LR9）は「大腿部内側、薄筋と縫工筋の間、膝蓋骨底の上方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR9",
+    "t": "陰包（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "伏兎（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "承扶（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 115,
+  "question": "長母指外転筋腱と短母指伸筋腱の間にある経穴について正しいのはどれか。",
+  "choices": [
+   "主に急性症状の治療で用いる。",
+   "督脈との交会穴である。",
+   "脈気が溜るところにあたる。",
+   "頭項の病に用いる。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 116,
+  "question": "正中神経の分布領域にある経穴はどれか。",
+  "choices": [
+   "商陽",
+   "関衝",
+   "少衝",
+   "少沢"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "商陽（大腸経・LI1）は「示指、末節骨橈側、爪甲角近位外方1分、爪甲橈側縁の垂線と爪甲基底部の水平線との交点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LI1",
+    "t": "商陽（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "関衝（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT9",
+    "t": "少衝（心経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 117,
+  "question": "第4 ・第5中手骨の間にあるのはどれか。",
+  "choices": [
+   "労宮",
+   "少府",
+   "腕骨",
+   "落枕"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "少府（心経・HT8）は「手掌、第5中手指節関節の近位端と同じ高さ、第4・第5中手骨の間」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "少府（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "労宮（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI4",
+    "t": "腕骨（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 118,
+  "question": "経穴と取り方の指標の組合せで正しいのはどれか。",
+  "choices": [
+   "顴髎 ― 外眼角を通る垂線上",
+   "地倉 ― 瞳孔を通る垂線上",
+   "四白 ― 耳垂下縁を通る水平線",
+   "下関 ― 頬骨弓中央の上際"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "顴髎（小腸経・SI18）は「顔面部、外眼角の直下、頬骨下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "顴髎（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "地倉（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST2",
+    "t": "四白（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 119,
+  "question": "所属経脈が表裏関係にあるのはどれか。",
+  "choices": [
+   "頭竅陰と足竅陰",
+   "手五里と足五里",
+   "腰陽関と膝陽関",
+   "腹通谷と足通谷"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "足通谷（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腹通谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "頭竅陰（胆経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 120,
+  "question": "腓骨の後方に取る経穴はどれか。",
+  "choices": [
+   "陽維脈の郄穴",
+   "胆経の郄穴",
+   "胆経の絡穴",
+   "八会穴の髄会"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 121,
+  "question": "五兪穴で咳嗽と発熱に用いるのはどれか。",
+  "choices": [
+   "陰谷",
+   "復溜",
+   "太渓",
+   "然谷"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "復溜（腎経・KI7）は「下腿後内側、アキレス腱の前縁、内果尖の上方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI7",
+    "t": "復溜（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI10",
+    "t": "陰谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI3",
+    "t": "太渓（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 122,
+  "question": "六つ灸で用いる経穴と同じ高さにあるのはどれか。",
+  "choices": [
+   "至陽",
+   "接脊",
+   "中枢",
+   "陽綱"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "至陽（督脈・GV9）は「上背部、後正中線上、第7胸椎棘突起下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GV9",
+    "t": "至陽（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "中枢（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "陽綱（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 123,
+  "question": "大腸の下合穴が所属する経脈の経火穴はどれか。",
+  "choices": [
+   "陥谷",
+   "陽渓",
+   "解渓",
+   "崑崙"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "解渓（胃経・ST41）は「足関節前面、足関節前面中央の陥凹部、長母指伸筋腱と長指伸筋腱の間」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST41",
+    "t": "解渓（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "陥谷（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI5",
+    "t": "陽渓（大腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 124,
+  "question": "腓骨頭直下と脛骨粗面下端の中間に取る経穴が所属するのはどれか。",
+  "choices": [
+   "八総穴",
+   "八会穴",
+   "中風七穴",
+   "五要穴"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 125,
+  "question": "生体において皮膚温の変化を示すのはどれか。",
+  "choices": [
+   "丘疹点",
+   "ヘッド帯",
+   "ボアス点",
+   "エアポケット現象"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 30,
+  "number": 126,
+  "question": "透熱灸を避けるべき経穴はどれか。",
+  "choices": [
+   "百会",
+   "巨髎",
+   "天柱",
+   "角孫"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "巨髎（胃経・ST3）は「顔面部、瞳孔線上、鼻翼下縁と同じ高さ」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-ST3",
+    "t": "巨髎（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GV20",
+    "t": "百会（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "天柱（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 107,
+  "question": "胸中で接続する経脈の井穴の組合せで正しいのはどれか。",
+  "choices": [
+   "商陽 ― 厲兌",
+   "隠白 ― 少衝",
+   "少沢 ― 至陰",
+   "湧泉 ― 中衝"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "湧泉（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC9",
+    "t": "中衝（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI1",
+    "t": "商陽（大腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 108,
+  "question": "経絡の概要について正しいのはどれか。",
+  "choices": [
+   "十二経筋は四肢末端から始まる。",
+   "奇経八脈は奇経同士が表裏関係にある。",
+   "十二経別は正経とは合しない経脈である。",
+   "正経十二経脈は上焦から始まる。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 109,
+  "question": "奇経で子宮から起こるのはどれか。",
+  "choices": [
+   "陽蹻脈",
+   "陽維脈",
+   "任脈",
+   "帯脈"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 110,
+  "question": "腧穴の概要について正しいのはどれか。",
+  "choices": [
+   "WHO/WPRO で経穴が 365穴となる。",
+   "奇穴は奇経に所属する。",
+   "新穴は奇穴に含まれる。",
+   "阿是穴は部位が定まっている。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 111,
+  "question": "手の三陽経、足の三陽経が交わる交会穴はどれか。",
+  "choices": [
+   "百会",
+   "大椎",
+   "陽交",
+   "三陽絡"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "大椎（督脈・GV14）は「後頸部、後正中線上、第7頸椎棘突起下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "大椎（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GV20",
+    "t": "百会（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "陽交（胆経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 112,
+  "question": "骨度で左右の乳様突起の間と同じ長さなのはどれか。",
+  "choices": [
+   "外果尖の高さから承山",
+   "膝蓋骨尖の高さから漏谷",
+   "肘窩横紋から内関",
+   "手関節背側横紋から四瀆"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "漏谷（脾経・SP7）は「下腿内側（脛側）、脛骨内縁の後際、内果尖の上方6寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "漏谷（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "承山（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC6",
+    "t": "内関（心包経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 113,
+  "question": "腹部において、腎経、胃経ともに同じ高さに経穴がないのはどれか。",
+  "choices": [
+   "臍中央の上方7寸",
+   "臍中央の上方3寸",
+   "臍中央の上方1寸",
+   "臍中央の下方4寸"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 114,
+  "question": "督脈の経穴がある部位はどれか。",
+  "choices": [
+   "第2胸椎棘突起下方の陥凹部",
+   "第4胸椎棘突起下方の陥凹部",
+   "第6胸椎棘突起下方の陥凹部",
+   "第8胸椎棘突起下方の陥凹部"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 115,
+  "question": "顖会について正しいのはどれか。",
+  "choices": [
+   "所属する経脈の 21番目の経穴である。",
+   "小児では小泉門部にあたる。",
+   "眼神経の支配領域にある。",
+   "目窓と横に並ぶ。"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "顖会（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "目窓（胆経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 116,
+  "question": "経穴の部位で正しいのはどれか。",
+  "choices": [
+   "青霊は、上腕二頭筋長頭と短頭の間、腋窩横紋前端の下方2寸にある。",
+   "消濼は、肘頭と肩峰角を結ぶ線上、肘頭の上方5寸にある。",
+   "侠白は、上腕二頭筋外側縁、腋窩横紋前端の下方3寸にある。",
+   "手五里は、肘窩横紋外端の上方7寸にある。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "消濼（三焦経・TE12）は「上腕後面、肘頭と肩峰角を結ぶ線上、肘頭の上方5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "消濼（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "青霊（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "侠白（肺経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 117,
+  "question": "取穴部位が後頸三角の領域にあるのはどれか。",
+  "choices": [
+   "人迎",
+   "天窓",
+   "天容",
+   "扶突"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "天窓（小腸経・SI16）は「前頸部、甲状軟骨上縁と同じ高さ、胸鎖乳突筋の後縁」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "天窓（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST9",
+    "t": "人迎（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI17",
+    "t": "天容（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 118,
+  "question": "同じ高さに並ぶ経穴はどれか。",
+  "choices": [
+   "膏肓と心兪",
+   "肓門と胃兪",
+   "胞肓と膀胱兪",
+   "秩辺と中膂兪"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL21",
+    "t": "胃兪（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 119,
+  "question": "鎖骨下縁に取るのはどれか。",
+  "choices": [
+   "欠盆",
+   "中府",
+   "天突",
+   "兪府"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "兪府（腎経・KI27）は「前胸部、鎖骨下縁、前正中線の外方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "兪府（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "欠盆（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "中府（肺経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 120,
+  "question": "橈側手根屈筋腱の橈側に位置する経穴はどれか。",
+  "choices": [
+   "列欠",
+   "霊道",
+   "内関",
+   "支正"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT4",
+    "t": "霊道（心経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC6",
+    "t": "内関（心包経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 121,
+  "question": "深刺すると、前鋸筋と肋間筋を貫き肺を損傷するのはどれか。",
+  "choices": [
+   "輒筋",
+   "膺窓",
+   "期門",
+   "胸郷"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "輒筋（胆経・GB23）は「側胸部、第4肋間、中腋窩線の前方1寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "輒筋（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "膺窓（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR14",
+    "t": "期門（肝経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 122,
+  "question": "足の太陰経にある経金穴の部位はどれか。",
+  "choices": [
+   "足関節後内側、内果尖とアキレス腱の間の陥凹部",
+   "足内側、内果の前下方、舟状骨粗面と内果尖の中央陥凹部",
+   "足関節前外側、長指伸筋腱外側の陥凹部、外果尖の前下方",
+   "足関節前面中央の陥凹部、長母指伸筋腱と長指伸筋腱の間"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 123,
+  "question": "五要穴について正しいのはどれか。",
+  "choices": [
+   "同じ高さで並ぶ郄穴がある。",
+   "手関節横紋上には 6穴の原穴がある。",
+   "前腕の外側と内側で対応する絡穴がある。",
+   "募穴のうち 4穴は自経にある。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 124,
+  "question": "組合せで用いる経穴で八会穴を含まないのはどれか。",
+  "choices": [
+   "脚気八処の穴",
+   "小児斜差の灸",
+   "中風七穴",
+   "六つ灸"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 125,
+  "question": "肓門穴の外方5分にある奇穴の主治はどれか。",
+  "choices": [
+   "喘息",
+   "動悸",
+   "痞塊",
+   "痔疾"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "肓門（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 31,
+  "number": 126,
+  "question": "奇穴とその部位の組合せで正しいのはどれか。",
+  "choices": [
+   "魚腰 ― 眉間中央陥凹部",
+   "接脊 ― 第11胸椎棘突起下方の陥凹部",
+   "十宣 ― 各中手指節関節の間の背側",
+   "胆嚢点 ― 陽陵泉の下約1寸"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 107,
+  "question": "経脈の流注で横隔膜を貫かないのはどれか。",
+  "choices": [
+   "手の太陰肺経",
+   "足の太陰脾経",
+   "足の太陽膀胱経",
+   "手の少陽三焦経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "膀胱経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 108,
+  "question": "小腸経の脈気を受けて内眼角に起こる経脈の別絡はどれか。",
+  "choices": [
+   "衝脈",
+   "督脈",
+   "陽蹻脈",
+   "陽維脈"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 109,
+  "question": "五兪穴について正しいのはどれか。",
+  "choices": [
+   "足の少陰経の井木穴は爪甲の際にある。",
+   "足の陽明経の滎水穴は経脈の末端穴から 2番目にある。",
+   "手の太陽経の兪木穴は原穴と一致する。",
+   "手の厥陰経の経金穴は手関節横紋にある。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "胃経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 110,
+  "question": "要穴で、所属するすべての経穴が足の三陽経のいずれかにあてはまるのは どれか。",
+  "choices": [
+   "下合穴",
+   "四総穴",
+   "八総穴",
+   "八会穴"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 111,
+  "question": "膝蓋骨尖と内果尖とを結ぶ線を 3等分し、内果尖から 3分の 1 にあるのは どれか。",
+  "choices": [
+   "肝経の絡穴",
+   "腎経の絡穴",
+   "脾経の郄穴",
+   "陰蹻脈の郄穴"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 112,
+  "question": "経穴の部位で正しいのはどれか。",
+  "choices": [
+   "天衝は、耳尖の直上、髪際の上方1寸5分にある。",
+   "天牖は、下顎角と同じ高さ、胸鎖乳突筋後方の陥凹部にある。",
+   "天容は、胸鎖乳突筋の後縁、甲状軟骨上縁と同じ高さにある。",
+   "天鼎は、輪状軟骨と同じ高さ、胸鎖乳突筋の前縁にある。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "天牖（三焦経・TE16）は「前頸部、下顎角と同じ高さ、胸鎖乳突筋の後方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "天牖（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "天衝（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI17",
+    "t": "天容（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 113,
+  "question": "陰都と同じ高さに位置する任脈の経穴について正しいのはどれか。",
+  "choices": [
+   "臍中央の上方3寸にある。",
+   "八会穴の腑会である。",
+   "任脈の絡穴である。",
+   "上方3寸には中庭がある。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "陰都（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "中庭（任脈）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 114,
+  "question": "膻中について正しいのはどれか。",
+  "choices": [
+   "心の募穴である。",
+   "八脈交会穴の一つである。",
+   "胸骨上窩を基準に取穴する。",
+   "外方6寸は天渓である。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "天渓（脾経・SP18）は「前胸部、第4肋間、前正中線の外方6寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP18",
+    "t": "天渓（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-CV17",
+    "t": "膻中（任脈）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 115,
+  "question": "左右の第12肋骨先端を結ぶ線と後正中線の交点で、棘突起下方陥凹部に あるのはどれか。",
+  "choices": [
+   "懸枢",
+   "命門",
+   "腰陽関",
+   "下極兪"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "命門（督脈・GV4）は「腰部、後正中線上、第2腰椎棘突起下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "命門（督脈）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 116,
+  "question": "絡穴が郄穴より末梢にある経脈はどれか。",
+  "choices": [
+   "手の太陽経",
+   "手の少陰経",
+   "足の太陽経",
+   "足の太陰経"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "心経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "小腸経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 117,
+  "question": "膝窩横紋上で半腱様筋腱の外縁にあるのはどれか。",
+  "choices": [
+   "膝関",
+   "委陽",
+   "陰谷",
+   "曲泉"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "陰谷（腎経・KI10）は「膝後内側、半腱様筋腱の外縁、膝窩横紋上」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI10",
+    "t": "陰谷（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR7",
+    "t": "膝関（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "委陽（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 118,
+  "question": "上腕二頭筋長頭と短頭の間、腋窩横紋前端の下方2寸にあるのはどれか。",
+  "choices": [
+   "天府",
+   "臂臑",
+   "天泉",
+   "消濼"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "天泉（心包経・PC2）は「上腕前面、上腕二頭筋長頭と短頭の間、腋窩横紋前端の下方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-PC2",
+    "t": "天泉（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "天府（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI14",
+    "t": "臂臑（大腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 119,
+  "question": "経脈の流注の方向に沿った斜刺で深刺をした場合、肺を損傷するリスクが 最も高い募穴はどれか。",
+  "choices": [
+   "中府",
+   "章門",
+   "京門",
+   "日月"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "日月（胆経・GB24）は「前胸部、第7肋間、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "日月（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "中府（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR13",
+    "t": "章門（肝経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 120,
+  "question": "足陽明経の経火穴と足太陰経の経金穴の間にあるのはどれか。",
+  "choices": [
+   "衝陽",
+   "太衝",
+   "中封",
+   "丘墟"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "中封（肝経・LR4）は「足関節前内側、前脛骨筋腱内側の陥凹部、内果尖の前方」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LR4",
+    "t": "中封（肝経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST42",
+    "t": "衝陽（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR3",
+    "t": "太衝（肝経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 121,
+  "question": "足少陽経の経火穴の部位はどれか。",
+  "choices": [
+   "下腿外側、腓骨の前方、外果尖の上方4寸",
+   "下腿前面、膝蓋靱帯外方の陥凹部の下方9寸",
+   "下腿内側、脛骨内縁の後方の陥凹部、内果尖の上方2寸",
+   "下腿後外側、外果尖とアキレス腱の間の陥凹部から上方3寸"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 122,
+  "question": "腋窩壁を構成する筋上にあるのはどれか。",
+  "choices": [
+   "魂門",
+   "風門",
+   "幽門",
+   "雲門"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "魂門（膀胱経・BL47）は「上背部、第9胸椎棘突起下縁と同じ高さ、後正中線の外方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "魂門（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "幽門（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "雲門（肺経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 123,
+  "question": "八会穴で、所属する経脈が異なる組合せはどれか。",
+  "choices": [
+   "気会 ― 腑会",
+   "筋会 ― 髄会",
+   "血会 ― 骨会",
+   "脈会 ― 臓会"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 124,
+  "question": "手関節横紋から最も遠いのはどれか。",
+  "choices": [
+   "肺経の郄穴",
+   "大腸経の絡穴",
+   "心包経の経金穴",
+   "三焦経の経火穴"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "肺経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "大腸経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#PC",
+    "t": "心包経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 125,
+  "question": "脚気八処の穴に含まれないのはどれか。",
+  "choices": [
+   "伏兎",
+   "外膝眼",
+   "下巨虚",
+   "条口"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "条口（胃経・ST38）は「下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方8寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "条口（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 32,
+  "number": 126,
+  "question": "循経感伝現象と関係しないのはどれか。",
+  "choices": [
+   "丘疹",
+   "索状硬結",
+   "腫脹",
+   "色素沈着"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 107,
+  "question": "経絡系統について正しいのはどれか。",
+  "choices": [
+   "経絡は正経十二経脈と奇経八脈で構成される。",
+   "経脈には十二経別が含まれる。",
+   "十二経筋は中焦から始まる。",
+   "十二皮部は臓腑と属絡関係にある。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 108,
+  "question": "郄穴でないのはどれか。",
+  "choices": [
+   "陽谷",
+   "跗陽",
+   "交信",
+   "築賓"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "陽谷（小腸経・SI5）は「手関節後内側、三角骨と尺骨茎状突起の間の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI5",
+    "t": "陽谷（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL59",
+    "t": "跗陽（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI8",
+    "t": "交信（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 109,
+  "question": "骨度法で最も長いのはどれか。",
+  "choices": [
+   "殿溝から膝窩",
+   "膝蓋骨尖から内果尖",
+   "膝窩から外果尖",
+   "脛骨内側顆下縁から内果尖"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 110,
+  "question": "臍中央と恥骨結合上縁を結ぶ線の中点の下方5分にある募穴の臓腑はどれか。",
+  "choices": [
+   "胃",
+   "三焦",
+   "小腸",
+   "膀胱"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 111,
+  "question": "経穴の部位で正しいのはどれか。",
+  "choices": [
+   "顴髎は、頬骨弓の下縁中点と下顎切痕の間の陥凹部にある。",
+   "巨髎は、鼻唇溝中、鼻翼外縁中点と同じ高さにある。",
+   "和髎は、耳珠上の切痕と下顎骨の関節突起の間、陥凹部にある。",
+   "禾髎は、人中溝中点と同じ高さ、鼻孔外縁の下方にある。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "禾髎（大腸経・LI19）は「顔面部、人中溝中点と同じ高さ、鼻孔外縁の下方」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#LI",
+    "t": "禾髎（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "顴髎（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST3",
+    "t": "巨髎（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 112,
+  "question": "正中神経が支配する皮膚領域にあるのはどれか。",
+  "choices": [
+   "少商",
+   "少衝",
+   "関衝",
+   "商陽"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "商陽（大腸経・LI1）は「示指、末節骨橈側、爪甲角近位外方1分、爪甲橈側縁の垂線と爪甲基底部の水平線との交点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LI1",
+    "t": "商陽（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "少商（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-HT9",
+    "t": "少衝（心経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 113,
+  "question": "尺骨神経の支配する筋上にあるのはどれか。",
+  "choices": [
+   "合谷",
+   "偏歴",
+   "手三里",
+   "手五里"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "合谷（大腸経・LI4）は「手背、第2中手骨中点の橈側」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LI4",
+    "t": "合谷（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI6",
+    "t": "偏歴（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LI10",
+    "t": "手三里（大腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 114,
+  "question": "八会穴の腑会と同じ高さに並ぶのはどれか。",
+  "choices": [
+   "承満",
+   "梁門",
+   "太乙",
+   "滑肉門"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "梁門（胃経・ST21）は「上腹部、臍中央の上方4寸、前正中線の外方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "梁門（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 115,
+  "question": "脛骨内側顆下縁と脛骨内縁が接する陥凹部の下方3寸にあるのはどれか。",
+  "choices": [
+   "足の太陰経の郄穴",
+   "足の太陰経の絡穴",
+   "足の厥陰経の郄穴",
+   "足の厥陰経の絡穴"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#LR",
+    "t": "肝経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 116,
+  "question": "回旋筋腱板で肩を外転させる筋上にある経穴はどれか。",
+  "choices": [
+   "肩貞",
+   "臑兪",
+   "曲垣",
+   "天宗"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "曲垣（小腸経・SI13）は「肩甲部、肩甲棘内端の上方陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI13",
+    "t": "曲垣（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "肩貞（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SI11",
+    "t": "天宗（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 117,
+  "question": "広背筋上にある経穴はどれか。",
+  "choices": [
+   "神堂",
+   "淵腋",
+   "章門",
+   "志室"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "志室（膀胱経・BL52）は「腰部、第2腰椎棘突起下縁と同じ高さ、後正中線の外方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "志室（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "淵腋（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-LR13",
+    "t": "章門（肝経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 118,
+  "question": "足の少陰経の経金穴と同じ高さに並ぶのはどれか。",
+  "choices": [
+   "交信",
+   "陽輔",
+   "豊隆",
+   "中都"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "交信（腎経・KI8）は「下腿内側、脛骨内縁の後方の陥凹部、内果尖の上方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-KI8",
+    "t": "交信（腎経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "陽輔（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST40",
+    "t": "豊隆（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 119,
+  "question": "頭部、耳介の付け根の後縁の直上、髪際の上方2寸にあるのはどれか。",
+  "choices": [
+   "角孫",
+   "浮白",
+   "天衝",
+   "曲鬢"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "天衝（胆経・GB9）は「頭部、耳介の付け根の後縁の直上、髪際の上方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "天衝（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "角孫（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 120,
+  "question": "足の太陰経の五兪穴で、身体が重く関節が痛む際に用いる経穴の部位はど れか。",
+  "choices": [
+   "足の第1指、第1中足指節関節内側の遠位陥凹部、赤白肉際",
+   "足内側、第1中足指節関節内側の近位陥凹部、赤白肉際",
+   "足内側、内果の前下方、舟状骨粗面と内果尖の中央陥凹部",
+   "足関節前内側、前脛骨筋腱内側の陥凹部、内果尖の前方"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 121,
+  "question": "原穴が足関節部にある経脈はどれか。",
+  "choices": [
+   "少陽経",
+   "厥陰経",
+   "太陰経",
+   "太陽経"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 122,
+  "question": "八会穴の部位はどれか。",
+  "choices": [
+   "第6肋間、前正中線の外方4寸",
+   "第7肋間、前正中線の外方4寸",
+   "第11肋骨端下縁",
+   "第12肋骨端下縁"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 123,
+  "question": "中風七穴はどれか。",
+  "choices": [
+   "肩髎",
+   "梁丘",
+   "陽陵泉",
+   "曲池"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "曲池（大腸経・LI11）は「肘外側、尺沢と上腕骨外側上顆を結ぶ線上の中点」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LI11",
+    "t": "曲池（大腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE14",
+    "t": "肩髎（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "梁丘（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 124,
+  "question": "女児に行う小児斜差の灸で正しいのはどれか。",
+  "choices": [
+   "左の膈兪と右の肝兪",
+   "右の肝兪と左の脾兪",
+   "左の胆兪と右の脾兪",
+   "右の脾兪と左の胃兪"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL18",
+    "t": "肝兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "脾兪（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL17",
+    "t": "膈兪（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 125,
+  "question": "直刺で刺入した場合、肺までの距離が最も短いのはどれか。",
+  "choices": [
+   "肩井",
+   "譩譆",
+   "肺兪",
+   "大杼"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "譩譆（膀胱経・BL45）は「上背部、第6胸椎棘突起下縁と同じ高さ、後正中線の外方3寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#BL",
+    "t": "譩譆（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB21",
+    "t": "肩井（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-BL11",
+    "t": "大杼（膀胱経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 33,
+  "number": 126,
+  "question": "臓器損傷を避けるため、刺鍼の際に最も注意すべき経穴はどれか。",
+  "choices": [
+   "天泉",
+   "天井",
+   "天宗",
+   "天突"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "天突（任脈・CV22）は「前頸部、前正中線上、頸窩（胸骨上窩）の中央」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "天突（任脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC2",
+    "t": "天泉（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "天井（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 107,
+  "question": "足から腹部に至り任脈、胆経、肝経と交わり舌に至る経脈はどれか。",
+  "choices": [
+   "陰蹻脈",
+   "陰維脈",
+   "足太陰脾経",
+   "足少陰腎経"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SP",
+    "t": "脾経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "腎経の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "胆経の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 108,
+  "question": "奇経八脈について最も適切なのはどれか。",
+  "choices": [
+   "循行には共通する規則性がある。",
+   "督脈と任脈は属絡関係である。",
+   "陽維脈と陰維脈は表裏関係にある。",
+   "正経十二経脈と交会している。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "督脈の走行とよく出る穴"
+   },
+   {
+    "href": "../guide/keiketsu/#CV",
+    "t": "任脈の走行とよく出る穴"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 109,
+  "question": "募穴について最も適切なのはどれか。",
+  "choices": [
+   "背部兪穴と表裏関係にある。",
+   "臓腑の気が注ぐところである。",
+   "臓と腑では主に臓の治療に有効である。",
+   "臓腑と同名の経脈上にある。"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 110,
+  "question": "天応穴の特徴はどれか。",
+  "choices": [
+   "十四経脈上にある。",
+   "主治が定まっている。",
+   "1901年以降に定められた。",
+   "病態と関連して出現する。"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 111,
+  "question": "中指末節骨の指幅を 1横指として取穴する経穴はどれか。",
+  "choices": [
+   "陽白",
+   "照海",
+   "水泉",
+   "頬車"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "頬車（胃経・ST6）は「顔面部、下顎角の前上方1横指」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "頬車（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#GB",
+    "t": "陽白（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-KI6",
+    "t": "照海（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 112,
+  "question": "陰経を総括する奇経の八脈交会穴はどれか。",
+  "choices": [
+   "内関",
+   "公孫",
+   "列欠",
+   "照海"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "列欠（肺経・LU7）は「前腕橈側、長母指外転筋腱と短母指伸筋腱の間、手関節掌側横紋の上方1.5寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-LU7",
+    "t": "列欠（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-PC6",
+    "t": "内関（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-SP4",
+    "t": "公孫（脾経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 113,
+  "question": "神庭穴と眉間の中点との長さはどれか。",
+  "choices": [
+   "5分",
+   "1寸5分",
+   "2寸5分",
+   "3寸5分"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "神庭（督脈）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 114,
+  "question": "経穴と体表指標の組合せで誤っているのはどれか。",
+  "choices": [
+   "身柱 ― 肩甲骨上角",
+   "至陽 ― 肩甲骨下角",
+   "命門 ― 第12肋骨先端",
+   "腰陽関 ― 腸骨稜最高点"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "身柱（督脈・GV12）の正しい部位は「上背部、後正中線上、第3胸椎棘突起下方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "身柱（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GV9",
+    "t": "至陽（督脈）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 115,
+  "question": "鎖骨下縁と乳頭線との交点にあるのはどれか。",
+  "choices": [
+   "庫房",
+   "気戸",
+   "兪府",
+   "気舎"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "気戸（胃経・ST13）は「前胸部、鎖骨下縁、前正中線の外方4寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "気戸（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#KI",
+    "t": "兪府（腎経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 116,
+  "question": "伏在神経の分布領域にあるのはどれか。",
+  "choices": [
+   "陽陵泉",
+   "陰陵泉",
+   "陰市",
+   "陰包"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "陰陵泉（脾経・SP9）は「下腿内側、脛骨内側顆下縁と脛骨内縁が接する陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SP9",
+    "t": "陰陵泉（脾経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-GB34",
+    "t": "陽陵泉（胆経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "陰市（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 117,
+  "question": "少海穴について最も適切なのはどれか。",
+  "choices": [
+   "尺骨神経溝上にある。",
+   "同経の兪穴までは 12寸である。",
+   "五行穴では金穴に属する。",
+   "皮膚面に対しての直刺で、尺側手根屈筋に刺鍼できる。"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-HT3",
+    "t": "少海（心経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 118,
+  "question": "上腕二頭筋の長頭と短頭の間にあるのはどれか。",
+  "choices": [
+   "天泉",
+   "天府",
+   "青霊",
+   "臂臑"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "天泉（心包経・PC2）は「上腕前面、上腕二頭筋長頭と短頭の間、腋窩横紋前端の下方2寸」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-PC2",
+    "t": "天泉（心包経）"
+   },
+   {
+    "href": "../guide/keiketsu/#LU",
+    "t": "天府（肺経）"
+   },
+   {
+    "href": "../guide/keiketsu/#HT",
+    "t": "青霊（心経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 119,
+  "question": "顔面部、耳珠中央の前縁と下顎骨関節突起の間の陥凹部にあるのはどれか。",
+  "choices": [
+   "耳門",
+   "和髎",
+   "聴会",
+   "聴宮"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "聴宮（小腸経・SI19）は「顔面部、耳珠中央の前縁と下顎骨関節突起の間の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#SI",
+    "t": "聴宮（小腸経）"
+   },
+   {
+    "href": "../guide/keiketsu/#TE",
+    "t": "耳門（三焦経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE22",
+    "t": "和髎（三焦経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 120,
+  "question": "五兪穴で、のぼせと失禁に用いる経穴の部位はどれか。",
+  "choices": [
+   "内果尖とアキレス腱の間の陥凹部",
+   "膝後内側、半腱様筋腱の外縁、膝窩横紋上",
+   "アキレス腱の前縁、内果尖の上方2寸",
+   "足内側、舟状骨粗面の下方、赤白肉際"
+  ],
+  "answers": [
+   1
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 121,
+  "question": "原気が集まるとされ、体が重だるく関節が痛むときに用いる経穴の部位は どれか。",
+  "choices": [
+   "手背、第2中手指節関節橈側の近位陥凹部",
+   "足背、第2中足骨底部と中間楔状骨の間、足背動脈拍動部",
+   "手関節前内側、尺側手根屈筋腱の橈側縁、手関節掌側横紋上",
+   "足背、第4 ・第5中足骨底接合部の遠位、第5指の長指伸筋腱外側の陥凹部"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 122,
+  "question": "郄穴の部位はどれか。",
+  "choices": [
+   "前腕後面、尺骨の橈側縁、手関節背側横紋の上方3寸",
+   "肘後内側、肘頭と上腕骨内側上顆の間の陥凹部",
+   "足内側、内果の前下方、舟状骨粗面と内果尖の中央陥凹部",
+   "足外側、第5中足骨粗面の遠位、赤白肉際"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-SI4",
+    "t": "腕骨（小腸経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 123,
+  "question": "絡穴の部位はどれか。",
+  "choices": [
+   "下腿外側、腓骨の前方、外果尖の上方4寸",
+   "下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方8寸",
+   "下腿内側、脛骨内縁の後際、陰陵泉の下方3寸",
+   "下腿後外側、腓腹筋外側頭下縁とアキレス腱の間、崑崙の上方7寸"
+  ],
+  "answers": [
+   3
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#pt-BL60",
+    "t": "崑崙（膀胱経）"
+   },
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "犢鼻（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST41",
+    "t": "解渓（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 124,
+  "question": "八会穴で募穴でもあるのはどれか。",
+  "choices": [
+   "気会",
+   "血会",
+   "骨会",
+   "脈会"
+  ],
+  "answers": [
+   0
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/",
+    "t": "経穴・経絡（14経の走行と流注の図）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 125,
+  "question": "八総穴に属する経穴の部位はどれか。",
+  "choices": [
+   "下腿前面、犢鼻と解渓を結ぶ線上、犢鼻の下方9寸",
+   "下腿外側、腓骨の前方、外果尖の上方3寸",
+   "足外側、外果尖の直下、外果下縁と踵骨の間の陥凹部",
+   "膝後面、膝窩横紋の中点"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#ST",
+    "t": "犢鼻（胃経）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-ST41",
+    "t": "解渓（胃経）"
+   }
+  ],
+  "basis": "official"
+ },
+ {
+  "exam": 34,
+  "number": 126,
+  "question": "腧穴で鍼の深刺により延髄損傷の危険性が最も高いのはどれか。",
+  "choices": [
+   "脳戸",
+   "翳風",
+   "瘂門",
+   "夾脊"
+  ],
+  "answers": [
+   2
+  ],
+  "explanation": "瘂門（督脈・GV15）は「後頸部、後正中線上、第2頸椎棘突起上方の陥凹部」。",
+  "links": [
+   {
+    "href": "../guide/keiketsu/#GV",
+    "t": "瘂門（督脈）"
+   },
+   {
+    "href": "../guide/keiketsu/#pt-TE17",
+    "t": "翳風（三焦経）"
+   }
+  ],
+  "basis": "official"
+ }
+]

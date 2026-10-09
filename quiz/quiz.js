@@ -1,11 +1,11 @@
-/* 4択クイズ（10・30・50問）／まちがえた問題だけ復習。過去問JSON（anatomy/・physiology/ の questions.json）を読み込んで出題（重複なし）。 */
+/* 4択クイズ（10・30・50問）／まちがえた問題だけ復習。過去問JSON（anatomy/・physiology/・keiketsu/ の questions.json）を読み込んで出題（重複なし）。 */
 (function () {
   "use strict";
   var G = window.JKGame;
   var ROOT = G.rootUrl;
   var C = G.constants;
   var NAMES = C.SUBJ, PAGES = C.SUBJ_PAGE;
-  var PAGE2S = { anatomy: "ana", physiology: "phy" };
+  var PAGE2S = { anatomy: "ana", physiology: "phy", keiketsu: "kei" };
     var $ = function (id) { return document.getElementById(id); };
   var params = new URLSearchParams(location.search);
   if (params.get("mode") === "weak") history.replaceState(null, "", location.pathname + "?s=" + (params.get("s") || ""));
