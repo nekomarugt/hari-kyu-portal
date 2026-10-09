@@ -25,7 +25,16 @@
 
   var LEVELS = [
     [0, "はじめの一歩"], [50, "かけだし"], [150, "見習い"], [300, "いっぱしの学生"], [500, "実力アップ"],
-    [800, "力がついてきた"], [1200, "頼れる先輩"], [1700, "合格圏"], [2300, "ほぼ先生"], [3000, "解剖生理マスター"]
+    [800, "力がついてきた"], [1200, "頼れる先輩"], [1700, "合格圏"], [2300, "ほぼ先生"], [3000, "解剖生理マスター"],
+    // Lv11〜50（ここから先は1レベルごとに必要XPが少しずつ増える）
+    [3700, "マスターのその先"], [4400, "ひとりだち"], [5150, "ノッてきた"], [5950, "がんばり屋"], [6750, "安定感バツグン"],
+    [7550, "クラスのたよれる人"], [8400, "解説できる人"], [9300, "問題が見えてきた"], [10200, "ベテラン"], [11100, "解剖生理エキスパート"],
+    [12050, "ねばり強い"], [13050, "ひらめき上手"], [14050, "ぶれない心"], [15050, "教え上手"], [16100, "合格ほぼ確実"],
+    [17200, "達人見習い"], [18300, "達人"], [19400, "じわじわ伝説"], [20550, "名人"], [21750, "解剖生理の名人"],
+    [22950, "知識の泉"], [24150, "スーパー学生"], [25400, "鉄人"], [26700, "ゴールド"], [28000, "プラチナ"],
+    [29300, "ダイヤモンド"], [30650, "はり灸ヒーロー"], [32050, "みんなの目標"], [33450, "生きる教科書"], [34850, "解剖生理グランドマスター"],
+    [36300, "伝説の入り口"], [37800, "伝説の学生"], [39300, "無敵モード"], [40800, "超人"], [42350, "レジェンド"],
+    [43950, "殿堂入り"], [45550, "神ってる"], [47150, "解剖生理の神見習い"], [48800, "あと一歩で神"], [50500, "解剖生理の神"]
   ];
   var BADGES = [
     { id: "first", n: "はじめの一歩", d: "はじめて1問答えた", t: function (s) { return s.att >= 1; } },
@@ -42,7 +51,56 @@
     { id: "both", n: "2科目デビュー", d: "解剖学・生理学の両方を1問以上といた", t: function (s) { return s.seen.ana && s.seen.phy; } },
     { id: "p100", n: "過去問100問クリア", d: "どちらかの科目で、過去問100問に正解（重複なし）", t: function (s) { return Object.keys(s.past).some(function (k) { return k.indexOf("|300") < 0; }); } },
     { id: "p300", n: "過去問300問クリア", d: "どちらかの科目で、過去問300問に正解（重複なし）", t: function (s) { return Object.keys(s.past).some(function (k) { return k.indexOf("|300") > 0; }); } },
-    { id: "d20", n: "1日20問", d: "1日で20問といた", t: function (s) { return s.maxDay >= 20; } }
+    { id: "d20", n: "1日20問", d: "1日で20問といた", t: function (s) { return s.maxDay >= 20; } },
+    // ---- ここから追加バッジ（条件はすでにある記録だけで判定。次に1問答えたとき、昔の記録の分もまとめてもらえる） ----
+    { id: "c250", n: "250問正解", d: "正解が合計250問", t: function (s) { return s.cor >= 250; } },
+    { id: "c500", n: "500問正解", d: "正解が合計500問", t: function (s) { return s.cor >= 500; } },
+    { id: "c1000", n: "1000問正解", d: "正解が合計1000問", t: function (s) { return s.cor >= 1000; } },
+    { id: "c2000", n: "2000問正解", d: "正解が合計2000問", t: function (s) { return s.cor >= 2000; } },
+    { id: "c3000", n: "3000問正解", d: "正解が合計3000問", t: function (s) { return s.cor >= 3000; } },
+    { id: "c5000", n: "5000問正解", d: "正解が合計5000問", t: function (s) { return s.cor >= 5000; } },
+    { id: "a100", n: "100問チャレンジ", d: "答えた数が合計100問（まちがいも数える）", t: function (s) { return s.att >= 100; } },
+    { id: "a500", n: "500問チャレンジ", d: "答えた数が合計500問（まちがいも数える）", t: function (s) { return s.att >= 500; } },
+    { id: "a1000", n: "1000問チャレンジ", d: "答えた数が合計1000問（まちがいも数える）", t: function (s) { return s.att >= 1000; } },
+    { id: "a3000", n: "3000問チャレンジ", d: "答えた数が合計3000問（まちがいも数える）", t: function (s) { return s.att >= 3000; } },
+    { id: "st21", n: "21日連続", d: "21日つづけて問題をといた", t: function (s) { return s.best >= 21; } },
+    { id: "st60", n: "60日連続", d: "60日つづけて問題をといた", t: function (s) { return s.best >= 60; } },
+    { id: "st100", n: "100日連続", d: "100日つづけて問題をといた", t: function (s) { return s.best >= 100; } },
+    { id: "st200", n: "200日連続", d: "200日つづけて問題をといた", t: function (s) { return s.best >= 200; } },
+    { id: "d50", n: "1日50問", d: "1日で50問といた", t: function (s) { return s.maxDay >= 50; } },
+    { id: "d100", n: "1日100問", d: "1日で100問といた", t: function (s) { return s.maxDay >= 100; } },
+    { id: "dy10", n: "のべ10日", d: "問題をといた日が合計10日（連続でなくてOK）", t: function (s) { return s.days.length >= 10; } },
+    { id: "dy30", n: "のべ30日", d: "問題をといた日が合計30日（連続でなくてOK）", t: function (s) { return s.days.length >= 30; } },
+    { id: "dy100", n: "のべ100日", d: "問題をといた日が合計100日（連続でなくてOK）", t: function (s) { return s.days.length >= 100; } },
+    { id: "qc5", n: "4択クイズ 5回クリア", d: "4択クイズを60%以上正解で5回完走", t: function (s) { return s.quests >= 5; } },
+    { id: "qc10", n: "4択クイズ 10回クリア", d: "4択クイズを60%以上正解で10回完走", t: function (s) { return s.quests >= 10; } },
+    { id: "qc30", n: "4択クイズ 30回クリア", d: "4択クイズを60%以上正解で30回完走", t: function (s) { return s.quests >= 30; } },
+    { id: "qc100", n: "4択クイズ 100回クリア", d: "4択クイズを60%以上正解で100回完走", t: function (s) { return s.quests >= 100; } },
+    { id: "pf3", n: "満点 3回", d: "4択クイズの全問正解が3回", t: function (s) { return s.perfect >= 3; } },
+    { id: "pf10", n: "満点 10回", d: "4択クイズの全問正解が10回", t: function (s) { return s.perfect >= 10; } },
+    { id: "pf30", n: "満点 30回", d: "4択クイズの全問正解が30回", t: function (s) { return s.perfect >= 30; } },
+    { id: "g10", n: "弱点を10個克服", d: "まちがえた問題を2回連続で正解、が10問", t: function (s) { return s.grads >= 10; } },
+    { id: "g50", n: "弱点を50個克服", d: "まちがえた問題を2回連続で正解、が50問", t: function (s) { return s.grads >= 50; } },
+    { id: "g100", n: "弱点を100個克服", d: "まちがえた問題を2回連続で正解、が100問", t: function (s) { return s.grads >= 100; } },
+    { id: "ana100", n: "解剖学 過去問100問", d: "解剖学の過去問で100問に正解（重複なし）", t: function (s) { return (s.ec.ana || 0) >= 100; } },
+    { id: "ana300", n: "解剖学 過去問300問", d: "解剖学の過去問で300問に正解（重複なし）", t: function (s) { return (s.ec.ana || 0) >= 300; } },
+    { id: "ana500", n: "解剖学 過去問500問", d: "解剖学の過去問で500問に正解（重複なし）", t: function (s) { return (s.ec.ana || 0) >= 500; } },
+    { id: "phy100", n: "生理学 過去問100問", d: "生理学の過去問で100問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 100; } },
+    { id: "phy300", n: "生理学 過去問300問", d: "生理学の過去問で300問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 300; } },
+    { id: "phy450", n: "生理学 過去問450問", d: "生理学の過去問で450問に正解（重複なし）", t: function (s) { return (s.ec.phy || 0) >= 450; } },
+    { id: "bal50", n: "2科目バランス", d: "解剖学・生理学の過去問それぞれ50問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 50 && (s.ec.phy || 0) >= 50; } },
+    { id: "bal200", n: "2科目どっちも強い", d: "解剖学・生理学の過去問それぞれ200問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 200 && (s.ec.phy || 0) >= 200; } },
+    { id: "lv15", n: "Lv15到達", d: "レベル15になった", t: function (s) { return levelInfo(s.xp).lv >= 15; } },
+    { id: "lv20", n: "Lv20到達", d: "レベル20になった", t: function (s) { return levelInfo(s.xp).lv >= 20; } },
+    { id: "lv30", n: "Lv30到達", d: "レベル30になった", t: function (s) { return levelInfo(s.xp).lv >= 30; } },
+    { id: "lv40", n: "Lv40到達", d: "レベル40になった", t: function (s) { return levelInfo(s.xp).lv >= 40; } },
+    { id: "lv50", n: "Lv50到達", d: "レベル50になった", t: function (s) { return levelInfo(s.xp).lv >= 50; } },
+    { id: "gp10", n: "ガチャ10回", d: "ガチャを合計10回まわした", t: function (s) { return s.pulls >= 10; } },
+    { id: "gp50", n: "ガチャ50回", d: "ガチャを合計50回まわした", t: function (s) { return s.pulls >= 50; } },
+    { id: "gp100", n: "ガチャ100回", d: "ガチャを合計100回まわした", t: function (s) { return s.pulls >= 100; } },
+    { id: "own10", n: "キャラ10体", d: "ちがうキャラを10体あつめた", t: function (s) { return Object.keys(s.own).length >= 10; } },
+    { id: "own20", n: "キャラ20体", d: "ちがうキャラを20体あつめた", t: function (s) { return Object.keys(s.own).length >= 20; } },
+    { id: "own30", n: "キャラ30体", d: "ちがうキャラを30体あつめた", t: function (s) { return Object.keys(s.own).length >= 30; } }
   ];
 
   /* ---------- state ---------- */
@@ -63,6 +121,9 @@
   function sane(s) {
     function num(v) { v = Math.floor(+v); return isFinite(v) && v > 0 ? v : 0; }
     function obj(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : {}; }
+    ["xp", "att", "cor", "best", "quests", "perfect", "grads", "perfChap", "subjDone", "maxDay"].forEach(function (k) { s[k] = num(s[k]); });
+    if (!Array.isArray(s.days)) s.days = [];
+    ["qs", "ec", "weak", "badges", "mast", "past", "seen"].forEach(function (k) { s[k] = obj(s[k]); });
     s.coins = num(s.coins); s.pulls = num(s.pulls); s.pity = num(s.pity); s.grant = s.grant ? 1 : 0;
     s.qb = obj(s.qb); s.qb.m = obj(s.qb.m); s.td = obj(s.td);
     s.own = obj(s.own); s.ms = obj(s.ms); s.shown = obj(s.shown);
@@ -267,7 +328,8 @@
     else if (ev.coins) msgs.push({ t: "+" + ev.coins + " コイン", k: "xp" });
     if (ev.grad) msgs.push({ t: "弱点を1つ克服！", k: "up" });
     if (ev.levelUp) msgs.push({ t: "レベルアップ！ Lv" + ev.levelUp.lv + "「" + ev.levelUp.title + "」", k: "up" });
-    ev.badges.forEach(function (b) { msgs.push({ t: "バッジ：" + b, k: "up" }); });
+    if (ev.badges.length > 2) msgs.push({ t: "バッジ " + ev.badges.length + "個ゲット！（" + ev.badges.slice(0, 2).join("・") + " ほか）", k: "up" }); // 昔の記録の分がまとめて来たとき
+    else ev.badges.forEach(function (b) { msgs.push({ t: "バッジ：" + b, k: "up" }); });
     ev.titles.forEach(function (b) { msgs.push({ t: "称号：" + b, k: "up" }); });
     ev.ms.forEach(function (m) { msgs.push({ t: m + "日連続！ ボーナス +" + ECO.MILESTONE + " コイン", k: "up" }); });
     if (bonus) msgs = msgs.filter(function (m) { return m.k !== "xp"; }); // クイズ結果画面で表示するので省略
@@ -382,10 +444,14 @@
   }
   function renderRecord() {
     var st = streakNow(), li = levelInfo(S.xp);
-    var badges = BADGES.map(function (b) {
+    function bli(b) {
       var got = S.badges[b.id];
       return '<li class="jkg-badge' + (got ? " is-got" : "") + '"><span class="jkg-bico" aria-hidden="true">' + (got ? "🏅" : "🔒") + '</span><span><strong>' + esc(b.n) + '</strong><small>' + esc(b.d) + '</small></span></li>';
-    }).join("");
+    }
+    // もらったバッジを先に。まだのバッジはたたんでおく（数が多いので）
+    var gotB = BADGES.filter(function (b) { return S.badges[b.id]; }), notB = BADGES.filter(function (b) { return !S.badges[b.id]; });
+    var badges = (gotB.length ? '<ul class="jkg-badges">' + gotB.map(bli).join("") + '</ul>' : '<p class="jkg-sub">まだありません。1問答えると最初のバッジがもらえます。</p>') +
+      (notB.length ? '<details class="jkg-more"><summary>まだのバッジ（' + notB.length + '）を見る</summary><ul class="jkg-badges">' + notB.map(bli).join("") + '</ul></details>' : '');
     var titles = [];
     Object.keys(S.past).forEach(function (k) { var p = k.split("|"); titles.push(SUBJ[p[0]] + " 過去問" + (p[1] ? p[1] : "100") + "問クリア"); });
     var prog = "";
@@ -396,7 +462,7 @@
       '<div class="jkg-stat"><small>レベル</small><strong>Lv' + li.lv + '</strong><span>' + esc(li.title) + '</span></div>' +
       '<div class="jkg-stat"><small>正解した数</small><strong>' + S.cor + '<em>問</em></strong><span>挑戦 ' + S.att + '問</span></div></div>' +
       '<div class="jkg-lvbox">' + barHtml(li) + '<span class="jkg-sub">' + S.xp + ' XP' + (li.max ? "（最高レベル）" : " ／ 次のレベルまで " + (li.next - S.xp) + " XP") + '</span></div>' +
-      '<h4>バッジ（' + badgeCount() + '/' + BADGES.length + '）</h4><ul class="jkg-badges">' + badges + '</ul>' +
+      '<h4>バッジ（' + badgeCount() + '/' + BADGES.length + '）</h4>' + badges +
       '<h4>称号</h4>' + (titles.length ? '<ul class="jkg-titles">' + titles.map(function (t) { return "<li>🎖 " + esc(t) + "</li>"; }).join("") + '</ul>' : '<p class="jkg-sub">まだありません。過去問で100問・300問に正解（重複なし）すると、科目ごとの称号がもらえます。</p>') +
       (prog ? '<h4>分野ごとの進みぐあい</h4><p class="jkg-sub">正解したことがある問題の数。80%で称号。</p>' + prog : '') +
       '<div class="jkg-rules"><h4>ルール</h4><ul><li>正解 +10 XP（同じ問題の2回目以降は +5）／ まちがい +2 XP ／ 4択クイズを60%以上で完走 +10／20／30 XP（10／30／50問。全問正解でさらに +10）</li>' +

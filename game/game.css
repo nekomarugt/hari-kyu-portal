@@ -55,7 +55,14 @@
 .jkg-stat span { font-size: .76rem; color: var(--jk-muted); }
 .jkg-lvbox { margin-top: 10px; }
 .jkg-badges, .jkg-titles, .jkg-prog, .jkg-rules ul { list-style: none; margin: 0; padding: 0; }
-.jkg-badges { display: grid; gap: 6px; }
+.jkg-badges { display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.jkg-badges .jkg-badge { gap: 6px; padding: 6px 8px; line-height: 1.35; }
+.jkg-badges .jkg-bico { font-size: 1.1rem; }
+.jkg-badges .jkg-badge strong { font-size: .86rem; }
+.jkg-badges .jkg-badge small { font-size: .72rem; }
+.jkg-more { margin-top: 8px; }
+.jkg-more > summary { cursor: pointer; padding: 6px 2px; font-weight: 800; font-size: .9rem; color: var(--jk-muted); }
+.jkg-more > .jkg-badges { margin-top: 6px; }
 .jkg-badge { display: flex; gap: 10px; align-items: center; padding: 8px 10px; border: 1px solid var(--jk-line); border-radius: 12px; opacity: .55; }
 .jkg-badge.is-got { opacity: 1; background: #fff9ec; border-color: #f0d9a0; }
 .jkg-badge strong { display: block; font-size: .95rem; }
