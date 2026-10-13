@@ -501,6 +501,13 @@
       '<div class="jkg-foot"><button type="button" class="jkg-link" data-jkg-open>🏅 バッジ・きろくを見る（' + badgeCount() + '/' + BADGES.length + '）</button>' +
       '<span class="jkg-note">記録は、この端末の中だけに保存されます。</span></div></div>';
   }
+  function renderStatus(el) { // ホーム用：レベル・連続日数・限界突破だけの細い帯（4択・ガチャはたたみの中）
+    var st = streakNow(), li = lvInfo();
+    el.innerHTML = '<div class="jkg-card is-compact is-status">' +
+      '<div class="jkg-strip">' + avaHtml(30, true) + '<span class="jkg-chip">🔥 ' + streakText(st) + '</span><span class="jkg-chip">Lv' + li.lv + ' ' + esc(li.title) + '</span>' +
+      '<span class="jkg-stbar">' + barHtml(li) + '<small class="jkg-sub">' + lvSub(li) + '</small></span>' +
+      '<button type="button" class="jkg-link" data-jkg-open>きろく</button></div>' + gateCard() + '</div>';
+  }
   function renderPanel(el) {
     var subj = el.getAttribute("data-subject");
     var st = streakNow(), li = lvInfo(), wc = weakIds(subj).length;
@@ -519,7 +526,7 @@
     renderAll();
   }
   function renderAll() {
-    mounts.forEach(function (el) { if (el.getAttribute("data-jkg") === "home") renderHome(el); else renderPanel(el); });
+    mounts.forEach(function (el) { var k = el.getAttribute("data-jkg"); if (k === "home") renderHome(el); else if (k === "status") renderStatus(el); else renderPanel(el); });
     if (overlay && !overlay.hidden) renderRecord();
     try { document.dispatchEvent(new CustomEvent("jkg-change")); } catch (e) {}
   }

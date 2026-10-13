@@ -31,3 +31,10 @@
 .home-group.study{border-left-color:var(--hk-jade-800,#1f5f4a)}
 .home-group .about-section{margin-top:0;padding:0;border:0;background:none;font-size:.86rem}
 @media (min-width:900px){.home-start .subject-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* レベル・連続日数・限界突破の帯（常に表示） */
+.home-status{margin:0 0 14px}
+.home-status .jkg-card{margin:0}
+.home-status .jkg-strip{flex-wrap:wrap;align-items:center}
+.jkg-stbar{display:flex;flex-direction:column;gap:2px;flex:1 1 140px;min-width:120px}
+.jkg-stbar .jkg-bar{margin:0}
+.jkg-stbar small{font-size:.75rem}
