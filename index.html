@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./game/game.css" />
     <link rel="stylesheet" href="./theme.css" />
+    <link rel="stylesheet" href="./home.css" />
     <script src="./backnav.js"></script>
   </head>
   <body>
@@ -36,23 +37,10 @@
         </div>
       </header>
 
-      <section class="jkg-home" aria-label="わたしのきろく">
-        <div data-jkg="home"></div>
-      </section>
-
-      <section class="portal-surface" aria-labelledby="choose-title">
-        <div class="surface-heading">
-          <p><span class="jk-tag is-exam">過去問演習</span></p>
-          <h2 id="choose-title">過去問を解く</h2>
-          <p class="jk-cap">ゲーム演出なし。ふつうの過去問を、じっくり解く。（2科目・無料）</p>
-        </div>
-
-        <ul class="jk-modes" aria-label="出題モードの違い">
-          <li><strong>分野別</strong><span>出題基準の大項目ごと</span></li>
-          <li><strong>回数別</strong><span>好きな回を選んで解く</span></li>
-          <li><strong>ランダム</strong><span>全体から抜き打ち</span></li>
-        </ul>
-
+      <section class="home-start" aria-labelledby="choose-title">
+        <p class="home-hint">✏️ 問題を解きたいときに</p>
+        <h2 id="choose-title"><span class="home-star">まずはここから</span>過去問を解く</h2>
+        <p class="jk-cap">科目を押したらすぐ開始（登録・ログイン不要）。分野別／回数別／ランダムが選べます。</p>
         <nav class="subject-grid" aria-label="過去問アプリ一覧">
           <a class="subject-card anatomy" href="./anatomy/">
             <span class="card-number">01</span>
@@ -87,7 +75,23 @@
             <span class="card-arrow" aria-hidden="true">→</span>
           </a>
         </nav>
+      </section>
 
+      <section class="home-more" aria-label="目的からえらぶ">
+        <h2 class="home-more-title">目的からえらぶ</h2>
+
+        <details class="home-group review">
+          <summary><span class="home-hint">🔁 間違えたとこを復習したいときに</span><b>苦手復習</b></summary>
+          <p class="home-note">各科目の過去問を開いて「苦手復習」を押すと、まちがえた問題だけ出ます。</p>
+          <nav class="home-mini" aria-label="苦手復習">
+            <a href="./anatomy/">解剖学の苦手復習 →</a>
+            <a href="./physiology/">生理学の苦手復習 →</a>
+            <a href="./keiketsu/">経絡経穴の苦手復習 →</a>
+          </nav>
+        </details>
+
+        <details class="home-group study">
+          <summary><span class="home-hint">📖 資料で調べたいときに</span><b>学習資料（解剖学・生理学・経穴）</b></summary>
         <nav class="subject-grid guide-grid" aria-label="学習資料">
           <a class="subject-card guide" href="./guide/">
             <span class="card-number">資料</span>
@@ -100,18 +104,21 @@
             <span class="card-arrow" aria-hidden="true">→</span>
           </a>
         </nav>
+        </details>
 
-        <div class="use-note">
-          <strong>過去問は登録・ログイン不要</strong>
-          <span>科目を押したらそのまま開始。4択クイズやガチャは上の「わたしのきろく」から。</span>
-        </div>
+        <details class="home-group play">
+          <summary><span class="home-hint">🎲 ちょっと遊びたいときに</span><b>4択クイズ・ガチャ・レベル・バッジ</b></summary>
+          <div class="jkg-home" aria-label="わたしのきろく"><div data-jkg="home"></div></div>
+        </details>
 
-        <section class="about-section" aria-labelledby="about-title">
-          <h2 id="about-title">このサイトについて</h2>
+        <details class="home-group about">
+          <summary><span class="home-hint">ℹ️ 出典・収録範囲を知りたいときに</span><b id="about-title">このサイトについて</b></summary>
+          <div class="about-section">
           <p class="src">出典：問題は公益財団法人東洋療法研修試験財団の国家試験問題を元にしています。</p>
           <p>収録は第1〜34回の解剖学・生理学と、経絡経穴概論（第26回以降の正答は財団の正答肢表、第25回以前は問題集の正答。取穴部位の問題は WHO 標準経穴部位で確認できたものだけ）。分野別は「出題基準（2026年版）」の大項目に当てはめたもので、公式の区分そのものではありません。解説は「学習資料」にまとめています（出題基準に対して未収録の内容もあります）。答えに誤りを見つけたら、公式の問題・正答でご確認ください。</p>
           <p>学習記録（連続日数・レベルなど）は端末内だけに保存され、サーバーには送られません。</p>
-        </section>
+          </div>
+        </details>
       </section>
 
       <footer>
