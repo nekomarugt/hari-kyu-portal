@@ -26,9 +26,23 @@ Promise.all(C.subjects.map(function(s){return fetch(s.data).then(function(r){ret
  function bars(list,link){return list.map(function(r){var few=r.att<MIN,p=Math.round(100*r.rate);var cls=few?"few":p<60?"weak":"ok";
   var inner='<span class="st-bl">'+esc(r.meta.label)+(r.meta.kind?'<small>'+esc(r.meta.subj+"・"+r.meta.kind)+'</small>':'')+'</span><span class="st-track"><span class="st-fill '+cls+'" style="width:'+(few?100:Math.max(p,2))+'%"></span></span><span class="st-v">'+(few?'—':p+'%')+'<small>n='+r.att+'</small></span>';
   return link&&r.meta.href?'<a class="st-bar" href="'+esc(r.meta.href)+'">'+inner+'</a>':'<div class="st-bar">'+inner+'</div>'}).join("")}
- var sr=rows(subj),fr=rows(fld);$("subj").innerHTML=bars(sr,false)||'<p class="muted">まだ記録がありません</p>';$("fld").innerHTML=bars(fr,true)||'<p class="muted">まだ記録がありません</p>';
- var weak=fr.filter(function(r){return r.att>=MIN})[0];
- $("weak").innerHTML=weak?'<div class="st-callout"><div class="muted">いちばん弱い分野</div><div class="st-wname">'+esc(weak.meta.label)+'</div><div class="muted">'+esc(weak.meta.subj+"・"+weak.meta.kind)+'　正解率 '+Math.round(100*weak.rate)+'%（n='+weak.att+'）</div><a class="st-go" href="'+esc(weak.meta.href)+'">この分野をやる →</a></div>':'<div class="st-callout"><div class="muted">いちばん弱い分野</div><div>分野ごとに'+MIN+'問以上解くと出ます</div></div>';
+ // 教科バー（決まった並び・データなしはグレー）
+ var sr=C.order.map(function(lab){var o=subj[lab]||{att:0,cor:0};return {k:lab,att:o.att,cor:o.cor,rate:o.att?o.cor/o.att:0,meta:{label:lab}}});
+ $("subj").innerHTML=bars(sr,false);
+ // 得意・のびしろ（各分野MIN問以上）
+ var ok=rows(fld).filter(function(r){return r.att>=MIN});var nb=Math.min(3,Math.floor(ok.length/2)||0),low=ok.slice(0,Math.max(nb,ok.length===1?0:nb));
+ var hi=ok.slice().reverse().slice(0,Math.min(3,ok.length-low.length));
+ function mini(list,cls){return list.map(function(r){return '<a class="st-mini '+cls+'" href="'+esc(r.meta.href)+'"><span><b>'+esc(r.meta.label)+'</b><small>'+esc(r.meta.subj+"・"+r.meta.kind)+'</small></span><span class="st-mv">'+Math.round(100*r.rate)+'%<small>n='+r.att+'</small></span></a>'}).join("")}
+ var hint='<p class="muted">分野ごとに'+MIN+'問以上解くと出ます</p>';
+ $("good").innerHTML='<h2>💪 得意</h2>'+(mini(hi,"good")||hint);
+ $("grow").innerHTML='<h2>🌱 のびしろ</h2>'+(low.length?mini(low,"grow")+'<p class="muted">タップでその分野を出題。ここを伸ばすと一気に上がります！</p>':(ok.length?'<p class="muted">もう少し分野が増えると出ます</p>':hint));
+ // 称号
+ var acc=att?100*cor/att:0,TI=[["🌱","見習い",1,0],["🔥","がんばり屋",50,0],["⭐","使い手",150,55],["🏅","名人",400,65],["🏆","達人",800,75],["👑","マスター",1500,85]];
+ var lv=0;TI.forEach(function(t,i){if(att>=t[2]&&acc>=t[3])lv=i});
+ var cand=sr.filter(function(r){return r.att>=MIN});var best=(cand.length?cand:sr.filter(function(r){return r.att>0})).slice().sort(function(a,b){return cand.length?b.rate-a.rate||b.att-a.att:b.att-a.att})[0];
+ var fv=best&&C.flavor[best.k]||{w:"まなびの"};var nameOf=function(i){return fv.t?fv.t[i]:fv.w+TI[i][1]};
+ var nx=TI[lv+1],need="";if(nx){var q=[];if(att<nx[2])q.push("あと"+(nx[2]-att)+"問");if(acc<nx[3])q.push("正解率"+nx[3]+"%以上");need='次の称号「'+nameOf(lv+1)+'」まで：'+q.join("・")}else need="最高ランク到達！おめでとう 🎉";
+ $("title").innerHTML='<div class="st-tlab">いまの称号</div><div class="st-tname">'+TI[lv][0]+' '+esc(nameOf(lv))+'</div><div class="st-tsub">'+(best?'いちばん得意な教科：'+esc(best.k):'')+'</div><div class="st-next">'+esc(need)+'</div>';
  // 直近10回のうでだめし（古い→新しい）
  var last=SC.slice(0,10).reverse().filter(function(x){return x&&x.n>0});
  if(last.length<2){$("line").innerHTML='<p class="muted">うでだめしを2回以上やると、点数の推移が出ます。</p>';}

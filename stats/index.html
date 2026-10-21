@@ -30,6 +30,10 @@ a.st-bar:hover .st-bl{text-decoration:underline}.st-bl{font-size:13px;overflow-w
 .st-go{display:inline-block;margin-top:8px;background:var(--teal);color:#fff;border-radius:10px;padding:8px 12px;text-decoration:none;font-weight:700}
 .st-grid{stroke:var(--line);stroke-width:1}.st-ax{font-size:10px;fill:var(--muted)}.st-pl{fill:none;stroke:var(--teal);stroke-width:2.5}.st-pt{fill:#fff;stroke:var(--navy);stroke-width:2}
 .st-legend{font-size:12px;color:var(--muted)}.st-legend i{display:inline-block;width:12px;height:8px;border-radius:3px;margin:0 4px 0 8px;vertical-align:middle}
+.st-title{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;text-align:center}.st-tlab{font-size:12px;opacity:.85}.st-tname{font-size:26px;font-weight:900;margin:2px 0}.st-tsub{font-size:12px;opacity:.9}.st-next{margin-top:8px;background:rgba(255,255,255,.16);border-radius:10px;padding:6px 10px;font-size:13px}
+.st-two{display:grid;grid-template-columns:1fr;gap:0}@media(min-width:560px){.st-two{grid-template-columns:1fr 1fr;gap:14px}}
+.st-mini{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 10px;border-radius:10px;margin-bottom:6px;text-decoration:none;color:var(--ink)}.st-mini small{display:block;color:var(--muted);font-size:11px;font-weight:400}.st-mv{font-weight:800;text-align:right;white-space:nowrap}
+.st-mini.good{background:var(--tint)}.st-mini.grow{background:#fff7e8;border-left:4px solid #d89a2b}
 </style>
     <script src="../backnav.js"></script>
   </head>
@@ -42,14 +46,14 @@ a.st-bar:hover .st-bl{text-decoration:underline}.st-bl{font-size:13px;overflow-w
       </header>
       <section id="empty" class="card" hidden><h2>まだ記録がありません</h2><p>過去問・4択クイズ・うでだめしを解くと、ここに正解率や弱い分野が出ます。</p><a class="st-go" href="../jitsuryoku/">うでだめしをやってみる →</a></section>
       <div id="main" hidden>
+        <section class="card st-title" id="title"></section>
         <section class="card"><div class="st-bigs" id="big"></div></section>
-        <section class="card" id="weak"></section>
         <section class="card"><h2>直近10回のうでだめし（正解率％）</h2><div id="line"></div></section>
-        <section class="card"><h2>教科ごとの正解率（弱い順）</h2><div id="subj"></div></section>
-        <section class="card"><h2>分野ごとの正解率（弱い順）</h2><p class="st-legend">タップでその分野を出題<i style="background:#d89a2b"></i>60%未満<i style="background:var(--teal)"></i>60%以上<i style="background:#d5dbe3"></i>5問未満（参考）</p><div id="fld"></div></section>
+        <section class="card"><h2>教科ごとの正解率</h2><div id="subj"></div><p class="st-legend"><i style="background:var(--teal)"></i>60%以上<i style="background:#d89a2b"></i>60%未満<i style="background:#d5dbe3"></i>5問未満</p></section>
+        <div class="st-two"><section class="card" id="good"></section><section class="card" id="grow"></section></div>
       </div>
     </main>
-    <script>window.STATS_CFG={"gameKey": "jkp-hk-game-v1", "wjScoreKey": "hkp-wj-scores-v1", "wjLogKey": "hkp-wj-log-v1", "subjects": [{"src": "ana", "label": "解剖学", "kind": "fields", "data": "../anatomy/fields.json", "app": "../anatomy/"}, {"src": "phy", "label": "生理学", "kind": "fields", "data": "../physiology/fields.json", "app": "../physiology/"}, {"src": "kei", "label": "経絡経穴概論", "kind": "fields", "data": "../keiketsu/fields.json", "app": "../keiketsu/"}], "wjLabel": {"anatomy": "解剖学", "physiology": "生理学", "keiketsu": "経絡経穴概論", "toyo": "東洋医学（五行・臓腑）"}};</script>
+    <script>window.STATS_CFG={"gameKey": "jkp-hk-game-v1", "wjScoreKey": "hkp-wj-scores-v1", "wjLogKey": "hkp-wj-log-v1", "subjects": [{"src": "ana", "label": "解剖学", "kind": "fields", "data": "../anatomy/fields.json", "app": "../anatomy/"}, {"src": "phy", "label": "生理学", "kind": "fields", "data": "../physiology/fields.json", "app": "../physiology/"}, {"src": "kei", "label": "経絡経穴概論", "kind": "fields", "data": "../keiketsu/fields.json", "app": "../keiketsu/"}], "wjLabel": {"anatomy": "解剖学", "physiology": "生理学", "keiketsu": "経絡経穴概論", "toyo": "東洋医学（五行・臓腑）"}, "order": ["解剖学", "生理学", "経絡経穴概論", "東洋医学（五行・臓腑）"], "flavor": {"解剖学": {"w": "解剖の"}, "生理学": {"w": "生理の"}, "経絡経穴概論": {"t": ["ツボさがしの見習い", "がんばる経穴ハンター", "経穴ハンター", "腕ききの経穴ハンター", "経絡の達人", "経絡経穴マスター"]}, "東洋医学（五行・臓腑）": {"t": ["五行の見習い", "がんばる五行さがし", "陰陽の使い手", "五行の名人", "臓腑の達人", "陰陽五行マスター"]}}};</script>
     <script src="./stats.js"></script>
   </body>
 </html>
