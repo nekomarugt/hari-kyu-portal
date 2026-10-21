@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c4a40" />
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="かけら（事実1行）から毎回ちがう問題を組み立てる、ランダム出題のうでだめし（無料）。" />
+    <title>うでだめし（web実力）｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="../game/game.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <style>:root{--ink:#17261f;--muted:#55675e;--line:#e3d9bd;--paper:#fffdf7;--navy:#0c4a40;--blue:#12705f;--teal:#12705f;--tint:#dff0e9;--accent:#12705f}
+.wj{max-width:640px;margin:0 auto;padding:16px 16px 96px;color:var(--ink);line-height:1.6}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 6px 20px rgba(12,35,72,.06)}
+.wj button{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:12px 14px;cursor:pointer}
+.wj .primary{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700;width:100%}
+.ch{display:block;width:100%;text-align:left;margin:8px 0}.ch.ok{background:var(--tint)!important;border-color:var(--teal)!important}.ch.ng{background:#f3f3f3!important;border-color:#999!important;color:#555!important}
+.bar{display:flex;justify-content:space-between;color:var(--muted);font-size:14px;margin-bottom:8px}.q{font-size:17px;font-weight:700}
+.muted{color:var(--muted);font-size:13px}.rv{border-top:1px solid var(--line);padding:10px 0}.mark{font-weight:700}.big{font-size:32px;font-weight:800;color:var(--navy)}
+.wj input{font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;width:140px}.wj a{color:var(--blue)}
+.tp{display:flex;flex-wrap:wrap;gap:6px}.tp label{border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:14px;background:#fff}.tp input{width:auto!important;margin-right:4px}
+.nb{display:flex;gap:8px;flex-wrap:wrap}.nb button{flex:1 1 auto;white-space:nowrap;padding:10px 12px}.nb button[aria-pressed=true]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.chip{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:4px}.fg{font-size:12px;color:var(--muted);margin:8px 0 4px}
+</style>
+    <script src="../backnav.js"></script>
+  </head>
+  <body class="jkq-body">
+    <a class="jkq-return" href="../">← ポータルへ</a>
+    <main class="wj">
+      <header class="jkq-head">
+        <div class="jkq-mark" aria-hidden="true">実力</div>
+        <div><h1>うでだめし（web実力）</h1></div>
+      </header>
+<section id="v-setup" class="card"><p>ランダム出題でうでだめし！</p>
+<p class="mark">教科</p><div class="nb" id="sb"></div>
+<p class="mark">分野</p><div id="tp"></div><p class="muted"><a href="#" id="allBtn">全部選ぶ</a>／<a href="#" id="noneBtn">全部外す</a></p>
+<p class="mark">問題数</p><div class="nb" id="nb"><button data-n="10" aria-pressed="true">10問</button><button data-n="20">20問</button><button data-n="30">30問</button></div>
+<p class="muted">シード番号：同じ番号・同じ選択なら同じ回を再現（空欄で新規）</p><input id="seedIn" inputmode="numeric" placeholder="例 12345">
+<p><button class="primary" id="newBtn">新しい回を作る</button></p><div id="hist" class="muted"></div></section>
+<section id="v-quiz" class="card" hidden><div class="bar"><span id="pos"></span><span id="timer"></span></div><div class="bar"><span id="seedShow"></span><span id="sc"></span></div>
+<p class="muted" id="qtag"></p><p class="q" id="qt"></p><div id="chs"></div><button class="primary" id="nextBtn" hidden>次へ</button></section>
+<section id="v-result" class="card" hidden><div class="muted" id="rseed"></div><div class="big" id="rscore"></div><div id="rtime" class="muted"></div>
+<div id="rv"></div><p><button class="primary" id="againBtn">新しい回を作る</button></p><p><button id="retryBtn" style="width:100%">同じ回をもう一度</button></p></section>
+<p class="muted" id="loadmsg">読み込み中…</p>
+    </main>
+<script>var SUBJ_W={"anatomy": 15.1, "physiology": 13.4, "keiketsu": 9.9, "toyo": 9.9},WJ_KEY="hkp-wj-scores-v1";</script>
+<script src="./gen.js"></script>
+<script src="./app.js"></script>
+  </body>
+</html>
