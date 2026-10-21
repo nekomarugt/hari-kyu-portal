@@ -28,7 +28,9 @@ Promise.all(C.subjects.map(function(s){return fetch(s.data).then(function(r){ret
   return link&&r.meta.href?'<a class="st-bar" href="'+esc(r.meta.href)+'">'+inner+'</a>':'<div class="st-bar">'+inner+'</div>'}).join("")}
  // 教科バー（決まった並び・データなしはグレー）
  var sr=C.order.map(function(lab){var o=subj[lab]||{att:0,cor:0};return {k:lab,att:o.att,cor:o.cor,rate:o.att?o.cor/o.att:0,meta:{label:lab}}});
- $("subj").innerHTML=bars(sr,false);
+ // RPGステータス：能力値0〜99＝正解率×（解いた数が少ないうちは控えめ）
+ $("subj").innerHTML=sr.map(function(r){var a=(C.ability||{})[r.k]||[r.k,"",""],few=r.att<MIN,p=Math.round(100*r.rate),st=few?0:Math.min(99,Math.round(99*r.rate*Math.min(1,0.4+0.6*r.att/50)));
+  return '<div class="st-ab'+(few?' few':'')+'"><span class="st-abn">'+esc(a[2])+' <b>'+esc(a[1])+'</b><small>'+esc(a[0])+'</small></span><span class="st-abv">'+(few?'??':st)+'</span><span class="st-track"><span class="st-fill '+(few?'few':p<60?'weak':'ok')+'" style="width:'+(few?100:Math.max(2,Math.round(st/99*100)))+'%"></span></span><span class="st-v">'+(few?'—':p+'%')+'<small>n='+r.att+'</small></span></div>'}).join("");
  // 得意・のびしろ（各分野MIN問以上）
  var ok=rows(fld).filter(function(r){return r.att>=MIN});var nb=Math.min(3,Math.floor(ok.length/2)||0),low=ok.slice(0,Math.max(nb,ok.length===1?0:nb));
  var hi=ok.slice().reverse().slice(0,Math.min(3,ok.length-low.length));
@@ -42,7 +44,8 @@ Promise.all(C.subjects.map(function(s){return fetch(s.data).then(function(r){ret
  var cand=sr.filter(function(r){return r.att>=MIN});var best=(cand.length?cand:sr.filter(function(r){return r.att>0})).slice().sort(function(a,b){return cand.length?b.rate-a.rate||b.att-a.att:b.att-a.att})[0];
  var fv=best&&C.flavor[best.k]||{w:"まなびの"};var nameOf=function(i){return fv.t?fv.t[i]:fv.w+TI[i][1]};
  var nx=TI[lv+1],need="";if(nx){var q=[];if(att<nx[2])q.push("あと"+(nx[2]-att)+"問");if(acc<nx[3])q.push("正解率"+nx[3]+"%以上");need='次の称号「'+nameOf(lv+1)+'」まで：'+q.join("・")}else need="最高ランク到達！おめでとう 🎉";
- $("title").innerHTML='<div class="st-tlab">いまの称号</div><div class="st-tname">'+TI[lv][0]+' '+esc(nameOf(lv))+'</div><div class="st-tsub">'+(best?'いちばん得意な教科：'+esc(best.k):'')+'</div><div class="st-next">'+esc(need)+'</div>';
+ var LV=null;try{LV=window.JKGame&&JKGame.level()}catch(e){}
+ $("title").innerHTML='<div class="st-tlab">'+(LV?'<span class="st-lv">Lv'+LV.lv+'</span> '+esc(LV.title||''):'いまの称号')+'</div><div class="st-tname">'+TI[lv][0]+' '+esc(nameOf(lv))+'</div><div class="st-tsub">'+(best?'いちばん得意な教科：'+esc(best.k):'')+'</div><div class="st-next">'+esc(need)+'</div>';
  // 直近10回のうでだめし（古い→新しい）
  var last=SC.slice(0,10).reverse().filter(function(x){return x&&x.n>0});
  if(last.length<2){$("line").innerHTML='<p class="muted">うでだめしを2回以上やると、点数の推移が出ます。</p>';}
