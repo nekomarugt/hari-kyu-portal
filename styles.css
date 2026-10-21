@@ -261,3 +261,17 @@ footer span::before {
 .about-section p { margin: 0 0 6px; }
 .about-section p:last-child { margin-bottom: 0; }
 .about-section .src { font-weight: 800; }
+
+
+/* MINI-PARAM */
+.mini-param { margin: 0 6px 18px; padding: 10px 14px; background: #fff; border: 1px solid #e3d9bd; border-radius: 14px; color: #17261f; }
+.mp-head { display: flex; justify-content: space-between; align-items: center; font-size: 14px; margin-bottom: 2px; }
+.mp-more { font-size: 13px; font-weight: 700; color: #12705f; text-decoration: none; }
+.mini-param .st-ab { display: grid; grid-template-columns: 7.2em 2.2em 1fr 3.4em; gap: 8px; align-items: center; padding: 5px 0; border-top: 1px solid #e3d9bd; }
+.mini-param .st-abn { font-size: 13px; } .mini-param .st-abn b { color: #0c4a40; } .mini-param .st-abn small, .mini-param .st-v small { display: none; }
+.mini-param .st-abv { font-size: 18px; font-weight: 900; color: #0c4a40; text-align: right; font-variant-numeric: tabular-nums; } .mini-param .st-ab.few .st-abv { color: #aab3bf; }
+.mini-param .st-track { height: 10px; background: #eef1f5; border-radius: 5px; overflow: hidden; } .mini-param .st-fill { display: block; height: 100%; border-radius: 5px; }
+.mini-param .st-fill.ok { background: #12705f; } .mini-param .st-fill.weak { background: #d89a2b; } .mini-param .st-fill.few { background: repeating-linear-gradient(45deg,#d5dbe3 0 6px,#e6eaef 6px 12px); }
+.mini-param .st-v { font-weight: 700; text-align: right; font-size: 13px; }
+.mp-note { margin: 4px 0 0; font-size: 11px; color: #55675e; }
+/* /MINI-PARAM */

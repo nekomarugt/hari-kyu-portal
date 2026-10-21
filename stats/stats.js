@@ -18,10 +18,10 @@ Promise.all(C.subjects.map(function(s){return fetch(s.data).then(function(r){ret
  L.log.forEach(function(x){var lab=C.wjLabel[x.s]||x.s;add(subj,lab,1,x.ok?1:0);add(fld,"w|"+x.tb,1,x.ok?1:0,{label:x.ti,subj:lab,kind:"うでだめし",href:"../jitsuryoku/?t="+encodeURIComponent(x.tb)});});
  var att=(+G.att||0)+L.log.length,cor=(+G.cor||0)+L.log.reduce(function(a,x){return a+(x.ok?1:0)},0);
  var days={};(Array.isArray(G.days)?G.days:[]).forEach(function(d){days[d]=1});L.log.forEach(function(x){days[x.d]=1});
- if(!att&&!SC.length){$("empty").hidden=false;$("main").hidden=true;return;}
- $("main").hidden=false;
+ if(!C.mini&&!att&&!SC.length){$("empty").hidden=false;$("main").hidden=true;return;}
+ if(!C.mini)$("main").hidden=false;
  var big=[["うでだめし実施",(L.sets||SC.length)+"回"],["解いた問題",att+"問"],["全体の正解率",att?Math.round(100*cor/att)+"%":"―"],["がんばり日数",Object.keys(days).length+"日"]];
- $("big").innerHTML=big.map(function(b){return '<div class="st-big"><div class="st-num">'+esc(b[1])+'</div><div class="st-lab">'+esc(b[0])+'</div></div>'}).join("");
+if(!C.mini)$("big").innerHTML=big.map(function(b){return '<div class="st-big"><div class="st-num">'+esc(b[1])+'</div><div class="st-lab">'+esc(b[0])+'</div></div>'}).join("");
  function rows(map){return Object.keys(map).map(function(k){var o=map[k];return {k:k,att:o.att,cor:o.cor,rate:o.att?o.cor/o.att:0,meta:o.meta||{label:k}}}).sort(function(a,b){var fa=a.att<MIN,fb=b.att<MIN;if(fa!==fb)return fa?1:-1;return a.rate-b.rate||b.att-a.att})}
  function bars(list,link){return list.map(function(r){var few=r.att<MIN,p=Math.round(100*r.rate);var cls=few?"few":p<60?"weak":"ok";
   var inner='<span class="st-bl">'+esc(r.meta.label)+(r.meta.kind?'<small>'+esc(r.meta.subj+"・"+r.meta.kind)+'</small>':'')+'</span><span class="st-track"><span class="st-fill '+cls+'" style="width:'+(few?100:Math.max(p,2))+'%"></span></span><span class="st-v">'+(few?'—':p+'%')+'<small>n='+r.att+'</small></span>';
@@ -31,6 +31,7 @@ Promise.all(C.subjects.map(function(s){return fetch(s.data).then(function(r){ret
  // RPGステータス：能力値0〜99＝正解率×（解いた数が少ないうちは控えめ）
  $("subj").innerHTML=sr.map(function(r){var a=(C.ability||{})[r.k]||[r.k,"",""],few=r.att<MIN,p=Math.round(100*r.rate),st=few?0:Math.min(99,Math.round(99*r.rate*Math.min(1,0.4+0.6*r.att/50)));
   return '<div class="st-ab'+(few?' few':'')+'"><span class="st-abn">'+esc(a[2])+' <b>'+esc(a[1])+'</b><small>'+esc(a[0])+'</small></span><span class="st-abv">'+(few?'??':st)+'</span><span class="st-track"><span class="st-fill '+(few?'few':p<60?'weak':'ok')+'" style="width:'+(few?100:Math.max(2,Math.round(st/99*100)))+'%"></span></span><span class="st-v">'+(few?'—':p+'%')+'<small>n='+r.att+'</small></span></div>'}).join("");
+ if(C.mini)return;
  // 得意・のびしろ（各分野MIN問以上）
  var ok=rows(fld).filter(function(r){return r.att>=MIN});var nb=Math.min(3,Math.floor(ok.length/2)||0),low=ok.slice(0,Math.max(nb,ok.length===1?0:nb));
  var hi=ok.slice().reverse().slice(0,Math.min(3,ok.length-low.length));

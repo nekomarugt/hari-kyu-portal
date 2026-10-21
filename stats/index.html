@@ -31,6 +31,7 @@ a.st-bar:hover .st-bl{text-decoration:underline}.st-bl{font-size:13px;overflow-w
 .st-grid{stroke:var(--line);stroke-width:1}.st-ax{font-size:10px;fill:var(--muted)}.st-pl{fill:none;stroke:var(--teal);stroke-width:2.5}.st-pt{fill:#fff;stroke:var(--navy);stroke-width:2}
 .st-legend{font-size:12px;color:var(--muted)}.st-legend i{display:inline-block;width:12px;height:8px;border-radius:3px;margin:0 4px 0 8px;vertical-align:middle}
 .st-title{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;text-align:center}.st-tlab{font-size:12px;opacity:.85}.st-tname{font-size:26px;font-weight:900;margin:2px 0}.st-tsub{font-size:12px;opacity:.9}.st-next{margin-top:8px;background:rgba(255,255,255,.16);border-radius:10px;padding:6px 10px;font-size:13px}
+.st-rs{text-align:center}.st-rs button{font:inherit;border:1px solid #c9d2de;background:#fff;color:var(--muted);border-radius:10px;padding:8px 14px;cursor:pointer}.st-rs button:disabled{opacity:.5;cursor:not-allowed}
 .st-two{display:grid;grid-template-columns:1fr;gap:0}@media(min-width:560px){.st-two{grid-template-columns:1fr 1fr;gap:14px}}
 .st-mini{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 10px;border-radius:10px;margin-bottom:6px;text-decoration:none;color:var(--ink)}.st-mini small{display:block;color:var(--muted);font-size:11px;font-weight:400}.st-mv{font-weight:800;text-align:right;white-space:nowrap}
 .st-mini.good{background:var(--tint)}.st-mini.grow{background:#fff7e8;border-left:4px solid #d89a2b}
@@ -54,10 +55,16 @@ a.st-bar:hover .st-bl{text-decoration:underline}.st-bl{font-size:13px;overflow-w
         <section class="card"><h2>直近10回のうでだめし（正解率％）</h2><div id="line"></div></section>
         <section class="card"><h2>⚔️ ステータス</h2><p class="st-legend" style="margin-top:-6px">能力値（0〜99）は正解率と解いた数から計算</p><div id="subj"></div><p class="st-legend"><i style="background:var(--teal)"></i>60%以上<i style="background:#d89a2b"></i>60%未満<i style="background:#d5dbe3"></i>5問未満</p></section>
         <div class="st-two"><section class="card" id="good"></section><section class="card" id="grow"></section></div>
+        <section class="card st-rs"><button type="button" id="rsBtn">🔄 うでだめしの記録をリセット</button><p class="muted" id="rsMsg" style="margin:6px 0 0"></p></section>
       </div>
     </main>
     <script>window.STATS_CFG={"gameKey": "jkp-hk-game-v1", "wjScoreKey": "hkp-wj-scores-v1", "wjLogKey": "hkp-wj-log-v1", "subjects": [{"src": "ana", "label": "解剖学", "kind": "fields", "data": "../anatomy/fields.json", "app": "../anatomy/"}, {"src": "phy", "label": "生理学", "kind": "fields", "data": "../physiology/fields.json", "app": "../physiology/"}, {"src": "kei", "label": "経絡経穴概論", "kind": "fields", "data": "../keiketsu/fields.json", "app": "../keiketsu/"}], "wjLabel": {"anatomy": "解剖学", "physiology": "生理学", "keiketsu": "経絡経穴概論", "toyo": "東洋医学（五行・臓腑）"}, "order": ["解剖学", "生理学", "経絡経穴概論", "東洋医学（五行・臓腑）"], "flavor": {"解剖学": {"w": "解剖の"}, "生理学": {"w": "生理の"}, "経絡経穴概論": {"t": ["ツボさがしの見習い", "がんばる経穴ハンター", "経穴ハンター", "腕ききの経穴ハンター", "経絡の達人", "経絡経穴マスター"]}, "東洋医学（五行・臓腑）": {"t": ["五行の見習い", "がんばる五行さがし", "陰陽の使い手", "五行の名人", "臓腑の達人", "陰陽五行マスター"]}}, "ability": {"解剖学": ["解剖学", "正確さ", "🎯"], "生理学": ["生理学", "理解力", "💡"], "経絡経穴概論": ["経絡経穴", "ツボ勘", "📍"], "東洋医学（五行・臓腑）": ["東洋医学", "気の巡り", "🌀"]}};</script>
     <script src="../game/game.js"></script>
     <script src="./stats.js"></script>
+    <script>(function(){var C=window.STATS_CFG,K=C.wjScoreKey.replace('scores','reset'),MAX=3,b=document.getElementById('rsBtn'),m=document.getElementById('rsMsg');
+function st(){try{return JSON.parse(localStorage.getItem(K))||{count:0,at:[]}}catch(e){return{count:0,at:[]}}}
+function draw(){var r=MAX-st().count;if(r<=0){b.disabled=true;m.textContent='リセットはもう使い切ったで（最大'+MAX+'回）';}else{m.textContent='リセット あと'+r+'回（ゲームのLv・コインは消えへん）';}}
+b.onclick=function(){var s=st();if(MAX-s.count<=0)return;if(!confirm('うでだめしの成績と記録を消すで。ほんまにええ？\n（あと'+(MAX-s.count-1)+'回になります）'))return;
+localStorage.removeItem(C.wjScoreKey);localStorage.removeItem(C.wjLogKey);s.count++;s.at=(s.at||[]).concat(new Date().toISOString());localStorage.setItem(K,JSON.stringify(s));location.reload();};draw();})();</script>
   </body>
 </html>
