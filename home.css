@@ -22,6 +22,7 @@
 .home-mini a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;background:#eef3fa;border:1px solid #c9d8ec;color:#1676ae;font-weight:800;font-size:.9rem;text-decoration:none}
 .home-group.review{border-left:4px solid #c94f4f}.home-group.study{border-left:4px solid #1676ae}.home-group.basics{border-left:4px solid #c39335}.home-group.play{border-left:4px solid #b06ad6}.home-group.workbook{border-left:4px solid #6b7a90}.home-group.about{border-left:4px solid #9aa5b5}
 .home-group.jitsuryoku{border-left:4px solid #087866}
+.home-group.stats{border-left:4px solid #173d78}
 @media (max-width:600px){.home-start{padding:16px 12px 14px;border-radius:16px}.home-start h2{font-size:1.3rem}}
 @media (max-width:600px){.home-start .subject-card{min-height:0;padding-top:12px;padding-bottom:12px}.home-start .subject-card h3{font-size:1.25rem;margin:2px 0}.home-start .card-features{display:none}}
 /* はり灸テーマの色 */

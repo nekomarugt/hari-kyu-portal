@@ -3,7 +3,7 @@
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v36';
+const VERSION = 'v37';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
@@ -14,7 +14,7 @@ const PRECACHE = [
   './physiology/', './physiology/app.js', './physiology/styles.css', './physiology/questions.json', './physiology/fields.json',
   './keiketsu/', './keiketsu/app.js', './keiketsu/styles.css', './keiketsu/questions.json', './keiketsu/fields.json',
   './quiz/', './quiz/quiz.js',
-  './jitsuryoku/', './jitsuryoku/app.js', './jitsuryoku/gen.js', './jitsuryoku/kakera.json',
+  './jitsuryoku/', './jitsuryoku/app.js', './jitsuryoku/gen.js', './jitsuryoku/kakera.json', './stats/', './stats/stats.js',
   './guide/', './guide/guide.css', './guide/guide.js', './guide/qlinks.json', './guide/coverage.js', './guide/coverage/',
   './guide/anatomy/', './guide/anatomy/content.js', './guide/physiology/', './guide/physiology/content.js',
   './guide/anatomy/tooru.html', './guide/anatomy/tooru-data.js', './guide/tooru.js', './guide/extra.css',

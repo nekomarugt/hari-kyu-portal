@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c4a40" />
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <!-- /PWA -->
+    <meta name="description" content="この端末に保存された学習記録から、教科・分野ごとの正解率や弱い分野を表示します（端末内だけ・無料）。" />
+    <title>じぶんのパラメータ｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <link rel="stylesheet" href="../game/game.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <style>:root{--ink:#17261f;--muted:#55675e;--line:#e3d9bd;--paper:#fffdf7;--navy:#0c4a40;--blue:#12705f;--teal:#12705f;--tint:#dff0e9}
+.st{max-width:640px;margin:0 auto;padding:16px 16px 96px;color:var(--ink);line-height:1.55}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px;box-shadow:0 6px 20px rgba(12,35,72,.06)}
+.card h2{font-size:1rem;margin:0 0 10px}.muted{color:var(--muted);font-size:13px}
+.st-bigs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.st-big{background:var(--tint);border-radius:12px;padding:12px;text-align:center}.st-num{font-size:28px;font-weight:800;color:var(--navy);line-height:1.2}.st-lab{font-size:12px;color:var(--muted)}
+.st-bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 4.2em;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+a.st-bar:hover .st-bl{text-decoration:underline}.st-bl{font-size:13px;overflow-wrap:anywhere}.st-bl small,.st-v small{display:block;color:var(--muted);font-size:11px}
+.st-track{height:12px;background:#eef1f5;border-radius:6px;overflow:hidden}.st-fill{display:block;height:100%;border-radius:6px}.st-fill.ok{background:var(--teal)}.st-fill.weak{background:#d89a2b}.st-fill.few{background:repeating-linear-gradient(45deg,#d5dbe3 0 6px,#e6eaef 6px 12px)}
+.st-v{font-weight:700;text-align:right;font-size:14px}.st-callout{border-left:5px solid #d89a2b;background:#fff7e8;border-radius:10px;padding:12px}.st-wname{font-size:20px;font-weight:800;color:var(--navy)}
+.st-go{display:inline-block;margin-top:8px;background:var(--teal);color:#fff;border-radius:10px;padding:8px 12px;text-decoration:none;font-weight:700}
+.st-grid{stroke:var(--line);stroke-width:1}.st-ax{font-size:10px;fill:var(--muted)}.st-pl{fill:none;stroke:var(--teal);stroke-width:2.5}.st-pt{fill:#fff;stroke:var(--navy);stroke-width:2}
+.st-legend{font-size:12px;color:var(--muted)}.st-legend i{display:inline-block;width:12px;height:8px;border-radius:3px;margin:0 4px 0 8px;vertical-align:middle}
+</style>
+    <script src="../backnav.js"></script>
+  </head>
+  <body class="jkq-body">
+    <a class="jkq-return" href="../">← ポータルへ</a>
+    <main class="st">
+      <header class="jkq-head">
+        <div class="jkq-mark" aria-hidden="true">📊</div>
+        <div><h1>じぶんのパラメータ</h1><p class="muted">この端末の記録だけで計算しています（どこにも送信しません）。</p></div>
+      </header>
+      <section id="empty" class="card" hidden><h2>まだ記録がありません</h2><p>過去問・4択クイズ・うでだめしを解くと、ここに正解率や弱い分野が出ます。</p><a class="st-go" href="../jitsuryoku/">うでだめしをやってみる →</a></section>
+      <div id="main" hidden>
+        <section class="card"><div class="st-bigs" id="big"></div></section>
+        <section class="card" id="weak"></section>
+        <section class="card"><h2>直近10回のうでだめし（正解率％）</h2><div id="line"></div></section>
+        <section class="card"><h2>教科ごとの正解率（弱い順）</h2><div id="subj"></div></section>
+        <section class="card"><h2>分野ごとの正解率（弱い順）</h2><p class="st-legend">タップでその分野を出題<i style="background:#d89a2b"></i>60%未満<i style="background:var(--teal)"></i>60%以上<i style="background:#d5dbe3"></i>5問未満（参考）</p><div id="fld"></div></section>
+      </div>
+    </main>
+    <script>window.STATS_CFG={"gameKey": "jkp-hk-game-v1", "wjScoreKey": "hkp-wj-scores-v1", "wjLogKey": "hkp-wj-log-v1", "subjects": [{"src": "ana", "label": "解剖学", "kind": "fields", "data": "../anatomy/fields.json", "app": "../anatomy/"}, {"src": "phy", "label": "生理学", "kind": "fields", "data": "../physiology/fields.json", "app": "../physiology/"}, {"src": "kei", "label": "経絡経穴概論", "kind": "fields", "data": "../keiketsu/fields.json", "app": "../keiketsu/"}], "wjLabel": {"anatomy": "解剖学", "physiology": "生理学", "keiketsu": "経絡経穴概論", "toyo": "東洋医学（五行・臓腑）"}};</script>
+    <script src="./stats.js"></script>
+  </body>
+</html>
