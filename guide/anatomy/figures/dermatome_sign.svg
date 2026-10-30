@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" font-family="sans-serif">
+<rect width="640" height="440" fill="#fff"/>
+<text x="20" y="30" font-size="18" font-weight="bold" fill="#000">指サインで覚える上肢デルマトーム</text>
+<!-- OK sign -->
+<g transform="translate(40,60)">
+<rect x="20" y="110" width="90" height="90" rx="22" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<circle cx="35" cy="95" r="26" fill="none" stroke="#EE0000" stroke-width="12"/>
+<circle cx="35" cy="95" r="26" fill="none" stroke="#000" stroke-width="1.5"/>
+<rect x="52" y="30" width="16" height="85" rx="8" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<rect x="72" y="25" width="16" height="90" rx="8" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<rect x="92" y="40" width="15" height="75" rx="7" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<text x="5" y="235" font-size="15" fill="#000">OKサイン＝「6」の形</text>
+<text x="5" y="257" font-size="15" fill="#000">母指・示指 → <tspan fill="#EE0000" font-weight="bold">C6</tspan></text>
+</g>
+<!-- middle finger -->
+<g transform="translate(220,60)">
+<rect x="20" y="110" width="90" height="90" rx="22" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<rect x="56" y="15" width="18" height="105" rx="9" fill="#fde7d0" stroke="#EE0000" stroke-width="4"/>
+<rect x="30" y="95" width="18" height="28" rx="9" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<rect x="80" y="95" width="17" height="28" rx="8" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<rect x="5" y="140" width="28" height="16" rx="8" fill="#fde7d0" stroke="#000" stroke-width="2"/>
+<text x="5" y="235" font-size="15" fill="#000">中指サイン（中指を立てる）</text>
+<text x="5" y="257" font-size="15" fill="#000">中指 → <tspan fill="#EE0000" font-weight="bold">C7</tspan></text>
+</g>
+<!-- sequence -->
+<g transform="translate(430,55)" font-size="15" fill="#000">
+<text x="0" y="0" font-weight="bold">あとは小指側から順番こ</text>
+<text x="0" y="35">小指・前腕内側 → <tspan fill="#EE0000" font-weight="bold">C8</tspan></text>
+<text x="20" y="60">↓</text>
+<text x="0" y="85">上腕内側 → <tspan fill="#EE0000" font-weight="bold">T1</tspan></text>
+<text x="20" y="110">↓</text>
+<text x="0" y="135">腋窩あたり → <tspan fill="#EE0000" font-weight="bold">T2</tspan></text>
+<text x="20" y="160">↓ T3</text>
+<text x="0" y="185">乳頭 → <tspan fill="#EE0000" font-weight="bold">T4</tspan></text>
+<text x="0" y="207">「乳首だヨン」</text>
+</g>
+<line x1="20" y1="350" x2="620" y2="350" stroke="#999"/>
+<text x="20" y="378" font-size="14" fill="#000">母指側から：C5（上腕外側）→ C6（前腕外側・母指）→ C7（中指）→ C8（小指）→ T1（上腕内側）</text>
+<text x="20" y="402" font-size="14" fill="#000">試験はまず <tspan fill="#EE0000">母指C6・中指C7・小指C8・乳頭T4・臍T10</tspan> を押さえる</text>
+</svg>
