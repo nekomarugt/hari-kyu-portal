@@ -392,7 +392,7 @@ function paintAnswer(question, correct) {
 // この問題に結び付けた学習資料（主1つ＋関連最大2つ）。../guide/qlinks.json は初回だけ読み込む
 let guideLinks = null;
 function loadGuideLinks() {
-  if (!guideLinks) guideLinks = Promise.resolve(null); // 臨床医学の学習資料は準備中
+  if (!guideLinks) guideLinks = fetch("../guide/qlinks-clin.json").then((response) => (response.ok ? response.json() : null)).catch(() => null);
   return guideLinks;
 }
 function renderGuideLink(question) {
@@ -404,7 +404,7 @@ function renderGuideLink(question) {
     if (!data || queue[position] !== question) return;
     const ids = (data[SUBJECT_KEY][questionId(question)] || []);
     if (!ids.length) return;
-    const page = SUBJECT_KEY === "ana" ? "anatomy" : "physiology";
+    const page = SUBJECT_KEY === "sor" ? "souron" : "kakuron";
     const label = document.createElement("span");
     label.className = "guide-link-label";
     label.textContent = "学習資料で確認";

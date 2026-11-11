@@ -28,7 +28,8 @@ for d, c in CLIN.items():
     h = h.replace('<link rel="stylesheet" href="./styles.css', '<style>#question-text{white-space:pre-line}</style>\n    <link rel="stylesheet" href="./styles.css')
     open(f"{R}/{d}/index.html", "w").write(h)
     js = a.replace('const SUBJECT_KEY = "ana";', 'const SUBJECT_KEY = "%s";' % c["KEY"]).replace("hk-anatomy-history-v1", "hk-%s-history-v1" % d)
-    js = js.replace('if (!guideLinks) guideLinks = fetch("../guide/qlinks.json").then((response) => (response.ok ? response.json() : null)).catch(() => null);', 'if (!guideLinks) guideLinks = Promise.resolve(null); // 臨床医学の学習資料は準備中')
-    assert "Promise.resolve(null)" in js and ('"%s"' % c["KEY"]) in js
+    js = js.replace('fetch("../guide/qlinks.json")', 'fetch("../guide/qlinks-clin.json")')
+    js = js.replace('const page = SUBJECT_KEY === "ana" ? "anatomy" : "physiology";', 'const page = SUBJECT_KEY === "sor" ? "souron" : "kakuron";')
+    assert "qlinks-clin.json" in js and 'SUBJECT_KEY === "sor" ? "souron"' in js and ('"%s"' % c["KEY"]) in js
     open(f"{R}/{d}/app.js", "w").write(js)
     shutil.copy(R + "/anatomy/styles.css", f"{R}/{d}/styles.css")

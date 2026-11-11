@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" font-family="sans-serif" role="img" aria-label="頸椎の神経根症 C5〜C8の腱反射・筋力・感覚の見分け">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="10" y="10" width="200" height="490" rx="10" fill="#fbfdfc" stroke="#cfdcd8"/>
+<text x="110.0" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#0c4a40">C5</text>
+<text x="110.0" y="66" text-anchor="middle" font-size="13" fill="#555">椎間 C4/5</text>
+<text x="64.0" y="94" font-size="11" fill="#888">外側</text><text x="134.0" y="94" font-size="11" fill="#888">内側</text>
+<rect x="88.0" y="100" width="44" height="96" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="90.0" y="200" width="40" height="92" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="86.0" y="296" width="48" height="40" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="90.0" y="108" width="20.0" height="80" rx="8" fill="#f2a0a0"/>
+<rect x="76.0" y="292" width="10" height="30" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="92.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="104.0" y="336" width="10" height="44" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="116.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="128.0" y="336" width="10" height="32" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<text x="22" y="400" font-size="12" fill="#0c4a40" font-weight="700">腱反射↓</text><text x="22" y="417" font-size="13" fill="#222">上腕二頭筋（弱）</text>
+<text x="22" y="436" font-size="12" fill="#0c4a40" font-weight="700">筋力↓</text><text x="22" y="453" font-size="13" fill="#222">三角筋</text>
+<text x="22" y="472" font-size="12" fill="#0c4a40" font-weight="700">感覚↓</text><text x="22" y="489" font-size="13" fill="#222">上腕の外側</text>
+<rect x="230" y="10" width="200" height="490" rx="10" fill="#fbfdfc" stroke="#cfdcd8"/>
+<text x="330.0" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#0c4a40">C6</text>
+<text x="330.0" y="66" text-anchor="middle" font-size="13" fill="#555">椎間 C5/6</text>
+<text x="284.0" y="94" font-size="11" fill="#888">外側</text><text x="354.0" y="94" font-size="11" fill="#888">内側</text>
+<rect x="308.0" y="100" width="44" height="96" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="310.0" y="200" width="40" height="92" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="306.0" y="296" width="48" height="40" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="312.0" y="206" width="18.0" height="82" rx="8" fill="#f2a0a0"/>
+<rect x="296.0" y="292" width="10" height="30" rx="5" fill="#f2a0a0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="312.0" y="336" width="10" height="40" rx="5" fill="#f2a0a0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="324.0" y="336" width="10" height="44" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="336.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="348.0" y="336" width="10" height="32" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<text x="242" y="400" font-size="12" fill="#0c4a40" font-weight="700">腱反射↓</text><text x="242" y="417" font-size="13" fill="#222">上腕二頭筋・腕橈骨筋</text>
+<text x="242" y="436" font-size="12" fill="#0c4a40" font-weight="700">筋力↓</text><text x="242" y="453" font-size="13" fill="#222">上腕二頭筋・手関節背屈</text>
+<text x="242" y="472" font-size="12" fill="#0c4a40" font-weight="700">感覚↓</text><text x="242" y="489" font-size="13" fill="#222">前腕の外側〜母指・示指</text>
+<rect x="450" y="10" width="200" height="490" rx="10" fill="#fbfdfc" stroke="#cfdcd8"/>
+<text x="550.0" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#0c4a40">C7</text>
+<text x="550.0" y="66" text-anchor="middle" font-size="13" fill="#555">椎間 C6/7</text>
+<text x="504.0" y="94" font-size="11" fill="#888">外側</text><text x="574.0" y="94" font-size="11" fill="#888">内側</text>
+<rect x="528.0" y="100" width="44" height="96" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="530.0" y="200" width="40" height="92" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="526.0" y="296" width="48" height="40" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="516.0" y="292" width="10" height="30" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="532.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="544.0" y="336" width="10" height="44" rx="5" fill="#f2a0a0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="556.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="568.0" y="336" width="10" height="32" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<text x="462" y="400" font-size="12" fill="#0c4a40" font-weight="700">腱反射↓</text><text x="462" y="417" font-size="13" fill="#222">上腕三頭筋</text>
+<text x="462" y="436" font-size="12" fill="#0c4a40" font-weight="700">筋力↓</text><text x="462" y="453" font-size="13" fill="#222">上腕三頭筋</text>
+<text x="462" y="472" font-size="12" fill="#0c4a40" font-weight="700">感覚↓</text><text x="462" y="489" font-size="13" fill="#222">中指</text>
+<rect x="670" y="10" width="200" height="490" rx="10" fill="#fbfdfc" stroke="#cfdcd8"/>
+<text x="770.0" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#0c4a40">C8</text>
+<text x="770.0" y="66" text-anchor="middle" font-size="13" fill="#555">椎間 C7/T1</text>
+<text x="724.0" y="94" font-size="11" fill="#888">外側</text><text x="794.0" y="94" font-size="11" fill="#888">内側</text>
+<rect x="748.0" y="100" width="44" height="96" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="750.0" y="200" width="40" height="92" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="746.0" y="296" width="48" height="40" rx="12" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.5"/>
+<rect x="770.0" y="206" width="18.0" height="82" rx="8" fill="#f2a0a0"/>
+<rect x="736.0" y="292" width="10" height="30" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="752.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="764.0" y="336" width="10" height="44" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="776.0" y="336" width="10" height="40" rx="5" fill="#e8eef0" stroke="#5a6b70" stroke-width="1.2"/>
+<rect x="788.0" y="336" width="10" height="32" rx="5" fill="#f2a0a0" stroke="#5a6b70" stroke-width="1.2"/>
+<text x="682" y="400" font-size="12" fill="#0c4a40" font-weight="700">腱反射↓</text><text x="682" y="417" font-size="13" fill="#222">決まったものなし</text>
+<text x="682" y="436" font-size="12" fill="#0c4a40" font-weight="700">筋力↓</text><text x="682" y="453" font-size="13" fill="#222">手の小さい筋（指の屈曲）</text>
+<text x="682" y="472" font-size="12" fill="#0c4a40" font-weight="700">感覚↓</text><text x="682" y="489" font-size="13" fill="#222">小指・前腕の内側</text>
+</svg>

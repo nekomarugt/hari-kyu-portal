@@ -11,7 +11,7 @@
 
   /* ---------------- 入口ページ ---------------- */
   if (page === "landing") {
-    [["gl-ana", G.anatomy], ["gl-phy", G.physiology]].forEach(function (x) {
+    [["gl-ana", G.anatomy], ["gl-phy", G.physiology], ["gl-sor", G.souron], ["gl-kak", G.kakuron]].forEach(function (x) {
       var el = document.getElementById(x[0]); var d = x[1];
       if (!el || !d) return;
       el.textContent = d.chapters.length + "分野・" + Object.keys(d.sections).length + "項目（過去問" + d.nq + "問と結び付け）";
@@ -238,10 +238,9 @@
       if (c.sho.length) box.appendChild(h("p", "g-sho", "出題基準の小項目：" + c.sho.join("／")));
       if (c.secs.length) c.secs.forEach(function (id) { box.appendChild(sectionCard(id)); });
       else {
-        var todo = h("p", "g-todo", "準備中：この中項目の解説はまだありません。");
-        box.appendChild(todo);
+        if (!c.refs.length) box.appendChild(h("p", "g-todo", "準備中：この中項目の解説はまだありません。"));
         if (c.refs.length) {
-          var p = h("p", "g-refs", "関連して、次の項目でふれています："); c.refs.forEach(function (id) { var s = D.sections[id]; var a = h("a", "", id + " " + s.t); a.href = "#" + id; p.appendChild(a); p.appendChild(document.createTextNode(" ")); });
+          var p = h("p", "g-refs", D.short === "A" || D.short === "P" ? "関連して、次の項目でふれています：" : "この中項目は次の項目にまとめています："); c.refs.forEach(function (id) { var s = D.sections[id]; var a = h("a", "", id + " " + s.t); a.href = "#" + id; a.addEventListener("click", function (e) { if (secIndex[id] != null) { e.preventDefault(); go(secIndex[id], id, true); } }); p.appendChild(a); p.appendChild(document.createTextNode(" ")); });
           box.appendChild(p);
         }
       }

@@ -41,7 +41,7 @@
    * 資料を開いたかどうかは、ページ内の「資料へのリンク」を押したことで数える（資料ページ側は変えない。開いた先が何のページでも数える）。 */
   var GATES = [10, 20, 30, 40];
   function gateNeed(g) { return g === 10 ? { gr: 3, rc: 3 } : { gr: 5, rc: 5 }; }
-  var GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/", kei: "guide/keiketsu/" }; // 科目ごとの学習資料の入口（ROOT からの相対）
+  var GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/", kei: "guide/keiketsu/", sor: "guide/souron/", kak: "guide/kakuron/" }; // 科目ごとの学習資料の入口（ROOT からの相対）
   var BADGES = [
     { id: "first", n: "はじめの一歩", d: "はじめて1問答えた", t: function (s) { return s.att >= 1; } },
     { id: "c10", n: "10問正解", d: "正解が合計10問", t: function (s) { return s.cor >= 10; } },
@@ -463,7 +463,7 @@
 
   function gateCard() { // 限界突破カード（壁に着いている間だけ）
     var pr = gateProg(); if (!pr) return "";
-    var li = lvInfo(), ws = weakSubj(), rs = pr.read ? pr.read.s : (ws && GUIDE[ws] ? ws : Object.keys(GUIDE)[0]); // 臨床医学は資料準備中なので資料のある科目へ
+    var li = lvInfo(), ws = weakSubj(), rs = pr.read ? pr.read.s : (ws && GUIDE[ws] ? ws : Object.keys(GUIDE)[0]);
     var one = pr.gr >= pr.grN ? '✓ 苦手を' + pr.grN + '問克服' : '苦手をあと <strong>' + (pr.grN - pr.gr) + '</strong>問克服（まちがえた問題を2回つづけて正解）';
     var two = !pr.read ? '苦手な科目の資料を読む（過去問の「関連資料」からでもOK）→ その科目で' + pr.rcN + '問正解'
       : pr.rc >= pr.rcN ? '✓ 資料を読んで' + SUBJ[pr.read.s] + 'で' + pr.rcN + '問正解'

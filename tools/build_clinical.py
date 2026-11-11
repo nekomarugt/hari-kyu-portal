@@ -9,6 +9,10 @@ R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DS = json.load(open(W + "ds_all.json"))
 K = json.load(open(W + "kijun_clinical.json"))
 EXPL = json.load(open(os.path.join(R, "tools", "explanations_hk.json"), encoding="utf8"))
+# 学習資料（tools/build_clinical_guide.py が先に作る）：節の割り当てと、自信のある問題だけの一言解説
+CS = json.load(open(os.path.join(R, "tools", "clinical_secs.json"), encoding="utf8")) if os.path.exists(os.path.join(R, "tools", "clinical_secs.json")) else {"chu": {}, "sections": {}, "qx": {}}
+for _k in ("sor", "kak"): EXPL.setdefault(_k, {})
+for _q, _t in CS["qx"].items(): EXPL["sor"].setdefault(_q, _t); EXPL["kak"].setdefault(_q, _t)
 CJ = r"[一-龥ぁ-んァ-ヶー]"
 FIX = str.maketrans({"伳": "腱", "伹": "叉", "伮": "灸", "伷": "梗", "伱": "隙"})   # 問題PDFの外字（テキスト抽出で別字になるもの）
 def clean(s):
@@ -91,12 +95,12 @@ for subj, (dir_, key, ekey) in CFG.items():
     nchu = Counter(x["kijun_chu"] for x in rows)
     nsho = Counter((x["kijun_chu"], x["sho_name"]) for x in rows if x.get("sho_name") and x.get("kijun_sho", "") and x["kijun_sho"].startswith(x["kijun_chu"] + "-"))
     name = "souron" if subj == "総論" else "kakuron"
-    cov_g[name] = {"chapters": [{"id": d["id"], "name": d["name"]} for d in kj], "sections": {}, "qdir": f"../../{dir_}/"}
+    cov_g[name] = {"chapters": [{"id": d["id"], "name": d["name"]} for d in kj], "sections": {i: v for i, v in CS["sections"].items() if i[0] == ("S" if subj == "総論" else "K")}, "qdir": f"../../{dir_}/"}
     cov_c[name] = []
     for d in kj:
         for c in d["chu"]:
             pts = sorted([(n, s) for (ch, s), n in nsho.items() if ch == c["id"] and n >= 2], reverse=True)
-            r = {"id": c["id"], "dai": d["id"], "name": c["name"], "secs": [], "refs": [], "nq": nchu.get(c["id"], 0)}
+            r = {"id": c["id"], "dai": d["id"], "name": c["name"], "secs": CS["chu"].get(c["id"], {}).get("secs", []), "refs": CS["chu"].get(c["id"], {}).get("refs", []), "nq": nchu.get(c["id"], 0)}
             r["freq"] = r["nq"] >= FREQ_MIN
             if pts: r["pt"] = {"t": pts[0][1], "n": pts[0][0]}
             cov_c[name].append(r)

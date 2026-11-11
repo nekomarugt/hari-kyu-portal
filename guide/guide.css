@@ -132,3 +132,12 @@
 .g-kchips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0 2px; }
 .g-kchips-k { font-size: .74rem; font-weight: 800; color: #0c4a40; }
 .g-kchip { display: inline-block; padding: 4px 10px; border: 1px solid #9bc4b4; border-radius: 999px; background: #f4fbf8; color: #1f4a40; text-decoration: none; font-size: .84rem; font-weight: 700; }
+
+/* 臨床医学の資料 */
+.g-html .g-tblw { overflow-x: auto; margin: .5em 0; }
+.g-html .g-tbl td:first-child { white-space: nowrap; font-weight: 600; }
+.g-html .g-h4 { margin: .9em 0 .3em; font-size: .95rem; color: var(--hk-jade-700,#0c4a40); }
+.g-html .g-one { padding: 6px 10px; background: var(--hk-jade-50,#f1f8f5); border-left: 3px solid var(--hk-jade-500,#2f8f74); border-radius: 4px; }
+.g-html .g-links { font-size: .86rem; padding: 6px 10px; border: 1px dashed var(--hk-line,#e3d9bd); border-radius: 8px; }
+.g-html .g-links a { margin-right: .3em; }
+@media (max-width: 520px) { .g-html .g-tbl td:first-child { white-space: normal; } }

@@ -3,7 +3,7 @@
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v50';
+const VERSION = 'v51';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
@@ -18,7 +18,7 @@ const PRECACHE = [
   './quiz/', './quiz/quiz.js',
   './jitsuryoku/', './jitsuryoku/app.js', './jitsuryoku/gen.js', './jitsuryoku/kakera.json', './stats/', './stats/stats.js',
   './guide/', './guide/guide.css', './guide/guide.js', './guide/qlinks.json', './guide/coverage.js', './guide/clinical-cov.js', './guide/coverage/',
-  './guide/anatomy/', './guide/anatomy/content.js', './guide/physiology/', './guide/physiology/content.js',
+  './guide/anatomy/', './guide/anatomy/content.js', './guide/physiology/', './guide/physiology/content.js', './guide/souron/', './guide/souron/content.js', './guide/kakuron/', './guide/kakuron/content.js', './guide/qlinks-clin.json',
   './guide/anatomy/tooru.html', './guide/anatomy/tooru-data.js', './guide/tooru.js', './guide/extra.css',
   './guide/keiketsu/', './guide/keiketsu/keiketsu-data.js', './guide/keiketsu.js', './guide/keiketsu/assets/kei-04-tokunin.webp',
   './guide/anatomy/assets/taihyo-kotsudo-hk.webp', './guide/anatomy/assets/taihyo-back-hk.webp', './guide/anatomy/assets/taihyo-wrist-hk.webp', './guide/anatomy/assets/taihyo-snuff-hk.webp', './guide/anatomy/assets/taihyo-knee-hk.webp', './guide/anatomy/assets/taihyo-ankle-hk.webp',

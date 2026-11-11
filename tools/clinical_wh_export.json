@@ -1,0 +1,515 @@
+[
+{
+"id": "K11-01",
+"t": "アレルギー",
+"tag": "both",
+"jz": "infection_rheumatology:リウマチ性・自己免疫疾患",
+"html": "<ul class=\"g-list\"><li>アレルギー性鼻炎：くしゃみ・水様の鼻水・鼻づまり。鼻汁の好酸球やIgE抗体で調べる。</li></ul>",
+"np": 6,
+"rec": 2
+},
+{
+"id": "K12-01",
+"t": "椎間板ヘルニアと神経根症（頸・腰）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<p class=\"g-one\">椎間板の髄核が飛び出して<strong>神経根</strong>を押す。押された根の「反射・筋力・感覚」がそろって落ちる。</p><figure class=\"fig fig-diagram\"><a href=\"figures/k_cervical_root.svg\" target=\"_blank\" rel=\"noopener\"><img src=\"figures/k_cervical_root.svg\" alt=\"頸椎の神経根症 C5〜C8の腱反射・筋力・感覚の見分け\" loading=\"lazy\" decoding=\"async\" width=\"560\"></a><figcaption><strong>頸椎の神経根症</strong>　C6は「母指と手関節の背屈・腕橈骨筋反射」、C7は「中指と上腕三頭筋」。本サイトで作図した模式図。<small class=\"fig-zoom\">（図をタップすると拡大）</small></figcaption></figure><div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>腰の神経根（椎間）</th><th>腱反射↓</th><th>筋力↓</th><th>感覚↓</th></tr></thead><tbody><tr><td>L4（L3/4）</td><td><span class=\"answer\">膝蓋腱反射</span></td><td>大腿四頭筋（膝の伸展）</td><td>下腿の内側</td></tr><tr><td>L5（L4/5・最多）</td><td>目立つものなし（<span class=\"answer\">正常</span>）</td><td><span class=\"answer\">母趾の背屈</span>・足関節の背屈</td><td>下腿の外側〜足背</td></tr><tr><td>S1（L5/S1）</td><td><span class=\"answer\">アキレス腱反射</span></td><td>下腿三頭筋（つま先立ち）</td><td>足の外側・<span class=\"answer\">足底</span></td></tr></tbody></table></div><ul class=\"g-list\"><li>腰椎椎間板ヘルニアは20〜40代の男性に多く、L4/5とL5/S1が多い。片側の坐骨神経痛、ラセーグ（SLR）テスト陽性。</li></ul><ul class=\"g-list\"><li>頸椎の神経根症は<span class=\"answer\">スパーリングテスト</span>で腕に痛みが走る。頸椎の病気でも、脊髄が押される「脊髄症」では下肢の腱反射が亢進し病的反射が出る（神経根症とのちがい）。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">尿閉</span>・会陰部のしびれ（馬尾の障害）は早く手術を考える。</li></ul>",
+"np": 29,
+"rec": 12
+},
+{
+"id": "K12-02",
+"t": "脊柱管狭窄症・分離すべり症・後縦靱帯骨化症",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>腰部脊柱管狭窄症：高齢者。歩くと脚がしびれ、<span class=\"answer\">前かがみで休む</span>と楽になる間欠跛行（<span class=\"answer\">両側</span>に出ることが多い）。<span class=\"answer\">黄色靱帯の肥厚</span>・椎間板の膨隆・骨棘で狭くなる。会陰部のしびれも出る。ケンプ徴候。</li></ul><ul class=\"g-list\"><li>腰椎分離症：成長期のスポーツで関節突起間部の疲労骨折。L5に多い。斜位X線で<span class=\"answer\">テリアの首輪</span>（スコッチテリアの首輪）。腰をそらす・ひねると痛む。</li></ul><ul class=\"g-list\"><li>後縦靱帯骨化症：頸椎（C5あたり）に多く、脊髄を押す。日本人に多い。</li></ul><ul class=\"g-list\"><li>強直性脊椎炎：若い男性、HLA-B27、脊柱が竹のように強直。</li></ul>",
+"np": 5,
+"rec": 1
+},
+{
+"id": "K12-03",
+"t": "関節炎（変形性関節症・偽痛風・化膿性関節炎）と関節リウマチ",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>変形性関節症：軟骨のすり減り（<span class=\"answer\">退行変性</span>）。X線は<span class=\"answer\">関節裂隙の狭小化</span>・<span class=\"answer\">骨棘</span>・軟骨下骨の硬化・骨のう胞。強直は起こしにくい。治療は運動・減量・NSAIDs・人工関節など（ギプス固定はしない）。</li></ul><ul class=\"g-list\"><li>ヘバーデン結節はDIP関節（PIPはブシャール結節）。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">偽痛風</span>：<span class=\"answer\">ピロリン酸カルシウム</span>の結晶。高齢者の膝。X線で<span class=\"answer\">半月板の石灰化</span>。</li></ul><ul class=\"g-list\"><li>化膿性関節炎：黄色ブドウ球菌が多い。関節の腫れ・熱感・強い痛み、乳児の股関節に多い。早く排膿しないと関節がこわれる。単純性股関節炎は子どもの一過性の炎症で自然に治る。</li></ul><ul class=\"g-list\"><li>肩関節周囲炎（五十肩）：50歳代に多い。</li></ul><ul class=\"g-list\"><li>関節リウマチの詳しい所は柔整の資料（一般臨床「関節リウマチ」）と共通。</li></ul><p class=\"g-links\"><strong>柔整の資料で見る</strong>　<a href=\"https://nekomarugt.github.io/j-kokushi-portal/clinical-guide/#sec-infection_rheumatology-14\" target=\"_blank\" rel=\"noopener\">関節リウマチ</a>／<a href=\"https://nekomarugt.github.io/j-kokushi-portal/clinical-guide/#sec-cardiovascular-29\" target=\"_blank\" rel=\"noopener\">深部静脈血栓症</a>／<a href=\"https://nekomarugt.github.io/j-kokushi-portal/jusei-guide/#soft\" target=\"_blank\" rel=\"noopener\">コンパートメント症候群（軟部組織損傷）</a></p>",
+"np": 23,
+"rec": 5
+},
+{
+"id": "K12-04",
+"t": "骨腫瘍（良性と悪性の見分け・骨転移・骨髄腫）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<p class=\"g-one\">最近は「骨肉腫だけ」ではなく、<strong>良性と悪性の見分け</strong>・<strong>骨転移</strong>の形で出る。</p><div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>腫瘍</th><th>年齢・場所</th><th>特徴</th></tr></thead><tbody><tr><td><span class=\"answer\">骨肉腫</span></td><td><span class=\"answer\">10代</span>、膝のまわり（大腿骨遠位・脛骨近位）</td><td>原発性悪性骨腫瘍で<span class=\"answer\">最も多い</span>。運動時痛から始まる。ALP上昇、X線で骨膜反応（スピクラ・コッドマン三角）</td></tr><tr><td><span class=\"answer\">軟骨肉腫</span></td><td>中高年、骨盤・大腿骨近位</td><td>抗がん剤・放射線が効きにくく手術。悪性で予後は悪い</td></tr><tr><td>ユーイング肉腫</td><td>小児、骨幹部</td><td>発熱を伴い骨髄炎と紛らわしい。たまねぎの皮様の骨膜反応</td></tr><tr><td>脊索腫</td><td>高齢者、仙骨・頭蓋底</td><td>悪性。まれ</td></tr><tr><td>内軟骨腫</td><td>手の指の骨</td><td>良性。病的骨折で見つかる</td></tr><tr><td>骨軟骨腫（外骨腫）</td><td>膝のまわり</td><td>良性で最も多い。軟骨の帽子をかぶったこぶ。多発性は悪性化に注意</td></tr><tr><td>類骨骨腫</td><td>若い人の下肢</td><td>良性。夜間痛がアスピリン（NSAIDs）でよく治まる</td></tr><tr><td>骨巨細胞腫</td><td>20〜30代、膝のまわり</td><td>X線で石けんの泡状。再発しやすい</td></tr></tbody></table></div><ul class=\"g-list\"><li>全部の骨腫瘍で最も多いのは<span class=\"answer\">転移性骨腫瘍</span>（中高年、脊椎・骨盤・肋骨）。もとは肺癌・乳癌・前立腺癌・腎癌など。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">多発性骨髄腫</span>：形質細胞のがん。高齢者。骨痛・病的骨折・ベンス・ジョーンズ蛋白・高カルシウム血症。</li></ul>",
+"np": 4,
+"rec": 1
+},
+{
+"id": "K12-05",
+"t": "先天性骨系統疾患・骨壊死・骨端症",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>病気</th><th>遺伝</th><th>特徴</th></tr></thead><tbody><tr><td><span class=\"answer\">軟骨無形成症</span></td><td>常染色体顕性（優性）</td><td>四肢の短い低身長、前頭部の突出・鼻根部の陥没、三尖手</td></tr><tr><td><span class=\"answer\">骨形成不全症</span></td><td>主に顕性</td><td>骨がもろく骨折をくり返す、<span class=\"answer\">青色強膜</span>・難聴</td></tr><tr><td><span class=\"answer\">マルファン症候群</span></td><td>顕性</td><td>高身長・クモ状指・側弯・水晶体の亜脱臼・<span class=\"answer\">大動脈解離</span></td></tr><tr><td>モルキオ病（ムコ多糖症Ⅳ型）</td><td>潜性（劣性）</td><td>体幹の短い低身長、角膜混濁</td></tr><tr><td>大理石骨病</td><td>いろいろ</td><td>骨が硬くなりすぎて逆に折れやすい、骨髄が狭い</td></tr><tr><td>神経線維腫症1型</td><td>顕性</td><td>カフェオレ斑・神経線維腫・側弯</td></tr></tbody></table></div><ul class=\"g-list\"><li>ペルテス病：<span class=\"answer\">4〜8歳の男児</span>の大腿骨頭の壊死。跛行・股関節の痛み（膝の痛みとして訴えることも）。股関節の外転・内旋が制限される。</li></ul><ul class=\"g-list\"><li>特発性大腿骨頭壊死：アルコール多飲・ステロイドの使用。</li></ul><ul class=\"g-list\"><li>骨端症：オスグッド病（<span class=\"answer\">脛骨粗面</span>、成長期のスポーツ）、キーンベック病（月状骨）、第2ケーラー病（中足骨頭）。</li></ul>",
+"np": 2,
+"rec": 0
+},
+{
+"id": "K12-06",
+"t": "形態異常（発育性股関節形成不全・側弯症・斜頸）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>発育性股関節形成不全（旧：先天性股関節脱臼）：<span class=\"answer\">女児</span>に多い。<span class=\"answer\">開排制限</span>・大腿皮膚溝の左右差・脚の長さの差（<span class=\"answer\">アリス徴候</span>）・クリック。乳児は<span class=\"answer\">リーメンビューゲル装具</span>。歩き始めが遅れ、両側では腰椎前弯・あひる歩行。</li></ul><ul class=\"g-list\"><li>特発性側弯症：思春期の女子。前屈すると背中の<span class=\"answer\">肋骨隆起</span>が見える。学校の健康診断で早く見つける。曲がりの程度は<span class=\"answer\">コブ法</span>で測る。装具はミルウォーキーブレースなど。</li></ul><ul class=\"g-list\"><li>先天性筋性斜頸は性差がない。外反母趾のバニオンは母趾のつけ根の滑液包の腫れ。</li></ul>",
+"np": 14,
+"rec": 4
+},
+{
+"id": "K12-07",
+"t": "脊髄損傷",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>受傷直後は<span class=\"answer\">脊髄ショック</span>で弛緩性麻痺・反射消失。後に損傷部より下は痙性麻痺になる。</li></ul><ul class=\"g-list\"><li>頸髄中心性損傷：高齢者の転倒（頸の過伸展）、<span class=\"answer\">上肢の方が下肢より重い</span>麻痺。</li></ul><ul class=\"g-list\"><li>重さの評価は<span class=\"answer\">フランケル分類</span>（A〜E）・ASIA。</li></ul><ul class=\"g-list\"><li>残存高位の目安：C4＝横隔膜（自分で呼吸できる）、C5＝肘の屈曲（三角筋・上腕二頭筋。自助具で食事）、C6＝手関節の背屈、C7＝肘の伸展。</li></ul><ul class=\"g-list\"><li>合併症：褥瘡・尿路感染・<span class=\"answer\">異所性骨化</span>（股・膝）・自律神経過反射。</li></ul>",
+"np": 10,
+"rec": 3
+},
+{
+"id": "K12-08",
+"t": "外傷・スポーツ障害・感染（骨髄炎）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>高齢者の4大骨折：<span class=\"answer\">大腿骨頸部（近位部）</span>・脊椎圧迫・橈骨遠位端・上腕骨近位部。小児：<span class=\"answer\">上腕骨顆上骨折</span>（正中神経・上腕動脈を傷める。フォルクマン拘縮）。小児の骨は自家矯正が強い。</li></ul><ul class=\"g-list\"><li>肘内障：2〜4歳の子の手を引っぱって起こる橈骨頭の亜脱臼。<span class=\"answer\">腫れはない</span>。</li></ul><ul class=\"g-list\"><li>外傷性脱臼は<span class=\"answer\">肩関節</span>が最も多い（若い人の初回脱臼は反復性になりやすい）。脱臼は弾発性固定（ばね様固定）が特徴。</li></ul><ul class=\"g-list\"><li>スポーツ障害：野球肘（外側型は<span class=\"answer\">上腕骨小頭</span>の離断性骨軟骨炎）、ジャンパー膝（膝蓋靱帯炎）、脛骨の疲労骨折（跳躍型は<span class=\"answer\">中1/3</span>、疾走型は上・下1/3）、肉ばなれ（ハムストリング・<span class=\"answer\">腓腹筋</span>）。</li></ul><ul class=\"g-list\"><li>筋挫傷のあとの無理なストレッチやマッサージで<span class=\"answer\">骨化性筋炎</span>。腱板断裂はドロップアームテスト、MRIで確定。</li></ul><ul class=\"g-list\"><li>胸郭出口症候群：なで肩の若い女性。前斜角筋・中斜角筋の間などで腕神経叢と鎖骨下動脈が押される。ライトテスト。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">化膿性骨髄炎</span>：小児の長管骨の骨幹端（大腿骨・脛骨）。黄色ブドウ球菌の血行感染。安静時も痛み、発熱・CRP上昇。慢性化すると腐骨。脊椎カリエス（結核）は亀背・冷膿瘍・麻痺（ポットの三徴）。</li></ul><ul class=\"g-list\"><li>急性の捻挫・打撲はRICE（安静・冷却・<span class=\"answer\">圧迫</span>・挙上）。</li></ul><ul class=\"g-list\"><li>深部静脈血栓症・コンパートメント症候群は柔整の資料と共通（上の「関節炎」の節にリンク）。</li></ul>",
+"np": 43,
+"rec": 11
+},
+{
+"id": "K13-01",
+"t": "皮膚の病気（熱傷・アトピー性皮膚炎）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>熱傷：まず<span class=\"answer\">水で冷やす</span>。重さは深さと広さ（9の法則）、年齢・部位で決まる（性別は関係しない）。広い熱傷では血漿が漏れて循環血漿量が減る→<span class=\"answer\">早期の輸液</span>。低温熱傷は深くなりやすく治りにくい。</li></ul><ul class=\"g-list\"><li>アトピー性皮膚炎：Ⅰ型アレルギーが関わる慢性の湿疹。小児では<span class=\"answer\">肘・膝の内側</span>（大関節の屈側）。治療の土台は<span class=\"answer\">スキンケア</span>（保湿）。</li></ul>",
+"np": 10,
+"rec": 2
+},
+{
+"id": "K13-02",
+"t": "眼の病気",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>病気</th><th>しるし</th></tr></thead><tbody><tr><td><span class=\"answer\">緑内障</span></td><td>眼圧が上がり視神経が傷む。<span class=\"answer\">視野が欠ける</span>。日本の後天性失明の原因で<span class=\"answer\">最も多い</span></td></tr><tr><td>白内障</td><td>水晶体がにごる（角膜ではない）。加齢・糖尿病・ステロイド</td></tr><tr><td><span class=\"answer\">加齢黄斑変性</span></td><td>中心が見えにくい・ゆがんで見える</td></tr><tr><td>網膜剥離</td><td><span class=\"answer\">飛蚊症</span>・光が走る（光視症）のあと、視野がカーテン状に欠ける</td></tr><tr><td>流行性角結膜炎</td><td><span class=\"answer\">アデノウイルス</span>（細菌ではない）。うつりやすい</td></tr><tr><td>アレルギー性結膜炎</td><td>かゆみ・充血・まぶたの腫れ。視力は落ちない</td></tr></tbody></table></div><ul class=\"g-list\"><li>乱視は円柱レンズで矯正する。</li></ul>",
+"np": 15,
+"rec": 6
+},
+{
+"id": "K13-03",
+"t": "耳鼻咽喉の病気（難聴・メニエール病）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>伝音性難聴（外耳・中耳）：耳垢・<span class=\"answer\">急性中耳炎</span>・耳管狭窄。感音性難聴（内耳・神経）：<span class=\"answer\">メニエール病</span>・突発性難聴・老人性難聴・聴神経腫瘍。</li></ul><ul class=\"g-list\"><li>メニエール病：回転性めまい＋耳鳴＋<span class=\"answer\">感音性難聴</span>の発作をくり返す。耳漏はない。</li></ul><ul class=\"g-list\"><li>突発性難聴：ある日突然、片耳の感音性難聴と耳鳴。早く治療する。</li></ul><ul class=\"g-list\"><li>慢性副鼻腔炎はX線・CTで調べる。</li></ul>",
+"np": 11,
+"rec": 2
+},
+{
+"id": "K13-04",
+"t": "乳癌",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>女性の癌で最も多い。乳房の<span class=\"answer\">外上部</span>に多い。主な症状は痛みのない<span class=\"answer\">しこり</span>。多くは女性ホルモン依存性。</li></ul><ul class=\"g-list\"><li>検査の順：視触診・<span class=\"answer\">超音波検査</span>・マンモグラフィ→確定は<span class=\"answer\">病理組織検査</span>（針生検）。</li></ul>",
+"np": 5,
+"rec": 4
+},
+{
+"id": "K14-01",
+"t": "精神・心身医学の病気",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>病気</th><th>特徴</th></tr></thead><tbody><tr><td>統合失調症</td><td>思春期〜青年期。幻聴・妄想・<span class=\"answer\">させられ体験</span>（自我障害）</td></tr><tr><td>うつ病</td><td>抑うつ気分・興味の喪失・<span class=\"answer\">思考制止</span>（考えが進まない）・不眠・早朝覚醒。<span class=\"answer\">セロトニン</span>の関与</td></tr><tr><td><span class=\"answer\">パニック症</span></td><td>突然の動悸・息苦しさの発作。また起こるのではという<span class=\"answer\">予期不安</span>。認知行動療法</td></tr><tr><td>心気症</td><td>病気でないのに重い病気だと思いこむ</td></tr><tr><td>心身症</td><td>体の病気だが心理的な要因が強い：<span class=\"answer\">過敏性腸症候群</span>・気管支喘息・胃潰瘍・本態性高血圧など（うつ病は含まない）</td></tr><tr><td>神経性やせ症</td><td>若い女性。やせているのに太るのをおそれる。心理療法</td></tr><tr><td>ADHD</td><td><span class=\"answer\">不注意・多動性・衝動性</span></td></tr><tr><td>自閉スペクトラム症（アスペルガー）</td><td>対人関係・こだわり。知的障害を伴わない型がある</td></tr><tr><td>せん妄</td><td>急に起こる意識の軽いくもりと混乱。高齢者の入院・夜間</td></tr></tbody></table></div>",
+"np": 22,
+"rec": 9
+},
+{
+"id": "K16-01",
+"t": "高齢者に多い状態（フレイル・サルコペニア・ロコモ）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<p class=\"g-one\">出題基準に入った新しい項目（はり灸の過去問ではまだ出ていない）。用語の区別だけ押さえる。</p><ul class=\"g-list\"><li><span class=\"answer\">フレイル</span>：加齢で心身の予備力が落ち、要介護の一歩手前の状態。体重減少・疲れやすさ・歩く速さの低下・握力低下・活動量の低下。適切な介入で元に戻りうる。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">サルコペニア</span>：加齢による筋肉の量と力の低下。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">ロコモティブシンドローム</span>：骨・関節・筋肉など運動器の障害で、移動の力が落ちた状態。</li></ul>",
+"np": 0,
+"rec": 0
+},
+{
+"id": "K3-07",
+"t": "全身の病気に伴う肺の病変",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>サルコイドーシス：両側の肺門リンパ節の腫れ。目（ぶどう膜炎）・皮膚にも出る。</li></ul><ul class=\"g-list\"><li>膠原病では間質性肺炎が起こりやすい（全身性強皮症・皮膚筋炎・関節リウマチ）。</li></ul>",
+"np": 0,
+"rec": 0
+},
+{
+"id": "K6-04",
+"t": "腎・膀胱の腫瘍",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>痛みのない<span class=\"answer\">血尿</span>は膀胱癌・腎癌を考える。膀胱癌は喫煙が危険因子。</li></ul>",
+"np": 0,
+"rec": 0
+},
+{
+"id": "K10-04",
+"t": "膵臓の内分泌の病気",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>インスリノーマ：インスリンを出す腫瘍。空腹時の<span class=\"answer\">低血糖</span>（冷汗・動悸・意識障害）。</li></ul>",
+"np": 0,
+"rec": 0
+},
+{
+"id": "K11-03",
+"t": "免疫不全症",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>生まれつきの免疫不全と、後から起こる免疫不全（HIV感染症・抗がん剤・ステロイド・糖尿病など）がある。</li></ul><ul class=\"g-list\"><li>免疫が落ちると日和見感染（ニューモシスチス肺炎・カンジダ・サイトメガロウイルス）が起こる。詳しくはK1「ウイルス感染症」。</li></ul>",
+"np": 0,
+"rec": 0
+},
+{
+"id": "K1-01",
+"t": "感染のしくみ・院内感染・予防接種",
+"tag": "both",
+"jz": "infection_rheumatology:細菌感染症",
+"html": "<ul class=\"g-list\"><li>針刺し事故で感染する率は<span class=\"answer\">B型肝炎</span>が最も高い（C型・HIVより高い）。HBV陽性の血液なら抗HBs免疫グロブリンとワクチン。</li></ul><ul class=\"g-list\"><li>潜伏期の長さ：ブドウ球菌の食中毒は数時間（最も短い）〜HIV感染症（エイズ発症まで<span class=\"answer\">数年〜10年</span>）。</li></ul>",
+"np": 13,
+"rec": 4
+},
+{
+"id": "K1-02",
+"t": "細菌感染症（破傷風・百日咳・結核・抗酸菌）",
+"tag": "both",
+"jz": "infection_rheumatology:細菌感染症",
+"html": "<ul class=\"g-list\"><li>非結核性抗酸菌症：人から人へはうつらないが<span class=\"answer\">治りにくい</span>。中高年の女性に増えている。</li></ul>",
+"np": 10,
+"rec": 6
+},
+{
+"id": "K1-03",
+"t": "食中毒と寄生虫",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>原因</th><th>多い食品・特徴</th></tr></thead><tbody><tr><td><span class=\"answer\">カンピロバクター</span></td><td><span class=\"answer\">鶏肉</span>の生食・加熱不足。ギラン・バレー症候群の先行感染にもなる</td></tr><tr><td>サルモネラ</td><td>鶏卵・肉</td></tr><tr><td>腸炎ビブリオ</td><td>魚介類（夏）。潜伏期は半日ほど</td></tr><tr><td>黄色ブドウ球菌</td><td>おにぎりなど手作り食品。毒素型で潜伏期が<span class=\"answer\">数時間</span>と最も短い</td></tr><tr><td>ボツリヌス菌</td><td>缶詰・びん詰・<span class=\"answer\">乳児のはちみつ</span>。神経毒で麻痺。致死率が高い</td></tr><tr><td>腸管出血性大腸菌（O157）</td><td>ベロ毒素。溶血性尿毒症症候群</td></tr><tr><td>ノロウイルス</td><td>貝（冬）。吐物は<span class=\"answer\">次亜塩素酸ナトリウム</span>で消毒（アルコールは効きにくい）</td></tr><tr><td><span class=\"answer\">アニサキス</span></td><td>生のサバ・イカ。数時間後の激しい胃痛。<span class=\"answer\">内視鏡</span>で虫体を取る。−20℃・24時間以上の冷凍で予防</td></tr></tbody></table></div>",
+"np": 11,
+"rec": 5
+},
+{
+"id": "K1-04",
+"t": "ウイルス感染症（帯状疱疹・麻疹・風疹・インフルエンザ・HIV）",
+"tag": "both",
+"jz": "infection_rheumatology:ウイルス感染症",
+"html": "<ul class=\"g-list\"><li>アデノウイルス：<span class=\"answer\">流行性角結膜炎</span>（はやり目）・咽頭結膜熱（プール熱）。</li></ul><ul class=\"g-list\"><li>手足口病はエンテロウイルス（ヘルペスではない）。流行性耳下腺炎はムンプスウイルス。</li></ul>",
+"np": 23,
+"rec": 9
+},
+{
+"id": "K2-01",
+"t": "脳血管障害（脳梗塞・脳出血・くも膜下出血・TIA）",
+"tag": "both",
+"jz": "neurology:脳血管障害",
+"html": "<ul class=\"g-list\"><li>部位の手がかり：視床出血は眼が<span class=\"answer\">下方・鼻先</span>を見つめる。後大脳動脈の閉塞は<span class=\"answer\">同名半盲</span>。延髄外側の梗塞（ワレンベルグ症候群）は同じ側の顔と反対側の体の温痛覚障害、ホルネル症候群。</li></ul><ul class=\"g-list\"><li>脳卒中のあとに出る高次脳機能障害：遂行機能障害（段取りができない）には、手順を見える形で示して一緒に確かめる。</li></ul>",
+"np": 16,
+"rec": 6
+},
+{
+"id": "K2-02",
+"t": "中枢神経の感染症と脳腫瘍",
+"tag": "both",
+"jz": "neurology:髄膜炎",
+"html": "<ul class=\"g-list\"><li>聴神経鞘腫：初めの症状は<span class=\"answer\">難聴</span>・耳鳴（小脳橋角部）。</li></ul>",
+"np": 7,
+"rec": 0
+},
+{
+"id": "K2-03",
+"t": "パーキンソン病と変性疾患",
+"tag": "both",
+"jz": "neurology:パーキンソン病",
+"html": "<ul class=\"g-list\"><li>脊髄小脳変性症・多系統萎縮症（オリーブ橋小脳萎縮症など）：小脳性の運動失調・断綴性言語。起立性低血圧（自律神経障害）を伴う型もある。</li></ul><ul class=\"g-list\"><li>ハンチントン病：舞踏運動（錐体外路）と認知症。常染色体優性遺伝。</li></ul>",
+"np": 16,
+"rec": 6
+},
+{
+"id": "K2-05",
+"t": "筋ジストロフィーと重症筋無力症",
+"tag": "both",
+"jz": "neurology:筋疾患",
+"html": "<ul class=\"g-list\"><li>ほかの型：ベッカー型（デュシェンヌに似るが軽く、発症が遅い）、<span class=\"answer\">筋強直性ジストロフィー</span>（握った手を開きにくい筋強直、斧様顔貌、白内障、遠位筋から萎縮、常染色体優性）、福山型（日本に多い先天型、知的障害を伴う）、肢帯型（腰と肩まわり）、顔面肩甲上腕型（顔と肩甲骨まわり）。</li></ul>",
+"np": 9,
+"rec": 3
+},
+{
+"id": "K2-06",
+"t": "運動ニューロン疾患（ALS）と脱髄疾患",
+"tag": "both",
+"jz": "neurology:筋萎縮性側索硬化症",
+"html": "<ul class=\"g-list\"><li>ポリオ（急性灰白髄炎）：脊髄<span class=\"answer\">前角</span>の下位運動ニューロンが侵され、弛緩性麻痺が残る。</li></ul>",
+"np": 9,
+"rec": 3
+},
+{
+"id": "K2-07",
+"t": "ギラン・バレー症候群と顔面神経麻痺",
+"tag": "both",
+"jz": "neurology:ギラン・バレー症候群",
+"html": "<ul class=\"g-list\"><li>末梢性顔面神経麻痺（ベル麻痺）：片側の顔全体（額のしわ寄せもできない）。舌の前2/3の<span class=\"answer\">味覚障害</span>・聴覚過敏・涙の減少。顔の痛覚は三叉神経なので保たれる。</li></ul><ul class=\"g-list\"><li><span class=\"answer\">ラムゼイ・ハント症候群</span>：水痘・帯状疱疹ウイルスの再活性化。顔面神経麻痺＋耳の帯状疱疹＋めまい・難聴。治療は<span class=\"answer\">抗ウイルス薬</span>とステロイド。</li></ul>",
+"np": 14,
+"rec": 4
+},
+{
+"id": "K2-08",
+"t": "絞扼性神経障害と末梢神経麻痺",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>神経</th><th>麻痺の形</th><th>代表の原因</th></tr></thead><tbody><tr><td>正中神経</td><td><span class=\"answer\">猿手</span>（母指球の萎縮）。母指〜環指橈側のしびれ</td><td><span class=\"answer\">手根管症候群</span>（中年女性・妊娠・透析・甲状腺機能低下症・関節リウマチ）</td></tr><tr><td>尺骨神経</td><td><span class=\"answer\">鷲手</span>、骨間筋の萎縮、<span class=\"answer\">フローマン徴候</span></td><td>肘部管症候群（<span class=\"answer\">外反肘</span>・変形性肘関節症・小児期の外顆骨折のあとの遅発性麻痺）</td></tr><tr><td>橈骨神経</td><td><span class=\"answer\">下垂手</span></td><td>上腕骨骨幹部骨折・腕枕（土曜の夜の麻痺）</td></tr></tbody></table></div><ul class=\"g-list\"><li>手根管症候群では神経伝導速度が遅くなる。骨間筋の萎縮は尺骨神経のしるし。</li></ul><ul class=\"g-list\"><li>脊髄空洞症：温痛覚が失われ<span class=\"answer\">触覚は残る</span>（解離性感覚障害）。</li></ul>",
+"np": 11,
+"rec": 4
+},
+{
+"id": "K2-09",
+"t": "三叉神経痛・慢性頭痛・てんかん",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>特発性三叉神経痛：顔の片側に電撃のような痛みが数秒。洗顔・歯みがきで誘発される<span class=\"answer\">トリガーゾーン</span>がある。第2・第3枝に多い。</li></ul><ul class=\"g-list\"><li>片頭痛：前ぶれ（<span class=\"answer\">閃輝暗点</span>）のあとに拍動性の頭痛。群発頭痛：片目の奥の激痛、男性に多い。</li></ul><ul class=\"g-list\"><li>てんかん：脳波で診断する。</li></ul>",
+"np": 6,
+"rec": 0
+},
+{
+"id": "K3-01",
+"t": "肺炎の種類とかぜ症候群",
+"tag": "both",
+"jz": "respiratory:肺炎",
+"html": "<ul class=\"g-list\"><li>非定型肺炎（<span class=\"answer\">マイコプラズマ</span>・クラミジア・レジオネラ）：痰の少ない<span class=\"answer\">頑固な乾いた咳</span>。若い人に多い。ペニシリン系が効かない。レジオネラは循環式の風呂や空調の水から。</li></ul><ul class=\"g-list\"><li>誤嚥性肺炎：高齢者・脳卒中のあとで、飲み込む力や咳の反射が弱い人。右の下葉に多い。</li></ul><ul class=\"g-list\"><li>ニューモシスチス肺炎：エイズなど免疫が落ちた人の日和見感染（真菌）。</li></ul><ul class=\"g-list\"><li>抗菌薬の使いすぎで菌の<span class=\"answer\">耐性化</span>が問題になっている。</li></ul>",
+"np": 9,
+"rec": 1
+},
+{
+"id": "K3-05",
+"t": "肺癌",
+"tag": "both",
+"jz": "respiratory:肺腫瘍",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>組織型</th><th>特徴</th></tr></thead><tbody><tr><td><span class=\"answer\">腺癌</span></td><td>最も多い。肺の<span class=\"answer\">末梢</span>、女性・非喫煙者にも</td></tr><tr><td>扁平上皮癌</td><td>肺門部（中心）、喫煙と強く関係</td></tr><tr><td>小細胞癌</td><td>進行が速く転移しやすい。抗癌剤・放射線がよく効く</td></tr><tr><td>大細胞癌</td><td>末梢、進行が速い</td></tr></tbody></table></div><ul class=\"g-list\"><li>周りへの広がりのしるし：上大静脈→顔面・上肢の浮腫、反回神経→<span class=\"answer\">嗄声</span>、頸部交感神経→ホルネル症候群（縮瞳・眼瞼下垂＝眼裂狭小）。詳しくは総論「ホルネル症候群と肺癌の局所症状」。</li></ul><ul class=\"g-list\"><li>脳に転移しやすいので、遠隔転移は造影MRIで調べる。</li></ul>",
+"np": 11,
+"rec": 4
+},
+{
+"id": "K3-06",
+"t": "気胸・過換気症候群・気管支拡張症",
+"tag": "both",
+"jz": "respiratory:気胸",
+"html": "<ul class=\"g-list\"><li>過換気症候群：不安で呼吸が速くなりCO2が下がる。手足のしびれ・テタニー。脳の血管が縮み血流は<span class=\"answer\">減る</span>。</li></ul><ul class=\"g-list\"><li>気管支拡張症：気管支が広がったままもどらない（<span class=\"answer\">不可逆</span>）。大量の膿性痰・血痰。体位ドレナージ。</li></ul>",
+"np": 11,
+"rec": 4
+},
+{
+"id": "K4-01",
+"t": "不整脈と心不全",
+"tag": "both",
+"jz": "cardiovascular:心不全",
+"html": "<ul class=\"g-list\"><li>予後のよい不整脈：上室性期外収縮。危ないもの：心室細動・心室頻拍・完全房室ブロック。</li></ul>",
+"np": 11,
+"rec": 4
+},
+{
+"id": "K4-02",
+"t": "先天性心疾患・弁膜症・心筋症",
+"tag": "both",
+"jz": "cardiovascular:後天性心疾患",
+"html": "<ul class=\"g-list\"><li>大動脈弁狭窄症：<span class=\"answer\">収縮期</span>雑音、脈の立ち上がりが遅い（遅脈・小脈）、失神・狭心痛。大動脈弁閉鎖不全症：拡張期雑音、拡張期血圧が<span class=\"answer\">下がる</span>（脈圧が大きい）。</li></ul><ul class=\"g-list\"><li>肥大型心筋症（とくに閉塞性）は若い人の<span class=\"answer\">突然死</span>の原因。拡張型心筋症は心臓が大きく伸びて収縮力が落ちる。</li></ul><ul class=\"g-list\"><li>感染性心内膜炎：歯の治療などのあと。発熱・心雑音・塞栓。貧血になる。</li></ul>",
+"np": 13,
+"rec": 0
+},
+{
+"id": "K4-03",
+"t": "狭心症と心筋梗塞",
+"tag": "both",
+"jz": "cardiovascular:虚血性心疾患",
+"html": "<ul class=\"g-list\"><li>冠攣縮性（異型）狭心症：<span class=\"answer\">夜間〜早朝</span>の安静時に起こる。</li></ul>",
+"np": 20,
+"rec": 3
+},
+{
+"id": "K5-01",
+"t": "口腔・食道の病気（う歯・食道癌・胃食道逆流症）",
+"tag": "both",
+"jz": "digestive:食道癌",
+"html": "<ul class=\"g-list\"><li>胃食道逆流症（GERD）：下部食道括約筋が一時的にゆるみ、胃酸が逆流して胸やけ。長く続くと食道下部の扁平上皮が<span class=\"answer\">円柱上皮</span>に置き換わる（バレット食道）。</li></ul>",
+"np": 8,
+"rec": 3
+},
+{
+"id": "K5-02",
+"t": "胃の病気（消化性潰瘍・胃切除後症候群）",
+"tag": "both",
+"jz": "digestive:消化性潰瘍",
+"html": "<ul class=\"g-list\"><li>胃切除後のダンピング症候群：早期（食後30分以内）は動悸・発汗・腹痛、後期（食後2〜3時間）は<span class=\"answer\">低血糖</span>。</li></ul><ul class=\"g-list\"><li>内臓の痛みが皮膚に感じられるのは関連痛（胃・膵は背中）。</li></ul>",
+"np": 6,
+"rec": 0
+},
+{
+"id": "K5-03",
+"t": "腸の病気（炎症性腸疾患・過敏性腸症候群・腸閉塞・大腸癌）",
+"tag": "both",
+"jz": "digestive:腸疾患",
+"html": "<ul class=\"g-list\"><li>過敏性腸症候群：検査で異常がないのに腹痛と便通異常（下痢・便秘・交互）。ストレスで悪化。</li></ul>",
+"np": 17,
+"rec": 4
+},
+{
+"id": "K5-04",
+"t": "肝炎・肝硬変・肝癌",
+"tag": "both",
+"jz": "digestive:腹痛（総論）",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>型</th><th>うつり方</th><th>特徴</th></tr></thead><tbody><tr><td>A型</td><td><span class=\"answer\">経口</span>（生ガキなど生の貝・水）</td><td>発熱で始まる急性肝炎。慢性化しない。いちばん治りやすい</td></tr><tr><td>E型</td><td>経口（加熱不足の豚・シカ・イノシシの肉）</td><td>慢性化しない。妊婦で重くなる</td></tr><tr><td>B型</td><td>血液・<span class=\"answer\">性行為</span>・<span class=\"answer\">母子（分娩時の垂直感染）</span></td><td>DNAウイルス。劇症化しやすい。針刺しで最もうつりやすい</td></tr><tr><td>C型</td><td>血液（<span class=\"answer\">血液への曝露</span>）</td><td><span class=\"answer\">慢性化しやすい</span>。肝細胞癌の原因で最も多い。急性で劇症化はまれ</td></tr></tbody></table></div><ul class=\"g-list\"><li>肝性昏睡（肝性脳症）：アンモニアが増え、<span class=\"answer\">羽ばたき振戦</span>・意識障害。</li></ul><ul class=\"g-list\"><li>アルコール性肝障害は同じ量の飲酒なら<span class=\"answer\">女性</span>の方が起こりやすい。</li></ul>",
+"np": 29,
+"rec": 9
+},
+{
+"id": "K5-05",
+"t": "胆石症と膵臓の病気",
+"tag": "both",
+"jz": "digestive:腹痛（総論）",
+"html": "<ul class=\"g-list\"><li>慢性膵炎：膵臓の石灰化（超音波・CT）、糖尿病・脂肪便。</li></ul><ul class=\"g-list\"><li>膵癌：膵管の上皮から発生。危険因子は<span class=\"answer\">糖尿病</span>・喫煙・慢性膵炎。腫瘍マーカーは<span class=\"answer\">CA19-9</span>。膵頭部の癌は黄疸と、痛みのない胆嚢のふくらみ（クールボアジェ徴候）。</li></ul>",
+"np": 18,
+"rec": 6
+},
+{
+"id": "K6-03",
+"t": "尿路の感染・結石・排尿障害・前立腺",
+"tag": "both",
+"jz": "renal:感染症",
+"html": "<ul class=\"g-list\"><li>過活動膀胱：急に強い尿意（尿意切迫）・頻尿・切迫性尿失禁。生活指導は<span class=\"answer\">骨盤底筋訓練</span>。</li></ul>",
+"np": 17,
+"rec": 9
+},
+{
+"id": "K7-01",
+"t": "子宮筋腫・子宮癌・更年期・妊娠高血圧",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>子宮筋腫：良性。<span class=\"answer\">エストロゲン依存性</span>で30〜40代に多く、閉経後は小さくなる。子宮体部に多い。<span class=\"answer\">過多月経</span>→鉄欠乏性貧血、不妊の原因になる。</li></ul><ul class=\"g-list\"><li>子宮頸癌：<span class=\"answer\">ヒトパピローマウイルス（HPV）</span>が原因。ワクチンと検診で予防。子宮体癌はエストロゲンと関係し、閉経後の不正出血。診断は組織診。</li></ul><ul class=\"g-list\"><li>子宮内膜症：月経困難症（強い月経痛）・不妊。</li></ul><ul class=\"g-list\"><li>更年期障害：ほてり・のぼせ・発汗・動悸・不眠・いらいら。</li></ul><ul class=\"g-list\"><li>妊娠高血圧症候群（旧：妊娠中毒症）：高血圧・蛋白尿。つわりは危険因子ではない。</li></ul>",
+"np": 13,
+"rec": 1
+},
+{
+"id": "K8-02",
+"t": "白血病・リンパ腫・骨髄腫",
+"tag": "both",
+"jz": "hematology:白血球疾患",
+"html": "<ul class=\"g-list\"><li>急性骨髄性白血病（成人に多い）：骨髄で<span class=\"answer\">幼若芽球</span>が増え、成熟した細胞との間がない（<span class=\"answer\">白血病裂孔</span>）。急性リンパ性白血病は<span class=\"answer\">小児</span>に多い。</li></ul><ul class=\"g-list\"><li>慢性骨髄性白血病：<span class=\"answer\">フィラデルフィア染色体</span>。白血球が著しく増え、脾腫。</li></ul><ul class=\"g-list\"><li>慢性リンパ性白血病：高齢者。日本には少ない。</li></ul><ul class=\"g-list\"><li>多発性骨髄腫：形質細胞のがん。高齢者。骨痛・病的骨折・<span class=\"answer\">ベンス・ジョーンズ蛋白</span>・腎障害・高カルシウム血症。</li></ul><ul class=\"g-list\"><li>骨髄異形成症候群：高齢者。血球がうまく育たず血球が減る。白血病に移ることがある（はり灸の過去問ではまだ出ていない）。</li></ul>",
+"np": 7,
+"rec": 4
+},
+{
+"id": "K8-03",
+"t": "出血しやすい病気（ITP・血友病・DIC）",
+"tag": "both",
+"jz": "hematology:出血性素因",
+"html": "<ul class=\"g-list\"><li>ITPではピロリ菌がいれば除菌で血小板が増えることがある。</li></ul>",
+"np": 7,
+"rec": 3
+},
+{
+"id": "K9-01",
+"t": "糖尿病と合併症",
+"tag": "both",
+"jz": "metabolic:糖尿病",
+"html": "<ul class=\"g-list\"><li>単一の脳神経がまひすることもある（動眼神経まひ：血管がつまる虚血による）。</li></ul>",
+"np": 18,
+"rec": 6
+},
+{
+"id": "K9-02",
+"t": "脂質異常症・痛風・ウィルソン病",
+"tag": "both",
+"jz": "metabolic:尿酸代謝異常",
+"html": "<ul class=\"g-list\"><li>続発性高尿酸血症の原因：白血病・多発性骨髄腫などの血液の病気（細胞がこわれる）、腎不全、利尿薬。</li></ul><ul class=\"g-list\"><li>ウィルソン病：<span class=\"answer\">銅</span>がたまる。肝障害・錐体外路症状・角膜のカイザー・フライシャー輪。常染色体潜性遺伝。</li></ul>",
+"np": 9,
+"rec": 3
+},
+{
+"id": "S1-06",
+"t": "ホルネル症候群（つながりの要）",
+"tag": "hk",
+"jz": "respiratory:肺腫瘍",
+"html": "<ul class=\"g-list\"><li>顔へ行く<span class=\"answer\">交感神経</span>の障害。三徴は<span class=\"answer\">眼瞼下垂</span>・<span class=\"answer\">縮瞳</span>・<span class=\"answer\">眼球陥凹</span>（散瞳ではない）。</li></ul><ul class=\"g-list\"><li>「どの病気で起こるか」で出る：<span class=\"answer\">肺尖部の肺癌</span>（パンコースト型）・<span class=\"answer\">食道癌</span>・<span class=\"answer\">縦隔腫瘍</span>・腕神経叢の下位（C8〜T1）の損傷。</li></ul><ul class=\"g-list\"><li>肺癌の局所症状として並べて覚える：上大静脈の圧迫＝<span class=\"answer\">上大静脈症候群</span>（顔・腕のむくみ）、反回神経＝<span class=\"answer\">嗄声</span>。</li></ul><p class=\"g-links\"><strong>つながり</strong>　解剖：<a href=\"../anatomy/#A10-15\">自律神経（交感神経幹・頸部の交感神経節）</a>／<a href=\"../anatomy/#A5-06\">肺（肺尖）</a>／<a href=\"../anatomy/#A5-07\">縦隔</a>／<a href=\"../anatomy/#A6-06\">食道の位置</a>／<a href=\"../anatomy/#A10-13\">腕神経叢</a>　生理：<a href=\"../physiology/#P11-34\">交感神経のしくみ</a>／<a href=\"../physiology/#P11-37\">各器官への作用（瞳孔）</a></p>",
+"np": 11,
+"rec": 1
+},
+{
+"id": "S1-10",
+"t": "尿・月経の異常",
+"tag": "both",
+"jz": "",
+"html": "<ul class=\"g-list\"><li>月経の用語：早発閉経＝<span class=\"answer\">40歳未満</span>で閉経、続発性無月経＝それまであった月経が3か月以上ない。月経前症候群は月経の前に起こり、月経が始まると軽くなる。</li></ul>",
+"np": 7,
+"rec": 5
+},
+{
+"id": "S1-11",
+"t": "心理・精神機能の症状（睡眠・見当識）",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>見当識＝時（いつ）・場所（どこ）・人（だれ）がわかるか。物の名前を言わせるのは見当識ではなく呼称の検査。</li></ul><ul class=\"g-list\"><li>睡眠時無呼吸症候群：<span class=\"answer\">肥満</span>で起こりやすく、昼間の強い眠気・いびきが出る。</li></ul>",
+"np": 2,
+"rec": 1
+},
+{
+"id": "S1-14",
+"t": "頭痛・不随意運動・高次脳機能障害",
+"tag": "both",
+"jz": "",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>頭痛</th><th>特徴</th></tr></thead><tbody><tr><td>片頭痛</td><td><span class=\"answer\">拍動性</span>、片側、吐き気・光や音で悪化。女性に多い</td></tr><tr><td>群発頭痛</td><td>片目の奥のえぐられる痛み。数週〜数か月の群発期に毎日ほぼ同じ時刻に起こる。涙・鼻水を伴う。<span class=\"answer\">男性</span>に多く、飲酒で誘発</td></tr><tr><td>緊張型頭痛</td><td>頭をしめつける痛み。肩こりを伴う</td></tr><tr><td>脳腫瘍の頭痛</td><td>脳圧亢進による牽引性の頭痛。朝に強い</td></tr></tbody></table></div><ul class=\"g-list\"><li>失語：ブローカ失語（<span class=\"answer\">運動性</span>。話せないが理解はできる）、ウェルニッケ失語（<span class=\"answer\">感覚性</span>。話すが言葉を理解できない）。</li></ul><ul class=\"g-list\"><li>失行：構成失行＝<span class=\"answer\">図形の模写・積み木の組み立て</span>ができない。観念失行＝道具の使い方がわからない。</li></ul><ul class=\"g-list\"><li>半側空間無視：多くは右大脳の障害で<span class=\"answer\">左側</span>を無視する。線分二等分試験で調べる。</li></ul>",
+"np": 17,
+"rec": 4
+},
+{
+"id": "S2-04",
+"t": "聴診（呼吸音・心音・心雑音・腸音）",
+"tag": "both",
+"jz": "",
+"html": "<h4 class=\"g-h4\">心音と心雑音</h4><ul class=\"g-list\"><li>収縮期雑音：<span class=\"answer\">大動脈弁狭窄症</span>・<span class=\"answer\">僧帽弁閉鎖不全症</span>・心室中隔欠損症。</li></ul><ul class=\"g-list\"><li>拡張期雑音：<span class=\"answer\">僧帽弁狭窄症</span>（拡張期ランブル・僧帽弁開放音）・大動脈弁閉鎖不全症。</li></ul><ul class=\"g-list\"><li>僧帽弁狭窄症では第1音が<span class=\"answer\">亢進</span>する。</li></ul><ul class=\"g-list\"><li>覚え方：心室が縮む（収縮期）とき、開くはずの弁（大動脈弁）が狭い、または閉じるはずの弁（僧帽弁）がもれると雑音が出る。拡張期はその逆。</li></ul>",
+"np": 8,
+"rec": 3
+},
+{
+"id": "S2-09",
+"t": "運動機能検査（関節可動域・徒手検査）",
+"tag": "both",
+"jz": "",
+"html": "<div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>部位</th><th>検査</th><th>わかること</th></tr></thead><tbody><tr><td>頸</td><td><span class=\"answer\">スパーリング</span>テスト・ジャクソンテスト</td><td>頸を後ろ・横に曲げて押すと腕に痛み＝頸椎の神経根症</td></tr><tr><td>胸郭出口</td><td><span class=\"answer\">ライト</span>テスト・アドソンテスト・エデンテスト・モーレイテスト</td><td>腕の脈が弱まる・しびれ＝胸郭出口症候群（ファレンは違う）</td></tr><tr><td>肩</td><td>ペインフルアークサイン・ドロップアームテスト</td><td><span class=\"answer\">棘上筋腱</span>（腱板）の障害</td></tr><tr><td>肩</td><td>ヤーガソンテスト・スピードテスト</td><td>上腕二頭筋長頭腱炎</td></tr><tr><td>肘</td><td>トムゼンテスト・チェアテスト</td><td>上腕骨外側上顆炎（テニス肘）</td></tr><tr><td>手</td><td><span class=\"answer\">ファレン</span>テスト・ティネル徴候</td><td>手根管症候群（正中神経）</td></tr><tr><td>腰</td><td><span class=\"answer\">ラセーグ</span>テスト（SLR）</td><td>L4〜S1の神経根（坐骨神経）</td></tr><tr><td>腰</td><td>大腿神経伸展テスト</td><td>L2〜L4の神経根</td></tr><tr><td>股</td><td><span class=\"answer\">パトリック</span>テスト</td><td>股関節の障害</td></tr><tr><td>股</td><td><span class=\"answer\">トーマス</span>テスト</td><td>股関節の屈曲拘縮</td></tr><tr><td>股</td><td><span class=\"answer\">トレンデレンブルグ</span>徴候</td><td>中殿筋の筋力低下</td></tr><tr><td>股</td><td>ドレーマン徴候</td><td>大腿骨頭すべり症</td></tr><tr><td>股</td><td>アリス徴候</td><td>先天性股関節脱臼（膝の高さの左右差）</td></tr><tr><td>膝</td><td><span class=\"answer\">ラックマン</span>テスト・前方引き出しテスト</td><td>前十字靱帯の損傷</td></tr><tr><td>膝</td><td><span class=\"answer\">マクマレー</span>テスト・アプレイテスト</td><td>半月板の損傷</td></tr><tr><td>足</td><td>トンプソン（シモンズ）テスト</td><td>アキレス腱断裂</td></tr><tr><td>全身</td><td>ガワーズ徴候（登はん性起立）</td><td>デュシェンヌ型筋ジストロフィー</td></tr></tbody></table></div>",
+"np": 27,
+"rec": 7
+},
+{
+"id": "S3-02",
+"t": "生理機能検査と画像検査",
+"tag": "both",
+"jz": "",
+"html": "<ul class=\"g-list\"><li>MRIの注意：ペースメーカーや体内の金属がある人には原則行えない。</li></ul>",
+"np": 9,
+"rec": 3
+},
+{
+"id": "S4-03",
+"t": "神経ブロック・麻酔・その他の療法",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>神経ブロック：神経のそばに局所麻酔薬を入れて痛みや血管の収縮を止める。</li></ul><div class=\"g-tblw\"><table class=\"g-tbl\"><thead><tr><th>ブロック</th><th>主な適応</th></tr></thead><tbody><tr><td><span class=\"answer\">星状神経節ブロック</span></td><td>顔・頭・上肢の痛みと血行障害、末梢性顔面神経麻痺、レイノー病</td></tr><tr><td>硬膜外ブロック</td><td>腰痛・<span class=\"answer\">坐骨神経痛</span>・帯状疱疹の痛み</td></tr><tr><td>腹腔神経叢ブロック</td><td><span class=\"answer\">膵臓癌</span>などの上腹部の癌の痛み</td></tr><tr><td>肩甲上神経ブロック</td><td>五十肩</td></tr><tr><td>三叉神経ブロック</td><td>三叉神経痛</td></tr><tr><td>顔面神経ブロック</td><td>片側顔面けいれん（運動神経を止める。痛みの治療ではない）</td></tr></tbody></table></div><ul class=\"g-list\"><li>麻酔：脊椎麻酔（くも膜下麻酔）は下腹部・下肢の手術（虫垂切除など）。硬膜外麻酔は頸部から下まで使え、意識が保たれる。全身麻酔は吸入麻酔・静脈麻酔。</li></ul><ul class=\"g-list\"><li>ペースメーカーを入れた人には<span class=\"answer\">低周波の鍼通電</span>をしない。</li></ul><ul class=\"g-list\"><li>低出力レーザーは痛みと炎症をやわらげ傷の治りを助ける（組織を焼く光凝固とは別）。</li></ul><ul class=\"g-list\"><li>ターミナルケアの目標は治すことではなく<span class=\"answer\">苦痛をやわらげ生活の質を保つ</span>こと。</li></ul>",
+"np": 28,
+"rec": 2
+},
+{
+"id": "S5-01",
+"t": "患者の心理・心理療法",
+"tag": "hk",
+"jz": "hk_extra:",
+"html": "<ul class=\"g-list\"><li>カウンセリングの基本は<span class=\"answer\">受容</span>・共感・傾聴。指示や説得を先にしない。</li></ul><ul class=\"g-list\"><li>心理療法の例：自律訓練法（自己暗示で緊張をほぐす）、行動療法、認知行動療法、精神分析療法、森田療法。</li></ul>",
+"np": 2,
+"rec": 0
+}
+]
