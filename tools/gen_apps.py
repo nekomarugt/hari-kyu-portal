@@ -14,3 +14,21 @@ for d, c in CFG.items():
 a = open(R + "/anatomy/app.js").read()
 open(R + "/physiology/app.js", "w").write(a.replace('const SUBJECT_KEY = "ana";', 'const SUBJECT_KEY = "phy";').replace("hk-anatomy-history-v1", "hk-physiology-history-v1"))
 shutil.copy(R + "/anatomy/styles.css", R + "/physiology/styles.css")
+
+# 臨床医学総論・各論（2026-11 追加）：anatomy/app.js を基に。学習資料はまだ無いので資料リンクは出さない
+CLIN = {
+  "rinsho-soron": dict(NAME="臨床医学総論", KEY="sor", TITLE="臨床医学総論 過去問", DESC="はり師・きゅう師 国家試験の臨床医学総論の過去問を、回別・分野別・ランダムで練習できるアプリ", NF="大項目（症候・診察法・臨床検査法・治療法など）に当てはめたもの。収録は第27〜34回（財団の公開問題・正答肢表）"),
+  "rinsho-kakuron": dict(NAME="臨床医学各論", KEY="kak", TITLE="臨床医学各論 過去問", DESC="はり師・きゅう師 国家試験の臨床医学各論の過去問を、回別・分野別・ランダムで練習できるアプリ", NF="大項目（感染症・神経・呼吸器・循環器など）に当てはめたもの。収録は第27〜34回（財団の公開問題・正答肢表）。症例問題は「」内が症例文"),
+}
+for d, c in CLIN.items():
+    h = TPL
+    for k, v in c.items(): h = h.replace("{{%s}}" % k, v)
+    h = h.replace("<li><strong>分野別</strong><span>出題基準の大項目ごと</span></li>", "<li><strong>分野別</strong><span>出題基準の大項目ごと（中項目でさらに絞れる）</span></li>")
+    h = h.replace("※この問題は公式の正答表が見つからず、内容から正答を判断しています。", "【推定】この問題は公式の正答表が見つからないため、内容から判断した正答です。")
+    h = h.replace('<link rel="stylesheet" href="./styles.css', '<style>#question-text{white-space:pre-line}</style>\n    <link rel="stylesheet" href="./styles.css')
+    open(f"{R}/{d}/index.html", "w").write(h)
+    js = a.replace('const SUBJECT_KEY = "ana";', 'const SUBJECT_KEY = "%s";' % c["KEY"]).replace("hk-anatomy-history-v1", "hk-%s-history-v1" % d)
+    js = js.replace('if (!guideLinks) guideLinks = fetch("../guide/qlinks.json").then((response) => (response.ok ? response.json() : null)).catch(() => null);', 'if (!guideLinks) guideLinks = Promise.resolve(null); // 臨床医学の学習資料は準備中')
+    assert "Promise.resolve(null)" in js and ('"%s"' % c["KEY"]) in js
+    open(f"{R}/{d}/app.js", "w").write(js)
+    shutil.copy(R + "/anatomy/styles.css", f"{R}/{d}/styles.css")

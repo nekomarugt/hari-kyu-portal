@@ -1,7 +1,7 @@
 /* はり師きゅう師 解剖学・生理学ポータル：学習ゲーム機能（連続日数・バッジ・レベル・弱点ステージ）
  * - すべて端末内（localStorage "jkp-hk-game-v1"）。サーバー送信・個人情報・計測なし。
  * - 各ドリルから JKGame.record(src, id, correct) を呼ぶだけ。
- *   src: ana/phy/kei = 過去問(解剖学/生理学/経絡経穴概論)
+ *   src: ana/phy/kei/sor/kak = 過去問(解剖学/生理学/経絡経穴概論/臨床医学総論/臨床医学各論)
  */
 (function () {
   "use strict";
@@ -9,10 +9,10 @@
   var script = document.currentScript || document.querySelector('script[src*="game/game.js"]');
   var ROOT = script && script.src ? new URL("../", script.src).href : "../";
 
-  var SUBJ = { ana: "解剖学", phy: "生理学", kei: "経絡経穴概論" };
-  var SUBJ_PAGE = { ana: "anatomy", phy: "physiology", kei: "keiketsu" };
+  var SUBJ = { ana: "解剖学", phy: "生理学", kei: "経絡経穴概論", sor: "臨床医学総論", kak: "臨床医学各論" };
+  var SUBJ_PAGE = { ana: "anatomy", phy: "physiology", kei: "keiketsu", sor: "rinsho-soron", kak: "rinsho-kakuron" };
   var QS = {}; // 短答ドリルは本サイトにはない（互換のため空のまま）
-  var SRC_SUBJ = { ana: "ana", phy: "phy", kei: "kei" };
+  var SRC_SUBJ = { ana: "ana", phy: "phy", kei: "kei", sor: "sor", kak: "kak" };
   var WEAK_OUT = 2;      // 弱点リストから外れる連続正解数
   var MASTER_RATE = 0.8;
   var PAST_TITLES = [[100, ""], [300, "|300"]]; // 過去問で100問・300問（重複なし）に正解
@@ -463,7 +463,7 @@
 
   function gateCard() { // 限界突破カード（壁に着いている間だけ）
     var pr = gateProg(); if (!pr) return "";
-    var li = lvInfo(), ws = weakSubj(), rs = pr.read ? pr.read.s : ws || Object.keys(SUBJ)[0];
+    var li = lvInfo(), ws = weakSubj(), rs = pr.read ? pr.read.s : (ws && GUIDE[ws] ? ws : Object.keys(GUIDE)[0]); // 臨床医学は資料準備中なので資料のある科目へ
     var one = pr.gr >= pr.grN ? '✓ 苦手を' + pr.grN + '問克服' : '苦手をあと <strong>' + (pr.grN - pr.gr) + '</strong>問克服（まちがえた問題を2回つづけて正解）';
     var two = !pr.read ? '苦手な科目の資料を読む（過去問の「関連資料」からでもOK）→ その科目で' + pr.rcN + '問正解'
       : pr.rc >= pr.rcN ? '✓ 資料を読んで' + SUBJ[pr.read.s] + 'で' + pr.rcN + '問正解'
@@ -480,7 +480,7 @@
   function badgeCount() { return BADGES.filter(function (b) { return S.badges[b.id]; }).length; }
   function renderHome(el) {
     var st = streakNow(), li = lvInfo(), n = S.td.d === today() ? S.td.n : 0;
-    var rows = ["ana", "phy", "kei"].map(function (s) {
+    var rows = ["ana", "phy", "kei", "sor", "kak"].map(function (s) {
       var wc = weakIds(s).length; // 4択クイズの復習は過去問の分だけ
       return '<div class="jkg-subrow"><span class="jkg-subname">' + SUBJ[s] + '</span>' +
         '<a class="jkg-btn" href="' + quizUrl(s) + '">4択クイズ（10・30・50問）</a>' +

@@ -21,7 +21,7 @@
 
   /* ---------------- 出題範囲マップ（学習者向け） ---------------- */
   if (page === "coverage") {
-    var C = window.HKCoverage || {}, subj = location.hash === "#physiology" ? "physiology" : "anatomy", sortFreq = false, openState = {};
+    var C = window.HKCoverage || {}, subj = ({ "#physiology": "physiology", "#souron": "souron", "#kakuron": "kakuron" })[location.hash] || "anatomy", sortFreq = false, openState = {};
     var body = document.getElementById("cov-body");
     function best(d, r) {
       // 「資料を読む」の行き先：この中項目の項目のうち、過去問がいちばん多いもの（なければ先頭。収録がなければ関連項目）
@@ -38,8 +38,8 @@
       var d = G[subj], rows = C[subj] || [];
       var list = d.chapters.map(function (ch) {
         var items = rows.filter(function (r) { return r.dai === ch.id; }).map(function (r) {
-          var freq = r.secs.some(function (id) { return d.sections[id] && d.sections[id].freq; });
-          return { r: r, freq: freq, read: best(d, r), pt: topPoint(d, r) };
+          var freq = r.freq != null ? r.freq : r.secs.some(function (id) { return d.sections[id] && d.sections[id].freq; }); // 臨床医学は行ごとに頻出を持つ
+          return { r: r, freq: freq, read: best(d, r), pt: r.pt || topPoint(d, r) };
         });
         return { ch: ch, items: items, nq: items.reduce(function (a, x) { return a + x.r.nq; }, 0), nfreq: items.filter(function (x) { return x.freq; }).length };
       });

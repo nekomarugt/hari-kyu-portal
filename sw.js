@@ -3,7 +3,7 @@
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v47';
+const VERSION = 'v48';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
@@ -13,9 +13,11 @@ const PRECACHE = [
   './anatomy/', './anatomy/app.js', './anatomy/styles.css', './anatomy/questions.json', './anatomy/fields.json',
   './physiology/', './physiology/app.js', './physiology/styles.css', './physiology/questions.json', './physiology/fields.json',
   './keiketsu/', './keiketsu/app.js', './keiketsu/styles.css', './keiketsu/questions.json', './keiketsu/fields.json',
+  './rinsho-soron/', './rinsho-soron/app.js', './rinsho-soron/styles.css', './rinsho-soron/questions.json', './rinsho-soron/fields.json',
+  './rinsho-kakuron/', './rinsho-kakuron/app.js', './rinsho-kakuron/styles.css', './rinsho-kakuron/questions.json', './rinsho-kakuron/fields.json',
   './quiz/', './quiz/quiz.js',
   './jitsuryoku/', './jitsuryoku/app.js', './jitsuryoku/gen.js', './jitsuryoku/kakera.json', './stats/', './stats/stats.js',
-  './guide/', './guide/guide.css', './guide/guide.js', './guide/qlinks.json', './guide/coverage.js', './guide/coverage/',
+  './guide/', './guide/guide.css', './guide/guide.js', './guide/qlinks.json', './guide/coverage.js', './guide/clinical-cov.js', './guide/coverage/',
   './guide/anatomy/', './guide/anatomy/content.js', './guide/physiology/', './guide/physiology/content.js',
   './guide/anatomy/tooru.html', './guide/anatomy/tooru-data.js', './guide/tooru.js', './guide/extra.css',
   './guide/keiketsu/', './guide/keiketsu/keiketsu-data.js', './guide/keiketsu.js', './guide/keiketsu/assets/kei-04-tokunin.webp',
