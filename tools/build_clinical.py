@@ -15,7 +15,7 @@ def clean(s):
     s = unicodedata.normalize("NFKC", s).replace("\u3000", " ").translate(FIX)
     s = re.sub(r"(?<![A-Za-z])([A-E]) +型", r"\1型", s)
     s = s.replace("ラムゼイ ハント", "ラムゼイ・ハント").replace("肘 部", "肘部").replace("圧 迫", "圧迫")
-    s = s.replace("仏痛", "疼痛").replace("アミロイド b ", "アミロイドβ").replace("c ‐GTP", "γ-GTP").replace("c -GT", "γ-GT")
+    s = s.replace("仏痛", "疼痛").replace("骨組鬆", "骨粗鬆").replace("症侯群", "症候群").replace("アミロイド b ", "アミロイドβ").replace("c ‐GTP", "γ-GTP").replace("c -GT", "γ-GT")
     s = re.sub(r"(?<!\S)(" + CJ + r")\s+(" + CJ + r")(?!\S)", r"\1\2", s)   # 「胃   癌」→「胃癌」
     return s.strip()
 def opt(s, combo):
