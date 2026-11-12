@@ -141,3 +141,20 @@
 .g-html .g-links { font-size: .86rem; padding: 6px 10px; border: 1px dashed var(--hk-line,#e3d9bd); border-radius: 8px; }
 .g-html .g-links a { margin-right: .3em; }
 @media (max-width: 520px) { .g-html .g-tbl td:first-child { white-space: normal; } }
+
+
+/* 漫画・イラストの閉じた箱（授業用オリジナル） */
+.more-box.mb-manga, .more-box.mb-art, .tips-box.mb-manga, .g-tips-manga {
+  border-color: #e6c99a; background: #fffdf7;
+}
+.more-box.mb-manga .more-badge, .tips-box.mb-manga .tips-badge, .g-tips-manga > summary {
+  /* badge color via existing badge styles; extra hook */
+}
+.more-box.mb-manga .more-badge, .more-box.mb-art .more-badge {
+  background: #fcefd4; color: #6a4a12;
+}
+.manga-fig, .more-body .manga-fig, .tips-body .manga-fig { margin: 8px 0 12px; }
+.manga-fig img, .g-tips-manga img, .tips-box.mb-manga img, .more-box.mb-manga img, .more-box.mb-art img {
+  width: 100%; max-width: 900px; height: auto; display: block; margin: 0 auto; border-radius: 6px;
+}
+.manga-fig figcaption, .mb-caption { font-size: .85rem; margin: 4px 0 8px; }

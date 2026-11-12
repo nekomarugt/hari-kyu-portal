@@ -188,7 +188,7 @@
       dt.appendChild(inner); b.appendChild(dt);
     });
     (s.tips || []).forEach(function (t) {
-      var tp = h("details", t.lab ? "g-tips g-tips-zu" : "g-tips"); tp.appendChild(h("summary", "", (t.lab || "TIPS") + "：" + t.t));
+      var isManga = t.lab && /漫画|イラスト/.test(t.lab); var tp = h("details", t.lab ? (isManga ? "g-tips g-tips-manga more-box" : "g-tips g-tips-zu") : "g-tips"); tp.appendChild(h("summary", "", (t.lab || "TIPS") + "：" + t.t));
       var inner = h("div", "g-tips-b");
       var fg = h("figure", t.imgs || t.lab ? "g-tips-fig g-tips-multi" : "g-tips-fig");
       (t.imgs || [{ src: t.src, alt: t.alt, w: t.w, h: t.h }]).forEach(function (x) {
