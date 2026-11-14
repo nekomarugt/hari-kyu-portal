@@ -11,12 +11,12 @@
     <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-title" content="はりきゅう国試" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
     <!-- /PWA -->
     <meta name="description" content="かけら（事実1行）から毎回ちがう問題を組み立てる、ランダム出題のうでだめし（無料）。" />
-    <title>うでだめし（web実力）｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <title>うでだめし（web実力）｜はり師きゅう師 国家試験ポータル</title>
     <link rel="stylesheet" href="../game/game.css" />
     <link rel="stylesheet" href="../theme.css" />
     <style>:root{--ink:#17261f;--muted:#55675e;--line:#e3d9bd;--paper:#fffdf7;--navy:#0c4a40;--blue:#12705f;--teal:#12705f;--tint:#dff0e9;--accent:#12705f}
@@ -32,6 +32,7 @@
 .chip{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:4px}.fg{font-size:12px;color:var(--muted);margin:8px 0 4px}
 </style>
     <script src="../backnav.js"></script>
+    <script src="../subjects.js"></script>
   </head>
   <body class="jkq-body">
     <a class="jkq-return" href="../">← ポータルへ</a>
@@ -52,7 +53,7 @@
 <div id="rv"></div><p><button class="primary" id="againBtn">新しい回を作る</button></p><p><button id="retryBtn" style="width:100%">同じ回をもう一度</button></p></section>
 <p class="muted" id="loadmsg">読み込み中…</p>
     </main>
-<script>var SUBJ_W={"anatomy": 15.1, "physiology": 13.4, "keiketsu": 9.9, "toyo": 9.9},WJ_KEY="hkp-wj-scores-v1";</script>
+<script>var SUBJ_W=(window.JKSubjects&&JKSubjects.jitsuryokuWeights())||{"anatomy": 15.1, "physiology": 13.4, "keiketsu": 9.9, "toyo": 9.9},WJ_KEY=(window.JKSubjects&&JKSubjects.site.wjScoreKey)||"hkp-wj-scores-v1";</script>
 <script src="./gen.js"></script>
 <script src="./app.js"></script>
   </body>

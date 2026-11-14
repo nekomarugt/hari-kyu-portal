@@ -11,12 +11,12 @@
     <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-title" content="はりきゅう国試" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
     <!-- /PWA -->
-    <meta name="description" content="はり師・きゅう師 国家試験の解剖学・生理学の過去問から、4択クイズ（10・30・50問）と、まちがえた問題だけの復習（無料）。" />
-    <title>4択クイズ｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <meta name="description" content="はり師・きゅう師 国家試験の解剖学・生理学・経絡経穴概論・臨床医学総論・臨床医学各論の過去問から、4択クイズ（10・30・50問）と、まちがえた問題だけの復習（無料）。" />
+    <title>4択クイズ｜はり師きゅう師 国家試験ポータル</title>
     <link rel="stylesheet" href="../game/game.css" />
     <link rel="stylesheet" href="../theme.css" />
     <script src="../backnav.js"></script>
@@ -31,7 +31,7 @@
 
       <section id="v-setup" class="jkq-surface" aria-labelledby="setup-h">
         <h2 id="setup-h">どの科目にする？</h2>
-        <div class="jkq-seg" role="group" aria-label="科目">
+        <div class="jkq-seg" role="group" aria-label="科目" id="quiz-subjs">
           <button type="button" data-subj="ana" aria-pressed="false">解剖学</button>
           <button type="button" data-subj="phy" aria-pressed="true">生理学</button>
           <button type="button" data-subj="kei" aria-pressed="false">経絡経穴</button>
@@ -102,7 +102,9 @@
         <button type="button" class="jkq-primary" id="retry-error">もどる</button>
       </section>
     </main>
+    <script src="../subjects.js"></script>
     <script src="../game/game.js"></script>
+    <script>if(window.JKSubjects)JKSubjects.renderQuizButtons(document.getElementById("quiz-subjs"));</script>
     <script src="./quiz.js"></script>
   </body>
 </html>

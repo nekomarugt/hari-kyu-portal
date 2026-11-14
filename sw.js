@@ -1,15 +1,15 @@
-/* はり師きゅう師 解剖学・生理学ポータル service worker (scope: /hari-kyu-portal/)
+/* はり師きゅう師 国家試験ポータル service worker (scope: /hari-kyu-portal/)
  * - HTML / JS / CSS / JSON : network-first (always revalidated -> edits show immediately), cache fallback when offline
  * - ?v=hash assets : cache-first (immutable); images / fonts / icons : stale-while-revalidate
  * - Only touches Cache Storage entries prefixed "hkp-" (the sibling site on the same origin uses "jkp-"); never touches localStorage.
  * Bump VERSION when changing this file's strategy or the precache list. */
-const VERSION = 'v53';
+const VERSION = 'v54';
 const PREFIX = 'hkp-';
 const PAGES = PREFIX + 'pages-' + VERSION;
 const STATIC = PREFIX + 'static-' + VERSION;
 const SCOPE = new URL('./', self.location).pathname; // "/hari-kyu-portal/"
 const PRECACHE = [
-  './', './backnav.js', './styles.css', './theme.css', './home.css', './icons/logo.svg', './game/game.css', './game/game.js', './game/avatars.js', './game/fx.js', './game/lore.js',
+  './', './subjects.js', './backnav.js', './styles.css', './theme.css', './home.css', './icons/logo.svg', './game/game.css', './game/game.js', './game/avatars.js', './game/fx.js', './game/lore.js',
   './anatomy/', './anatomy/app.js', './anatomy/styles.css', './anatomy/questions.json', './anatomy/fields.json',
   './physiology/', './physiology/app.js', './physiology/styles.css', './physiology/questions.json', './physiology/fields.json',
   './keiketsu/', './keiketsu/app.js', './keiketsu/styles.css', './keiketsu/questions.json', './keiketsu/fields.json',

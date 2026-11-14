@@ -11,12 +11,12 @@
     <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-title" content="はりきゅう国試" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
     <!-- /PWA -->
     <meta name="description" content="はり師・きゅう師 国家試験の臨床医学総論の過去問を、回別・分野別・ランダムで練習できるアプリ" />
-    <title>臨床医学総論 過去問｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <title>臨床医学総論 過去問｜はり師きゅう師 国家試験ポータル</title>
     <style>#question-text{white-space:pre-line}</style>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="../game/game.css" />
@@ -24,7 +24,7 @@
     <script src="../backnav.js"></script>
   </head>
   <body>
-    <a class="portal-return" href="../" aria-label="解剖学・生理学ポータルへ戻る">← ポータルへ戻る</a>
+    <a class="portal-return" href="../" aria-label="はり師きゅう師 国家試験ポータルへ戻る">← ポータルへ戻る</a>
     <main class="app-shell">
       <header class="app-header">
         <img class="site-logo" src="../icons/logo.svg" width="52" height="52" alt="" />
@@ -150,6 +150,7 @@
         <button id="reset-history-button" class="footer-button is-hidden" type="button">学習記録をリセット</button>
       </footer>
     </main>
+    <script src="../subjects.js"></script>
     <script src="../game/game.js" defer></script>
     <script src="./app.js" defer></script>
   </body>

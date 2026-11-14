@@ -1,8 +1,8 @@
 {
   "id": "/hari-kyu-portal/",
-  "name": "はり師きゅう師 解剖学・生理学ポータル",
-  "short_name": "解剖生理",
-  "description": "はり師・きゅう師 国家試験の解剖学・生理学の過去問（回別・分野別・ランダム）と4択クイズ。基礎の復習と過去問演習のためのポータル",
+  "name": "はり師きゅう師 国家試験ポータル",
+  "short_name": "はりきゅう国試",
+  "description": "はり師・きゅう師 国家試験の解剖学・生理学・経絡経穴概論・臨床医学総論・臨床医学各論の過去問（回別・分野別・ランダム）と4択クイズ。基礎の復習と過去問演習のためのポータル",
   "lang": "ja",
   "dir": "ltr",
   "start_url": "/hari-kyu-portal/",
@@ -67,9 +67,21 @@
       ]
     },
     {
-      "name": "4択クイズ",
-      "short_name": "クイズ",
-      "url": "/hari-kyu-portal/quiz/",
+      "name": "経絡経穴概論 過去問",
+      "short_name": "経穴過去問",
+      "url": "/hari-kyu-portal/keiketsu/",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "臨床医学総論 過去問",
+      "short_name": "臨床総論",
+      "url": "/hari-kyu-portal/rinsho-soron/",
       "icons": [
         {
           "src": "icons/icon-192.png",

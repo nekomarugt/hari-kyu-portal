@@ -18,12 +18,12 @@ def head(depth, title, desc, extra_css=""):
     <link rel="apple-touch-icon" href="{up}icons/apple-touch-icon.png" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="解剖生理" />
+    <meta name="apple-mobile-web-app-title" content="はりきゅう国試" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>if("serviceWorker"in navigator){{addEventListener("load",function(){{navigator.serviceWorker.register("{up}sw.js",{{scope:"{up}"}}).catch(function(){{}})}})}}</script>
     <!-- /PWA -->
     <meta name="description" content="{desc}" />
-    <title>{title}｜はり師きゅう師 解剖学・生理学ポータル</title>
+    <title>{title}｜はり師きゅう師 国家試験ポータル</title>
     <link rel="stylesheet" href="{up}theme.css" />
     <link rel="stylesheet" href="{up}guide/guide.css" />
     <script src="{up}backnav.js"></script>
@@ -67,7 +67,7 @@ def viewer(subj, label, short):
 ''' + ('' if subj != 'anatomy' else '    <script src="../../bridges/meridian-bridges.js" defer></script>\n') + FOOT
 
 def landing():
-    return head(1, "学習資料", "解剖学・生理学の学習資料。出題基準（2026年版）の順に整理し、過去問と相互にリンクしています。") + '''  <body class="g-body" data-page="landing">
+    return head(1, "学習資料", "解剖学・生理学・経穴・臨床医学総論・各論の学習資料。出題基準（2026年版）の順に整理し、過去問と相互にリンクしています。") + '''  <body class="g-body" data-page="landing">
     <a class="g-return" href="../">← ポータルへ戻る</a>
     <main class="g-shell">
       <header class="g-head">

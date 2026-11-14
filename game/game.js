@@ -1,4 +1,4 @@
-/* はり師きゅう師 解剖学・生理学ポータル：学習ゲーム機能（連続日数・バッジ・レベル・弱点ステージ）
+/* はり師きゅう師 国家試験ポータル：学習ゲーム機能（連続日数・バッジ・レベル・弱点ステージ）
  * - すべて端末内（localStorage "jkp-hk-game-v1"）。サーバー送信・個人情報・計測なし。
  * - 各ドリルから JKGame.record(src, id, correct) を呼ぶだけ。
  *   src: ana/phy/kei/sor/kak = 過去問(解剖学/生理学/経絡経穴概論/臨床医学総論/臨床医学各論)
@@ -9,10 +9,19 @@
   var script = document.currentScript || document.querySelector('script[src*="game/game.js"]');
   var ROOT = script && script.src ? new URL("../", script.src).href : "../";
 
-  var SUBJ = { ana: "解剖学", phy: "生理学", kei: "経絡経穴概論", sor: "臨床医学総論", kak: "臨床医学各論" };
-  var SUBJ_PAGE = { ana: "anatomy", phy: "physiology", kei: "keiketsu", sor: "rinsho-soron", kak: "rinsho-kakuron" };
+  var SUBJ, SUBJ_PAGE, SRC_SUBJ, GUIDE;
+  (function () {
+    var maps = window.JKSubjects && JKSubjects.gameMaps && JKSubjects.gameMaps();
+    if (maps && maps.SUBJ && Object.keys(maps.SUBJ).length) {
+      SUBJ = maps.SUBJ; SUBJ_PAGE = maps.SUBJ_PAGE; SRC_SUBJ = maps.SRC_SUBJ; GUIDE = maps.GUIDE || {};
+    } else {
+      SUBJ = { ana: "解剖学", phy: "生理学", kei: "経絡経穴概論", sor: "臨床医学総論", kak: "臨床医学各論" };
+      SUBJ_PAGE = { ana: "anatomy", phy: "physiology", kei: "keiketsu", sor: "rinsho-soron", kak: "rinsho-kakuron" };
+      SRC_SUBJ = { ana: "ana", phy: "phy", kei: "kei", sor: "sor", kak: "kak" };
+      GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/", kei: "guide/keiketsu/", sor: "guide/souron/", kak: "guide/kakuron/" };
+    }
+  })();
   var QS = {}; // 短答ドリルは本サイトにはない（互換のため空のまま）
-  var SRC_SUBJ = { ana: "ana", phy: "phy", kei: "kei", sor: "sor", kak: "kak" };
   var WEAK_OUT = 2;      // 弱点リストから外れる連続正解数
   var MASTER_RATE = 0.8;
   var PAST_TITLES = [[100, ""], [300, "|300"]]; // 過去問で100問・300問（重複なし）に正解
@@ -25,23 +34,23 @@
 
   var LEVELS = [
     [0, "はじめの一歩"], [50, "かけだし"], [150, "見習い"], [300, "いっぱしの学生"], [500, "実力アップ"],
-    [800, "力がついてきた"], [1200, "頼れる先輩"], [1700, "合格圏"], [2300, "ほぼ先生"], [3000, "解剖生理マスター"],
+    [800, "力がついてきた"], [1200, "頼れる先輩"], [1700, "合格圏"], [2300, "ほぼ先生"], [3000, "国試マスター"],
     // Lv11〜50（ここから先は1レベルごとに必要XPが少しずつ増える）
     [3700, "マスターのその先"], [4400, "ひとりだち"], [5150, "ノッてきた"], [5950, "がんばり屋"], [6750, "安定感バツグン"],
-    [7550, "クラスのたよれる人"], [8400, "解説できる人"], [9300, "問題が見えてきた"], [10200, "ベテラン"], [11100, "解剖生理エキスパート"],
+    [7550, "クラスのたよれる人"], [8400, "解説できる人"], [9300, "問題が見えてきた"], [10200, "ベテラン"], [11100, "国試エキスパート"],
     [12050, "ねばり強い"], [13050, "ひらめき上手"], [14050, "ぶれない心"], [15050, "教え上手"], [16100, "合格ほぼ確実"],
-    [17200, "達人見習い"], [18300, "達人"], [19400, "じわじわ伝説"], [20550, "名人"], [21750, "解剖生理の名人"],
+    [17200, "達人見習い"], [18300, "達人"], [19400, "じわじわ伝説"], [20550, "名人"], [21750, "国試の名人"],
     [22950, "知識の泉"], [24150, "スーパー学生"], [25400, "鉄人"], [26700, "ゴールド"], [28000, "プラチナ"],
-    [29300, "ダイヤモンド"], [30650, "はり灸ヒーロー"], [32050, "みんなの目標"], [33450, "生きる教科書"], [34850, "解剖生理グランドマスター"],
+    [29300, "ダイヤモンド"], [30650, "はり灸ヒーロー"], [32050, "みんなの目標"], [33450, "生きる教科書"], [34850, "国試グランドマスター"],
     [36300, "伝説の入り口"], [37800, "伝説の学生"], [39300, "無敵モード"], [40800, "超人"], [42350, "レジェンド"],
-    [43950, "殿堂入り"], [45550, "神ってる"], [47150, "解剖生理の神見習い"], [48800, "あと一歩で神"], [50500, "解剖生理の神"]
+    [43950, "殿堂入り"], [45550, "神ってる"], [47150, "国試の神見習い"], [48800, "あと一歩で神"], [50500, "国試の神"]
   ];
   /* 限界突破：Lv10・20・30・40 の壁。XPはたまり続けるが、表示レベルは条件クリアまで壁のレベルで止まる。
    * 条件 ①苦手克服（壁に着いてから、まちがえた問題を2回連続で正解した数）②資料を読む（苦手な科目の学習資料を開く）→ その科目で正解。
    * 資料を開いたかどうかは、ページ内の「資料へのリンク」を押したことで数える（資料ページ側は変えない。開いた先が何のページでも数える）。 */
   var GATES = [10, 20, 30, 40];
   function gateNeed(g) { return g === 10 ? { gr: 3, rc: 3 } : { gr: 5, rc: 5 }; }
-  var GUIDE = { ana: "guide/anatomy/", phy: "guide/physiology/", kei: "guide/keiketsu/", sor: "guide/souron/", kak: "guide/kakuron/" }; // 科目ごとの学習資料の入口（ROOT からの相対）
+  if (!GUIDE || !Object.keys(GUIDE).length) { /* subjects.js が無いときの資料入口は gameMaps のフォールバックで入る */ }
   var BADGES = [
     { id: "first", n: "はじめの一歩", d: "はじめて1問答えた", t: function (s) { return s.att >= 1; } },
     { id: "c10", n: "10問正解", d: "正解が合計10問", t: function (s) { return s.cor >= 10; } },
@@ -99,6 +108,14 @@
     { id: "trio", n: "3科目デビュー", d: "解剖学・生理学・経絡経穴概論のすべてを1問以上といた", t: function (s) { return s.seen.ana && s.seen.phy && s.seen.kei; } },
     { id: "bal50", n: "2科目バランス", d: "解剖学・生理学の過去問それぞれ50問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 50 && (s.ec.phy || 0) >= 50; } },
     { id: "bal200", n: "2科目どっちも強い", d: "解剖学・生理学の過去問それぞれ200問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 200 && (s.ec.phy || 0) >= 200; } },
+    { id: "five", n: "5科目デビュー", d: "解剖学・生理学・経絡経穴概論・臨床医学総論・臨床医学各論のすべてを1問以上といた", t: function (s) { return s.seen.ana && s.seen.phy && s.seen.kei && s.seen.sor && s.seen.kak; } },
+    { id: "bal5_50", n: "5科目バランス", d: "5科目の過去問それぞれ50問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 50 && (s.ec.phy || 0) >= 50 && (s.ec.kei || 0) >= 50 && (s.ec.sor || 0) >= 50 && (s.ec.kak || 0) >= 50; } },
+    { id: "bal5_200", n: "5科目どれも強い", d: "5科目の過去問それぞれ200問以上に正解", t: function (s) { return (s.ec.ana || 0) >= 200 && (s.ec.phy || 0) >= 200 && (s.ec.kei || 0) >= 200 && (s.ec.sor || 0) >= 200 && (s.ec.kak || 0) >= 200; } },
+    { id: "sor100", n: "臨床総論 過去問100問", d: "臨床医学総論の過去問で100問に正解（重複なし）", t: function (s) { return (s.ec.sor || 0) >= 100; } },
+    { id: "sor300", n: "臨床総論 過去問300問", d: "臨床医学総論の過去問で300問に正解（重複なし）", t: function (s) { return (s.ec.sor || 0) >= 300; } },
+    { id: "kak100", n: "臨床各論 過去問100問", d: "臨床医学各論の過去問で100問に正解（重複なし）", t: function (s) { return (s.ec.kak || 0) >= 100; } },
+    { id: "kak300", n: "臨床各論 過去問300問", d: "臨床医学各論の過去問で300問に正解（重複なし）", t: function (s) { return (s.ec.kak || 0) >= 300; } },
+    { id: "kak500", n: "臨床各論 過去問500問", d: "臨床医学各論の過去問で500問に正解（重複なし）", t: function (s) { return (s.ec.kak || 0) >= 500; } },
     { id: "lv15", n: "Lv15到達", d: "レベル15になった", t: function (s) { return lvInfo().lv >= 15; } },
     { id: "lv20", n: "Lv20到達", d: "レベル20になった", t: function (s) { return lvInfo().lv >= 20; } },
     { id: "lv30", n: "Lv30到達", d: "レベル30になった", t: function (s) { return lvInfo().lv >= 30; } },

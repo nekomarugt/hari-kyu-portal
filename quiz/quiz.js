@@ -5,7 +5,7 @@
   var ROOT = G.rootUrl;
   var C = G.constants;
   var NAMES = C.SUBJ, PAGES = C.SUBJ_PAGE;
-  var PAGE2S = { anatomy: "ana", physiology: "phy", keiketsu: "kei", "rinsho-soron": "sor", "rinsho-kakuron": "kak" };
+  var PAGE2S = (window.JKSubjects && JKSubjects.quizPage2s && JKSubjects.quizPage2s()) || { anatomy: "ana", physiology: "phy", keiketsu: "kei", "rinsho-soron": "sor", "rinsho-kakuron": "kak" };
     var $ = function (id) { return document.getElementById(id); };
   var params = new URLSearchParams(location.search);
   if (params.get("mode") === "weak") history.replaceState(null, "", location.pathname + "?s=" + (params.get("s") || ""));
