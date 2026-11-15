@@ -12,6 +12,7 @@
     description: "はり師・きゅう師 国家試験の解剖学・生理学・経絡経穴概論・臨床医学総論・臨床医学各論の過去問と4択クイズ。基礎の復習と過去問演習のための無料ポータル",
     gameKey: "jkp-hk-game-v1",
     wjScoreKey: "hkp-wj-scores-v1",
+    search: "search/",
     wjLogKey: "hkp-wj-log-v1"
   };
 

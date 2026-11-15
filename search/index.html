@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c4a40" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="はりきゅう国試" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>if("serviceWorker"in navigator){addEventListener("load",function(){navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){})})}</script>
+    <meta name="description" content="はり師・きゅう師国家試験の学習資料（解剖学・生理学・経絡経穴概論・臨床医学総論・臨床医学各論）を本文から検索します。" />
+    <title>学習資料をさがす｜はり師きゅう師 国家試験ポータル</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="../game/game.css" />
+    <link rel="stylesheet" href="./search.css" />
+    <script src="../backnav.js"></script>
+  </head>
+  <body>
+    <a class="jkq-return" href="../">← ポータルへ</a>
+    <main class="search-page">
+      <header>
+        <p class="eyebrow">はり師・きゅう師　基礎の復習と過去問演習</p>
+        <h1>学習資料をさがす</h1>
+        <p class="search-lead">学習資料の本文だけを探します。過去問の文面は対象外です。閉じた箱（くわしく・TIPSなど）の中も探します。</p>
+      </header>
+      <form id="search-form" class="search-bar" role="search" action="./" method="get">
+        <label class="visually-hidden" for="q">学習資料を検索</label>
+        <input id="q" type="search" name="q" placeholder="例：腕神経叢、鵞足" enterkeyhint="search" autocomplete="off" />
+        <button type="submit">検索</button>
+      </form>
+      <p id="search-status" class="search-status" aria-live="polite"></p>
+      <div id="search-results"></div>
+    </main>
+    <script src="../subjects.js"></script>
+    <script src="./search.js"></script>
+  </body>
+</html>

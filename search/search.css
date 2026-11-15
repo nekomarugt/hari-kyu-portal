@@ -1,0 +1,41 @@
+/* 学習資料の検索。モバイル優先・ポータルの見た目に合わせる */
+.search-page { width: min(720px, calc(100% - 24px)); margin: 0 auto; padding: 16px 0 88px; }
+.search-page h1 { font-size: 1.35rem; margin: 0 0 4px; }
+.search-lead { margin: 0 0 14px; color: var(--muted); font-size: 0.88rem; }
+.search-bar {
+  display: flex; gap: 8px; position: sticky; top: 0; z-index: 20;
+  padding: 10px 0 12px; background: color-mix(in srgb, var(--paper, #fff) 86%, transparent);
+  backdrop-filter: blur(8px);
+}
+.search-bar input[type="search"] {
+  flex: 1; min-width: 0; font: inherit; font-size: 16px; line-height: 1.4;
+  padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--paper, #fff); color: var(--ink);
+}
+.search-bar button {
+  flex: none; min-height: 48px; min-width: 4.5em; padding: 10px 16px;
+  border: 0; border-radius: 12px; background: var(--navy); color: #fff;
+  font: inherit; font-weight: 800; cursor: pointer;
+}
+.search-bar button:focus-visible,
+.search-bar input:focus-visible { outline: 3px solid color-mix(in srgb, var(--navy) 35%, transparent); outline-offset: 2px; }
+.search-status { margin: 0 0 16px; color: var(--muted); font-size: 0.9rem; }
+.search-group { margin: 0 0 22px; }
+.search-group h2 {
+  margin: 0 0 8px; font-size: 0.92rem; letter-spacing: 0.04em;
+  color: var(--navy); border-bottom: 2px solid var(--line); padding-bottom: 4px;
+}
+.search-hit {
+  display: block; margin: 0 0 8px; padding: 12px 14px;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--paper, #fff);
+  color: inherit; text-decoration: none; box-shadow: 0 6px 16px rgba(12, 35, 72, 0.05);
+}
+.search-hit:hover, .search-hit:focus-visible { border-color: var(--navy); }
+.search-hit:focus-visible { outline: 3px solid color-mix(in srgb, var(--navy) 35%, transparent); outline-offset: 2px; }
+.search-hit-h { display: block; font-weight: 800; font-size: 0.98rem; line-height: 1.4; }
+.search-hit-box { display: inline-block; margin-top: 4px; padding: 1px 8px; border-radius: 999px; background: #fff4cc; color: #6a4b00; font-size: 0.72rem; font-weight: 700; }
+.search-snip { margin: 6px 0 0; font-size: 0.88rem; line-height: 1.55; color: var(--ink); }
+.search-snip mark, mark.search-hl { background: #ffe08a; color: inherit; padding: 0 0.12em; border-radius: 3px; }
+.search-empty { padding: 24px 8px; color: var(--muted); }
+
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
